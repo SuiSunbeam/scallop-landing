@@ -1,0 +1,92 @@
+{
+  "name": "solana-scallop-home",
+  "version": "0.1.0",
+  "author": "Scallop",
+  "license": "Apache Licence 2.0",
+  "description": "Scallop home page",
+  "private": true,
+  "devDependencies": {
+    "@craco/craco": "^6.1.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindui/react": "^0.1.1",
+    "@testing-library/jest-dom": "^5.13.0",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.20.14",
+    "@types/react": "^17.0.9",
+    "@types/react-dom": "^17.0.6",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/react-responsive": "^8.0.3",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-line-awesome-svg": "^1.0.12",
+    "react-plx": "^1.3.17",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-responsive": "^9.0.0-beta.3",
+    "classnames": "^2.3.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2",
+    "typescript": "^4.3.0",
+    "prettier": "^2.3.2",
+    "web-vitals": "^0.2.4",
+    "workbox-background-sync": "^5.1.3",
+    "workbox-broadcast-update": "^5.1.3",
+    "workbox-cacheable-response": "^5.1.3",
+    "workbox-core": "^5.1.3",
+    "workbox-expiration": "^5.1.3",
+    "workbox-google-analytics": "^5.1.3",
+    "workbox-navigation-preload": "^5.1.3",
+    "workbox-precaching": "^5.1.3",
+    "workbox-range-requests": "^5.1.3",
+    "workbox-routing": "^5.1.3",
+    "workbox-strategies": "^5.1.3",
+    "workbox-streams": "^5.1.3"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "format:fix": "prettier --write \"src/**/*.+(js|jsx|ts|tsx|json|css|md)\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scallop-labs/solana-scallop-dapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scallop-labs/solana-scallop-dapp/issues"
+  },
+  "homepage": "."
+}

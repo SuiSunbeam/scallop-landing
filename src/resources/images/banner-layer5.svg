@@ -1,0 +1,33 @@
+<svg id="a5e600f0-3741-44a3-96c2-4ae8d7881b32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 376.41">
+	<defs>
+		<style>
+			.fc241785-8aef-4db2-817c-4fd136c18874{fill:#fff;opacity:0;}
+			.fe45eb60-054e-4d3b-ab1c-4ef45a463fa4{
+				fill:#8aa8ca;
+				transform: scaleX(1.5);
+				animation-name: swell;
+				animation-duration: 2.5s;
+				animation-fill-mode: forwards;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+			@keyframes swell {
+				from { transform: scaleX(1.5) translateX(-25%); }
+				to { transform:  scaleX(1.5) translateX(0%); }
+			}
+
+		</style>
+	</defs>
+	<rect class="fc241785-8aef-4db2-817c-4fd136c18874" width="1280" height="376.41"/>
+	<path class="fe45eb60-054e-4d3b-ab1c-4ef45a463fa4" d="M1120,351.81c-80,0-80-9.44-160-9.44s-80,9.44-160,9.44-80-9.44-160-9.44-80,9.44-160,9.44-80-9.44-160-9.44-80,9.44-160,9.44-80-9.44-160-9.44v33H1280v-33C1200,342.37,1200,351.81,1120,351.81Z">
+		<animate 
+			dur="5s"
+			repeatCount="indefinite"
+			attributeName="d"
+			values="
+				M1120,351.81c-80,0-80-9.44-160-9.44s-80,9.44-160,9.44-80-9.44-160-9.44-80,9.44-160,9.44-80-9.44-160-9.44-80,9.44-160,9.44-80-9.44-160-9.44v33H1280v-33C1200,342.37,1200,351.81,1120,351.81Z;
+				M1120,342.82c-80,0-80,9.34-160,9.34s-80-9.34-160-9.34-80,9.34-160,9.34-80-9.34-160-9.34-80,9.34-160,9.34-80-9.34-160-9.34-89.65.23-160,9.34v23.25H1280V352.16C1200,352.16,1200,342.82,1120,342.82Z;
+				M1120,351.81c-80,0-80-9.44-160-9.44s-80,9.44-160,9.44-80-9.44-160-9.44-80,9.44-160,9.44-80-9.44-160-9.44-80,9.44-160,9.44-80-9.44-160-9.44v33H1280v-33C1200,342.37,1200,351.81,1120,351.81Z
+			"/>
+	</path>
+</svg>
