@@ -83,10 +83,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scallop-labs/solana-scallop-dapp.git"
+    "url": "git+https://github.com/scallop-labs/solana-scallop-home.git"
   },
   "bugs": {
-    "url": "https://github.com/scallop-labs/solana-scallop-dapp/issues"
+    "url": "https://github.com/scallop-labs/solana-scallop-home/issues"
   },
   "homepage": "."
 }

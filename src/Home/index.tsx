@@ -30,7 +30,7 @@ const Home = () => {
     })
 
     useEffect(() => {
-        document.title = 'Scallop | The DeFi game on Solana';
+        document.title = 'Scallop | A DeFi game on Solana';
         return () => { };
     }, []);
 
