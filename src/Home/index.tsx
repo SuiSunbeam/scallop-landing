@@ -128,7 +128,7 @@ const Home = () => {
                                 What is Scallop?
                             </p>
                             <p className="Home-wrap-descript text-justify">
-                                Scallop is a Defi game on Solana, users can stake their SOL here to grow a scallop and have chances to win tokens and NFTs. At the end of each week, one (or a few) of winner chosen by program randomly will share out some Scallop token (SCA) with same value of SOL staking reward, 7% of SOL reward will be kept in the staking pool, 93% will be SCA buyback. During the game users can win Scallop Decorations by carrying out some tasks ✨ !
+                                Scallop is a Defi game on Solana, users can stake their tokens to grow scallops in Scallop tank. At the end of each week, one (or a few) of winners chosen by program randomly will share out some Scallop token (SCA) with the same value of staking reward, 7% of staking reward will be kept in the staking pool, 93% will be SCA buyback. During the game users can win tokens Scallop Decorations by carrying out some tasks ✨ !
                             </p>
                         </div>
                     </section>
@@ -141,29 +141,29 @@ const Home = () => {
                                 <div className="Home-cards">
                                     <div className="Home-card">
                                         <div className="Home-card-title">
-                                            STAKING SOL
+                                            Choosing Pools
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            Users can stake SOL to the Scallop tank, after staking over 7 days users will have the qualification of harvest, every Friday 20:00 (GMT+8) will be the harvest time
+                                            There will be pools with different tiers, address limits, SPL tokens and projects to let users staking their tokens.
                                         </div>
                                     </div>
                                     <div className="Home-card">
                                         <div className="Home-card-title">
-                                            HARVEST SCALLOP
+                                            Staking
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            After harvesting, one (or a few) of winners chosen by program randomly will get Scallop token (SCA) with the same value of SOL staking reward, 7% of SOL reward will be kept in the staking pool and 93% will be SCA buyback.
+                                            Users stake tokens and get scallops to grow at Scallop tank , after staking over 7 days, users will have the qualification of harvesting.
                                         </div>
                                     </div>
                                     <div className="Home-card">
                                         <div className="Home-card-title">
-                                            Tasks🏅
+                                            Harvesting
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            During the game users can carrying out some tasks, like stake more than 10 SOL in the Scallop tank for a month or stake more than 10000 SCA in the staking pool for two weeks.
+                                            Every Friday 20:00 (GMT+8) will be the harvest time, one (or a few) of winners chosen by program randomly will get Scallop token (SCA) with the same value of staking reward.
                                         </div>
                                     </div>
                                 </div>
@@ -183,10 +183,10 @@ const Home = () => {
                                         </div>
                                         <div className="Home-road-content">
                                             <ul className="list-disc text-justify">
-                                                <li>Scallop Fossil Decorations 🗿</li>
-                                                <li>First SCA airdrop 💸</li>
+                                                <li>Scallop Fossil 🗿</li>
+                                                <li>SCA airdrop 💸</li>
                                                 <li>Launch Scallop on test-net</li>
-                                                <li>SCA token launch</li>
+                                                <li>SCA token</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -196,10 +196,10 @@ const Home = () => {
                                         </div>
                                         <div className="Home-road-content">
                                             <ul className="list-disc text-justify">
-                                                <li>Launch Scallop on main-net🚀</li>
-                                                <li>SCA token staking pool</li>
-                                                <li>SCA/USDC Liquidity pool and Swap pool</li>
-                                                <li>Scallop Nautilus Decorations (Bidding event)</li>
+                                                <li>Scallop on main-net 🚀</li>
+                                                <li>SCA staking pool</li>
+                                                <li>SCA Swap, Liquidity pools</li>
+                                                <li>Scallop Nautilus (Bidding)</li>
                                                 <li>More ways to let the funds to earn rewards</li>
                                             </ul>
                                         </div>
@@ -212,7 +212,7 @@ const Home = () => {
                                             <ul className="list-disc text-justify">
                                                 <li>Another token Scallop pool</li>
                                                 <li>Scallop NFTs Decorations</li>
-                                                <li>Second SCA airdrop 💸</li>
+                                                <li>SCA airdrop 2 💸</li>
                                                 <li>Scallop shop</li>
                                             </ul>
                                         </div>
@@ -223,7 +223,9 @@ const Home = () => {
                                         </div>
                                         <div className="Home-road-content">
                                             <ul className="list-disc">
-                                                <li>Vote with your SCA</li>
+                                                <li>Vote with SCA</li>
+                                                <li>Decorations Market</li>
+                                                <li>Decorations Illustrated Book</li>
                                                 <li>Scallop Decorations Eggs 🥚</li>
                                             </ul>
                                         </div>

@@ -166,7 +166,7 @@
     border: 2px solid rgba(150, 200, 220, 0.7);
     border-radius: 0.5rem;
     color: #bfeff0;
-    @apply flex flex-col flex-nowrap items-center w-full h-auto lg:max-w-4xl sm:h-80 lg:h-88;
+    @apply flex flex-col flex-nowrap items-center w-full h-auto lg:max-w-4xl sm:h-72 lg:h-80;
 }
 .Home-card-title {
     @apply w-full text-center text-sm xs:text-lg pt-2;
