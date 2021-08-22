@@ -128,7 +128,7 @@ const Home = () => {
                                 What is Scallop?
                             </p>
                             <p className="Home-wrap-descript text-justify">
-                                Scallop is a Defi game on Solana, users can stake their tokens to grow scallops in Scallop tank. At the end of each week, one (or a few) of winners chosen by program randomly will share out some Scallop token (SCA) with the same value of staking reward, 7% of staking reward will be kept in the staking pool, 93% will be SCA buyback. During the game users can win tokens Scallop Decorations by carrying out some tasks ✨ !
+                                Scallop is a Defi game on Solana, users can stake their tokens to grow scallops in Scallop tank. At the end of each week, one (or a few) of winners chosen by program randomly will share out some Scallop token (SCA) with the same value of staking reward, 7% of staking reward will be kept in the staking pool, 93% will be SCA buyback. During the game users can win tokens and Scallop Decorations by carrying out some tasks ✨ !
                             </p>
                         </div>
                     </section>
