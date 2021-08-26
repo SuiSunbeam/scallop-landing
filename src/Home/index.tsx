@@ -105,7 +105,7 @@ const Home = () => {
                                 win tokens and decorations!
                             </p>
                             <p className="Home-wrap-descript text-center sm:text-left">
-                                A Defi game on Solana, stake to win tokens and NFTs ✨ !
+                                A DeFi game on Solana, stake to win tokens and NFTs ✨ !
                             </p>
                             <div className="w-full">
                                 <div className="flex items-start justify-center sm:justify-start mt-6 xs:mt-8 gap-3 xs:gap-6">
@@ -128,7 +128,7 @@ const Home = () => {
                                 What is Scallop?
                             </p>
                             <p className="Home-wrap-descript text-justify">
-                                Scallop is a Defi game on Solana, users can stake their tokens to grow scallops in Scallop tank. At the end of each week, one (or a few) of winners chosen by program randomly will share out some Scallop token (SCA) with the same value of staking reward, 7% of staking reward will be kept in the staking pool, 93% will be SCA buyback. During the game users can win tokens and Scallop Decorations by carrying out some tasks ✨ !
+                                Scallop is a DeFi game on Solana, users can stake their tokens into Scallop Pools to grow scallops in Scallop Tank, users can get Scallop Token (SCA) while they staking tokens. At the end of each week, One or a few winner(s) chosen by program randomly will share out SCA as the staking reward. During the game users can win tokens and Scallop Decorations by carrying out some tasks✨!
                             </p>
                         </div>
                     </section>
@@ -145,7 +145,7 @@ const Home = () => {
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            There will be pools with different tiers, address limits, SPL tokens and projects to let users staking their tokens.
+                                            There will be different tiers of pools with the different address limits, different SPL tokens to let users stake tokens.
                                         </div>
                                     </div>
                                     <div className="Home-card">
@@ -154,7 +154,7 @@ const Home = () => {
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            Users stake tokens and get scallops to grow at Scallop tank , after staking over 7 days, users will have the qualification of harvesting.
+                                            Users can stake their tokens into Scallop Pools to grow scallops in Scallop Tank, while they stake tokens they will also get the same value of SCA (Scallop Token) of the token they stake. 
                                         </div>
                                     </div>
                                     <div className="Home-card">
@@ -163,7 +163,7 @@ const Home = () => {
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            Every Friday 20:00 (GMT+8) will be the harvest time, one (or a few) of winners chosen by program randomly will get Scallop token (SCA) with the same value of staking reward.
+                                            Every Friday 20:00 (GMT+8) will be the harvest time, one (or a few) of winners chosen by Switchboard VRF will share out the reward SCA (With the same value of 93% staking reward).
                                         </div>
                                     </div>
                                 </div>
