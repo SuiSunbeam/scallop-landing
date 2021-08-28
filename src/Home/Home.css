@@ -149,7 +149,7 @@
 }
 
 .Home-wrap-btn {
-    @apply font-medium rounded-md px-3 py-1.5 text-gray-700 bg-gray-100 bg-opacity-75 hover:bg-opacity-90 text-sm xs:text-base sm:text-lg;
+    @apply font-medium whitespace-nowrap rounded-md px-2 xs:px-3 py-1.5 text-gray-700 bg-gray-100 bg-opacity-75 hover:bg-opacity-90 text-sm xs:text-base sm:text-lg;
 }
 
 .Home-cards,
