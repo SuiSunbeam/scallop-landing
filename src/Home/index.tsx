@@ -253,7 +253,7 @@ const Home = () => {
                             <a className="hover:text-gray-100 hover:animate-bounce" href="https://scallopio.medium.com/scallop-c030758d9c40">
                                 <FontAwesomeIcon icon={['fab', 'medium']} />
                             </a>
-                            <a className="hover:text-gray-100 hover:animate-bounce" href="https://discord.gg/scallop">
+                            <a className="hover:text-gray-100 hover:animate-bounce" href="https://discord.com/invite/F7umecFArJ">
                                 <FontAwesomeIcon icon={['fab', 'discord']} transform={{ y: 1 }} />
                             </a>
                         </nav>
