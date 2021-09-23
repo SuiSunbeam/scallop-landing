@@ -156,7 +156,7 @@ const Home = () => {
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            Users can stake their tokens into Scallop Pools to grow scallops in Scallop Tank, while they stake tokens they will also get the same value of SCA (Scallop Token) of the token they stake. 
+                                            While they stake tokens, they can get the same worth of Scallop Token (SCA) as the token they staked. 
                                         </div>
                                     </div>
                                     <div className="Home-card">
@@ -165,7 +165,7 @@ const Home = () => {
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            Every Friday 20:00 (GMT+8) will be the harvest time, one (or a few) of winners chosen by Switchboard VRF will share out the reward SCA (With the same value of 93% staking reward).
+                                            Every Friday 20:00 (GMT+8) will be the harvest time, one (or a few) of winners chosen by on-chain program randomly will share out the staking reward SCA.
                                         </div>
                                     </div>
                                 </div>
