@@ -33,7 +33,7 @@
 }
 
 .Home-header-logo {
-    @apply absolute flex top-4 xs:top-4 sm:top-5 md:top-8 lg:top-12 xl:top-14 2xl:top-16 left-9 xs:left-10 md:left-12 lg:left-14  xl:left-20;
+    @apply absolute flex top-4 xs:top-4 sm:top-5 md:top-8 lg:top-12 xl:top-14 2xl:top-16 left-9 xs:left-10 md:left-12 lg:left-20 xl:left-44 2xl:left-60;
 }
 
 .Home-header-nav {
@@ -413,6 +413,10 @@
         font-size: 2.25rem;
     }
 
+    .Home-header {
+        background: #8cd1f4 radial-gradient(circle at 6.5rem 5rem, #fff 0%, #8cd1f4 30%);
+    }
+
     .Home-wrap section:nth-child(1),
     .Home-wrap-content section:nth-child(1) {
         height: 30rem;
@@ -447,6 +451,10 @@
     .Home-banner,
     .Home-banner-layer {
         height: 380px;
+    }
+
+    .Home-header {
+        background: #8cd1f4 radial-gradient(circle at 12rem 7rem, #fff 0%, #8cd1f4 30%);
     }
 
     .Home-wrap section:nth-child(1),
@@ -484,6 +492,10 @@
     .Home-banner,
     .Home-banner-layer {
         height: 410px;
+    }
+
+    .Home-header {
+        background: #8cd1f4 radial-gradient(circle at 15rem 8rem, #fff 0%, #8cd1f4 30%);
     }
 
     .Home-wrap section:nth-child(1),

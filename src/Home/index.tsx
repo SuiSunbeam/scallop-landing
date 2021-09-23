@@ -6,7 +6,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import logo from 'resources/images/logo-full.svg'
+import blogo from 'resources/images/LOGO-Black.png'
+import wlogo from 'resources/images/LOGO-White.png'
 import solana from 'resources/images/solana.svg'
 import fish1 from 'resources/images/school-fish1.svg'
 import fish2 from 'resources/images/school-fish2.svg'
@@ -54,7 +55,7 @@ const Home = () => {
                 </div>
                 <Plx className="Home-header-logo" parallaxData={header}>
                     <a className="Home-logo" href="/">
-                        <img className="Home-logo-image" src={logo} alt="logo" />
+                        <img className="Home-logo-image" src={blogo} alt="logo" />
                         {/* <div className="Home-logo-text">Scallop</div> */}
                     </a>
                 </Plx>
@@ -258,7 +259,7 @@ const Home = () => {
                             </a>
                         </nav>
                         <a className="Home-logo my-3 xs:mt-6 sm:mt-10 2xl:mt-16 filter drop-shadow-white" href="/">
-                            <img className="Home-logo-image" src={logo} alt="logo" />
+                            <img className="Home-logo-image" src={wlogo} alt="logo" />
                             {/* <div className="Home-logo-text">Scallop</div> */}
                         </a>
                         <div className="mt-3 xs:mt-6 sm:mt-9 text-xs sm:text-sm lg:text-base">
