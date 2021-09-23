@@ -33,7 +33,7 @@
 }
 
 .Home-header-logo {
-    @apply absolute flex top-2 xs:top-3 sm:top-5 md:top-10 lg:top-16 2xl:top-20 left-12 xs:left-14 md:left-14 lg:left-16;
+    @apply absolute flex top-4 xs:top-4 sm:top-5 md:top-8 lg:top-12 xl:top-14 2xl:top-16 left-9 xs:left-10 md:left-12 lg:left-14  xl:left-20;
 }
 
 .Home-header-nav {
@@ -41,10 +41,10 @@
 }
 
 .Home-logo {
-    @apply flex justify-center items-center w-32 xs:w-40 sm:w-44 md:w-52 lg:w-56 2xl:w-64;
+    @apply flex justify-center items-center;
 }
 .Home-logo-image {
-    @apply block pointer-events-none filter drop-shadow animate-shake h-7 xs:h-8 sm:h-9 lg:h-10 xl:h-11 2xl:h-12;
+    @apply block pointer-events-none filter drop-shadow h-10 xs:h-10 sm:h-12 md:h-12 lg:h-14 xl:h-16 2xl:h-20;
 }
 .Home-logo-text {
     font-family: 'Poppins';

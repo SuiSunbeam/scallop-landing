@@ -23,6 +23,9 @@ module.exports = {
           darker: 'var(--color-sea-darker)',
         }
       },
+      dropShadow: {
+        'white': '0 0 25px rgba(78, 107, 128, 0.95)',
+      },
       spacing: {
         '88': '22rem',
       },

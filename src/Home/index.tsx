@@ -6,7 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import logo from 'resources/images/logo.svg'
+import logo from 'resources/images/logo-full.svg'
 import solana from 'resources/images/solana.svg'
 import fish1 from 'resources/images/school-fish1.svg'
 import fish2 from 'resources/images/school-fish2.svg'
@@ -55,7 +55,7 @@ const Home = () => {
                 <Plx className="Home-header-logo" parallaxData={header}>
                     <a className="Home-logo" href="/">
                         <img className="Home-logo-image" src={logo} alt="logo" />
-                        <div className="Home-logo-text">Scallop</div>
+                        {/* <div className="Home-logo-text">Scallop</div> */}
                     </a>
                 </Plx>
                 <Plx className="Home-header-nav" parallaxData={header}>
@@ -257,9 +257,9 @@ const Home = () => {
                                 <FontAwesomeIcon icon={['fab', 'discord']} transform={{ y: 1 }} />
                             </a>
                         </nav>
-                        <a className="Home-logo mt-3 xs:mt-6 sm:mt-9 2xl:mt-16" href="/">
+                        <a className="Home-logo my-3 xs:mt-6 sm:mt-10 2xl:mt-16 filter drop-shadow-white" href="/">
                             <img className="Home-logo-image" src={logo} alt="logo" />
-                            <div className="Home-logo-text">Scallop</div>
+                            {/* <div className="Home-logo-text">Scallop</div> */}
                         </a>
                         <div className="mt-3 xs:mt-6 sm:mt-9 text-xs sm:text-sm lg:text-base">
                             <span className="rounded-full bg-gray-800 text-gray-100 px-4 py-1">
