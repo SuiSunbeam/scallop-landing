@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.scallop.io" align="center">
-    <img alt="Solana" src="src/resources/images/scallop.png" width="300" />
+    <img alt="Solana" src="https://i.imgur.com/g7Y4MIj.png" width="300" />
   </a>
 </p>
 
