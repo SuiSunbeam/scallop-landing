@@ -193,6 +193,7 @@
 
 .Home-road {
     position: relative;
+    @apply flex flex-col justify-center;
 }
 .Home-road:nth-child(1) {
     @apply col-span-2 sm:col-span-1 sm:row-span-4 sm:row-start-1;
