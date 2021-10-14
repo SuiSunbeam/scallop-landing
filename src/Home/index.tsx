@@ -112,7 +112,7 @@ const Home = () => {
                                 <div className="flex items-start justify-center sm:justify-start mt-6 xs:mt-8 gap-3 xs:gap-6">
                                     <a href="https://app.scallop.io" className="Home-wrap-btn">Launch App</a>
                                     <a href="https://docs.scallop.io" className="Home-wrap-btn">Read More</a>
-                                    <a href="https://doc.scallop.io/whitepaper.pdf" target="_blank" className="Home-wrap-btn">White Paper</a>
+                                    {/* <a href="https://doc.scallop.io/whitepaper.pdf" target="_blank" className="Home-wrap-btn">White Paper</a> */}
                                 </div>
                             </div>
                         </div>
@@ -181,14 +181,25 @@ const Home = () => {
                                 <div className="Home-map">
                                     <div className="Home-road">
                                         <div className="Home-road-title">
+                                            Q2 2021
+                                        </div>
+                                        <div className="Home-road-content">
+                                            <ul className="list-disc text-justify">
+                                                <li>Scallop Born🎂</li>
+                                                <li>Solana Season Hackathon🦾</li>
+                                                <li>First Scallop Decorations (Seagrass🌱)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="Home-road">
+                                        <div className="Home-road-title">
                                             Q3 2021
                                         </div>
                                         <div className="Home-road-content">
                                             <ul className="list-disc text-justify">
                                                 <li>Scallop Fossil 🗿</li>
-                                                <li>SCA airdrop 💸</li>
-                                                <li>Launch Scallop on test-net</li>
-                                                <li>SCA token</li>
+                                                <li>Wahite Paper 📃</li>
+                                                <li>Ignition 🔥 | Solana Hackathon</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -198,37 +209,23 @@ const Home = () => {
                                         </div>
                                         <div className="Home-road-content">
                                             <ul className="list-disc text-justify">
-                                                <li>Scallop on main-net 🚀</li>
-                                                <li>SCA staking pool</li>
-                                                <li>SCA Swap, Liquidity pools</li>
-                                                <li>Scallop Nautilus (Bidding)</li>
-                                                <li>More ways to let the funds to earn rewards</li>
+                                                <li>Scallop on Dev-net 🚀</li>
+                                                <li>Decorations Illustrated Book</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div className="Home-road">
                                         <div className="Home-road-title">
-                                            Q1 2022
-                                        </div>
-                                        <div className="Home-road-content">
-                                            <ul className="list-disc text-justify">
-                                                <li>Another token Scallop pool</li>
-                                                <li>Scallop NFTs Decorations</li>
-                                                <li>SCA airdrop 2 💸</li>
-                                                <li>Scallop shop</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="Home-road">
-                                        <div className="Home-road-title">
-                                            Q2 2022
+                                            H1 2022
                                         </div>
                                         <div className="Home-road-content">
                                             <ul className="list-disc">
-                                                <li>Vote with SCA</li>
-                                                <li>Decorations Market</li>
-                                                <li>Decorations Illustrated Book</li>
+                                                <li>SCA token launch</li>
+                                                <li>Scallop on main-net 🚀</li>
+                                                <li>SCA staking pool</li>
+                                                <li>SCA Swap, Liquidity pools</li>
                                                 <li>Scallop Decorations Eggs 🥚</li>
+                                                <li>Decorations Market</li>
                                             </ul>
                                         </div>
                                     </div>
