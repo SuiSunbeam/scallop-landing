@@ -106,7 +106,7 @@ const Home = () => {
                                 win tokens and decorations!
                             </p>
                             <p className="Home-wrap-descript text-center sm:text-left">
-                                A DeFi game on Solana, stake to win tokens and NFTs ✨ !
+                                A no loss lottery on Solana, stake to win tokens and NFTs ✨ !
                             </p>
                             <div className="w-full">
                                 <div className="flex items-start justify-center sm:justify-start mt-6 xs:mt-8 gap-3 xs:gap-6">
@@ -130,7 +130,7 @@ const Home = () => {
                                 What is Scallop?
                             </p>
                             <p className="Home-wrap-descript text-justify">
-                                Scallop is a DeFi game on Solana, users can stake their tokens in Scallop Pools to grow scallops in Scallop Tank, while they stake tokens, they can get the same worth of Scallop Token (SCA). At the end of each week, one or a few winner(s) chosen by program randomly will share out some SCA as the staking reward. During the game users can win tokens and Scallop Decorations by carrying out some tasks✨!
+                                Scallop is a no loss lottery on Solana, users can stake their tokens in Scallop Pools to grow scallops in Scallop Tank, while they stake tokens, they can get the same worth of Scallop Token (SCA). At the end of each week, one or a few winner(s) chosen by program randomly will share out some SCA as the staking reward. During the game users can win tokens and Scallop Decorations by carrying out some tasks✨!
                             </p>
                         </div>
                     </section>
