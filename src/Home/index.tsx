@@ -198,7 +198,7 @@ const Home = () => {
                                         <div className="Home-road-content">
                                             <ul className="list-disc text-justify">
                                                 <li>Scallop Fossil 🗿</li>
-                                                <li>Wahite Paper 📃</li>
+                                                <li>White Paper 📃</li>
                                                 <li>Ignition 🔥 | Solana Hackathon</li>
                                             </ul>
                                         </div>
