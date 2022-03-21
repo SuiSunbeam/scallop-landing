@@ -9,7 +9,7 @@ import {
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import reportWebVitals from './reportWebVitals'
 import './index.css'
-import Home from './Home'
+import Home from './Home/index'
 
 ReactDOM.render(
     <React.StrictMode>
