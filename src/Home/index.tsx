@@ -28,6 +28,23 @@ const Home = () => {
                     </a>
                 </div>
             </header>
+            <main className="Home-wrapper">
+                <section className="section-0">
+                    <div className="section-0-layer-0"></div>
+                    <div className="section-0-content">
+                        <div>
+                            <h1 className="text-xl">Join now to<br/>win tokens and decorations</h1>
+                            <p className="text-lg text-white">A no loss lottery on Solana, stake to win tokens and NFTs ✨ !</p>
+                        </div>
+                    </div>
+                </section>
+                <section className="section-1">
+                    <div className="section-1-layer-1"></div>
+                    <div className="section-1-layer-2"></div>
+                    <div className="section-1-content">
+                    </div>
+                </section>
+            </main>
         </div>
     )
 }
