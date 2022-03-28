@@ -16,11 +16,11 @@
     @apply absolute bg-cover bg-no-repeat;
 }
 
-.Home-banner-layer-1{
+.Home-banner-rock-1{
     background-image: url(../resources/images/top-banner-layer.png);
 }
 
-.Home-banner-layer-2 {
+.Home-banner-rock-2 {
     background-image: url(../resources/images/cloud-banner-1.svg);
 }
 
@@ -45,64 +45,169 @@
 }
 
 .section-0 {
-    @apply relative -m-2;
+    @apply relative;
     background-image: url("../resources/images/section-0-background.png");
-    height: 25rem;
 }
 
 .section-0 .section-0-layer-0 {
-    @apply absolute h-full w-full;
+    @apply absolute h-full w-full bg-no-repeat bg-cover;
     background-image: url("../resources/images/section-0-wave-mirror.svg");
-    background-size: 100% auto;
+    /*background-size: 100% auto;*/
 }
 
 
 .section-0 .section-0-content {
     @apply absolute h-full w-full flex items-center;
-    margin-left: 20%;
+}
+.section-0-content .text-title-1 {
+    @apply xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl
+}
+
+.section-0-content .text-title-2 {
+    @apply xs:text-xs sm:text-3xl md:text-3xl lg:text-3xl xl:text-xl 2xl:text-2xl
 }
 
 .section-1 {
-    @apply relative -m-2;
     background-image: url("../resources/images/section-1-background.png");
-    height: 60rem;
+    @apply relative bg-cover bg-no-repeat;
 }
-
-.section-1 .section-1-layer-1 {
-    @apply absolute;
-    background-image: url("../resources/images/rock-1.svg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    height: 50%;
-    width: 30rem;
-    top: 10rem;
-}
-
-.section-1 .section-1-layer-2 {
-    @apply absolute;
-    background-image: url("../resources/images/rock-2.svg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    height: 50%;
-    width: 20rem;
-    bottom: 2rem;
-    right: 0;
-}
-
 
 .section-1 .section-1-content {
-    @apply absolute h-full w-full flex items-center;
-    margin-left: 20%;
+    @apply absolute w-full h-full;
 }
 
+.section-1 .section-1-rock-1 {
+    top: 0;
+    left: -0.2%;
+    content: url("../resources/images/rock-seaweed.svg");
+    @apply absolute;
+}
+.section-1 .section-1-rock-2 {
+    content: url("../resources/images/rock-coral-seaweed.svg");
+    right: 0;
+    bottom: 0;
+    @apply absolute;
+}
 
+.section-1 .section-1-bubble-container {
+    background: url("../resources/images/bubble-container.svg");
+    background-size: 100% auto;
+    width: 30rem;
+    height: 15rem;
+    @apply bg-no-repeat;
+}
 
-@media (max-width: 639px) {
+.section-1 .section-1-bubble-container-2 {
+    background-image: url("../resources/images/bubble-container-2.svg");
+    background-size: 100% auto;
+    width: 30rem;
+    height: 15rem;
+    @apply bg-no-repeat;
+}
+
+.section-1-bubble-container-text-title {
+    @apply xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl xs:text-xs sm:mb-1 md:mb-2 lg:mb-3 xl:mb-4 2xl:mb-5 text-white;
+}
+.section-1-bubble-container-text-number {
+    @apply xs:text-sm sm:text-base md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-white;
+}
+.section-1-bubble-container-text-position{
+    @apply flex flex-col items-center;
+}
+
+.bubble-position-1{
+    right: 5%;
+    top: 10%;
+}
+
+.bubble-position-2{
+    left: 10%;
+    bottom: 5%;
+}
+
+@media (max-width: 480px) {
     .Home-header,
     .Home-banner,
     .Home-banner-layer{
         height: 180px;
+    }
+    .section-0 {
+        height: 190px;
+    }
+    .section-0-content {
+        @apply p-3
+    }
+    .section-1 .section-1-rock-1 {
+        width: 50%;
+        top: 8%;
+    }
+    .section-1 .section-1-rock-2 {
+        width: 50%;
+        bottom: 8%;
+    }
+    .section-1 .section-1-bubble-container {
+        width: 12rem;
+        height: 7rem;
+    }
+    .section-1 .section-1-bubble-container-2 {
+        width: 12rem;
+        height: 7rem;
+    }
+    .bubble-position-1{
+        right: 5%;
+        top: 26%;
+    }
+    .bubble-position-2{
+        left: 5%;
+        bottom: 30%;
+    }
+    .section-1-bubble-container-text-title {
+        @apply text-xs text-white;
+    }
+    .section-1-bubble-container-text-number {
+        @apply text-lg text-white;
+    }
+}
+
+@media (min-width: 480px) {
+    .Home-header,
+    .Home-banner,
+    .Home-banner-layer{
+        height: 180px;
+    }
+    .section-0 {
+        height: 190px;
+    }
+    .section-0-content {
+        @apply p-3
+    }
+    .section-1 .section-1-rock-1 {
+        width: 50%;
+    }
+    .section-1 .section-1-rock-2 {
+        width: 50%;
+    }
+    .section-1 .section-1-bubble-container {
+        width: 20rem;
+        height: 10rem;
+    }
+    .section-1 .section-1-bubble-container-2 {
+        width: 16rem;
+        height: 8rem;
+    }
+    .bubble-position-1{
+        right: 10%;
+        top: 25%;
+    }
+    .bubble-position-2{
+        left: 10%;
+        bottom: 35%;
+    }
+    .section-1-bubble-container-text-title {
+        @apply text-base text-white;
+    }
+    .section-1-bubble-container-text-number {
+        @apply text-2xl text-white;
     }
 }
 
@@ -111,6 +216,44 @@
     .Home-banner,
     .Home-banner-layer{
         height: 220px;
+    }
+    .section-0 {
+        height: 230px;
+    }
+    .section-1 .section-1-rock-1 {
+        width: 50%;
+    }
+    .section-1 .section-1-rock-2 {
+        width: 40%;
+    }
+    .section-1 .section-1-bubble-container {
+        width: 18rem;
+        height: 9rem;
+    }
+    .section-1 .section-1-bubble-container {
+        width: 18rem;
+        height: 9rem;
+    }
+    .section-1 .section-1-bubble-container-2 {
+        width: 15rem;
+        height: 8rem;
+    }
+    .section-1 .section-2-bubble-container {
+        width: 40%;
+    }
+    .bubble-position-1{
+        right: 5%;
+        top: 26%;
+    }
+    .bubble-position-2{
+        left: 5%;
+        bottom: 30%;
+    }
+    .section-1-bubble-container-text-title {
+        @apply text-sm text-white;
+    }
+    .section-1-bubble-container-text-number {
+        @apply text-xl text-white;
     }
 }
 
@@ -121,6 +264,40 @@
     .Home-bottom-banner-layer{
         height: 280px;
     }
+    .section-0 {
+        height: 290px;
+    }
+    .section-1 .section-1-rock-1 {
+        width: 43%;
+    }
+    .section-1 .section-1-rock-2 {
+        width: 30%;
+    }
+    .section-1 .section-1-bubble-container {
+        width: 20rem;
+        height: 10rem;
+    }
+    .section-1 .section-1-bubble-container-2 {
+        width: 18rem;
+        height: 10rem;
+    }
+    .section-1 .section-2-bubble-container {
+        width: 40%;
+    }
+    .bubble-position-1{
+        right: 10%;
+        top: 25%;
+    }
+    .bubble-position-2{
+        left: 19%;
+        bottom: 25%;
+    }
+    .section-1-bubble-container-text-title {
+        @apply text-base text-white;
+    }
+    .section-1-bubble-container-text-number {
+        @apply text-2xl text-white;
+    }
 }
 
 @media (min-width: 1028px) {
@@ -128,6 +305,37 @@
     .Home-banner,
     .Home-banner-layer{
         height: 360px;
+    }
+    .section-0 {
+        height: 370px;
+    }
+    .section-1 .section-1-rock-1 {
+        width: 43%;
+    }
+    .section-1 .section-1-rock-2 {
+        width: 30%;
+    }
+    .section-1 .section-1-bubble-container {
+        width: 24rem;
+        height: 12rem;
+    }
+    .section-1 .section-1-bubble-container-2 {
+        width: 20rem;
+        height: 11rem;
+    }
+    .bubble-position-1{
+        right: 15%;
+        top: 15%;
+    }
+    .bubble-position-2{
+        left: 19%;
+        bottom: 20%;
+    }
+    .section-1-bubble-container-text-title {
+        @apply text-base text-white;
+    }
+    .section-1-bubble-container-text-number {
+        @apply text-2xl text-white;
     }
 }
 
@@ -137,6 +345,37 @@
     .Home-banner-layer{
         height: 450px;
     }
+    .section-0 {
+        height: 460px;
+    }
+    .section-1 .section-1-rock-1 {
+        width: 40%;
+    }
+    .section-1 .section-1-rock-2 {
+        width: 25%;
+    }
+    .section-1 .section-1-bubble-container {
+        width: 28rem;
+        height: 14rem;
+    }
+    .section-1 .section-1-bubble-container-2 {
+        width: 24rem;
+        height: 13rem;
+    }
+    .bubble-position-1{
+        right: 20%;
+        top: 14%;
+    }
+    .bubble-position-2{
+        left: 19%;
+        bottom: 12%;
+    }
+    .section-1-bubble-container-text-title {
+        @apply text-lg text-white;
+    }
+    .section-1-bubble-container-text-number {
+        @apply text-4xl text-white;
+    }
 }
 
 @media (min-width: 1536px){
@@ -144,5 +383,38 @@
     .Home-banner,
     .Home-banner-layer {
         height: 540px;
+    }
+    .section-0 {
+        height: 550px;
+    }
+    .section-1 .section-1-rock-1 {
+        width: 43%;
+        top: 0;
+    }
+    .section-1 .section-1-rock-2 {
+        width: 23%;
+        bottom: 0;
+    }
+    .section-1 .section-1-bubble-container {
+        width: 32rem;
+        height: 15rem;
+    }
+    .section-1 .section-1-bubble-container-2 {
+        width: 29rem;
+        height: 15rem;
+    }
+    .bubble-position-1{
+        right: 24%;
+        top: 14%;
+    }
+    .bubble-position-2{
+        left: 19%;
+        bottom: 10%;
+    }
+    .section-1-bubble-container-text-title {
+        @apply text-2xl text-white;
+    }
+    .section-1-bubble-container-text-number {
+        @apply text-5xl text-white;
     }
 }
