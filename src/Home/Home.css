@@ -16,16 +16,16 @@
     @apply absolute bg-cover bg-no-repeat;
 }
 
-.Home-banner-rock-1{
-    background-image: url(../resources/images/top-banner-layer.png);
+.Home-banner-layer-1{
+    background-image: url("../resources/images/top-banner-layer.png");
 }
 
-.Home-banner-rock-2 {
-    background-image: url(../resources/images/cloud-banner-1.svg);
+.Home-banner-layer-2 {
+    background-image: url("../resources/images/cloud-banner-1.svg");
 }
 
 .Home-banner-layer-3 {
-    background-image: url(../resources/images/cloud-banner-2.svg);
+    background-image: url("../resources/images/cloud-banner-2.svg");
     bottom: -17%;
 }
 
