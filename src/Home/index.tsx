@@ -22,25 +22,50 @@ const Home = () => {
                     <div className="Home-banner-layer Home-banner-layer-2"></div>
                     <div className="Home-banner-layer Home-banner-layer-3"></div>
                 </div>
-                <div className="Home-header-logo">
-                    <a href="/" className="Home-logo">
-                        <img className="Home-logo-image" alt="logo" />
-                    </a>
-                </div>
+                <nav className="Home-navigation place-items-center">
+                    <div className="col-span-2">
+                        <a href="/" className="Home-logo">
+                            <img className="Home-logo-image" alt="logo" />
+                        </a>
+                    </div>
+                    <div className="Home-nav-menu col-span-4 lg:ml-24 xl:ml-44 2xl:ml-60 z-50 my-4 list-none divide-y">
+                        <ul className="xxs:hidden xs:hidden lg:flex md:space-x-12 2xl:space-x-14" aria-labelledby="dropdown">
+                            <li className="active">Home</li>
+                            <li>NFTs</li>
+                            <li>Roadmap</li>
+                            <li>Core Team</li>
+                            <li>Investors</li>
+                        </ul>
+                    </div>
+                </nav>
             </header>
             <main className="Home-wrapper">
-                <section className="section-0">
+                <section>
                     <div className="section-0-layer-0"></div>
-                    <div className="section-0-content grid grid-rows-2 justify-around sm:px-2 md:p-3">
-                        <div>
-                            <h1 className="text-title-1 xs:mb-1 sm:mb-1 md:mb-2 lg:mb-2 xl:mb-3 2xl:mb-3">Join now to</h1>
-                            <h1 className="text-title-1 xs:mb-3 sm:mb-3 md:mb-4 lg:mb-4 xl:mb-5 2xl:mb-5">win tokens and decorations</h1>
-                            <p className="text-title-2 text-white">A no loss lottery on Solana, stake to win tokens and NFTs ✨ !</p>
+                    <div className="section-0-content grid grid-cols-6 place-items-center w-full">
+                        <div className="col-span-4 place-self-start xxs:ml-10 xs:ml-10 lg:ml-20 xl:ml-40 2xl:ml-44">
+                            <p className="text-title-1">
+                                Scallop is a diverse no-loss<br />
+                                protocol on Solana blockchain
+                            </p>
+                            <p className="text-title-2">with ocean theme on-chain collectibles and NFTs ✨ !</p>
+                            <div className="flex space-x-8 xxs:mt-3 xs:mt-3 sm:mt-2 md:mt-4 lg:mt-6 xl:mt-8 2xl:mt-10">
+                                <div>
+                                    <button className="Home-button button-header">
+                                        Launch App
+                                    </button>
+                                </div>
+                                <div>
+                                    <button className="Home-button button-header">
+                                        Read More
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div></div>
+                        <div className="col-span-3"></div>
                     </div>
                 </section>
-                <section className="section-1 min-h-screen">
+                <section>
                     <img className="section-1-rock-1"/>
                     <img className="section-1-rock-2"/>
                     <div className="section-1-content">
@@ -62,9 +87,13 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+                <section>
+                    <div className="rock-left"></div>
+                    <div className="rock-right"></div>
+                </section>
+                <section></section>
             </main>
         </div>
     )
 }
-
 export default Home
