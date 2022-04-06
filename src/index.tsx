@@ -13,7 +13,7 @@ import Home from './Home/index'
 
 ReactDOM.render(
     <React.StrictMode>
-        <Router basename={"/"}>
+        <Router basename={'/'}>
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Redirect exact from="*" to="/" />
