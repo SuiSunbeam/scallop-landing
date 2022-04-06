@@ -42,8 +42,8 @@ const Home = () => {
             <main className="Home-wrapper">
                 <section>
                     <div className="section-0-layer-0"></div>
-                    <div className="section-0-content grid grid-cols-6 place-items-center w-full">
-                        <div className="col-span-4 place-self-start xxs:ml-10 xs:ml-10 lg:ml-20 xl:ml-40 2xl:ml-44">
+                    <div className="section-0-content grid grid-cols-6 w-full h-full">
+                        <div className="col-span-4 justify-self-start flex flex-col place-content-center h-full xxs:ml-10 xs:ml-10 lg:ml-20 xl:ml-40 2xl:ml-44">
                             <p className="text-title-1">
                                 Scallop is a diverse no-loss<br />
                                 protocol on Solana blockchain
@@ -62,7 +62,9 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-3"></div>
+                        <div className="col-span-2">
+                            <div className='group-of-discus-fish'></div>
+                        </div>
                     </div>
                 </section>
                 <section>

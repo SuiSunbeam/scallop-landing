@@ -73,7 +73,6 @@
 
 .Home-wrapper section:nth-child(1) .section-0-content {
     color: #1E2D45;
-    top: 15%;
     @apply absolute;
 }
 
@@ -654,4 +653,25 @@
         color:#315067;
         @apply text-5xl font-bold;
     }
+}
+
+.group-of-discus-fish {
+    @apply w-full h-4/6;
+    background-image: url("../resources/images/group-of-fish.svg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: translate(100%, 0px);
+    opacity: 0;
+    animation: swim 15s linear infinite;
+}
+
+@keyframes swim {
+    0% { transform: translate(100%, 0%); opacity: 0.2; }
+    20% { transform: translate(50%, 0%); opacity: 0.5; }
+    40% { transform: translate(0%, 0%); opacity: 1; }
+    60% { transform: translate(-50%, 0%); opacity: 1; }
+    80% { transform: translate(-70%, 0%); opacity: 0.5; }
+    90% { transform: translate(-150%, 0%); opacity: 0.2; }
+    100% { transform: translate(-200%, 0%); opacity: 0; }
 }
