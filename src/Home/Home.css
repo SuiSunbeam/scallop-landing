@@ -29,6 +29,18 @@
     bottom: -17%;
 }
 
+.Home-banner-layer-4 {
+    background-image: url('../resources/images/banner-layer4.svg');
+    bottom: 0;
+    background-position: bottom;
+}
+
+.Home-banner-layer-5 {
+    background-image: url('../resources/images/banner-layer5.svg');
+    bottom: 0;
+    background-position: bottom;
+}
+
 .Home-navigation {
     color: #969696;
     @apply absolute grid grid-cols-6 gap-1 w-full top-0 h-12 xs:h-12 sm:h-12 md:h-14 lg:h-16 xl:h-20 2xl:h-24 xs:top-0 sm:top-0 md:top-2 lg:top-6 xl:top-10 2xl:top-20;
@@ -59,20 +71,10 @@
     @apply relative;
 }
 
-.Home-wrapper section:nth-child(1) {
-    @apply relative;
-    background-image: url('../resources/images/section-0-background.png');
-}
-
-.Home-wrapper section:nth-child(1) .section-0-layer-0 {
-    @apply absolute h-full w-full bg-no-repeat bg-cover;
-    background-image: url('../resources/images/section-0-wave-mirror.svg');
-    /*background-size: 100% auto;*/
-}
-
 .Home-wrapper section:nth-child(1) .section-0-content {
     color: #1e2d45;
-    @apply absolute;
+    background-image: url('../resources/images/section-0-background.png');
+    @apply relative;
 }
 
 .section-0-content .text-title-1 {
@@ -287,12 +289,10 @@
     }
 
     .section-1-bubble-container-text-title {
-        color: #315067;
         @apply text-xs;
     }
 
     .section-1-bubble-container-text-number {
-        color: #315067;
         @apply text-base font-bold;
     }
 
@@ -405,12 +405,10 @@
     }
 
     .section-1-bubble-container-text-title {
-        color: #315067;
         @apply text-xs;
     }
 
     .section-1-bubble-container-text-number {
-        color: #315067;
         @apply text-base font-bold;
     }
 
@@ -523,12 +521,10 @@
     }
 
     .section-1-bubble-container-text-title {
-        color: #315067;
         @apply text-lg;
     }
 
     .section-1-bubble-container-text-number {
-        color: #315067;
         @apply text-3xl font-bold;
     }
 
@@ -628,12 +624,10 @@
     }
 
     .section-1-bubble-container-text-title {
-        color: #315067;
         @apply text-lg;
     }
 
     .section-1-bubble-container-text-number {
-        color: #315067;
         @apply text-3xl font-bold;
     }
 
@@ -682,7 +676,7 @@
     }
 
     .Home-wrapper section:nth-child(1) {
-        height: 18rem;
+        height: 26rem;
     }
 
     .Home-wrapper section:nth-child(2),
@@ -733,12 +727,10 @@
     }
 
     .section-1-bubble-container-text-title {
-        color: #315067;
         @apply text-lg;
     }
 
     .section-1-bubble-container-text-number {
-        color: #315067;
         @apply text-3xl font-bold;
     }
 
@@ -787,7 +779,7 @@
     }
 
     .Home-wrapper section:nth-child(1) {
-        height: 22.5rem;
+        height: 30.5rem;
     }
 
     .Home-wrapper section:nth-child(2),
@@ -838,12 +830,10 @@
     }
 
     .section-1-bubble-container-text-title {
-        color: #315067;
         @apply text-xl;
     }
 
     .section-1-bubble-container-text-number {
-        color: #315067;
         @apply text-3xl font-bold;
     }
 
@@ -943,17 +933,14 @@
     }
 
     .section-1-bubble-container-text-title {
-        color: #315067;
         @apply text-2xl;
     }
 
     .section-1-bubble-container-text-number {
-        color: #315067;
         @apply text-5xl font-bold;
     }
 
     .Home-wrapper section:nth-child(4) {
-        background-image: linear-gradient(#1f6793, #07476f);
         @apply relative bg-cover bg-no-repeat flex justify-center items-center;
     }
 
@@ -989,11 +976,10 @@
 }
 
 .group-of-discus-fish {
-    @apply w-full h-4/6;
+    @apply w-full h-3/6;
     background-image: url('../resources/images/group-of-fish.svg');
     background-size: auto 100%;
     background-repeat: no-repeat;
-    z-index: -1;
     transform: translate(100%, 0px);
     opacity: 0;
     animation: swim 15s linear infinite;
