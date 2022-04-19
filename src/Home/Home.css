@@ -153,7 +153,7 @@
 }
 
 .Home-wrapper section:nth-child(3) .rock-left {
-    content: url('../resources/images/section-3-rock-left.png');
+    content: url('../resources/images/section-3-rock-left.svg');
     @apply absolute;
 }
 
