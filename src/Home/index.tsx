@@ -102,11 +102,11 @@ const Home = () => {
                     <section className="flex flex-col sm:flex-row justify-center sm:justify-start">
                         <div className="Home-wrap-content-left">
                             <p className="Home-wrap-title">
-                                Join now to <br/>
-                                win tokens and decorations!
+                                Scallop is a diverse no-loss protocol <br/>
+                                on Solana blockchain.
                             </p>
                             <p className="Home-wrap-descript text-center sm:text-left">
-                                A no loss lottery on Solana, stake to win tokens and NFTs ✨ !
+                                with ocean theme on-chain collectibles and NFTs ✨ !
                             </p>
                             <div className="w-full">
                                 <div className="flex items-start justify-center sm:justify-start mt-6 xs:mt-8 gap-3 xs:gap-6">
@@ -127,45 +127,45 @@ const Home = () => {
                         <div className="Home-wrap-content-left"></div>
                         <div className="Home-wrap-content-right">
                             <p className="Home-wrap-title">
-                                What is Scallop?
+                                How it works?
                             </p>
                             <p className="Home-wrap-descript text-justify">
-                                Scallop is a no loss lottery on Solana, users can stake their tokens in Scallop Pools to grow scallops in Scallop Tank, while they stake tokens, they can get the same worth of Scallop Token (SCA). At the end of each week, one or a few winner(s) chosen by program randomly will share out some SCA as the staking reward. During the game users can win tokens and Scallop Decorations by carrying out some tasks✨!
+                                Users can deposit tokens into Scallop pools, Scallop on-chain program will invoke lending, staking, and stable pool liquidity mining protocols to earn the yield. Every 24 hrs, a winner will be picked from each pool by the on-chain program to get most of the yields as the prize, and other yields will be in the Scallop treasury.
                             </p>
                         </div>
                     </section>
                     <section className="flex flex-col sm:flex-row justify-center sm:justify-start">
                         <div className="Home-wrap-content-left">
                             <p className="Home-wrap-title">
-                                How to play?
+                                Rules:
                             </p>
                             <div className="relative w-full mt-4">
                                 <div className="Home-cards">
                                     <div className="Home-card">
                                         <div className="Home-card-title">
-                                            Choosing Pools
+                                            One period each day.
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            There will be different tiers of pools with the different address limits, different SPL tokens to let users stake tokens.
+                                            Every 24 hrs, 1 winner will be picked from each pool by the on-chain random function.
                                         </div>
                                     </div>
                                     <div className="Home-card">
                                         <div className="Home-card-title">
-                                            Staking
+                                            24 hrs cooldown.
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            While they stake tokens, they can get the same worth of Scallop Token (SCA) as the token they staked. 
+                                            Deposit amount changing during the round will make you can't be the winner in 24 hrs.
                                         </div>
                                     </div>
                                     <div className="Home-card">
                                         <div className="Home-card-title">
-                                            Harvesting
+                                            Deposit to win more.
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            Every Friday 20:00 (GMT+8) will be the harvest time, one (or a few) of winners chosen by on-chain program randomly will share out the staking reward SCA.
+                                            Winning Rate ≈ Deposit token percentage in pools, the more you deposit the higher winning chance you got.
                                         </div>
                                     </div>
                                 </div>
@@ -181,51 +181,38 @@ const Home = () => {
                                 <div className="Home-map">
                                     <div className="Home-road">
                                         <div className="Home-road-title">
-                                            Q2 2021
+                                            Q2 2022
                                         </div>
                                         <div className="Home-road-content">
                                             <ul className="list-disc text-justify">
-                                                <li>Scallop Born🎂</li>
-                                                <li>Solana Season Hackathon🦾</li>
-                                                <li>First Scallop Decorations (Seagrass🌱)</li>
+                                                <li>Mainnet Launch</li>
+                                                <li>Hermit Crab NFTs</li>
+                                                <li>Landing Page V2</li>
+                                                <li>Scallop IDO</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div className="Home-road">
                                         <div className="Home-road-title">
-                                            Q3 2021
+                                            Q3 2022
                                         </div>
                                         <div className="Home-road-content">
                                             <ul className="list-disc text-justify">
-                                                <li>Scallop Fossil 🗿</li>
-                                                <li>White Paper 📃</li>
-                                                <li>Ignition 🔥 | Solana Hackathon</li>
+                                                <li>Scallop Token (SCA)</li>
+                                                <li>Scallop Swap</li>
+                                                <li>SCA & Decorations Staking</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div className="Home-road">
                                         <div className="Home-road-title">
-                                            Q4 2021
+                                            Q4 2022
                                         </div>
                                         <div className="Home-road-content">
                                             <ul className="list-disc text-justify">
-                                                <li>Scallop on Dev-net 🚀</li>
-                                                <li>Decorations Illustrated Book</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="Home-road">
-                                        <div className="Home-road-title">
-                                            H1 2022
-                                        </div>
-                                        <div className="Home-road-content">
-                                            <ul className="list-disc">
-                                                <li>SCA token launch</li>
-                                                <li>Scallop on main-net 🚀</li>
-                                                <li>SCA staking pool</li>
-                                                <li>SCA Swap, Liquidity pools</li>
-                                                <li>Scallop Decorations Eggs 🥚</li>
-                                                <li>Decorations Market</li>
+                                                <li>Scallop Pool V2</li>
+                                                <li>Scallop DAO</li>
+                                                <li>Scallop Tank V2</li>
                                             </ul>
                                         </div>
                                     </div>
