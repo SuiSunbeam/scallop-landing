@@ -17,11 +17,15 @@
 }
 
 .Home-banner-layer-1 {
+    @apply bg-fixed bg-top;
     background-image: url('../resources/images/top-banner-layer.png');
+    background-size: 100% auto;
 }
 
 .Home-banner-layer-2 {
+    @apply bg-fixed bg-top;
     background-image: url('../resources/images/cloud-banner-1.svg');
+    background-size: 100% auto;
 }
 
 .Home-banner-layer-3 {
@@ -134,6 +138,13 @@
 
 .section-1-bubble-container-text-position {
     @apply flex flex-col items-center;
+}
+
+.section-1-content .two-jellyfish {
+    content: url(../resources/images/two-jellyfish.svg);
+    right: 15%;
+    top: 33%;
+    width: 10%;
 }
 
 .bubble-position-1 {
@@ -394,6 +405,10 @@
         height: 10rem;
     }
 
+    .section-1-content .two-jellyfish {
+        right: 18%;
+    }
+
     .bubble-position-1 {
         right: 25%;
         top: 18%;
@@ -510,6 +525,10 @@
         height: 17rem;
     }
 
+    .section-1-content .two-jellyfish {
+        right: 8%;
+    }
+
     .bubble-position-1 {
         right: 10%;
         top: 18%;
@@ -611,6 +630,11 @@
         right: 0;
         bottom: 2%;
         height: 20rem;
+    }
+
+    .section-1-content .two-jellyfish {
+        top: 40%;
+        right: 15%;
     }
 
     .bubble-position-1 {

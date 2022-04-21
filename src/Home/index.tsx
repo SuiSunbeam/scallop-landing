@@ -91,6 +91,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="absolute two-jellyfish"></div>
                         <div className="absolute bubble-position-2">
                             <div className="relative section-1-bubble-container-2 text-center grid gap-1 place-items-center">
                                 <div className="section-1-bubble-container-text-position">
