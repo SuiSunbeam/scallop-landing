@@ -78,6 +78,8 @@
 .Home-wrapper section:nth-child(1) .section-0-content {
     color: #1e2d45;
     background-image: url('../resources/images/section-0-background.png');
+    background-position: 100% 100%;
+    background-size: 100% 100%;
     @apply relative;
 }
 
@@ -92,6 +94,7 @@
 .Home-wrapper section:nth-child(2) {
     background-image: url('../resources/images/section-1-background.png');
     background-size: 100% 100%;
+    background-position: 100% 100%;
     @apply relative bg-no-repeat;
 }
 
@@ -179,8 +182,14 @@
     @apply relative bg-no-repeat flex justify-center items-center;
 }
 
+.Home-wrapper section:nth-child(5) {
+    background-image: url('../resources/images/section-4-background.png');
+    background-size: 100% 100%;
+    @apply relative bg-no-repeat flex justify-center items-center;
+}
+
 .Home-wrapper section:nth-child(4) .text-title-section {
-    @apply w-full absolute text-white font-bold xxs:text-xs sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl xxs:top-5 xs:top-10 2xl:top-36 xxs:left-10 xs:left-10 md:left-32 lg:left-40 xl:left-40 2xl:left-44;
+    @apply absolute text-white font-bold xxs:text-xs sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl xxs:top-5 xs:top-10 2xl:top-36 xxs:left-10 xs:left-10 md:left-32 lg:left-40 xl:left-40 2xl:left-44;
 }
 
 .Home-wrapper section:nth-child(4) .roadmap-line {
@@ -229,6 +238,68 @@
 .Home-wrapper section:nth-child(4) .rock-left {
     content: url('../resources/images/section-4-rock-left.svg');
     @apply absolute bottom-0 left-0;
+}
+
+.Home-wrapper section:nth-child(5) .core-team-submarine {
+    @apply w-10/12 md:w-1/2 pl-5 pt-5;
+    content: url('../resources/images/submarine-core-team.svg');
+}
+
+.Home-wrapper section:nth-child(5) .stingray-container {
+    @apply lg:w-6/12;
+}
+
+.Home-wrapper section:nth-child(5) .stingray-container .group-of-stingray {
+    @apply w-3/12 md:w-6/12 mx-auto;
+    content: url('../resources/images/group-of-stingrays.svg');
+}
+
+.Home-wrapper section:nth-child(5) .teams {
+    @apply grid grid-cols-2 place-items-center gap-4 md:gap-6 lg:gap-10 md:w-9/12 lg:w-6/12 xl:w-5/12 2xl:w-5/12;
+}
+
+.Home-wrapper section:nth-child(5) .card-team {
+    @apply flex border border-blue-400 rounded-3xl px-1 py-1 xs:px-2 md:px-3;
+    @apply h-28 sm:h-32 lg:h-32 xl:h-40 2xl:h-44;
+    @apply w-full;
+}
+
+.Home-wrapper section:nth-child(5) .card-team .card-profile {
+    @apply flex-grow flex flex-col my-auto;
+}
+
+.Home-wrapper section:nth-child(5) .card-team .card-profile .avatar {
+    @apply border-2 border-blue-400 rounded-full mx-auto w-8 xs:w-10 sm:w-16 md:w-16 lg:w-16 xl:w-20 2xl:w-20 h-auto;
+}
+
+.Home-wrapper section:nth-child(5) .card-team .card-profile .title {
+    @apply text-white mt-2 mx-auto text-center text-2xs xs:text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl;
+}
+
+.Home-wrapper section:nth-child(5) .card-team .card-content {
+    @apply flex-grow flex flex-col my-auto pl-3;
+}
+
+.Home-wrapper section:nth-child(5) .card-team .card-content .card-name {
+    @apply text-white text-xs sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
+}
+
+.Home-wrapper section:nth-child(5) .card-team .card-content .card-links {
+    @apply flex flex-wrap;
+}
+
+.Home-wrapper section:nth-child(5) .card-team .card-content .card-links a {
+    @apply mr-1 mt-1;
+}
+
+.Home-wrapper
+    section:nth-child(5)
+    .card-team
+    .card-content
+    .card-links
+    .twitter {
+    @apply w-4 h-auto lg:w-6 mt-2;
+    content: url(../resources/images/twitter-rounded.svg);
 }
 
 .Home-button {
@@ -494,6 +565,10 @@
         height: 36rem;
     }
 
+    .Home-wrapper section:nth-child(5) {
+        height: 50rem;
+    }
+
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
         width: 29.8%;
         top: 19%;
@@ -599,6 +674,10 @@
     .Home-wrapper section:nth-child(3),
     .Home-wrapper section:nth-child(4) {
         height: 36rem;
+    }
+
+    .Home-wrapper section:nth-child(5) {
+        height: 50rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
@@ -709,6 +788,10 @@
         height: 36rem;
     }
 
+    .Home-wrapper section:nth-child(5) {
+        height: 60rem;
+    }
+
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
         width: 29.8%;
         top: 19%;
@@ -812,6 +895,10 @@
         height: 45rem;
     }
 
+    .Home-wrapper section:nth-child(5) {
+        height: 70rem;
+    }
+
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
         width: 29.8%;
         top: 19%;
@@ -911,6 +998,10 @@
         height: 67.5rem;
     }
 
+    .Home-wrapper section:nth-child(5) {
+        height: 80rem;
+    }
+
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
         width: 29.8%;
         top: 19%;
@@ -1004,22 +1095,22 @@
     background-image: url('../resources/images/group-of-fish.svg');
     background-size: auto 100%;
     background-repeat: no-repeat;
-    transform: translate(100%, 0px);
+    transform: translate(0%, 0px);
     opacity: 0;
     animation: swim 15s linear infinite;
 }
 
 @keyframes swim {
     0% {
-        transform: translate(100%, 0%);
+        transform: translate(0%, 0%);
         opacity: 0.2;
     }
     20% {
-        transform: translate(50%, 0%);
+        transform: translate(-10%, 0%);
         opacity: 0.5;
     }
     40% {
-        transform: translate(0%, 0%);
+        transform: translate(-20%, 0%);
         opacity: 1;
     }
     60% {

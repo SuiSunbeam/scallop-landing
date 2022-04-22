@@ -24,6 +24,9 @@ module.exports = {
           darker: 'var(--color-sea-darker)',
         }
       },
+      fontSize: {
+        '2xs': ['0.5rem', '0.75rem'],
+      },
       dropShadow: {
         'white': '0 0 35px rgba(78, 107, 128, 0.95)',
       },

@@ -2,6 +2,10 @@ import { useEffect } from 'react'
 import Plx from 'react-plx'
 import { useMediaQuery } from 'react-responsive'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import krissAvatar from '../resources/images/kriss-avatar.png'
+import juneAvatar from '../resources/images/june-avatar.png'
+import donnieAvatar from '../resources/images/donnie-avatar.png'
+import nathanAvatar from '../resources/images/nathan-avatar.png'
 import './Home.css'
 
 const Home = () => {
@@ -170,6 +174,84 @@ const Home = () => {
                     </div>
                     <img className="rock-left" />
                     <div className="text-title-section">Roadmap</div>
+                </section>
+                <section className="flex flex-col w-full">
+                    <div className="p-5 w-full mb-20">
+                        <div className="core-team-submarine"></div>
+                    </div>
+                    <div className="p-5 flex flex-col md:flex-row w-full">
+                        <div className="stingray-container">
+                            <div className="group-of-stingray" />
+                        </div>
+                        <div className="p-5 teams">
+                            <div className="card-team">
+                                <div className="card-profile">
+                                    <img className="avatar" src={krissAvatar} />
+                                    <div className="title">Team Lead</div>
+                                </div>
+                                <div className="card-content">
+                                    <span className="card-name">Kriss</span>
+                                    <div className="card-links">
+                                        <a
+                                            className="twitter"
+                                            href="https://twitter.com/djchrisssssss"
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-team">
+                                <div className="card-profile">
+                                    <img
+                                        className="avatar"
+                                        src={donnieAvatar}
+                                    />
+                                    <div className="title">Developer</div>
+                                </div>
+                                <div className="card-content">
+                                    <span className="card-name">Donnie</span>
+                                    <div className="card-links">
+                                        <a
+                                            className="twitter"
+                                            href="https://twitter.com/djchrisssssss"
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-team">
+                                <div className="card-profile">
+                                    <img
+                                        className="avatar"
+                                        src={nathanAvatar}
+                                    />
+                                    <div className="title">Developer</div>
+                                </div>
+                                <div className="card-content">
+                                    <span className="card-name">Nathan</span>
+                                    <div className="card-links">
+                                        <a
+                                            className="twitter"
+                                            href="https://twitter.com/djchrisssssss"
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-team">
+                                <div className="card-profile">
+                                    <img className="avatar" src={juneAvatar} />
+                                    <div className="title">Designer</div>
+                                </div>
+                                <div className="card-content">
+                                    <span className="card-name">June</span>
+                                    <div className="card-links">
+                                        <a
+                                            className="twitter"
+                                            href="https://twitter.com/djchrisssssss"
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
