@@ -110,7 +110,7 @@ const Home = () => {
                             </p>
                             <div className="w-full">
                                 <div className="flex items-start justify-center sm:justify-start mt-6 xs:mt-8 gap-3 xs:gap-6">
-                                    <a href="https://app.scallop.io" className="Home-wrap-btn">Devenet App</a>
+                                    <a href="https://app.scallop.io" className="Home-wrap-btn">Devnet App</a>
                                     <a href="https://linktr.ee/scallop_io" className="Home-wrap-btn">Visit Linktree</a>
                                     {/* <a href="https://doc.scallop.io/whitepaper.pdf" target="_blank" className="Home-wrap-btn">White Paper</a> */}
                                 </div>
@@ -130,7 +130,7 @@ const Home = () => {
                                 How it works?
                             </p>
                             <p className="Home-wrap-descript text-justify">
-                                Users can deposit tokens into Scallop pools, Scallop on-chain program will invoke lending, staking, and stable pool liquidity mining protocols to earn the yield. Every 24 hrs, a winner will be picked from each pool by the on-chain program to get most of the yields as the prize, and other yields will be in the Scallop treasury.
+                                Users can deposit tokens into Scallop Pools, Scallop on-chain program will invoke lending, staking, and stable pool liquidity mining protocols to earn the yield. Every 24 hrs, a winner will be picked from each pool by the on-chain program to get most of the yields as the prize, and other yields will be in the Scallop treasury.
                             </p>
                         </div>
                     </section>
