@@ -188,6 +188,18 @@
     @apply relative bg-no-repeat flex justify-center items-center;
 }
 
+.Home-wrapper section:nth-child(6) {
+    background-image: url('../resources/images/section-5-background.png');
+    background-size: 100% 100%;
+    @apply relative bg-no-repeat flex justify-center items-center;
+}
+
+footer {
+    background-image: url('../resources/images/footer-background.png');
+    background-size: 100% 100%;
+    @apply relative h-1/2 bg-no-repeat flex justify-center items-center;
+}
+
 .Home-wrapper section:nth-child(4) .text-title-section {
     @apply absolute text-white font-bold xxs:text-xs sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl xxs:top-5 xs:top-10 2xl:top-36 xxs:left-10 xs:left-10 md:left-32 lg:left-40 xl:left-40 2xl:left-44;
 }
@@ -292,6 +304,59 @@
     @apply mr-1 mt-1;
 }
 
+.Home-wrapper section:nth-child(6) .content {
+    @apply absolute w-full h-full p-5;
+}
+
+.Home-wrapper section:nth-child(6) .content h1 {
+    @apply absolute text-white font-bold xxs:text-xs sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl xxs:top-5 xs:top-10 2xl:top-36 xxs:left-10 xs:left-10 md:left-32 lg:left-40 xl:left-40 2xl:left-44;
+}
+
+.Home-wrapper section:nth-child(6) .whale {
+    @apply absolute w-2/3 left-2/4;
+    content: url('../resources/images/whale.svg');
+}
+
+.Home-wrapper section:nth-child(6) .two-jellyfish {
+    content: url(../resources/images/two-jellyfish.svg);
+    transform: rotateY(-180deg);
+    bottom: 0;
+    right: 10%;
+    width: 7%;
+}
+
+footer .seabed {
+    @apply absolute bottom-0 w-full h-auto;
+    content: url(../resources/images/seabed.svg);
+}
+
+footer .content {
+    @apply absolute w-2/3 sm:w-1/3 flex flex-col items-center;
+    bottom: 12%;
+}
+
+footer .content .menu {
+    @apply border-b w-full p-3 text-center pb-2;
+}
+
+footer .content .menu a {
+    @apply inline px-1 font-semibold text-white text-2xs sm:text-2xs md:text-xs md:text-sm lg:text-lg lg:px-2 xl:px-3 xl:text-xl;
+    font-family: 'Poppins';
+}
+
+footer .content .social-media {
+    @apply w-full p-3 text-center;
+}
+
+footer .content .social-media a img {
+    @apply inline px-1 w-6 sm:w-10 sm:px-2 md:w-10 lg:w-12 xl:w-12 2xl:w-20 2xl:px-4;
+}
+
+footer .content .logo {
+    @apply w-1/2 text-center;
+    content: url(../resources/images/logo-white.png);
+}
+
 .Home-wrapper
     section:nth-child(5)
     .card-team
@@ -327,6 +392,15 @@
     .Home-wrapper section:nth-child(3),
     .Home-wrapper section:nth-child(4) {
         height: 16rem;
+    }
+
+    .Home-wrapper section:nth-child(5),
+    .Home-wrapper section:nth-child(6) {
+        height: 40rem;
+    }
+
+    footer {
+        height: 10rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
@@ -426,6 +500,10 @@
     .Home-wrapper section:nth-child(4) .rock-left {
         height: 8rem;
     }
+
+    .Home-wrapper section:nth-child(6) .two-jellyfish {
+        width: 12%;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 639px) {
@@ -443,6 +521,15 @@
     .Home-wrapper section:nth-child(3),
     .Home-wrapper section:nth-child(4) {
         height: 18rem;
+    }
+
+    .Home-wrapper section:nth-child(5),
+    .Home-wrapper section:nth-child(6) {
+        height: 40rem;
+    }
+
+    footer {
+        height: 20rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
@@ -546,6 +633,10 @@
     .Home-wrapper section:nth-child(4) .rock-left {
         height: 8rem;
     }
+
+    .Home-wrapper section:nth-child(6) .two-jellyfish {
+        width: 10%;
+    }
 }
 
 @media (min-width: 640px) {
@@ -565,8 +656,13 @@
         height: 36rem;
     }
 
-    .Home-wrapper section:nth-child(5) {
+    .Home-wrapper section:nth-child(5),
+    .Home-wrapper section:nth-child(6) {
         height: 50rem;
+    }
+
+    footer {
+        height: 30rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
@@ -657,6 +753,10 @@
     .Home-wrapper section:nth-child(4) .rock-left {
         height: 15rem;
     }
+
+    .Home-wrapper section:nth-child(6) .two-jellyfish {
+        width: 7%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -676,8 +776,13 @@
         height: 36rem;
     }
 
-    .Home-wrapper section:nth-child(5) {
+    .Home-wrapper section:nth-child(5),
+    .Home-wrapper section:nth-child(6) {
         height: 50rem;
+    }
+
+    footer {
+        height: 30rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
@@ -788,8 +893,13 @@
         height: 36rem;
     }
 
-    .Home-wrapper section:nth-child(5) {
+    .Home-wrapper section:nth-child(5),
+    .Home-wrapper section:nth-child(6) {
         height: 60rem;
+    }
+
+    footer {
+        height: 40rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
@@ -895,8 +1005,13 @@
         height: 45rem;
     }
 
-    .Home-wrapper section:nth-child(5) {
+    .Home-wrapper section:nth-child(5),
+    .Home-wrapper section:nth-child(6) {
         height: 70rem;
+    }
+
+    footer {
+        height: 50rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
@@ -998,8 +1113,13 @@
         height: 67.5rem;
     }
 
-    .Home-wrapper section:nth-child(5) {
+    .Home-wrapper section:nth-child(5),
+    .Home-wrapper section:nth-child(6) {
         height: 80rem;
+    }
+
+    footer {
+        height: 70rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {

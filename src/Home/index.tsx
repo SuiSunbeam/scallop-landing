@@ -1,18 +1,15 @@
 import { useEffect } from 'react'
-import Plx from 'react-plx'
-import { useMediaQuery } from 'react-responsive'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import krissAvatar from '../resources/images/kriss-avatar.png'
 import juneAvatar from '../resources/images/june-avatar.png'
 import donnieAvatar from '../resources/images/donnie-avatar.png'
 import nathanAvatar from '../resources/images/nathan-avatar.png'
+import twitterIcon from '../resources/images/twitter-icon.png'
+import telegramIcon from '../resources/images/telegram-icon.png'
+import discordIcon from '../resources/images/discord-icon.png'
+import mediumIcon from '../resources/images/medium-icon.png'
 import './Home.css'
 
 const Home = () => {
-    const isDekstopOrLaptop = useMediaQuery({
-        query: '(min-width: 768px)',
-    })
-
     useEffect(() => {
         document.title = 'Scallop'
         return () => {}
@@ -80,8 +77,8 @@ const Home = () => {
                     </div>
                 </section>
                 <section>
-                    <img className="section-1-rock-1" />
-                    <img className="section-1-rock-2" />
+                    <img alt="A rock" className="section-1-rock-1" />
+                    <img alt="A rock" className="section-1-rock-2" />
                     <div className="section-1-content">
                         <div className="absolute bubble-position-1">
                             <div className="relative section-1-bubble-container text-center grid gap-1 place-items-center">
@@ -116,9 +113,12 @@ const Home = () => {
                 </section>
                 <section>
                     <div className="w-full absolute flex justify-center">
-                        <img className="roadmap-line" />
+                        <img alt="Roadmap" className="roadmap-line" />
                         <div className="relative wrapper-bubble wrapper-bubble-position-1">
-                            <img className="absolute roadmap-bubble" />
+                            <img
+                                alt="Roadmap Bubble"
+                                className="absolute roadmap-bubble"
+                            />
                             <div className="absolute xxs:-ml-2 xs:-ml-1 xs:ml-4 sm:mt-2 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
                                 <h2 className="text-title">2022 Q2</h2>
                                 <ul className="text-list">
@@ -138,7 +138,10 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="relative wrapper-bubble wrapper-bubble-position-2">
-                            <img className="absolute roadmap-bubble" />
+                            <img
+                                alt="Roadmap Bubble"
+                                className="absolute roadmap-bubble"
+                            />
                             <div className="absolute xxs:-ml-3 xs:-ml-1 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
                                 <h2 className="text-title">2022 Q3</h2>
                                 <ul className="text-list">
@@ -155,7 +158,10 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="relative wrapper-bubble wrapper-bubble-position-3">
-                            <img className="absolute roadmap-bubble" />
+                            <img
+                                alt="Roadmap Bubble"
+                                className="absolute roadmap-bubble"
+                            />
                             <div className="absolute xxs:-ml-3 xs:-ml-1 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
                                 <h2 className="text-title">2022 Q4</h2>
                                 <ul className="text-list">
@@ -172,7 +178,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <img className="rock-left" />
+                    <img alt="A rock" className="rock-left" />
                     <div className="text-title-section">Roadmap</div>
                 </section>
                 <section className="flex flex-col w-full">
@@ -186,7 +192,11 @@ const Home = () => {
                         <div className="p-5 teams">
                             <div className="card-team">
                                 <div className="card-profile">
-                                    <img className="avatar" src={krissAvatar} />
+                                    <img
+                                        alt="Kriss Avatar"
+                                        className="avatar"
+                                        src={krissAvatar}
+                                    />
                                     <div className="title">Team Lead</div>
                                 </div>
                                 <div className="card-content">
@@ -202,6 +212,7 @@ const Home = () => {
                             <div className="card-team">
                                 <div className="card-profile">
                                     <img
+                                        alt="Donnie Avatar"
                                         className="avatar"
                                         src={donnieAvatar}
                                     />
@@ -212,7 +223,7 @@ const Home = () => {
                                     <div className="card-links">
                                         <a
                                             className="twitter"
-                                            href="https://twitter.com/djchrisssssss"
+                                            href="https://twitter.com/MrDonor_donnie"
                                         ></a>
                                     </div>
                                 </div>
@@ -220,6 +231,7 @@ const Home = () => {
                             <div className="card-team">
                                 <div className="card-profile">
                                     <img
+                                        alt="Nathan Avatar"
                                         className="avatar"
                                         src={nathanAvatar}
                                     />
@@ -230,14 +242,18 @@ const Home = () => {
                                     <div className="card-links">
                                         <a
                                             className="twitter"
-                                            href="https://twitter.com/djchrisssssss"
+                                            href="https://twitter.com/nathanramli"
                                         ></a>
                                     </div>
                                 </div>
                             </div>
                             <div className="card-team">
                                 <div className="card-profile">
-                                    <img className="avatar" src={juneAvatar} />
+                                    <img
+                                        alt="June Avatar"
+                                        className="avatar"
+                                        src={juneAvatar}
+                                    />
                                     <div className="title">Designer</div>
                                 </div>
                                 <div className="card-content">
@@ -245,7 +261,7 @@ const Home = () => {
                                     <div className="card-links">
                                         <a
                                             className="twitter"
-                                            href="https://twitter.com/djchrisssssss"
+                                            href="https://twitter.com/ChunnnnHsieh"
                                         ></a>
                                     </div>
                                 </div>
@@ -253,7 +269,42 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+                <section>
+                    <div className="whale"></div>
+                    <div className="absolute two-jellyfish"></div>
+                    <div className="content">
+                        <h1>Investors</h1>
+                    </div>
+                </section>
             </main>
+            <footer>
+                <div className="seabed"></div>
+                <div className="absolute w-full h-full flex justify-center items-center">
+                    <div className="content">
+                        <div className="menu">
+                            <a href="https://www.scallop.io/">HOME</a>
+                            <a href="https://app.scallop.io/">APP</a>
+                            <a href="https://docs.scallop.io/">DOCS</a>
+                            <a href="mailto:team@scallop.io">CONTACT US</a>
+                        </div>
+                        <div className="social-media">
+                            <a href="https://t.me/scallop_io">
+                                <img src={telegramIcon} alt="" />
+                            </a>
+                            <a href="https://twitter.com/Scallop_io">
+                                <img src={twitterIcon} alt="" />
+                            </a>
+                            <a href="https://scallopio.medium.com/scallop-c030758d9c40">
+                                <img src={mediumIcon} alt="" />
+                            </a>
+                            <a href="https://discord.com/invite/F7umecFArJ">
+                                <img src={discordIcon} alt="" />
+                            </a>
+                        </div>
+                        <div className="logo"></div>
+                    </div>
+                </div>
+            </footer>
         </div>
     )
 }
