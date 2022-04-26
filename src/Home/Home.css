@@ -168,7 +168,7 @@
 
 .Home-wrapper section:nth-child(3) .rock-left {
     content: url('../resources/images/section-3-rock-left.svg');
-    @apply absolute;
+    @apply w-7/12 md:w-full h-auto;
 }
 
 .Home-wrapper section:nth-child(3) .rock-right {
@@ -389,9 +389,12 @@ footer .content .logo {
     }
 
     .Home-wrapper section:nth-child(2),
-    .Home-wrapper section:nth-child(3),
     .Home-wrapper section:nth-child(4) {
         height: 16rem;
+    }
+
+    .Home-wrapper section:nth-child(3) {
+        height: 20rem;
     }
 
     .Home-wrapper section:nth-child(5),
@@ -421,11 +424,6 @@ footer .content .logo {
     .Home-wrapper section:nth-child(2) .section-1-bubble-container-2 {
         width: 8rem;
         height: 4rem;
-    }
-
-    .Home-wrapper section:nth-child(3) .rock-left {
-        top: 2rem;
-        height: 10rem;
     }
 
     .Home-wrapper section:nth-child(3) .rock-right {
@@ -518,9 +516,12 @@ footer .content .logo {
     }
 
     .Home-wrapper section:nth-child(2),
-    .Home-wrapper section:nth-child(3),
     .Home-wrapper section:nth-child(4) {
         height: 18rem;
+    }
+
+    .Home-wrapper section:nth-child(3) {
+        height: 25rem;
     }
 
     .Home-wrapper section:nth-child(5),
@@ -550,11 +551,6 @@ footer .content .logo {
     .Home-wrapper section:nth-child(2) .section-1-bubble-container-2 {
         width: 10rem;
         height: 5rem;
-    }
-
-    .Home-wrapper section:nth-child(3) .rock-left {
-        top: 2rem;
-        height: 10rem;
     }
 
     .Home-wrapper section:nth-child(3) .rock-right {
@@ -685,11 +681,6 @@ footer .content .logo {
         height: 8rem;
     }
 
-    .Home-wrapper section:nth-child(3) .rock-left {
-        top: 5rem;
-        height: 17rem;
-    }
-
     .Home-wrapper section:nth-child(3) .rock-right {
         right: 0;
         bottom: 0;
@@ -805,11 +796,6 @@ footer .content .logo {
         height: 10rem;
     }
 
-    .Home-wrapper section:nth-child(3) .rock-left {
-        top: 5rem;
-        height: 20rem;
-    }
-
     .Home-wrapper section:nth-child(3) .rock-right {
         right: 0;
         bottom: 2%;
@@ -922,11 +908,6 @@ footer .content .logo {
         height: 10rem;
     }
 
-    .Home-wrapper section:nth-child(3) .rock-left {
-        top: 10rem;
-        height: 20rem;
-    }
-
     .Home-wrapper section:nth-child(3) .rock-right {
         right: 0;
         bottom: 5%;
@@ -1034,11 +1015,6 @@ footer .content .logo {
         height: 13rem;
     }
 
-    .Home-wrapper section:nth-child(3) .rock-left {
-        top: 10rem;
-        height: 25rem;
-    }
-
     .Home-wrapper section:nth-child(3) .rock-right {
         right: 0;
         bottom: 5%;
@@ -1140,11 +1116,6 @@ footer .content .logo {
     .Home-wrapper section:nth-child(2) .section-1-bubble-container-2 {
         width: 29rem;
         height: 15rem;
-    }
-
-    .Home-wrapper section:nth-child(3) .rock-left {
-        top: 16rem;
-        height: 42rem;
     }
 
     .Home-wrapper section:nth-child(3) .rock-right {

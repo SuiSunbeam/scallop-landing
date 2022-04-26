@@ -108,7 +108,28 @@ const Home = () => {
                     </div>
                 </section>
                 <section>
-                    <div className="rock-left"></div>
+                    <div className="flex flex-col md:flex-row">
+                        <div className="w-full md:w-6/12">
+                            <div className="rock-left"></div>
+                        </div>
+                        <div className="w-7/12 xs:w-4/12 flex flex-col self-center justify-self-center mx-auto justify-center sm:w-5/12 text-white md:pr-2 md:w-4/12 max-w-lg">
+                            <h3 className="text-xs sm:text-base md:text-lg lg:text-3xl xl:text-4xl mb-4 font-bold">
+                                Hermit Crab NFTs
+                            </h3>
+                            <p className="text-2xs sm:text-xs md:text-sm lg:text-xl xl:text-2xl">
+                                4,200 unique Hermit Crabs NFTs created by
+                                Scallop Labs, they are the coolest Scallop
+                                Decorations which can also be your pet in
+                                Scallop Tank in the future🐚🦀!
+                            </p>
+                            <a
+                                href="#hermit-crab"
+                                className="bg-gray-300 text-2xs w-1/3 p-1 mt-2 md:mt-5 xl:mt-20 md:text-base md:p-3 md:w-2/3 text-center self-center rounded-lg xl:rounded-xl xl:py-3 xl:text-xl text-black"
+                            >
+                                Coming Soon
+                            </a>
+                        </div>
+                    </div>
                     <div className="rock-right"></div>
                 </section>
                 <section>
