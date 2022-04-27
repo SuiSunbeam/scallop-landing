@@ -191,7 +191,7 @@
 .Home-wrapper section:nth-child(6) {
     background-image: url('../resources/images/section-5-background.png');
     background-size: 100% 100%;
-    @apply relative bg-no-repeat flex justify-center items-center;
+    @apply relative bg-no-repeat flex justify-center items-center overflow-hidden;
 }
 
 footer {
@@ -357,12 +357,7 @@ footer .content .logo {
     content: url(../resources/images/logo-white.png);
 }
 
-.Home-wrapper
-    section:nth-child(5)
-    .card-team
-    .card-content
-    .card-links
-    .twitter {
+.Home-wrapper section:nth-child(5) .card-team .card-content .card-links .twitter {
     @apply w-4 h-auto lg:w-6 mt-2;
     content: url(../resources/images/twitter-rounded.svg);
 }

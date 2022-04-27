@@ -6,12 +6,12 @@ module.exports = {
     './public/*.html'
   ],
   theme: {
+    screens: {
+      'xxs': {'max': '480px'},
+      'xs': '480px',
+      ...defaultTheme.screens,
+    },
     extend: {
-      screens: {
-        'xxs': {'max': '480px'},
-        'xs': '480px',
-        ...defaultTheme.screens,
-      },
       colors: {
         current: 'currentColor',
         sea: {
