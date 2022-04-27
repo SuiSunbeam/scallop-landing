@@ -1,21 +1,19 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  darkMode: 'class',
-  purge: {
-    content: [
-      './src/**/*.{js,jsx,ts,tsx}',
-      './public/index.html',
-    ],
-  },
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    './public/*.html'
+  ],
   theme: {
-    screens: {
-      'xxs': {'max': '480px'},
-      'xs': '480px',
-      ...defaultTheme.screens,
-    },
     extend: {
+      screens: {
+        'xxs': {'max': '480px'},
+        'xs': '480px',
+        ...defaultTheme.screens,
+      },
       colors: {
+        current: 'currentColor',
         sea: {
           DEFAULT: 'var(--color-sea)',
           light: 'var(--color-sea-light)',
@@ -50,12 +48,5 @@ module.exports = {
       }
     },
   },
-  variants: {
-    extend: {
-      animation: ['hover'],
-    },
-  },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
-}
+  plugins: [],
+};

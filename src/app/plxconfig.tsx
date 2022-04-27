@@ -15,7 +15,7 @@ const header = [
             },
         ],
     },
-]
+];
 
 const bannerLayer1 = [
     {
@@ -29,7 +29,7 @@ const bannerLayer1 = [
             },
         ],
     },
-]
+];
 
 const bannerLayer2 = [
     {
@@ -43,7 +43,7 @@ const bannerLayer2 = [
             },
         ],
     },
-]
+];
 
 const bannerLayer3 = [
     {
@@ -57,7 +57,7 @@ const bannerLayer3 = [
             },
         ],
     },
-]
+];
 
 const bannerLayer4 = [
     {
@@ -71,7 +71,7 @@ const bannerLayer4 = [
             },
         ],
     },
-]
+];
 
 const mFishSection1 = [
     {
@@ -126,7 +126,7 @@ const mFishSection1 = [
             },
         ],
     },
-]
+];
 
 const mFishSection2 = [
     {
@@ -181,7 +181,7 @@ const mFishSection2 = [
             },
         ],
     },
-]
+];
 
 const mFishSection3 = [
     {
@@ -226,7 +226,7 @@ const mFishSection3 = [
             },
         ],
     },
-]
+];
 
 const mFishSection4 = [
     {
@@ -271,7 +271,7 @@ const mFishSection4 = [
             },
         ],
     },
-]
+];
 
 const fishSection1 = [
     {
@@ -342,7 +342,7 @@ const fishSection1 = [
             },
         ],
     },
-]
+];
 
 const fishSection2 = [
     {
@@ -413,7 +413,7 @@ const fishSection2 = [
             },
         ],
     },
-]
+];
 
 const fishSection3 = [
     {
@@ -458,7 +458,7 @@ const fishSection3 = [
             },
         ],
     },
-]
+];
 
 const fishSection4 = [
     {
@@ -503,7 +503,7 @@ const fishSection4 = [
             },
         ],
     },
-]
+];
 
 export {
     header,
@@ -519,4 +519,4 @@ export {
     fishSection2,
     fishSection3,
     fishSection4,
-}
+};

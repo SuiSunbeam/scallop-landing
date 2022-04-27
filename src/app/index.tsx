@@ -1,19 +1,19 @@
-import { useEffect } from 'react'
-import krissAvatar from '../resources/images/kriss-avatar.png'
-import juneAvatar from '../resources/images/june-avatar.png'
-import donnieAvatar from '../resources/images/donnie-avatar.png'
-import nathanAvatar from '../resources/images/nathan-avatar.png'
-import twitterIcon from '../resources/images/twitter-icon.png'
-import telegramIcon from '../resources/images/telegram-icon.png'
-import discordIcon from '../resources/images/discord-icon.png'
-import mediumIcon from '../resources/images/medium-icon.png'
-import './Home.css'
+import { useEffect } from 'react';
+import krissAvatar from '../resources/images/kriss-avatar.png';
+import juneAvatar from '../resources/images/june-avatar.png';
+import donnieAvatar from '../resources/images/donnie-avatar.png';
+import nathanAvatar from '../resources/images/nathan-avatar.png';
+import twitterIcon from '../resources/images/twitter-icon.png';
+import telegramIcon from '../resources/images/telegram-icon.png';
+import discordIcon from '../resources/images/discord-icon.png';
+import mediumIcon from '../resources/images/medium-icon.png';
+import './index.css';
 
 const Home = () => {
     useEffect(() => {
-        document.title = 'Scallop'
-        return () => {}
-    }, [])
+        document.title = 'Scallop';
+        return () => {};
+    }, []);
 
     return (
         <div className="Home">
@@ -32,10 +32,7 @@ const Home = () => {
                         </a>
                     </div>
                     <div className="Home-nav-menu col-span-4 lg:ml-24 xl:ml-44 2xl:ml-60 z-50 my-4 list-none divide-y">
-                        <ul
-                            className="xxs:hidden xs:hidden lg:flex md:space-x-12 2xl:space-x-14"
-                            aria-labelledby="dropdown"
-                        >
+                        <ul className="xxs:hidden xs:hidden lg:flex md:space-x-12 2xl:space-x-14" aria-labelledby="dropdown">
                             <li className="active">Home</li>
                             <li>NFTs</li>
                             <li>Roadmap</li>
@@ -54,20 +51,13 @@ const Home = () => {
                                 <br />
                                 protocol on Solana blockchain
                             </p>
-                            <p className="text-title-2">
-                                with ocean theme on-chain collectibles and NFTs
-                                ✨ !
-                            </p>
+                            <p className="text-title-2">with ocean theme on-chain collectibles and NFTs ✨ !</p>
                             <div className="flex space-x-8 xxs:mt-3 xs:mt-3 sm:mt-2 md:mt-4 lg:mt-6 xl:mt-8 2xl:mt-10">
                                 <div>
-                                    <button className="Home-button button-header">
-                                        Launch App
-                                    </button>
+                                    <button className="Home-button button-header">Launch App</button>
                                 </div>
                                 <div>
-                                    <button className="Home-button button-header">
-                                        Read More
-                                    </button>
+                                    <button className="Home-button button-header">Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -83,12 +73,8 @@ const Home = () => {
                         <div className="absolute bubble-position-1">
                             <div className="relative section-1-bubble-container text-center grid gap-1 place-items-center">
                                 <div className="section-1-bubble-container-text-position">
-                                    <h5 className="section-1-bubble-container-text-title">
-                                        Total Value Locked
-                                    </h5>
-                                    <h4 className="section-1-bubble-container-text-number">
-                                        3,456,789 USD
-                                    </h4>
+                                    <h5 className="section-1-bubble-container-text-title">Total Value Locked</h5>
+                                    <h4 className="section-1-bubble-container-text-number">3,456,789 USD</h4>
                                 </div>
                             </div>
                         </div>
@@ -96,12 +82,8 @@ const Home = () => {
                         <div className="absolute bubble-position-2">
                             <div className="relative section-1-bubble-container-2 text-center grid gap-1 place-items-center">
                                 <div className="section-1-bubble-container-text-position">
-                                    <h5 className="section-1-bubble-container-text-title">
-                                        Total Prize value
-                                    </h5>
-                                    <h4 className="section-1-bubble-container-text-number">
-                                        ≈ 36142 USD
-                                    </h4>
+                                    <h5 className="section-1-bubble-container-text-title">Total Prize value</h5>
+                                    <h4 className="section-1-bubble-container-text-number">≈ 36142 USD</h4>
                                 </div>
                             </div>
                         </div>
@@ -113,14 +95,10 @@ const Home = () => {
                             <div className="rock-left"></div>
                         </div>
                         <div className="w-7/12 xs:w-4/12 flex flex-col self-center justify-self-center mx-auto justify-center sm:w-5/12 text-white md:pr-2 md:w-4/12 max-w-lg">
-                            <h3 className="text-xs sm:text-base md:text-lg lg:text-3xl xl:text-4xl mb-4 font-bold">
-                                Hermit Crab NFTs
-                            </h3>
+                            <h3 className="text-xs sm:text-base md:text-lg lg:text-3xl xl:text-4xl mb-4 font-bold">Hermit Crab NFTs</h3>
                             <p className="text-2xs sm:text-xs md:text-sm lg:text-xl xl:text-2xl">
-                                4,200 unique Hermit Crabs NFTs created by
-                                Scallop Labs, they are the coolest Scallop
-                                Decorations which can also be your pet in
-                                Scallop Tank in the future🐚🦀!
+                                4,200 unique Hermit Crabs NFTs created by Scallop Labs, they are the coolest Scallop Decorations which can
+                                also be your pet in Scallop Tank in the future🐚🦀!
                             </p>
                             <a
                                 href="#hermit-crab"
@@ -136,10 +114,7 @@ const Home = () => {
                     <div className="w-full absolute flex justify-center">
                         <img alt="Roadmap" className="roadmap-line" />
                         <div className="relative wrapper-bubble wrapper-bubble-position-1">
-                            <img
-                                alt="Roadmap Bubble"
-                                className="absolute roadmap-bubble"
-                            />
+                            <img alt="Roadmap Bubble" className="absolute roadmap-bubble" />
                             <div className="absolute xxs:-ml-2 xs:-ml-1 xs:ml-4 sm:mt-2 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
                                 <h2 className="text-title">2022 Q2</h2>
                                 <ul className="text-list">
@@ -159,10 +134,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="relative wrapper-bubble wrapper-bubble-position-2">
-                            <img
-                                alt="Roadmap Bubble"
-                                className="absolute roadmap-bubble"
-                            />
+                            <img alt="Roadmap Bubble" className="absolute roadmap-bubble" />
                             <div className="absolute xxs:-ml-3 xs:-ml-1 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
                                 <h2 className="text-title">2022 Q3</h2>
                                 <ul className="text-list">
@@ -179,10 +151,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="relative wrapper-bubble wrapper-bubble-position-3">
-                            <img
-                                alt="Roadmap Bubble"
-                                className="absolute roadmap-bubble"
-                            />
+                            <img alt="Roadmap Bubble" className="absolute roadmap-bubble" />
                             <div className="absolute xxs:-ml-3 xs:-ml-1 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
                                 <h2 className="text-title">2022 Q4</h2>
                                 <ul className="text-list">
@@ -213,77 +182,49 @@ const Home = () => {
                         <div className="p-5 teams">
                             <div className="card-team">
                                 <div className="card-profile">
-                                    <img
-                                        alt="Kriss Avatar"
-                                        className="avatar"
-                                        src={krissAvatar}
-                                    />
+                                    <img alt="Kriss Avatar" className="avatar" src={krissAvatar} />
                                     <div className="title">Team Lead</div>
                                 </div>
                                 <div className="card-content">
                                     <span className="card-name">Kriss</span>
                                     <div className="card-links">
-                                        <a
-                                            className="twitter"
-                                            href="https://twitter.com/djchrisssssss"
-                                        ></a>
+                                        <a className="twitter" href="https://twitter.com/djchrisssssss"></a>
                                     </div>
                                 </div>
                             </div>
                             <div className="card-team">
                                 <div className="card-profile">
-                                    <img
-                                        alt="Donnie Avatar"
-                                        className="avatar"
-                                        src={donnieAvatar}
-                                    />
+                                    <img alt="Donnie Avatar" className="avatar" src={donnieAvatar} />
                                     <div className="title">Developer</div>
                                 </div>
                                 <div className="card-content">
                                     <span className="card-name">Donnie</span>
                                     <div className="card-links">
-                                        <a
-                                            className="twitter"
-                                            href="https://twitter.com/MrDonor_donnie"
-                                        ></a>
+                                        <a className="twitter" href="https://twitter.com/MrDonor_donnie"></a>
                                     </div>
                                 </div>
                             </div>
                             <div className="card-team">
                                 <div className="card-profile">
-                                    <img
-                                        alt="Nathan Avatar"
-                                        className="avatar"
-                                        src={nathanAvatar}
-                                    />
+                                    <img alt="Nathan Avatar" className="avatar" src={nathanAvatar} />
                                     <div className="title">Developer</div>
                                 </div>
                                 <div className="card-content">
                                     <span className="card-name">Nathan</span>
                                     <div className="card-links">
-                                        <a
-                                            className="twitter"
-                                            href="https://twitter.com/nathanramli"
-                                        ></a>
+                                        <a className="twitter" href="https://twitter.com/nathanramli"></a>
                                     </div>
                                 </div>
                             </div>
                             <div className="card-team">
                                 <div className="card-profile">
-                                    <img
-                                        alt="June Avatar"
-                                        className="avatar"
-                                        src={juneAvatar}
-                                    />
+                                    <img alt="June Avatar" className="avatar" src={juneAvatar} />
                                     <div className="title">Designer</div>
                                 </div>
                                 <div className="card-content">
                                     <span className="card-name">June</span>
                                     <div className="card-links">
-                                        <a
-                                            className="twitter"
-                                            href="https://twitter.com/ChunnnnHsieh"
-                                        ></a>
+                                        <a className="twitter" href="https://twitter.com/ChunnnnHsieh"></a>
                                     </div>
                                 </div>
                             </div>
@@ -327,6 +268,6 @@ const Home = () => {
                 </div>
             </footer>
         </div>
-    )
-}
-export default Home
+    );
+};
+export default Home;
