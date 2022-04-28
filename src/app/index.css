@@ -1182,11 +1182,11 @@ footer .content .logo {
     background-size: auto 100%;
     background-repeat: no-repeat;
     transform: translate(0%, 0px);
-    opacity: 0;
-    animation: swim 15s linear infinite;
+    /* opacity: 0;
+    animation: swim 15s linear infinite; */
 }
 
-@keyframes swim {
+/* @keyframes swim {
     0% {
         transform: translate(0%, 0%);
         opacity: 0.2;
@@ -1215,4 +1215,4 @@ footer .content .logo {
         transform: translate(-200%, 0%);
         opacity: 0;
     }
-}
+} */
