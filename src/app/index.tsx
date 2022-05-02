@@ -9,10 +9,13 @@ import discordIcon from '../resources/images/discord-icon.png';
 import mediumIcon from '../resources/images/medium-icon.png';
 import imageGroupOfFish1 from '../resources/images/group-of-fish-1.svg';
 import imageGroupOfFish3 from '../resources/images/group-of-fish-3.svg';
+import imageGroupOfFish4 from '../resources/images/group-of-fish-4.svg';
 import imageGroupOfFish5 from '../resources/images/group-of-fish-5.svg';
+import imageGroupOfTurtle from '../resources/images/group-of-turtle.svg';
+import imageGroupOfJellyfish from '../resources/images/group-of-jellyfish.svg';
 import './index.css';
 import Plx from 'react-plx';
-import { groupOfFish1, groupOfFish3, groupOfFish5 } from './plxconfig';
+import { groupOfFish1, groupOfFish3, groupOfFish4, groupOfFish5, groupOfTurtle, groupOfJellyfish } from './plxconfig';
 
 const Home = () => {
     useEffect(() => {
@@ -188,9 +191,24 @@ const Home = () => {
                 </section>
                 <section className="flex flex-col w-full">
                     <div className="p-5 w-full mb-20">
+                        <div className="group-of-turtle">
+                            <Plx parallaxData={groupOfTurtle}>
+                                <img className="h-full" src={imageGroupOfTurtle} alt="fish" />
+                            </Plx>
+                        </div>
+                        <div className="group-of-jellyfish">
+                            <Plx parallaxData={groupOfJellyfish}>
+                                <img src={imageGroupOfJellyfish} alt="fish" />
+                            </Plx>
+                        </div>
                         <div className="core-team-submarine"></div>
                     </div>
                     <div className="p-5 flex flex-col md:flex-row w-full">
+                        <div className="group-of-fish">
+                            <Plx parallaxData={groupOfFish4}>
+                                <img className="h-full" src={imageGroupOfFish4} alt="fish" />
+                            </Plx>
+                        </div>
                         <div className="stingray-container">
                             <div className="group-of-stingray" />
                         </div>

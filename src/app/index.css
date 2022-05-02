@@ -270,6 +270,18 @@ footer {
     content: url('../resources/images/submarine-core-team.svg');
 }
 
+.Home-wrapper section:nth-child(5) .group-of-turtle {
+    @apply absolute w-1/4 right-1/4 top-1/4;
+}
+
+.Home-wrapper section:nth-child(5) .group-of-jellyfish {
+    @apply absolute w-1/4 right-0 top-1/3;
+}
+
+.Home-wrapper section:nth-child(5) .group-of-fish {
+    @apply absolute w-1/4 left-0 top-1/4;
+}
+
 .Home-wrapper section:nth-child(5) .stingray-container {
     @apply lg:w-6/12;
 }

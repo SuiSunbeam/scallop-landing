@@ -324,6 +324,26 @@ const groupOfFish3 = [
     },
 ];
 
+const groupOfFish4 = [
+    {
+        start: 'self',
+        duration: '15%',
+        properties: [
+            {
+                startValue: 0.5,
+                endValue: 1,
+                property: 'scale',
+            },
+            {
+                startValue: -20,
+                endValue: 10,
+                unit: '%',
+                property: 'translateX',
+            },
+        ],
+    },
+];
+
 const groupOfFish5 = [
     {
         start: 'self',
@@ -339,6 +359,46 @@ const groupOfFish5 = [
                 endValue: 10,
                 unit: '%',
                 property: 'translateX',
+            },
+        ],
+    },
+];
+
+const groupOfTurtle = [
+    {
+        start: 'self',
+        duration: '15%',
+        properties: [
+            {
+                startValue: 0.5,
+                endValue: 1,
+                property: 'scale',
+            },
+            {
+                startValue: -20,
+                endValue: 10,
+                unit: '%',
+                property: 'translateX',
+            },
+        ],
+    },
+];
+
+const groupOfJellyfish = [
+    {
+        start: 'self',
+        duration: '15%',
+        properties: [
+            {
+                startValue: 0.3,
+                endValue: 0.6,
+                property: 'scale',
+            },
+            {
+                startValue: 20,
+                endValue: -100,
+                unit: '%',
+                property: 'translateY',
             },
         ],
     },
@@ -592,5 +652,8 @@ export {
     fishSection4,
     groupOfFish1,
     groupOfFish3,
+    groupOfFish4,
     groupOfFish5,
+    groupOfTurtle,
+    groupOfJellyfish,
 };
