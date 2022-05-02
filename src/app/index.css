@@ -75,12 +75,21 @@
     @apply relative;
 }
 
+.Home-wrapper,
+footer {
+    @apply overflow-hidden;
+}
+
 .Home-wrapper section:nth-child(1) .section-0-content {
     color: #1e2d45;
     background-image: url('../resources/images/section-0-background.png');
     background-position: 100% 100%;
     background-size: 100% 100%;
     @apply relative;
+}
+
+.Home-wrapper section:nth-child(1) .group-of-fish {
+    @apply absolute w-1/4 left-0 bottom-0;
 }
 
 .section-0-content .text-title-1 {
@@ -166,6 +175,10 @@
     @apply relative bg-no-repeat;
 }
 
+.Home-wrapper section:nth-child(3) .group-of-fish {
+    @apply absolute w-2/4 left-1/4 bottom-0;
+}
+
 .Home-wrapper section:nth-child(3) .rock-left {
     content: url('../resources/images/section-3-rock-left.svg');
     @apply w-7/12 md:w-full h-auto;
@@ -191,7 +204,7 @@
 .Home-wrapper section:nth-child(6) {
     background-image: url('../resources/images/section-5-background.png');
     background-size: 100% 100%;
-    @apply relative bg-no-repeat flex justify-center items-center overflow-hidden;
+    @apply relative bg-no-repeat flex justify-center items-center;
 }
 
 footer {
@@ -325,6 +338,10 @@ footer {
     width: 7%;
 }
 
+.Home-wrapper section:nth-child(6) .group-of-fish {
+    @apply absolute w-1/4 left-0 bottom-1/4;
+}
+
 footer .seabed {
     @apply absolute bottom-0 w-full h-auto;
     content: url(../resources/images/seabed.svg);
@@ -398,7 +415,7 @@ footer .content .logo {
     }
 
     footer {
-        height: 10rem;
+        height: 14rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
@@ -525,7 +542,7 @@ footer .content .logo {
     }
 
     footer {
-        height: 12rem;
+        height: 16rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {

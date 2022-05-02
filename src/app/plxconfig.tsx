@@ -273,6 +273,77 @@ const mFishSection4 = [
     },
 ];
 
+const groupOfFish1 = [
+    {
+        start: 'self',
+        end: '.rock-left',
+        properties: [
+            {
+                startValue: 0,
+                endValue: 10,
+                property: 'rotateZ',
+            },
+            {
+                startValue: 0.5,
+                endValue: 1,
+                property: 'scale',
+            },
+            {
+                startValue: -20,
+                endValue: 10,
+                unit: '%',
+                property: 'translateX',
+            },
+            {
+                startValue: 10,
+                endValue: 20,
+                unit: '%',
+                property: 'translateY',
+            },
+        ],
+    },
+];
+
+const groupOfFish3 = [
+    {
+        start: 'self',
+        duration: '20%',
+        properties: [
+            {
+                startValue: 0.5,
+                endValue: 1,
+                property: 'scale',
+            },
+            {
+                startValue: -20,
+                endValue: 10,
+                unit: '%',
+                property: 'translateX',
+            },
+        ],
+    },
+];
+
+const groupOfFish5 = [
+    {
+        start: 'self',
+        end: 'footer',
+        properties: [
+            {
+                startValue: 0.5,
+                endValue: 1,
+                property: 'scale',
+            },
+            {
+                startValue: -20,
+                endValue: 10,
+                unit: '%',
+                property: 'translateX',
+            },
+        ],
+    },
+];
+
 const fishSection1 = [
     {
         start: 0,
@@ -519,4 +590,7 @@ export {
     fishSection2,
     fishSection3,
     fishSection4,
+    groupOfFish1,
+    groupOfFish3,
+    groupOfFish5,
 };

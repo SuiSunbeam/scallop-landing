@@ -7,7 +7,12 @@ import twitterIcon from '../resources/images/twitter-icon.png';
 import telegramIcon from '../resources/images/telegram-icon.png';
 import discordIcon from '../resources/images/discord-icon.png';
 import mediumIcon from '../resources/images/medium-icon.png';
+import imageGroupOfFish1 from '../resources/images/group-of-fish-1.svg';
+import imageGroupOfFish3 from '../resources/images/group-of-fish-3.svg';
+import imageGroupOfFish5 from '../resources/images/group-of-fish-5.svg';
 import './index.css';
+import Plx from 'react-plx';
+import { groupOfFish1, groupOfFish3, groupOfFish5 } from './plxconfig';
 
 const Home = () => {
     useEffect(() => {
@@ -46,6 +51,11 @@ const Home = () => {
                 <section>
                     <div className="section-0-content grid grid-cols-6 w-full h-full">
                         <div className="col-span-4 justify-self-start flex flex-col place-content-center h-full xxs:ml-10 xs:ml-10 lg:ml-20 xl:ml-40 2xl:ml-44">
+                            <div className="group-of-fish">
+                                <Plx parallaxData={groupOfFish1}>
+                                    <img className="h-full" src={imageGroupOfFish1} alt="fish" />
+                                </Plx>
+                            </div>
                             <p className="text-title-1">
                                 Scallop is a diverse no-loss
                                 <br />
@@ -109,6 +119,11 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="rock-right"></div>
+                    <div className="group-of-fish">
+                        <Plx parallaxData={groupOfFish3}>
+                            <img src={imageGroupOfFish3} className="w-full xl:w-2/3" alt="" />
+                        </Plx>
+                    </div>
                 </section>
                 <section>
                     <div className="w-full absolute flex justify-center">
@@ -234,6 +249,11 @@ const Home = () => {
                 <section>
                     <div className="whale"></div>
                     <div className="absolute two-jellyfish"></div>
+                    <div className="group-of-fish">
+                        <Plx parallaxData={groupOfFish5} className="origin-left">
+                            <img src={imageGroupOfFish5} alt="" />
+                        </Plx>
+                    </div>
                     <div className="content">
                         <h1>Investors</h1>
                     </div>
