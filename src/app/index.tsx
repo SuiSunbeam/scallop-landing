@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import krissAvatar from '../resources/images/kriss-avatar.png';
 import juneAvatar from '../resources/images/june-avatar.png';
 import donnieAvatar from '../resources/images/donnie-avatar.png';
@@ -13,9 +13,23 @@ import imageGroupOfFish4 from '../resources/images/group-of-fish-4.svg';
 import imageGroupOfFish5 from '../resources/images/group-of-fish-5.svg';
 import imageGroupOfTurtle from '../resources/images/group-of-turtle.svg';
 import imageGroupOfJellyfish from '../resources/images/group-of-jellyfish.svg';
-import './index.css';
 import Plx from 'react-plx';
-import { groupOfFish1, groupOfFish3, groupOfFish4, groupOfFish5, groupOfTurtle, groupOfJellyfish } from './plxconfig';
+import {
+    bannerSun,
+    bannerClould1,
+    bannerClould2,
+    bannerClould3,
+    bannerClould4,
+    bannerSea,
+    groupOfFish1,
+    groupOfFish3,
+    groupOfFish4,
+    groupOfFish5,
+    groupOfTurtle,
+    groupOfJellyfish,
+} from './plxconfig';
+import { endpoint, checkBreakpoint } from './utils';
+import './index.css';
 
 const Home = () => {
     useEffect(() => {
@@ -23,15 +37,43 @@ const Home = () => {
         return () => {};
     }, []);
 
+    const [breackPoints, setBreackPoints] = useState<{ [index in endpoint]: boolean }>(checkBreakpoint());
+
+    const handleResize = useCallback((event: UIEvent) => {
+        setBreackPoints(checkBreakpoint());
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener('resize', (event) => handleResize(event));
+
+        return () => {
+            window.removeEventListener('resize', (event) => handleResize(event));
+        };
+    }, [handleResize]);
+    console.log(breackPoints);
     return (
         <div className="Home">
             <header className="Home-header">
                 <div className="Home-banner">
-                    <div className="Home-banner-layer Home-banner-layer-1"></div>
-                    <div className="Home-banner-layer Home-banner-layer-2"></div>
-                    <div className="Home-banner-layer Home-banner-layer-3"></div>
-                    <div className="Home-banner-layer Home-banner-layer-4"></div>
-                    <div className="Home-banner-layer Home-banner-layer-5"></div>
+                    <Plx parallaxData={bannerSun(breackPoints)}>
+                        <div className="Home-banner-layer Home-banner-sun"></div>
+                    </Plx>
+                    <Plx parallaxData={bannerClould1(breackPoints)}>
+                        <div className="Home-banner-layer Home-banner-clould-1"></div>
+                    </Plx>
+                    <Plx parallaxData={bannerClould2(breackPoints)} className="absolute w-full top-[15%]">
+                        <div className="Home-banner-layer Home-banner-clould-2"></div>
+                    </Plx>
+                    <Plx parallaxData={bannerClould3(breackPoints)} className="absolute w-full top-[15%]">
+                        <div className="Home-banner-layer Home-banner-clould-3"></div>
+                    </Plx>
+                    <Plx parallaxData={bannerClould4(breackPoints)} className="absolute w-full top-[45%]">
+                        <div className="Home-banner-layer Home-banner-clould-4"></div>
+                    </Plx>
+                    <Plx parallaxData={bannerSea(breackPoints)} className="absolute w-full bottom-0">
+                        <div className="Home-banner-layer Home-banner-sea"></div>
+                    </Plx>
+                    <div className="Home-banner-layer Home-banner-wave"></div>
                 </div>
                 <nav className="Home-navigation place-items-center">
                     <div className="col-span-2">
@@ -40,7 +82,7 @@ const Home = () => {
                         </a>
                     </div>
                     <div className="Home-nav-menu col-span-4 lg:ml-24 xl:ml-44 2xl:ml-60 z-50 my-4 list-none divide-y">
-                        <ul className="xxs:hidden xs:hidden lg:flex md:space-x-12 2xl:space-x-14" aria-labelledby="dropdown">
+                        <ul className="hidden lg:flex md:space-x-12 2xl:space-x-14" aria-labelledby="dropdown">
                             <li className="active">Home</li>
                             <li>NFTs</li>
                             <li>Roadmap</li>
@@ -53,7 +95,7 @@ const Home = () => {
             <main className="Home-wrapper">
                 <section>
                     <div className="section-0-content grid grid-cols-6 w-full h-full">
-                        <div className="col-span-4 justify-self-start flex flex-col place-content-center h-full xxs:ml-10 xs:ml-10 lg:ml-20 xl:ml-40 2xl:ml-44">
+                        <div className="col-span-4 justify-self-start flex flex-col place-content-center h-full ml-10 lg:ml-20 xl:ml-40 2xl:ml-44">
                             <div className="group-of-fish">
                                 <Plx parallaxData={groupOfFish1}>
                                     <img className="h-full" src={imageGroupOfFish1} alt="fish" />
@@ -65,7 +107,7 @@ const Home = () => {
                                 protocol on Solana blockchain
                             </p>
                             <p className="text-title-2">with ocean theme on-chain collectibles and NFTs ✨ !</p>
-                            <div className="flex space-x-8 xxs:mt-3 xs:mt-3 sm:mt-2 md:mt-4 lg:mt-6 xl:mt-8 2xl:mt-10">
+                            <div className="flex space-x-8 mt-3 sm:mt-2 md:mt-4 lg:mt-6 xl:mt-8 2xl:mt-10">
                                 <div>
                                     <button className="Home-button button-header">Launch App</button>
                                 </div>
@@ -133,7 +175,7 @@ const Home = () => {
                         <img alt="Roadmap" className="roadmap-line" />
                         <div className="relative wrapper-bubble wrapper-bubble-position-1">
                             <img alt="Roadmap Bubble" className="absolute roadmap-bubble" />
-                            <div className="absolute xxs:-ml-2 xs:-ml-1 xs:ml-4 sm:mt-2 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
+                            <div className="absolute -ml-2 xs:ml-4 sm:mt-2 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
                                 <h2 className="text-title">2022 Q2</h2>
                                 <ul className="text-list">
                                     <li>
@@ -153,7 +195,7 @@ const Home = () => {
                         </div>
                         <div className="relative wrapper-bubble wrapper-bubble-position-2">
                             <img alt="Roadmap Bubble" className="absolute roadmap-bubble" />
-                            <div className="absolute xxs:-ml-3 xs:-ml-1 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
+                            <div className="absolute -ml-3 xs:-ml-1 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
                                 <h2 className="text-title">2022 Q3</h2>
                                 <ul className="text-list">
                                     <li>
@@ -170,7 +212,7 @@ const Home = () => {
                         </div>
                         <div className="relative wrapper-bubble wrapper-bubble-position-3">
                             <img alt="Roadmap Bubble" className="absolute roadmap-bubble" />
-                            <div className="absolute xxs:-ml-3 xs:-ml-1 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
+                            <div className="absolute -ml-3 xs:-ml-1 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
                                 <h2 className="text-title">2022 Q4</h2>
                                 <ul className="text-list">
                                     <li>

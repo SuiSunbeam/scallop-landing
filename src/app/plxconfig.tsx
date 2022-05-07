@@ -1,77 +1,640 @@
-const header = [
-    {
-        start: 0,
-        end: 500,
-        properties: [
-            {
-                startValue: 0,
-                endValue: 200,
-                property: 'translateY',
-            },
-            {
-                startValue: 1,
-                endValue: 1.2,
-                property: 'scale',
-            },
-        ],
-    },
-];
+import { endpoint } from './utils';
 
-const bannerLayer1 = [
-    {
-        start: 0,
-        end: 480,
-        properties: [
-            {
-                startValue: 0,
-                endValue: 350,
-                property: 'translateY',
-            },
-        ],
-    },
-];
+const bannerSun = (breackPoints: { [index in endpoint]: boolean }) => {
+    let data: any = [];
 
-const bannerLayer2 = [
-    {
-        start: 0,
-        end: 480,
-        properties: [
+    if (breackPoints['2xl']) {
+        data = [
             {
-                startValue: 0,
-                endValue: 350,
-                property: 'translateY',
+                start: 0,
+                end: 720,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 425,
+                        property: 'translateY',
+                    },
+                ],
             },
-        ],
-    },
-];
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 0,
+                end: 608,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 400,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 0,
+                end: 512,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 375,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 0,
+                end: 352,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 300,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 0,
+                end: 352,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 275,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 0,
+                end: 256,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 200,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 0,
+                end: 192,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 150,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    }
 
-const bannerLayer3 = [
-    {
-        start: 0,
-        end: 480,
-        properties: [
-            {
-                startValue: 1,
-                endValue: 300,
-                property: 'translateY',
-            },
-        ],
-    },
-];
+    return data;
+};
 
-const bannerLayer4 = [
-    {
-        start: 0,
-        end: 480,
-        properties: [
+const bannerClould1 = (breackPoints: { [index in endpoint]: boolean }) => {
+    let data: any = [];
+
+    if (breackPoints['2xl']) {
+        data = [
             {
-                startValue: 0,
-                endValue: 250,
-                property: 'translateY',
+                start: 0,
+                end: 720,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 500,
+                        property: 'translateY',
+                    },
+                ],
             },
-        ],
-    },
-];
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 0,
+                end: 608,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 450,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 0,
+                end: 512,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 400,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 0,
+                end: 352,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 250,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 0,
+                end: 352,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 250,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 0,
+                end: 256,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 160,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 0,
+                end: 192,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 100,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    }
+
+    return data;
+};
+
+const bannerClould2 = (breackPoints: { [index in endpoint]: boolean }) => {
+    let data: any = [];
+
+    if (breackPoints['2xl']) {
+        data = [
+            {
+                start: 0,
+                end: 720,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 375,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 0,
+                end: 608,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 325,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 0,
+                end: 512,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 300,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 0,
+                end: 352,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 185,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 0,
+                end: 352,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 175,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 0,
+                end: 256,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 125,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 0,
+                end: 192,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 75,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    }
+
+    return data;
+};
+
+const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }) => {
+    let data: any = [];
+
+    if (breackPoints['2xl']) {
+        data = [
+            {
+                start: 0,
+                end: 720,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 300,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 0,
+                end: 608,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 275,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 0,
+                end: 512,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 250,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 0,
+                end: 352,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 175,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 0,
+                end: 352,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 170,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 0,
+                end: 256,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 120,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 0,
+                end: 192,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 70,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    }
+
+    return data;
+};
+
+const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }) => {
+    let data: any = [];
+
+    if (breackPoints['2xl']) {
+        data = [
+            {
+                start: 0,
+                end: 720,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 150,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 0,
+                end: 608,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 150,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 0,
+                end: 512,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 150,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 0,
+                end: 352,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 75,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 0,
+                end: 352,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 85,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 0,
+                end: 256,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 60,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 0,
+                end: 192,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 25,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    }
+
+    return data;
+};
+
+const bannerSea = (breackPoints: { [index in endpoint]: boolean }) => {
+    let data: any = [];
+
+    if (breackPoints['2xl']) {
+        data = [
+            {
+                start: 0,
+                end: 350,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -55,
+                        property: 'rotateX',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 0,
+                end: 325,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        property: 'rotateX',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 0,
+                end: 300,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -70,
+                        property: 'rotateX',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 0,
+                end: 225,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -65,
+                        property: 'rotateX',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 0,
+                end: 200,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        property: 'rotateX',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 0,
+                end: 200,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        property: 'rotateX',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 0,
+                end: 150,
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -50,
+                        property: 'rotateX',
+                    },
+                ],
+            },
+        ];
+    }
+
+    return data;
+};
 
 const mFishSection1 = [
     {
@@ -637,11 +1200,12 @@ const fishSection4 = [
 ];
 
 export {
-    header,
-    bannerLayer1,
-    bannerLayer2,
-    bannerLayer3,
-    bannerLayer4,
+    bannerSun,
+    bannerClould1,
+    bannerClould2,
+    bannerClould3,
+    bannerClould4,
+    bannerSea,
     mFishSection1,
     mFishSection2,
     mFishSection3,

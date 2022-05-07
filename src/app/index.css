@@ -1,5 +1,5 @@
 .Home {
-    @apply overflow-auto;
+    @apply overflow-auto bg-[#000];
 }
 
 .Home-header,
@@ -9,40 +9,57 @@
 }
 
 .Home-header {
+    @apply h-full bg-[#9cd0ff];
+}
+
+.Home-banner {
     @apply relative h-full overflow-hidden;
 }
 
 .Home-banner-layer {
-    @apply absolute bg-cover bg-no-repeat;
+    @apply absolute;
 }
 
-.Home-banner-layer-1 {
-    @apply bg-fixed bg-top;
-    background-image: url('../resources/images/top-banner-layer.png');
-    background-size: 100% auto;
+.Home-banner-sun {
+    background: transparent radial-gradient(circle at 25% 25%, #fff 0%, transparent 25%);
 }
 
-.Home-banner-layer-2 {
-    @apply bg-fixed bg-top;
-    background-image: url('../resources/images/cloud-banner-1.svg');
-    background-size: 100% auto;
+.Home-banner-clould-1 {
+    background:
+        url('../resources/images/banner-clould-1.svg') local no-repeat top/100%,
+        linear-gradient(to bottom, transparent 0% calc(100vw / 2.7 * 0.85), #c1e0ff calc(100vw / 2.7 * 0.85), rgba(193, 224, 255, 1) 100%);
 }
 
-.Home-banner-layer-3 {
-    background-image: url('../resources/images/cloud-banner-2.svg');
-    bottom: -17%;
+.Home-banner-clould-2 {
+    background: url('../resources/images/banner-clould-2.svg') local no-repeat top/100%;
 }
 
-.Home-banner-layer-4 {
-    background-image: url('../resources/images/banner-layer4.svg');
+.Home-banner-clould-3 {
+    background: url('../resources/images/banner-clould-3.svg') local no-repeat top/100%;
+}
+
+.Home-banner-clould-4 {
+    background: url('../resources/images/banner-clould-4.svg') local no-repeat top/100%;
+}
+
+.Home-banner-sea {
+    background: transparent linear-gradient(
+        to bottom,
+        transparent 70%,
+        #c1e0ff 70%,
+        #b8ddfc 74.5%,
+        #abd5ff 79%,
+        #a5d0fd 83.5%,
+        #a0ccf8 88%,
+        #94bfef 95.5%,
+        #86b5ea 100%
+    );
     bottom: 0;
-    background-position: bottom;
 }
 
-.Home-banner-layer-5 {
-    background-image: url('../resources/images/banner-layer5.svg');
+.Home-banner-wave {
+    background: url('../resources/images/banner-wave.svg') local no-repeat bottom / 100%;
     bottom: 0;
-    background-position: bottom;
 }
 
 .Home-navigation {
@@ -63,12 +80,12 @@
 }
 
 .Home-logo {
-    @apply flex justify-center items-center xxs:ml-10 xs:ml-10;
+    @apply flex justify-center items-center ml-10 xs:ml-10;
 }
 
 .Home-logo-image {
     content: url('../resources/images/logo-black.svg');
-    @apply block pointer-events-none filter h-16 xxs:h-10 xs:h-10 sm:h-10 md:h-14 lg:h-12 xl:h-14 2xl:h-20 xxs:mt-5 xs:mt-5 sm:mt-10 md:mt-10 lg:mt-0;
+    @apply block pointer-events-none filter h-10 xs:h-10 sm:h-10 md:h-14 lg:h-12 xl:h-14 2xl:h-20 mt-5 xs:mt-5 sm:mt-10 md:mt-10 lg:mt-0;
 }
 
 .Home-wrapper {
@@ -93,11 +110,11 @@ footer {
 }
 
 .section-0-content .text-title-1 {
-    @apply xxs:text-xs xs:text-base sm:text-base md:text-lg lg:text-xl xl:text-3xl 2xl:text-5xl font-bold xxs:mb-2 sm:mb-4 md:mb-3 lg:mb-3 xl:mb-4 2xl:mb-4;
+    @apply text-xs xs:text-base sm:text-base md:text-lg lg:text-xl xl:text-3xl 2xl:text-5xl font-bold mb-2 xs:mb-0 sm:mb-4 md:mb-3 lg:mb-3 xl:mb-4 2xl:mb-4;
 }
 
 .section-0-content .text-title-2 {
-    @apply xxs:text-xs xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
+    @apply text-xs xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
 }
 
 .Home-wrapper section:nth-child(2) {
@@ -141,7 +158,7 @@ footer {
 }
 
 .section-1-bubble-container-text-title {
-    @apply xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl xs:text-xs sm:mb-1 md:mb-2 lg:mb-3 xl:mb-4 2xl:mb-5 text-white;
+    @apply xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl sm:mb-1 md:mb-2 lg:mb-3 xl:mb-4 2xl:mb-5 text-white;
 }
 
 .section-1-bubble-container-text-number {
@@ -214,7 +231,7 @@ footer {
 }
 
 .Home-wrapper section:nth-child(4) .text-title-section {
-    @apply absolute text-white font-bold xxs:text-xs sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl xxs:top-5 xs:top-10 2xl:top-36 xxs:left-10 xs:left-10 md:left-32 lg:left-40 xl:left-40 2xl:left-44;
+    @apply absolute text-white font-bold text-xs xs:text-base sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl top-5 xs:top-10 2xl:top-36 left-10 xs:left-10 md:left-32 lg:left-40 xl:left-40 2xl:left-44;
 }
 
 .Home-wrapper section:nth-child(4) .roadmap-line {
@@ -249,15 +266,15 @@ footer {
 }
 
 .Home-wrapper section:nth-child(4) .text-title {
-    @apply xxs:text-sm xs:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-white font-semibold lg:mb-1 lg:mt-2 xl:mt-4;
+    @apply text-sm xs:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-white font-semibold lg:mb-1 lg:mt-2 xl:mt-4;
 }
 
 .Home-wrapper section:nth-child(4) .text-list {
-    @apply list-disc text-white xxs:ml-4 xs:ml-6 sm:ml-5 md:ml-7 lg:ml-8;
+    @apply list-disc text-white ml-4 xs:ml-6 sm:ml-5 md:ml-7 lg:ml-8;
 }
 
 .Home-wrapper section:nth-child(4) .text-list li span {
-    @apply xxs:text-xs xs:text-xs md:text-xs lg:text-sm xl:text-lg 2xl:text-xl;
+    @apply text-xs xs:text-xs md:text-xs lg:text-sm xl:text-lg 2xl:text-xl;
 }
 
 .Home-wrapper section:nth-child(4) .rock-left {
@@ -334,7 +351,7 @@ footer {
 }
 
 .Home-wrapper section:nth-child(6) .content h1 {
-    @apply absolute text-white font-bold xxs:text-xs sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl xxs:top-5 xs:top-10 2xl:top-36 xxs:left-10 xs:left-10 md:left-32 lg:left-40 xl:left-40 2xl:left-44;
+    @apply absolute text-white font-bold text-xs xs:text-base sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl top-5 xs:top-10 2xl:top-36 left-10 xs:left-10 md:left-32 lg:left-40 xl:left-40 2xl:left-44;
 }
 
 .Home-wrapper section:nth-child(6) .whale {
@@ -369,7 +386,7 @@ footer .content .menu {
 }
 
 footer .content .menu a {
-    @apply inline px-1 font-semibold text-white text-2xs sm:text-2xs md:text-xs md:text-sm lg:text-lg lg:px-2 xl:px-3 xl:text-xl 2xl:text-2xl;
+    @apply inline px-1 font-semibold text-white text-2xs sm:text-2xs md:text-sm lg:text-lg lg:px-2 xl:px-3 xl:text-xl 2xl:text-2xl;
     font-family: 'Poppins';
 }
 
@@ -394,18 +411,20 @@ footer .content .logo {
 .Home-button {
     background: rgba(255, 255, 255, 0.6);
     color: #1e2d45;
-    @apply text-center xxs:p-1 xs:p-1 sm:p-2 xxs:rounded-md xs:rounded-md sm:rounded-lg;
+    @apply text-center p-1 xs:p-1 sm:p-2 rounded-md xs:rounded-md sm:rounded-lg;
 }
 
 .button-header {
-    @apply xxs:w-24 xs:w-28 lg:w-36 xl:w-48 2xl:w-52 sm:text-sm md:text-base xxs:text-xs lg:text-lg xl:text-xl 2xl:text-2xl;
+    @apply w-24 xs:w-28 lg:w-36 xl:w-48 2xl:w-52 sm:text-sm md:text-base text-xs xs:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
 }
 
-@media (max-width: 480px) {
-    .Home-header,
-    .Home-banner,
+@media (min-width: 0px) {
+    .Home-banner {
+        height: 12rem;
+    }
+
     .Home-banner-layer {
-        height: 7rem;
+        height: 10rem;
     }
 
     .Home-wrapper section:nth-child(1) {
@@ -528,11 +547,13 @@ footer .content .logo {
     }
 }
 
-@media (min-width: 480px) and (max-width: 639px) {
-    .Home-header,
-    .Home-banner,
+@media (min-width: 480px) {
+    .Home-banner {
+        height: 16rem;
+    }
+
     .Home-banner-layer {
-        height: 10rem;
+        height: 13rem;
     }
 
     .Home-wrapper section:nth-child(1) {
@@ -660,14 +681,16 @@ footer .content .logo {
 }
 
 @media (min-width: 640px) {
-    .Home-header,
-    .Home-banner,
+    .Home-banner {
+        height: 22rem;
+    }
+
     .Home-banner-layer {
-        height: 18rem;
+        height: 17rem;
     }
 
     .Home-wrapper section:nth-child(1) {
-        height: 18rem;
+        height: 17rem;
     }
 
     .Home-wrapper section:nth-child(2),
@@ -775,10 +798,12 @@ footer .content .logo {
 }
 
 @media (min-width: 768px) {
-    .Home-header,
-    .Home-banner,
+    .Home-banner {
+        height: 22rem;
+    }
+
     .Home-banner-layer {
-        height: 18rem;
+        height: 17rem;
     }
 
     .Home-wrapper section:nth-child(1) {
@@ -887,10 +912,12 @@ footer .content .logo {
 }
 
 @media (min-width: 1024px) {
-    .Home-header,
-    .Home-banner,
+    .Home-banner {
+        height: 32rem;
+    }
+
     .Home-banner-layer {
-        height: 18rem;
+        height: 25rem;
     }
 
     .Home-wrapper section:nth-child(1) {
@@ -994,10 +1021,12 @@ footer .content .logo {
 }
 
 @media (min-width: 1280px) {
-    .Home-header,
-    .Home-banner,
+    .Home-banner {
+        height: 38rem;
+    }
+
     .Home-banner-layer {
-        height: 22.5rem;
+        height: 30rem;
     }
 
     .Home-wrapper section:nth-child(1) {
@@ -1097,10 +1126,12 @@ footer .content .logo {
 }
 
 @media (min-width: 1536px) {
-    .Home-header,
-    .Home-banner,
+    .Home-banner {
+        height: 45rem;
+    }
+
     .Home-banner-layer {
-        height: 540px;
+        height: 35rem;
     }
 
     .Home-wrapper section:nth-child(1) {
