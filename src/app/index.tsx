@@ -11,8 +11,10 @@ import imageGroupOfFish1 from '../resources/images/group-of-fish-1.svg';
 import imageGroupOfFish3 from '../resources/images/group-of-fish-3.svg';
 import imageGroupOfFish4 from '../resources/images/group-of-fish-4.svg';
 import imageGroupOfFish5 from '../resources/images/group-of-fish-5.svg';
+import imageGroupOfZebraFish from '../resources/images/group-of-zebra-fish.png';
 import imageGroupOfTurtle from '../resources/images/group-of-turtle.svg';
 import imageGroupOfJellyfish from '../resources/images/group-of-jellyfish.svg';
+import imageSeahorse from '../resources/images/seahorse.svg';
 import Plx from 'react-plx';
 import {
     bannerSun,
@@ -25,6 +27,9 @@ import {
     groupOfFish3,
     groupOfFish4,
     groupOfFish5,
+    groupOfFish6,
+    groupOfFish7,
+    seahorse,
     groupOfTurtle,
     groupOfJellyfish,
 } from './plxconfig';
@@ -34,7 +39,7 @@ import './index.css';
 const Home = () => {
     useEffect(() => {
         document.title = 'Scallop';
-        return () => {};
+        return () => { };
     }, []);
 
     const [breackPoints, setBreackPoints] = useState<{ [index in endpoint]: boolean }>(checkBreakpoint());
@@ -122,6 +127,16 @@ const Home = () => {
                     </div>
                 </section>
                 <section>
+                    <div className="group-of-fish">
+                        <Plx parallaxData={groupOfFish6}>
+                            <img src={imageGroupOfFish5} alt="fish" style={{transform: "scaleX(-1)"}}/>
+                        </Plx>
+                    </div>
+                    <div className="group-of-zebra-fish">
+                        <Plx parallaxData={groupOfFish7}>
+                            <img src={imageGroupOfZebraFish} alt="fish"/>
+                        </Plx>
+                    </div>
                     <img alt="A rock" className="section-1-rock-1" />
                     <img alt="A rock" className="section-1-rock-2" />
                     <div className="section-1-content">
@@ -148,6 +163,7 @@ const Home = () => {
                     <div className="flex flex-col md:flex-row">
                         <div className="w-full md:w-6/12">
                             <div className="rock-left"></div>
+                            <div className="lonely-zebrafish"></div>
                         </div>
                         <div className="w-7/12 xs:w-4/12 flex flex-col self-center justify-self-center mx-auto justify-center sm:w-5/12 text-white md:pr-2 md:w-4/12 max-w-lg">
                             <h3 className="text-xs sm:text-base md:text-lg lg:text-3xl xl:text-4xl mb-4 font-bold">Hermit Crab NFTs</h3>
@@ -169,66 +185,66 @@ const Home = () => {
                             <img src={imageGroupOfFish3} className="w-full xl:w-2/3" alt="" />
                         </Plx>
                     </div>
+                    <div className="seahorse">
+                        <Plx parallaxData={seahorse}>
+                            <img src={imageSeahorse} alt="seahorse" />
+                        </Plx>
+                    </div>
                 </section>
                 <section>
                     <div className="w-full absolute flex justify-center">
-                        <img alt="Roadmap" className="roadmap-line" />
-                        <div className="relative wrapper-bubble wrapper-bubble-position-1">
-                            <img alt="Roadmap Bubble" className="absolute roadmap-bubble" />
-                            <div className="absolute -ml-2 xs:ml-4 sm:mt-2 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
-                                <h2 className="text-title">2022 Q2</h2>
-                                <ul className="text-list">
-                                    <li>
-                                        <span>Mainnet Launch</span>
-                                    </li>
-                                    <li>
-                                        <span>Scallop IDO</span>
-                                    </li>
-                                    <li>
-                                        <span>Scallop Token (SCA)</span>
-                                    </li>
-                                    <li>
-                                        <span>Hermit Crab NFTS</span>
-                                    </li>
-                                </ul>
-                            </div>
+                        <img alt="Roadmap" className="roadmap" />
+                        <div className="text-roadmap-1">
+                            <h2 className="text-title">2022 Q2</h2>
+                            <ul className="text-list">
+                                <li>
+                                    <span>Mainnet Launch</span>
+                                </li>
+                                <li>
+                                    <span>Scallop IDO</span>
+                                </li>
+                                <li>
+                                    <span>Scallop Token (SCA)</span>
+                                </li>
+                                <li>
+                                    <span>Hermit Crab NFTS</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div className="relative wrapper-bubble wrapper-bubble-position-2">
-                            <img alt="Roadmap Bubble" className="absolute roadmap-bubble" />
-                            <div className="absolute -ml-3 xs:-ml-1 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
-                                <h2 className="text-title">2022 Q3</h2>
-                                <ul className="text-list">
-                                    <li>
-                                        <span>Scallop Swap</span>
-                                    </li>
-                                    <li>
-                                        <span>SCA Staking</span>
-                                    </li>
-                                    <li>
-                                        <span>Support more tokens</span>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div className="text-roadmap-2">
+                            <h2 className="text-title">2022 Q3</h2>
+                            <ul className="text-list">
+                                <li>
+                                    <span>Scallop Swap</span>
+                                </li>
+                                <li>
+                                    <span>SCA Staking</span>
+                                </li>
+                                <li>
+                                    <span>Decorations Staking</span>
+                                </li>
+                                <li>
+                                    <span>More Scallop Pools</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div className="relative wrapper-bubble wrapper-bubble-position-3">
-                            <img alt="Roadmap Bubble" className="absolute roadmap-bubble" />
-                            <div className="absolute -ml-3 xs:-ml-1 sm:ml-4 md:ml-6 lg:ml-12 xl:ml-10 2xl:ml-8">
-                                <h2 className="text-title">2022 Q4</h2>
-                                <ul className="text-list">
-                                    <li>
-                                        <span>Scallop Pool V2</span>
-                                    </li>
-                                    <li>
-                                        <span>Scallop DAO</span>
-                                    </li>
-                                    <li>
-                                        <span>Scallop Tamagotchi</span>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div className="text-roadmap-3">
+                            <h2 className="text-title">2022 Q4</h2>
+                            <ul className="text-list">
+                                <li>
+                                    <span>Scallop Pool V2</span>
+                                </li>
+                                <li>
+                                    <span>Scallop DAO</span>
+                                </li>
+                                <li>
+                                    <span>Scallop Tamagotchi</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <img alt="A rock" className="rock-left" />
+                    <img alt="A rock right" className="rock-right" />
                     <div className="text-title-section">Roadmap</div>
                 </section>
                 <section className="flex flex-col w-full">

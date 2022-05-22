@@ -124,6 +124,13 @@ footer {
     @apply relative bg-no-repeat;
 }
 
+.Home-wrapper section:nth-child(2) .group-of-fish {
+    @apply absolute w-1/4 right-10 bottom-0 2xl:right-52 2xl:bottom-0;
+}
+.Home-wrapper section:nth-child(2) .group-of-zebra-fish {
+    @apply absolute w-full right-0 bottom-20 md:bottom-8 md:right-0 2xl:right-52 2xl:bottom-40;
+}
+
 .Home-wrapper section:nth-child(2) .section-1-content {
     @apply absolute w-full h-full;
 }
@@ -234,52 +241,39 @@ footer {
     @apply absolute text-white font-bold text-xs xs:text-base sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl top-5 xs:top-10 2xl:top-36 left-10 xs:left-10 md:left-32 lg:left-40 xl:left-40 2xl:left-44;
 }
 
-.Home-wrapper section:nth-child(4) .roadmap-line {
-    content: url('../resources/images/roadmap-line.png');
+.Home-wrapper section:nth-child(4) .roadmap {
+    content: url('../resources/images/roadmap.png');
     margin-right: 10.2rem;
 }
 
-.Home-wrapper section:nth-child(4) .wrapper-bubble {
-    width: 25.625rem;
-    height: 15rem;
-    padding: 2rem;
-    @apply absolute flex justify-center items-center;
-}
-
-.Home-wrapper section:nth-child(4) .roadmap-bubble {
-    content: url('../resources/images/roadmap-bubble.png');
-}
-
-.Home-wrapper section:nth-child(4) .wrapper-bubble-position-1 {
-    left: 50.8%;
-    top: -1.4rem;
-}
-
-.Home-wrapper section:nth-child(4) .wrapper-bubble-position-2 {
-    margin-right: 47.5rem;
-    top: 12.9rem;
-}
-
-.Home-wrapper section:nth-child(4) .wrapper-bubble-position-3 {
-    left: 50.8%;
-    top: 27.2rem;
-}
-
 .Home-wrapper section:nth-child(4) .text-title {
-    @apply text-sm xs:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-white font-semibold lg:mb-1 lg:mt-2 xl:mt-4;
+    @apply text-xs xs:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-white font-bold lg:mb-1 lg:mt-2 xl:mt-4;
 }
 
 .Home-wrapper section:nth-child(4) .text-list {
-    @apply list-disc text-white ml-4 xs:ml-6 sm:ml-5 md:ml-7 lg:ml-8;
+    @apply list-disc text-white sm:ml-4 lg:ml-6;
 }
 
-.Home-wrapper section:nth-child(4) .text-list li span {
-    @apply text-xs xs:text-xs md:text-xs lg:text-sm xl:text-lg 2xl:text-xl;
+.text-roadmap-1 {
+    @apply absolute xs:ml-40 2xl:ml-8 xs:top-8;
+}
+
+.text-roadmap-2 {
+    @apply absolute xs:-ml-40
+}
+
+.text-roadmap-3 {
+    @apply absolute;
 }
 
 .Home-wrapper section:nth-child(4) .rock-left {
     content: url('../resources/images/section-4-rock-left.svg');
     @apply absolute bottom-0 left-0;
+}
+
+.Home-wrapper section:nth-child(4) .rock-right {
+    content: url('../resources/images/section-4-rock-right.svg');
+    @apply absolute bottom-0 -right-1;
 }
 
 .Home-wrapper section:nth-child(5) .core-team-submarine {
@@ -418,6 +412,15 @@ footer .content .logo {
     @apply w-24 xs:w-28 lg:w-36 xl:w-48 2xl:w-52 sm:text-sm md:text-base text-xs xs:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
 }
 
+.seahorse {
+    @apply absolute w-1/12;
+}
+
+.lonely-zebrafish {
+    content: url('../resources/images/lonely-zebrafish.svg');
+    @apply relative w-1/12;
+}
+
 @media (min-width: 0px) {
     .Home-banner {
         height: 12rem;
@@ -431,7 +434,9 @@ footer .content .logo {
         height: 10rem;
     }
 
-    .Home-wrapper section:nth-child(2),
+    .Home-wrapper section:nth-child(2){
+        height: 23rem;
+    }
     .Home-wrapper section:nth-child(4) {
         height: 16rem;
     }
@@ -450,7 +455,7 @@ footer .content .logo {
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
-        width: 30.8%;
+        width: 8rem;
         top: 19%;
     }
 
@@ -460,8 +465,8 @@ footer .content .logo {
     }
 
     .Home-wrapper section:nth-child(2) .section-1-bubble-container {
-        width: 10rem;
-        height: 5rem;
+        width: 8rem;
+        height: 4rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-bubble-container-2 {
@@ -477,73 +482,68 @@ footer .content .logo {
 
     .bubble-position-1 {
         right: 20%;
-        top: 18%;
+        top: 40%;
     }
 
     .bubble-position-2 {
         left: 17%;
-        bottom: 12%;
+        bottom: 18%;
     }
-
     .section-1-bubble-container-text-title {
-        @apply text-xs;
+        font-size: 8px;
+        margin-top: 0px;
     }
 
     .section-1-bubble-container-text-number {
-        @apply text-base font-bold;
+        @apply text-sm font-bold;
     }
 
     .section-0-content .text-title-1 {
         line-height: 1.2rem !important;
     }
 
-    .Home-wrapper section:nth-child(4) .wrapper-bubble {
-        width: 6rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .roadmap-line {
-        height: 14rem;
+    .Home-wrapper section:nth-child(4) .roadmap {
+        height: 12rem;
         margin-right: 2rem;
     }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-1 {
-        left: 55%;
-        top: -5rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-2 {
-        margin-right: 12rem;
-        top: -0.2rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-3 {
-        left: 54.8%;
-        top: 10rem;
-        height: 0;
-    }
-
-    .Home-wrapper section:nth-child(4) .text-title {
-        font-size: 8px;
-    }
-
-    .Home-wrapper section:nth-child(4) .text-list {
-        font-size: 6px;
-    }
-
-    .Home-wrapper section:nth-child(4) .text-list li {
-        margin: -9px;
-    }
-
-    .Home-wrapper section:nth-child(4) .text-list li span {
-        font-size: 5px;
-    }
-
     .Home-wrapper section:nth-child(4) .rock-left {
-        height: 8rem;
+        height: 6rem;
     }
+    .Home-wrapper section:nth-child(4) .rock-right {
+        height: 4rem;
+        bottom: 0;
+    }
+    .Home-wrapper section:nth-child(4) .text-title {
+        font-size: 7px;
+    }
+    .Home-wrapper section:nth-child(4) .text-list {
+        font-size: 5.5px;
+        @apply -mt-1;
+    }
+    .text-roadmap-1 {
+        @apply ml-36 mt-3;
 
+    }
+    .text-roadmap-2 {
+        margin-top: 75px;
+        @apply -ml-48;
+    }
+    .text-roadmap-3 {
+        margin-top: 138px;
+        @apply ml-36;
+    }
     .Home-wrapper section:nth-child(6) .two-jellyfish {
         width: 12%;
+    }
+    .seahorse{
+        width: 14px;
+        bottom: 40px;
+        right: 57px;
+    }
+    .lonely-zebrafish {
+        top: -2rem;
+        left: 1rem;
+        width: 20px;
     }
 }
 
@@ -560,7 +560,9 @@ footer .content .logo {
         height: 10rem;
     }
 
-    .Home-wrapper section:nth-child(2),
+    .Home-wrapper section:nth-child(2){
+        height: 28rem;
+    }
     .Home-wrapper section:nth-child(4) {
         height: 18rem;
     }
@@ -579,7 +581,7 @@ footer .content .logo {
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
-        width: 30%;
+        width: 33%;
         top: 19%;
     }
 
@@ -587,14 +589,16 @@ footer .content .logo {
         width: 15%;
         bottom: 4%;
     }
-
+    .Home-wrapper section:nth-child(2) .section-1-bubble-container-text-position{
+        margin-top: -8px;
+    }
     .Home-wrapper section:nth-child(2) .section-1-bubble-container {
-        width: 12rem;
+        width: 10rem;
         height: 6rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-bubble-container-2 {
-        width: 10rem;
+        width: 9rem;
         height: 5rem;
     }
 
@@ -610,12 +614,12 @@ footer .content .logo {
 
     .bubble-position-1 {
         right: 25%;
-        top: 18%;
+        top: 40%;
     }
 
     .bubble-position-2 {
         left: 20%;
-        bottom: 5%;
+        bottom: 15%;
     }
 
     .section-1-bubble-container-text-title {
@@ -630,53 +634,45 @@ footer .content .logo {
         line-height: 1.5rem !important;
     }
 
-    .Home-wrapper section:nth-child(4) .wrapper-bubble {
-        width: 6.5rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .roadmap-line {
+    .Home-wrapper section:nth-child(4) .roadmap {
         height: 14rem;
         margin-right: 2rem;
     }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-1 {
-        left: 53.5%;
-        top: -5rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-2 {
-        margin-right: 12.5rem;
-        top: -0.2rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-3 {
-        left: 53.5%;
-        top: 10rem;
-        height: 0;
-    }
-
     .Home-wrapper section:nth-child(4) .text-title {
-        font-size: 8px;
+        font-size: 10px;
     }
-
     .Home-wrapper section:nth-child(4) .text-list {
-        font-size: 6px;
+        font-size: 7px;
     }
-
-    .Home-wrapper section:nth-child(4) .text-list li {
-        margin: -9px;
+    .text-roadmap-1 {
+        @apply ml-44 -mt-5;
     }
-
-    .Home-wrapper section:nth-child(4) .text-list li span {
-        font-size: 5px;
+    .text-roadmap-2 {
+        margin-top: 86px;
+        @apply -ml-52;
     }
-
+    .text-roadmap-3 {
+        margin-top: 162px;
+        @apply ml-44;
+    }
     .Home-wrapper section:nth-child(4) .rock-left {
         height: 8rem;
     }
-
+    .Home-wrapper section:nth-child(4) .rock-right {
+        height: 5rem;
+    }
     .Home-wrapper section:nth-child(6) .two-jellyfish {
         width: 10%;
+    }
+    .seahorse{
+        width: 14px;
+        bottom: 40px;
+        right: 57px;
+    }
+    .lonely-zebrafish {
+        top: -3rem;
+        left: 2rem;
+        width: 30px;
     }
 }
 
@@ -719,13 +715,13 @@ footer .content .logo {
     }
 
     .Home-wrapper section:nth-child(2) .section-1-bubble-container {
-        width: 18rem;
-        height: 9rem;
+        width: 15rem;
+        height: 8rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-bubble-container-2 {
-        width: 15rem;
-        height: 8rem;
+        width: 13rem;
+        height: 7rem;
     }
 
     .Home-wrapper section:nth-child(3) .rock-right {
@@ -739,61 +735,66 @@ footer .content .logo {
     }
 
     .bubble-position-1 {
-        right: 10%;
-        top: 18%;
+        right: 20%;
+        top: 40%;
     }
 
     .bubble-position-2 {
         left: 15%;
-        bottom: 12%;
+        bottom: 18%;
     }
 
     .section-1-bubble-container-text-title {
-        @apply text-lg;
+        @apply text-sm mb-0;
     }
 
     .section-1-bubble-container-text-number {
-        @apply text-3xl font-bold;
+        @apply text-2xl font-bold;
     }
 
     .section-0-content .text-title-1 {
         line-height: 2.5rem !important;
     }
 
-    .Home-wrapper section:nth-child(4) .wrapper-bubble {
-        width: 14rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .roadmap-line {
-        height: 28rem;
+    .Home-wrapper section:nth-child(4) .roadmap {
+        height: 18rem;
         margin-right: 5rem;
     }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-1 {
-        left: 54%;
-        top: -2.7rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-2 {
-        margin-right: 27rem;
-        top: 7rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-3 {
-        left: 54%;
-        top: 17rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .text-list {
+    .Home-wrapper section:nth-child(4) .text-title {
         font-size: 12px;
     }
-
-    .Home-wrapper section:nth-child(4) .rock-left {
-        height: 15rem;
+    .Home-wrapper section:nth-child(4) .text-list {
+        font-size: 9px;
     }
-
+    .text-roadmap-1 {
+        @apply ml-44 -mt-3;
+    }
+    .text-roadmap-2 {
+        margin-top: 110px;
+        margin-left: -300px;
+    }
+    .text-roadmap-3 {
+        margin-top: 210px;
+        @apply ml-44;
+    }
+    .Home-wrapper section:nth-child(4) .rock-left {
+        height: 12rem;
+    }
+    .Home-wrapper section:nth-child(4) .rock-right {
+        height: 8rem;
+    }
     .Home-wrapper section:nth-child(6) .two-jellyfish {
         width: 7%;
+    }
+    .seahorse{
+        width: 18px;
+        bottom: 70px;
+        right: 105px;
+    }
+    .lonely-zebrafish {
+        top: -4rem;
+        left: 2rem;
+        width: 40px;
     }
 }
 
@@ -814,15 +815,6 @@ footer .content .logo {
     .Home-wrapper section:nth-child(3),
     .Home-wrapper section:nth-child(4) {
         height: 36rem;
-    }
-
-    .Home-wrapper section:nth-child(5),
-    .Home-wrapper section:nth-child(6) {
-        height: 50rem;
-    }
-
-    footer {
-        height: 16rem;
     }
 
     .Home-wrapper section:nth-child(2) .section-1-rock-1 {
@@ -878,36 +870,41 @@ footer .content .logo {
         line-height: 2rem !important;
     }
 
-    .Home-wrapper section:nth-child(4) .wrapper-bubble {
-        width: 14rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .roadmap-line {
+    .Home-wrapper section:nth-child(4) .roadmap {
         height: 24rem;
-        margin-right: 8rem;
+        margin-right: 6rem;
     }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-1 {
-        left: 49.1%;
-        top: -3.4rem;
+    .Home-wrapper section:nth-child(4) .text-title {
+        font-size: 18px;
     }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-2 {
-        margin-right: 28.9rem;
-        top: 5rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-3 {
-        left: 49.1%;
-        top: 13rem;
-    }
-
     .Home-wrapper section:nth-child(4) .text-list {
         font-size: 12px;
     }
+    .text-roadmap-1 {
+        @apply ml-60 -mt-1;
+    }
+    .text-roadmap-2 {
+        @apply mr-32 mt-40;
+    }
+    .text-roadmap-3 {
+        @apply ml-60 mt-72;
+    }
 
     .Home-wrapper section:nth-child(4) .rock-left {
-        height: 14rem;
+        height: 12rem;
+    }
+    .Home-wrapper section:nth-child(4) .rock-right {
+        height: 10rem;
+    }
+    .seahorse{
+        width: 18px;
+        bottom: 110px;
+        right: 120px;
+    }
+    .lonely-zebrafish {
+        top: -4rem;
+        left: 2rem;
+        width: 40px;
     }
 }
 
@@ -987,36 +984,43 @@ footer .content .logo {
         line-height: 2rem !important;
     }
 
-    .Home-wrapper section:nth-child(4) .wrapper-bubble {
-        width: 17rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .roadmap-line {
+    .Home-wrapper section:nth-child(4) .roadmap {
         height: 28rem;
         margin-right: 10.2rem;
     }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-1 {
-        left: 48.8%;
-        top: -2.7rem;
+    .Home-wrapper section:nth-child(4) .text-title {
+        font-size: 22px;
     }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-2 {
-        margin-right: 35rem;
-        top: 7rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-3 {
-        left: 48.8%;
-        top: 17rem;
-    }
-
     .Home-wrapper section:nth-child(4) .text-list {
-        font-size: 12px;
+        font-size: 13px;
+        @apply ml-4;
     }
-
+    .text-roadmap-1 {
+        @apply ml-56;
+    }
+    .text-roadmap-2 {
+        margin-top: 165px;
+        @apply mr-56;
+    }
+    .text-roadmap-3 {
+        margin-top: 330px;
+        @apply ml-56;
+    }
     .Home-wrapper section:nth-child(4) .rock-left {
         height: 16rem;
+    }
+    .Home-wrapper section:nth-child(4) .rock-right {
+        height: 11rem;
+    }
+    .seahorse{
+        width: 20px;
+        bottom: 120px;
+        right: 125px;
+    }
+    .lonely-zebrafish {
+        top: -5rem;
+        left: 3rem;
+        width: 50px;
     }
 }
 
@@ -1095,33 +1099,38 @@ footer .content .logo {
     .section-0-content .text-title-1 {
         line-height: 3.5rem !important;
     }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble {
-        width: 22rem;
+    .Home-wrapper section:nth-child(4) .roadmap {
+        height: 36rem;
+        margin-right: 10.2rem;
     }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-1 {
-        left: 48.8%;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-2 {
-        margin-right: 39.5rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-3 {
-        left: 48.8%;
-    }
-
-    .Home-wrapper section:nth-child(4) .text-list {
-        font-size: 14px;
-    }
-
     .Home-wrapper section:nth-child(4) .rock-left {
         height: 20rem;
     }
-
-    .Home-wrapper section:nth-child(4) .text-list li {
-        margin-bottom: 0px;
+    .Home-wrapper section:nth-child(4) .text-title {
+        font-size: 24px;
+    }
+    .Home-wrapper section:nth-child(4) .text-list {
+        font-size: 16px;
+    }
+    .text-roadmap-1 {
+        @apply ml-80 -mt-1;
+    }
+    .text-roadmap-2 {
+        @apply mr-80 mt-56;
+    }
+    .text-roadmap-3 {
+        margin-top: 410px;
+        @apply ml-80;
+    }
+    .seahorse{
+        width: 22px;
+        bottom: 125px;
+        right: 125px;
+    }
+    .lonely-zebrafish {
+        top: -6rem;
+        left: 3.5rem;
+        width: 60px;
     }
 }
 
@@ -1205,34 +1214,46 @@ footer .content .logo {
         @apply relative bg-cover bg-no-repeat flex justify-center items-center;
     }
 
-    .Home-wrapper section:nth-child(4) .roadmap-line {
-        height: 40rem;
+    .Home-wrapper section:nth-child(4) .roadmap {
+        height: 45rem;
         margin-right: 10.2rem;
     }
 
-    .Home-wrapper section:nth-child(4) .wrapper-bubble {
-        width: 25.625rem;
-        height: 15rem;
-        padding: 2rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-1 {
-        left: 50.8%;
-        top: -1.4rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-2 {
-        margin-right: 47.5rem;
-        top: 12.9rem;
-    }
-
-    .Home-wrapper section:nth-child(4) .wrapper-bubble-position-3 {
-        left: 50.8%;
-        top: 27.2rem;
-    }
-
     .Home-wrapper section:nth-child(4) .rock-left {
-        height: 30rem;
+        height: 27rem;
+    }
+    .Home-wrapper section:nth-child(4) .rock-right {
+        height: 25rem;
+        bottom: 7rem;
+    }
+    .Home-wrapper section:nth-child(4) .text-title {
+        font-size: 32px;
+        @apply font-bold;
+    }
+    .Home-wrapper section:nth-child(4) .text-list {
+        font-size: 20px;
+    }
+    .text-roadmap-1 {
+        margin-top: 5px;
+        margin-left: 490px;
+    }
+    .text-roadmap-2 {
+        margin-right: 400px;
+        margin-top: 265px;
+    }
+    .text-roadmap-3 {
+        margin-top: 510px;
+        margin-left: 490px
+    }
+    .seahorse {
+        width: 25px;
+        bottom: 230px;
+        right: 225px;
+    }
+    .lonely-zebrafish {
+        top: -7rem;
+        left: 4rem;
+        width: 70px;
     }
 }
 

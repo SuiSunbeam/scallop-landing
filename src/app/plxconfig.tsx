@@ -927,6 +927,56 @@ const groupOfFish5 = [
     },
 ];
 
+const groupOfFish6 = [
+    {
+        start: 'self',
+        duration: '15%',
+        properties: [
+            {
+                startValue: 0.5,
+                endValue: 1,
+                property: 'scale',
+            },
+            {
+                startValue: 10,
+                endValue: -25,
+                unit: '%',
+                property: 'translateX',
+            },
+        ],
+    },
+];
+
+const groupOfFish7 = [
+    {
+        start: 'self',
+        duration: '10%',
+        properties: [
+            {
+                startValue: 80,
+                endValue: -10,
+                unit: '%',
+                property: 'translateX',
+            },
+        ],
+    },
+];
+
+const seahorse = [
+    {
+        start: 'self',
+        duration: '10%',
+        properties: [
+            {
+                startValue: -10,
+                endValue: -100,
+                unit: '%',
+                property: 'translateY',
+            },
+        ],
+    },
+];
+
 const groupOfTurtle = [
     {
         start: 'self',
@@ -1218,6 +1268,9 @@ export {
     groupOfFish3,
     groupOfFish4,
     groupOfFish5,
+    groupOfFish6,
+    groupOfFish7,
+    seahorse,
     groupOfTurtle,
     groupOfJellyfish,
 };
