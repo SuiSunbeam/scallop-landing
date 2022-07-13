@@ -55,7 +55,11 @@ const Home = () => {
                 </div>
                 <Plx className="Home-header-logo" parallaxData={header}>
                     <a className="Home-logo" href="/">
-                        <img className="Home-logo-image" src={blogo} alt="logo" />
+                        <img
+                            className="Home-logo-image"
+                            src={blogo}
+                            alt="logo"
+                        />
                         {/* <div className="Home-logo-text">Scallop</div> */}
                     </a>
                 </Plx>
@@ -66,29 +70,53 @@ const Home = () => {
             <main className="Home-wrap">
                 <section className="flex justify-end">
                     <div className="w-full sm:w-1/2">
-                        <Plx parallaxData={isDesktopOrLaptop ? fishSection1 : mFishSection1}>
+                        <Plx
+                            parallaxData={
+                                isDesktopOrLaptop ? fishSection1 : mFishSection1
+                            }
+                        >
                             <img className="h-full" src={fish1} alt="fish" />
                         </Plx>
                     </div>
                 </section>
                 <section className="flex justify-start">
                     <div className="w-full sm:w-1/2">
-                        <Plx parallaxData={isDesktopOrLaptop ? fishSection2 : mFishSection2}>
+                        <Plx
+                            parallaxData={
+                                isDesktopOrLaptop ? fishSection2 : mFishSection2
+                            }
+                        >
                             <img className="h-full" src={fish2} alt="fish" />
                         </Plx>
                     </div>
                 </section>
                 <section className="flex justify-end">
                     <div className="w-full xs:w-1/2 h-full xs:flex xs:justify-center xs:items-center sm:justify-center sm:items-start">
-                        <Plx parallaxData={isDesktopOrLaptop ? fishSection3 : mFishSection3}>
-                            <img className="h-16 mb-10 mr-10" src={fish3} alt="fish" />
+                        <Plx
+                            parallaxData={
+                                isDesktopOrLaptop ? fishSection3 : mFishSection3
+                            }
+                        >
+                            <img
+                                className="h-16 mb-10 mr-10"
+                                src={fish3}
+                                alt="fish"
+                            />
                         </Plx>
                     </div>
                 </section>
                 <section className="flex justify-start">
                     <div className="w-full sm:w-1/2 h-full sm:flex sm:justify-center sm:items-start">
-                        <Plx parallaxData={isDesktopOrLaptop ? fishSection4 : mFishSection4}>
-                            <img className="w-3/4 md:w-full" src={fish4} alt="fish" />
+                        <Plx
+                            parallaxData={
+                                isDesktopOrLaptop ? fishSection4 : mFishSection4
+                            }
+                        >
+                            <img
+                                className="w-3/4 md:w-full"
+                                src={fish4}
+                                alt="fish"
+                            />
                         </Plx>
                     </div>
                 </section>
@@ -102,43 +130,64 @@ const Home = () => {
                     <section className="flex flex-col sm:flex-row justify-center sm:justify-start">
                         <div className="Home-wrap-content-left">
                             <p className="Home-wrap-title">
-                                Scallop is a diverse no-loss protocol <br/>
-                                on Solana blockchain.
+                                Scallop is a diverse no-loss protocol <br />
+                                on Solana.
                             </p>
                             <p className="Home-wrap-descript text-center sm:text-left">
-                                with ocean theme on-chain collectibles and NFTs ✨ !
+                                maximize the potential yield with no principal
+                                loss!
                             </p>
                             <div className="w-full">
                                 <div className="flex items-start justify-center sm:justify-start mt-6 xs:mt-8 gap-3 xs:gap-6">
-                                    <a href="https://app.scallop.io" className="Home-wrap-btn">Devnet App</a>
-                                    <a href="https://linktr.ee/scallop_io" className="Home-wrap-btn">Visit Linktree</a>
+                                    <a
+                                        href="https://app.scallop.io"
+                                        className="Home-wrap-btn"
+                                    >
+                                        App
+                                    </a>
+                                    <a
+                                        href="https://linktr.ee/scallop_io"
+                                        className="Home-wrap-btn"
+                                    >
+                                        Linktree
+                                    </a>
                                     {/* <a href="https://doc.scallop.io/whitepaper.pdf" target="_blank" className="Home-wrap-btn">White Paper</a> */}
                                 </div>
                             </div>
                         </div>
                         <div className="Home-wrap-content-right">
                             <div className="w-full flex flex-nowrap justify-center sm:justify-end space-x-2 text-xs xs:text-sm sm:text-base lg:text-base">
-                                <span className="block whitespace-nowrap text-gray-100">Build on</span>
-                                <img className="block w-14 xs:w-16 sm:w-20 lg:w-24" src={solana} alt="solana" />
+                                <span className="block whitespace-nowrap text-gray-100">
+                                    Build on
+                                </span>
+                                <img
+                                    className="block w-14 xs:w-16 sm:w-20 lg:w-24"
+                                    src={solana}
+                                    alt="solana"
+                                />
                             </div>
                         </div>
                     </section>
                     <section className="flex flex-col sm:flex-row justify-center sm:justify-end">
                         <div className="Home-wrap-content-left"></div>
                         <div className="Home-wrap-content-right">
-                            <p className="Home-wrap-title">
-                                How it works?
-                            </p>
+                            <p className="Home-wrap-title">How it works?</p>
                             <p className="Home-wrap-descript text-justify">
-                                Users can deposit tokens into Scallop Pools, Scallop on-chain program will invoke lending, staking, and stable pool liquidity mining protocols to earn the yield. Every 24 hrs, a winner will be picked from each pool by the on-chain program to get most of the yields as the prize, and other yields will be in the Scallop treasury.
+                                Users can deposit tokens into Scallop Pools,
+                                Scallop on-chain program will invoke lending,
+                                staking, or stable pool liquidity mining
+                                protocols to earn the yield. Every 24 hrs,
+                                Scallop protocol will use Switchboard on-chain
+                                verify random function to pick a winner from
+                                each pool to get most of the yields as the
+                                prize, and other yields will be in the Scallop
+                                treasury.
                             </p>
                         </div>
                     </section>
                     <section className="flex flex-col sm:flex-row justify-center sm:justify-start">
                         <div className="Home-wrap-content-left">
-                            <p className="Home-wrap-title">
-                                Rules:
-                            </p>
+                            <p className="Home-wrap-title">Rules:</p>
                             <div className="relative w-full mt-4">
                                 <div className="Home-cards">
                                     <div className="Home-card">
@@ -147,16 +196,20 @@ const Home = () => {
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            Every 24 hrs, 1 winner will be picked from each pool by the on-chain random function.
+                                            Every 24 hrs, 1 winner will be
+                                            picked from each pool by the
+                                            on-chain random function.
                                         </div>
                                     </div>
                                     <div className="Home-card">
                                         <div className="Home-card-title">
-                                            24 hrs cooldown.
+                                            24 hours cooldown.
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            Deposit amount changing during the round will make you can't be the winner in 24 hrs.
+                                            Deposit amount changing during the
+                                            round will make you can't be the
+                                            winner in 24 hours.
                                         </div>
                                     </div>
                                     <div className="Home-card">
@@ -165,7 +218,10 @@ const Home = () => {
                                         </div>
                                         <div className="Home-hr w-10/12 mt-1"></div>
                                         <div className="Home-card-content">
-                                            Winning Rate ≈ Deposit token percentage in pools, the more you deposit the higher winning chance you got.
+                                            Winning Rate ≈ Deposit token
+                                            percentage in pools, the more you
+                                            deposit the higher winning chance
+                                            you got.
                                         </div>
                                     </div>
                                 </div>
@@ -174,33 +230,18 @@ const Home = () => {
                     </section>
                     <section className="flex flex-col sm:flex-row justify-center sm:justify-end">
                         <div className="Home-wrap-content-right">
-                            <p className="Home-wrap-title">
-                                Road Map
-                            </p>
+                            <p className="Home-wrap-title">Road Map</p>
                             <div className="w-full mt-4">
                                 <div className="Home-map">
-                                    <div className="Home-road">
-                                        <div className="Home-road-title">
-                                            Q2 2022
-                                        </div>
-                                        <div className="Home-road-content">
-                                            <ul className="list-disc text-justify">
-                                                <li>Mainnet Launch</li>
-                                                <li>Hermit Crab NFTs</li>
-                                                <li>Landing Page V2</li>
-                                                <li>Scallop IDO</li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                     <div className="Home-road">
                                         <div className="Home-road-title">
                                             Q3 2022
                                         </div>
                                         <div className="Home-road-content">
                                             <ul className="list-disc text-justify">
-                                                <li>Scallop Token (SCA)</li>
-                                                <li>Scallop Swap</li>
-                                                <li>SCA & Decorations Staking</li>
+                                                <li>Mainnet Launch</li>
+                                                <li>Fossil NFTs</li>
+                                                <li>Scallop Tools</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -210,10 +251,19 @@ const Home = () => {
                                         </div>
                                         <div className="Home-road-content">
                                             <ul className="list-disc text-justify">
-                                                <li>Scallop Pool V2</li>
-                                                <li>Scallop DAO</li>
+                                                <li>Landing Page V2</li>
                                                 <li>Scallop Tank V2</li>
+                                                <li>$Scallop Decorations</li>
                                             </ul>
+                                        </div>
+                                    </div>
+                                    <div className="Home-road">
+                                        <div className="Home-road-title">
+                                            Q1 2023
+                                        </div>
+                                        <div className="Home-road-content">
+                                            <ul className="list-disc text-justify"></ul>
+                                            <li>Planing..</li>
                                         </div>
                                     </div>
                                 </div>
@@ -222,28 +272,72 @@ const Home = () => {
                     </section>
                     <section className="flex flex-col justify-center sm:justify-start items-center">
                         <nav className="flex gap-5 sm:gap-8 lg:gap-10 justify-center items-center text-gray-300 sm:mt-10 lg:mt-0 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl">
-                            <a className="Home-nav" href="/">HOME</a>
-                            <a className="Home-nav" href="https://app.scallop.io">APP</a>
-                            <a className="Home-nav" href="https://docs.scallop.io">DOCS</a>
-                            <a className="Home-nav" href="mailto:team@scallop.io">CONTACT US</a>
+                            <a className="Home-nav" href="/">
+                                HOME
+                            </a>
+                            <a
+                                className="Home-nav"
+                                href="https://app.scallop.io"
+                            >
+                                APP
+                            </a>
+                            <a
+                                className="Home-nav"
+                                href="https://docs.scallop.io"
+                            >
+                                DOCS
+                            </a>
+                            <a
+                                className="Home-nav"
+                                href="mailto:team@scallop.io"
+                            >
+                                CONTACT US
+                            </a>
                         </nav>
                         <div className="Home-hr mt-4 w-11/12 sm:w-3/4 md:w-7/12 lg:w-1/2"></div>
                         <nav className="flex gap-5 sm:gap-8 lg:gap-10 justify-center items-center text-gray-300 mt-4 xs:mt-7 text-3xl xs:text-4xl lg:text-5xl">
-                            <a className="hover:text-gray-100 hover:animate-bounce" href="https://t.me/scallop_io">
-                                <FontAwesomeIcon icon={['fab', 'telegram']} transform={{ y: .5 }}/>
+                            <a
+                                className="hover:text-gray-100 hover:animate-bounce"
+                                href="https://t.me/scallop_io"
+                            >
+                                <FontAwesomeIcon
+                                    icon={['fab', 'telegram']}
+                                    transform={{ y: 0.5 }}
+                                />
                             </a>
-                            <a className="hover:text-gray-100 hover:animate-bounce" href="https://twitter.com/Scallop_io">
-                                <FontAwesomeIcon icon={['fab', 'twitter-square']} />
+                            <a
+                                className="hover:text-gray-100 hover:animate-bounce"
+                                href="https://twitter.com/Scallop_io"
+                            >
+                                <FontAwesomeIcon
+                                    icon={['fab', 'twitter-square']}
+                                />
                             </a>
-                            <a className="hover:text-gray-100 hover:animate-bounce" href="https://scallopio.medium.com/scallop-c030758d9c40">
+                            <a
+                                className="hover:text-gray-100 hover:animate-bounce"
+                                href="https://scallopio.medium.com/scallop-c030758d9c40"
+                            >
                                 <FontAwesomeIcon icon={['fab', 'medium']} />
                             </a>
-                            <a className="hover:text-gray-100 hover:animate-bounce" href="https://discord.com/invite/F7umecFArJ">
-                                <FontAwesomeIcon icon={['fab', 'discord']} transform={{ y: 1 }} />
+                            <a
+                                className="hover:text-gray-100 hover:animate-bounce"
+                                href="https://discord.com/invite/F7umecFArJ"
+                            >
+                                <FontAwesomeIcon
+                                    icon={['fab', 'discord']}
+                                    transform={{ y: 1 }}
+                                />
                             </a>
                         </nav>
-                        <a className="Home-logo my-3 xs:mt-6 sm:mt-10 2xl:mt-16 filter drop-shadow-white" href="/">
-                            <img className="Home-logo-image" src={wlogo} alt="logo" />
+                        <a
+                            className="Home-logo my-3 xs:mt-6 sm:mt-10 2xl:mt-16 filter drop-shadow-white"
+                            href="/"
+                        >
+                            <img
+                                className="Home-logo-image"
+                                src={wlogo}
+                                alt="logo"
+                            />
                             {/* <div className="Home-logo-text">Scallop</div> */}
                         </a>
                         <div className="mt-3 xs:mt-6 sm:mt-9 text-xs sm:text-sm lg:text-base">
@@ -255,7 +349,7 @@ const Home = () => {
                 </div>
             </main>
         </div>
-    );
+    )
 }
 
 export default Home
