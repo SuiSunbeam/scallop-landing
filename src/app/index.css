@@ -1,5 +1,6 @@
 .Home {
-    @apply overflow-auto bg-[#000];
+    @apply overflow-auto;
+    background: linear-gradient(180deg, #98c9ff 13%, #265c83 27.7%, #081c28 100%);
 }
 
 .Home-header,
@@ -25,8 +26,7 @@
 }
 
 .Home-banner-clould-1 {
-    background:
-        url('../resources/images/banner-clould-1.svg') local no-repeat top/100%,
+    background: url('../resources/images/banner-clould-1.svg') local no-repeat top/100%,
         linear-gradient(to bottom, transparent 0% calc(100vw / 2.7 * 0.85), #c1e0ff calc(100vw / 2.7 * 0.85), rgba(193, 224, 255, 1) 100%);
 }
 
@@ -43,17 +43,18 @@
 }
 
 .Home-banner-sea {
-    background: transparent linear-gradient(
-        to bottom,
-        transparent 70%,
-        #c1e0ff 70%,
-        #b8ddfc 74.5%,
-        #abd5ff 79%,
-        #a5d0fd 83.5%,
-        #a0ccf8 88%,
-        #94bfef 95.5%,
-        #86b5ea 100%
-    );
+    background: transparent
+        linear-gradient(
+            to bottom,
+            transparent 70%,
+            #c1e0ff 70%,
+            #b8ddfc 74.5%,
+            #abd5ff 79%,
+            #a5d0fd 83.5%,
+            #a0ccf8 88%,
+            #94bfef 95.5%,
+            #86b5ea 100%
+        );
     bottom: 0;
 }
 
@@ -99,7 +100,6 @@ footer {
 
 .Home-wrapper section:nth-child(1) .section-0-content {
     color: #1e2d45;
-    background-image: url('../resources/images/section-0-background.png');
     background-position: 100% 100%;
     background-size: 100% 100%;
     @apply relative;
@@ -110,7 +110,7 @@ footer {
 }
 
 .section-0-content .text-title-1 {
-    @apply text-xs xs:text-base sm:text-base md:text-lg lg:text-xl xl:text-3xl 2xl:text-5xl font-bold mb-2 xs:mb-0 sm:mb-4 md:mb-3 lg:mb-3 xl:mb-4 2xl:mb-4;
+    @apply text-xs xs:text-base sm:text-base font-semibold md:text-lg lg:text-xl xl:text-4xl 2xl:text-5xl mb-2 xs:mb-0 sm:mb-4 md:mb-3 lg:mb-3 xl:mb-4 2xl:mb-4;
 }
 
 .section-0-content .text-title-2 {
@@ -118,7 +118,6 @@ footer {
 }
 
 .Home-wrapper section:nth-child(2) {
-    background-image: url('../resources/images/section-1-background.png');
     background-size: 100% 100%;
     background-position: 100% 100%;
     @apply relative bg-no-repeat;
@@ -194,7 +193,6 @@ footer {
 }
 
 .Home-wrapper section:nth-child(3) {
-    background-image: url('../resources/images/section-2-background.png');
     background-size: 100% 100%;
     @apply relative bg-no-repeat;
 }
@@ -214,25 +212,21 @@ footer {
 }
 
 .Home-wrapper section:nth-child(4) {
-    background-image: url('../resources/images/section-3-background.png');
     background-size: 100% 100%;
     @apply relative bg-no-repeat flex justify-center items-center;
 }
 
 .Home-wrapper section:nth-child(5) {
-    background-image: url('../resources/images/section-4-background.png');
     background-size: 100% 100%;
     @apply relative bg-no-repeat flex justify-center items-center;
 }
 
 .Home-wrapper section:nth-child(6) {
-    background-image: url('../resources/images/section-5-background.png');
     background-size: 100% 100%;
     @apply relative bg-no-repeat flex justify-center items-center;
 }
 
 footer {
-    background-image: url('../resources/images/footer-background.png');
     background-size: 100% 100%;
     @apply relative h-1/2 bg-no-repeat flex justify-center items-center;
 }
@@ -259,7 +253,7 @@ footer {
 }
 
 .text-roadmap-2 {
-    @apply absolute xs:-ml-40
+    @apply absolute xs:-ml-40;
 }
 
 .text-roadmap-3 {
@@ -405,11 +399,11 @@ footer .content .logo {
 .Home-button {
     background: rgba(255, 255, 255, 0.6);
     color: #1e2d45;
-    @apply text-center p-1 xs:p-1 sm:p-2 rounded-md xs:rounded-md sm:rounded-lg;
+    @apply text-center p-1 sm:p-2 rounded-md xs:rounded-md sm:rounded-lg;
 }
 
 .button-header {
-    @apply w-24 xs:w-28 lg:w-36 xl:w-48 2xl:w-52 sm:text-sm md:text-base text-xs xs:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
+    @apply w-20 sm:w-28 lg:w-36 xl:w-48 2xl:w-52 sm:text-sm md:text-base text-2xs lg:text-lg xl:text-xl 2xl:text-2xl;
 }
 
 .seahorse {
@@ -434,7 +428,7 @@ footer .content .logo {
         height: 10rem;
     }
 
-    .Home-wrapper section:nth-child(2){
+    .Home-wrapper section:nth-child(2) {
         height: 23rem;
     }
     .Home-wrapper section:nth-child(4) {
@@ -522,7 +516,6 @@ footer .content .logo {
     }
     .text-roadmap-1 {
         @apply ml-36 mt-3;
-
     }
     .text-roadmap-2 {
         margin-top: 75px;
@@ -535,7 +528,7 @@ footer .content .logo {
     .Home-wrapper section:nth-child(6) .two-jellyfish {
         width: 12%;
     }
-    .seahorse{
+    .seahorse {
         width: 14px;
         bottom: 40px;
         right: 57px;
@@ -560,7 +553,7 @@ footer .content .logo {
         height: 10rem;
     }
 
-    .Home-wrapper section:nth-child(2){
+    .Home-wrapper section:nth-child(2) {
         height: 28rem;
     }
     .Home-wrapper section:nth-child(4) {
@@ -589,7 +582,7 @@ footer .content .logo {
         width: 15%;
         bottom: 4%;
     }
-    .Home-wrapper section:nth-child(2) .section-1-bubble-container-text-position{
+    .Home-wrapper section:nth-child(2) .section-1-bubble-container-text-position {
         margin-top: -8px;
     }
     .Home-wrapper section:nth-child(2) .section-1-bubble-container {
@@ -664,7 +657,7 @@ footer .content .logo {
     .Home-wrapper section:nth-child(6) .two-jellyfish {
         width: 10%;
     }
-    .seahorse{
+    .seahorse {
         width: 14px;
         bottom: 40px;
         right: 57px;
@@ -786,7 +779,7 @@ footer .content .logo {
     .Home-wrapper section:nth-child(6) .two-jellyfish {
         width: 7%;
     }
-    .seahorse{
+    .seahorse {
         width: 18px;
         bottom: 70px;
         right: 105px;
@@ -896,7 +889,7 @@ footer .content .logo {
     .Home-wrapper section:nth-child(4) .rock-right {
         height: 10rem;
     }
-    .seahorse{
+    .seahorse {
         width: 18px;
         bottom: 110px;
         right: 120px;
@@ -1012,7 +1005,7 @@ footer .content .logo {
     .Home-wrapper section:nth-child(4) .rock-right {
         height: 11rem;
     }
-    .seahorse{
+    .seahorse {
         width: 20px;
         bottom: 120px;
         right: 125px;
@@ -1122,7 +1115,7 @@ footer .content .logo {
         margin-top: 410px;
         @apply ml-80;
     }
-    .seahorse{
+    .seahorse {
         width: 22px;
         bottom: 125px;
         right: 125px;
@@ -1243,7 +1236,7 @@ footer .content .logo {
     }
     .text-roadmap-3 {
         margin-top: 510px;
-        margin-left: 490px
+        margin-left: 490px;
     }
     .seahorse {
         width: 25px;

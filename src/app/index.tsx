@@ -39,7 +39,7 @@ import './index.css';
 const Home = () => {
     useEffect(() => {
         document.title = 'Scallop';
-        return () => { };
+        return () => {};
     }, []);
 
     const [breackPoints, setBreackPoints] = useState<{ [index in endpoint]: boolean }>(checkBreakpoint());
@@ -109,9 +109,9 @@ const Home = () => {
                             <p className="text-title-1">
                                 Scallop is a diverse no-loss
                                 <br />
-                                protocol on Solana blockchain
+                                protocol on Solana.
                             </p>
-                            <p className="text-title-2">with ocean theme on-chain collectibles and NFTs ✨ !</p>
+                            <p className="text-title-2">Maximizes the potential yield with no principal loss.</p>
                             <div className="flex space-x-8 mt-3 sm:mt-2 md:mt-4 lg:mt-6 xl:mt-8 2xl:mt-10">
                                 <div>
                                     <button className="Home-button button-header">Launch App</button>
@@ -129,12 +129,12 @@ const Home = () => {
                 <section>
                     <div className="group-of-fish">
                         <Plx parallaxData={groupOfFish6}>
-                            <img src={imageGroupOfFish5} alt="fish" style={{transform: "scaleX(-1)"}}/>
+                            <img src={imageGroupOfFish5} alt="fish" style={{ transform: 'scaleX(-1)' }} />
                         </Plx>
                     </div>
                     <div className="group-of-zebra-fish">
                         <Plx parallaxData={groupOfFish7}>
-                            <img src={imageGroupOfZebraFish} alt="fish"/>
+                            <img src={imageGroupOfZebraFish} alt="fish" />
                         </Plx>
                     </div>
                     <img alt="A rock" className="section-1-rock-1" />
