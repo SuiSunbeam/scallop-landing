@@ -274,7 +274,7 @@ const Home = () => {
                             <div className="card-team">
                                 <div className="card-profile">
                                     <img alt="Kriss Avatar" className="avatar" src={krissAvatar} />
-                                    <div className="title">Team Lead</div>
+                                    <div className="title">Lead</div>
                                 </div>
                                 <div className="card-content">
                                     <span className="card-name">Kriss</span>
@@ -286,7 +286,7 @@ const Home = () => {
                             <div className="card-team">
                                 <div className="card-profile">
                                     <img alt="Donnie Avatar" className="avatar" src={donnieAvatar} />
-                                    <div className="title">Developer</div>
+                                    <div className="title">Dev</div>
                                 </div>
                                 <div className="card-content">
                                     <span className="card-name">Donnie</span>
@@ -298,7 +298,7 @@ const Home = () => {
                             <div className="card-team">
                                 <div className="card-profile">
                                     <img alt="Nathan Avatar" className="avatar" src={nathanAvatar} />
-                                    <div className="title">Developer</div>
+                                    <div className="title">Dev</div>
                                 </div>
                                 <div className="card-content">
                                     <span className="card-name">Nathan</span>
