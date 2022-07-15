@@ -189,7 +189,9 @@
 <g style="mix-blend-mode:multiply">
 <path d="M172.274 303.624C170.861 302.693 170.648 301.197 171.999 300.963C172.387 300.9 172.728 301.013 173.016 301.219C172.078 301.675 171.976 302.61 172.274 303.624Z" fill="#F5B087"/>
 </g>
-<rect width="24" height="45" transform="matrix(-1 0 0 1 149 0)" fill="url(#pattern4)"/>
+<rect width="24" height="45" transform="matrix(-1 0 0 1 149 0)" fill="url(#pattern4)">
+<animate attributeName="y" dur="20s" values="90; 50; 80; 30; 90" keyTimes="0; 0.2; 0.4; 0.6; 1" repeatCount="indefinite"/>
+</rect>
 <rect x="339" y="113" width="29.1524" height="28.1868" fill="url(#pattern5)"/>
 <path d="M1336.94 296.095C1337.04 295.9 1337.04 295.705 1337.14 295.51C1337.04 295.607 1336.94 295.9 1336.94 296.095Z" fill="#9EA4B3"/>
 <path d="M1406.75 260.41C1408.31 261.483 1410.07 262.75 1411.82 264.115C1409.97 262.653 1408.31 261.483 1406.75 260.41Z" fill="#9EA4B3"/>
