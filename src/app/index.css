@@ -194,21 +194,35 @@ footer {
 
 .Home-wrapper section:nth-child(3) {
     background-size: 100% 100%;
-    @apply relative bg-no-repeat;
+    @apply relative;
 }
 
 .Home-wrapper section:nth-child(3) .group-of-fish {
     @apply absolute w-2/4 left-1/4 bottom-0;
 }
 
+.Home-wrapper section:nth-child(3) .rock-left-container {
+    @apply relative w-7/12 md:w-full h-auto;
+}
+
 .Home-wrapper section:nth-child(3) .rock-left {
     content: url('../resources/images/section-3-rock-left.svg');
-    @apply w-7/12 md:w-full h-auto;
+    @apply w-full h-auto;
+}
+
+.Home-wrapper section:nth-child(3) #rock-left-hermit {
+    @apply absolute w-1/4;
+    top: 21%;
+    left: 40%;
 }
 
 .Home-wrapper section:nth-child(3) .rock-right {
     content: url('../resources/images/section-3-rock-right.svg');
     @apply absolute;
+}
+
+.Home-wrapper section:nth-child(3) h1 {
+    @apply absolute text-white font-bold text-xs xs:text-base sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl left-10 xs:left-10 md:left-32 lg:left-40 xl:left-40 2xl:left-44;
 }
 
 .Home-wrapper section:nth-child(4) {
@@ -301,7 +315,8 @@ footer {
 }
 
 .Home-wrapper section:nth-child(5) .card-team {
-    @apply flex border border-blue-400 rounded-3xl px-1 py-1 xs:px-2 md:px-3;
+    @apply flex border-2 rounded-3xl px-1 py-1 xs:px-2 md:px-3;
+    border-color: #aad6ff;
     @apply h-28 sm:h-32 lg:h-32 xl:h-40 2xl:h-44;
     @apply w-full;
 }
@@ -311,11 +326,12 @@ footer {
 }
 
 .Home-wrapper section:nth-child(5) .card-team .card-profile .avatar {
-    @apply border-2 border-blue-400 rounded-full mx-auto w-8 xs:w-10 sm:w-16 md:w-16 lg:w-16 xl:w-20 2xl:w-20 h-auto;
+    @apply border-2 rounded-full mx-auto w-8 xs:w-10 sm:w-16 md:w-16 lg:w-16 xl:w-20 2xl:w-20 h-auto;
+    border-color: #aad6ff;
 }
 
 .Home-wrapper section:nth-child(5) .card-team .card-profile .title {
-    @apply text-white mt-2 mx-auto text-center text-2xs xs:text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl;
+    @apply text-white mt-2 mx-auto text-center text-2xs sm:text-xs lg:text-sm 2xl:text-base;
 }
 
 .Home-wrapper section:nth-child(5) .card-team .card-content {
@@ -323,7 +339,7 @@ footer {
 }
 
 .Home-wrapper section:nth-child(5) .card-team .card-content .card-name {
-    @apply text-white text-xs sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
+    @apply text-white text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl;
 }
 
 .Home-wrapper section:nth-child(5) .card-team .card-content .card-links {
@@ -399,11 +415,11 @@ footer .content .logo {
 .Home-button {
     background: rgba(255, 255, 255, 0.6);
     color: #1e2d45;
-    @apply text-center p-1 sm:p-2 rounded-md xs:rounded-md sm:rounded-lg;
+    @apply text-center p-1 rounded-md xs:rounded-md sm:rounded-lg;
 }
 
 .button-header {
-    @apply w-20 sm:w-28 lg:w-36 xl:w-48 2xl:w-52 sm:text-sm md:text-base text-2xs lg:text-lg xl:text-xl 2xl:text-2xl;
+    @apply w-20 sm:w-28 lg:w-36 xl:w-40 2xl:w-48 sm:text-sm md:text-base text-2xs lg:text-base xl:text-lg 2xl:text-2xl;
 }
 
 .seahorse {
@@ -436,7 +452,7 @@ footer .content .logo {
     }
 
     .Home-wrapper section:nth-child(3) {
-        height: 20rem;
+        height: 30rem;
     }
 
     .Home-wrapper section:nth-child(5),
@@ -561,7 +577,7 @@ footer .content .logo {
     }
 
     .Home-wrapper section:nth-child(3) {
-        height: 25rem;
+        height: 35rem;
     }
 
     .Home-wrapper section:nth-child(5),
@@ -1251,7 +1267,8 @@ footer .content .logo {
 }
 
 .group-of-discus-fish {
-    @apply w-full h-3/6;
+    @apply w-full;
+    height: 40%;
     background-image: url('../resources/images/group-of-fish.svg');
     background-size: auto 100%;
     background-repeat: no-repeat;

@@ -7,6 +7,7 @@ import twitterIcon from '../resources/images/twitter-icon.png';
 import telegramIcon from '../resources/images/telegram-icon.png';
 import discordIcon from '../resources/images/discord-icon.png';
 import mediumIcon from '../resources/images/medium-icon.png';
+import collectionOfNft from '../resources/images/hermit-crab-nfts.gif';
 import imageGroupOfFish1 from '../resources/images/group-of-fish-1.svg';
 import imageGroupOfFish3 from '../resources/images/group-of-fish-3.svg';
 import imageGroupOfFish4 from '../resources/images/group-of-fish-4.svg';
@@ -160,20 +161,26 @@ const Home = () => {
                     </div>
                 </section>
                 <section>
-                    <div className="flex flex-col md:flex-row">
+                    <div className="p-5">
+                        <h1>Scallop Decorations</h1>
+                    </div>
+                    <div className="flex flex-col md:flex-row mt-10 sm:mt-20 2xl:mt-32">
                         <div className="w-full md:w-6/12">
-                            <div className="rock-left"></div>
+                            <div className="rock-left-container">
+                                <img id="rock-left-hermit" src={collectionOfNft} alt="" />
+                                <div className="rock-left"></div>
+                            </div>
                             <div className="lonely-zebrafish"></div>
                         </div>
                         <div className="w-7/12 xs:w-4/12 flex flex-col self-center justify-self-center mx-auto justify-center sm:w-5/12 text-white md:pr-2 md:w-4/12 max-w-lg">
-                            <h3 className="text-xs sm:text-base md:text-lg lg:text-3xl xl:text-4xl mb-4 font-bold">Hermit Crab NFTs</h3>
-                            <p className="text-2xs sm:text-xs md:text-sm lg:text-xl xl:text-2xl">
-                                4,200 unique Hermit Crabs NFTs created by Scallop Labs, they are the coolest Scallop Decorations which can
-                                also be your pet in Scallop Tank in the future🐚🦀!
+                            {/* <h3 className="text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4 font-bold">Hermit Crab NFTs</h3> */}
+                            <p className="text-2xs sm:text-xs md:text-sm lg:text-base xl:text-base">
+                                In Scallop, we will mint some ocean theme NFTs called Scallop Decorations, its goal is useful on-chain
+                                collectibles, they will be shown at Scallop Tank and interact with our protocol.
                             </p>
                             <a
                                 href="#hermit-crab"
-                                className="bg-gray-300 text-2xs w-1/3 p-1 mt-2 md:mt-5 xl:mt-20 md:text-base md:p-3 md:w-2/3 text-center self-center rounded-lg xl:rounded-xl xl:py-3 xl:text-xl text-black"
+                                className="bg-gray-300 text-2xs w-1/3 p-1 mt-2 md:mt-5 md:text-base md:p-2 md:w-1/2 text-center self-center rounded-lg xl:rounded-xl xl:py-2 xl:text-lg text-black"
                             >
                                 Coming Soon
                             </a>
@@ -331,7 +338,7 @@ const Home = () => {
                         </Plx>
                     </div>
                     <div className="content">
-                        <h1>Investors</h1>
+                        <h1>Partners &amp; Integrated with</h1>
                     </div>
                 </section>
             </main>
