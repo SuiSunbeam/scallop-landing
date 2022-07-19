@@ -142,10 +142,9 @@ section {
 
 .Home-main section:nth-child(1) .group-of-discus-fish {
     @apply content-[url('../resources/images/group-of-discus-fish-1.svg')];
-    @apply absolute right-0 sm:right-[5%] 2xl:right-[10%] 3xl:right-[15%];
+    @apply absolute right-[5%] sm:right-[5%] lg:right-[10%] xl:right-[15%] 2xl:right-[20%] 3xl:right-[25%] 4xl:right-[20%];
     @apply top-[25%] xl:top-[35%] 2xl:top-[45%] 4xl:top-[55%] 5xl:top-[60%];
     @apply w-[30%] lg:w-[25%] xl:w-[20%] 2xl:w-[15%];
-    @apply animate-[swim_15s_linear_infinite];
 }
 
 .Home-main section:nth-child(1) .section-content {
@@ -610,52 +609,4 @@ footer .content .social-media a img {
 footer .content > img {
     @apply content-[url(../resources/images/logo-white.png)];
     @apply w-1/2 xl:w-1/3 text-center;
-}
-
-/*---- animation ---- */
-@keyframes swim {
-    0% {
-        transform: translate(0%, 0%);
-        opacity: 0.5;
-    }
-    10% {
-        transform: translate(-10%, 0%);
-        opacity: 0.7;
-    }
-    20% {
-        transform: translate(-20%, 0%);
-        opacity: 0.7;
-    }
-    30% {
-        transform: translate(-50%, 0%);
-        opacity: 1;
-    }
-    40% {
-        transform: translate(-40%, 0%);
-        opacity: 1;
-    }
-    50% {
-        transform: translate(-35%, 0%);
-        opacity: 1;
-    }
-    60% {
-        transform: translate(-30%, 0%);
-        opacity: 1;
-    }
-    70% {
-        transform: translate(-20%, 0%);
-        opacity: 1;
-    }
-    80% {
-        transform: translate(-15%, 0%);
-        opacity: 1;
-    }
-    90% {
-        transform: translate(-5%, 0%);
-        opacity: 0.7;
-    }
-    100% {
-        transform: translate(0%, 0%);
-        opacity: 0.5;
-    }
 }
