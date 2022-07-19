@@ -1,4 +1,4 @@
-export type endpoint = 'sm' | 'md' | 'lg' | 'xl' | '2xl' | 'xs';
+export type endpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl';
 
 export const checkBreakpoint = (endpoint?: endpoint) => {
     const screens: { [index in endpoint]: string } = {
@@ -8,6 +8,9 @@ export const checkBreakpoint = (endpoint?: endpoint) => {
         lg: '1024px',
         xl: '1280px',
         '2xl': '1536px',
+        '3xl': '1920px',
+        '4xl': '2560px',
+        '5xl': '3840px',
     };
 
     const matches = Object.entries(screens).reduce((results: any, [name, size]) => {
