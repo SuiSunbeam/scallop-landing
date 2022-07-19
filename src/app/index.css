@@ -97,7 +97,7 @@
 
 .Home-nav-menu {
     @apply flex col-span-4;
-    @apply sm:text-sm md:text-base lg:text-base xl:text-xl 2xl:text-2xl 4xl:text-4xl text-center;
+    @apply sm:text-xs md:text-sm lg:text-sm xl:text-base 2xl:text-xl 4xl:text-2xl text-center;
     @apply lg:ml-24 xl:ml-44 2xl:ml-60;
     @apply my-4 list-none divide-y z-50;
 }
@@ -114,7 +114,7 @@
 .Home-logo > img {
     @apply content-[url('../resources/images/logo-black.svg')];
     @apply block pointer-events-none filter;
-    @apply h-10 xs:h-10 sm:h-10 md:h-14 lg:h-12 xl:h-14 2xl:h-20 4xl:h-24;
+    @apply h-6 xs:h-6 sm:h-6 md:h-10 lg:h-8 xl:h-10 2xl:h-16 4xl:h-20;
     @apply mt-5 xs:mt-5 sm:mt-10 md:mt-10 lg:mt-0;
 }
 
@@ -145,7 +145,7 @@ section {
     @apply absolute right-0 sm:right-[5%] 2xl:right-[10%] 3xl:right-[15%];
     @apply top-[25%] xl:top-[35%] 2xl:top-[45%] 4xl:top-[55%] 5xl:top-[60%];
     @apply w-[30%] lg:w-[25%] xl:w-[20%] 2xl:w-[15%];
-    @apply animate-[swim_15s_linear_infinite];
+    /* @apply animate-[swim_15s_linear_infinite]; */
 }
 
 .Home-main section:nth-child(1) .section-content {
