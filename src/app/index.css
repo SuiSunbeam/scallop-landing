@@ -142,7 +142,7 @@ section {
 
 .Home-main section:nth-child(1) .group-of-discus-fish {
     @apply content-[url('../resources/images/group-of-discus-fish-1.svg')];
-    @apply absolute right-[5%] sm:right-[5%] lg:right-[10%] xl:right-[15%] 2xl:right-[20%] 3xl:right-[25%] 4xl:right-[20%];
+    @apply absolute right-[5%] sm:right-[5%] lg:right-[10%] xl:right-[15%] 2xl:right-[20%] 3xl:right-[20%] 4xl:right-[20%];
     @apply top-[25%] xl:top-[35%] 2xl:top-[45%] 4xl:top-[55%] 5xl:top-[60%];
     @apply w-[30%] lg:w-[25%] xl:w-[20%] 2xl:w-[15%];
 }
