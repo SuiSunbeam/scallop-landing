@@ -111,10 +111,10 @@ const Home = () => {
                     <img className="seahorse" alt="Seahorse" />
                     <img className="hermit" alt="Hermit crab" />
                     <div className="section-content">
-                        <h3 className="text-title-1">&nbsp;</h3>
+                        {/* <h3 className="text-title-1">&nbsp;</h3> */}
                         <p className="text-title-2">
-                            In Scallop, we will mint some ocean theme NFTs called Scallop Decorations, its goal is useful on-chain
-                            collectibles, they will be shown at Scallop Tank and interact with our protocol.
+                            Scallop protocol's native NFTs called Scallop Decorations, their goal is useful on-chain
+                            collectibles, Scallop Decorations will show at Scallop Tank and interact with Scallop protocol.
                         </p>
                         <a className="nft-button" href="#hermit-crab">
                             Coming Soon
@@ -137,16 +137,10 @@ const Home = () => {
                             <h2 className="text-title">2022 Q2</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Mainnet Launch</span>
+                                    <span>Scallop Devnet Beta</span>
                                 </li>
                                 <li>
-                                    <span>Scallop IDO</span>
-                                </li>
-                                <li>
-                                    <span>Scallop Token (SCA)</span>
-                                </li>
-                                <li>
-                                    <span>Hermit Crab NFTS</span>
+                                    <span>Hackathon 3.0</span>
                                 </li>
                             </ul>
                         </div>
@@ -154,16 +148,16 @@ const Home = () => {
                             <h2 className="text-title">2022 Q3</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Scallop Swap</span>
+                                    <span>Fossil NFTs</span>
                                 </li>
                                 <li>
-                                    <span>SCA Staking</span>
+                                    <span>Scallop Tools</span>
                                 </li>
                                 <li>
-                                    <span>Decorations Staking</span>
+                                    <span>Landing Page V2</span>
                                 </li>
                                 <li>
-                                    <span>More Scallop Pools</span>
+                                    <span>Scallop Mainnet</span>
                                 </li>
                             </ul>
                         </div>
@@ -171,13 +165,10 @@ const Home = () => {
                             <h2 className="text-title">2022 Q4</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Scallop Pool V2</span>
+                                    <span>Scallop Swap</span>
                                 </li>
                                 <li>
-                                    <span>Scallop DAO</span>
-                                </li>
-                                <li>
-                                    <span>Scallop Tamagotchi</span>
+                                    <span>?</span>
                                 </li>
                             </ul>
                         </div>
@@ -194,7 +185,7 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="Kriss Avatar" className="avatar" src={krissAvatar} />
-                                <div className="title">Lead</div>
+                                <div className="title">Team Lead</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Kriss</span>
@@ -206,7 +197,7 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="Donnie Avatar" className="avatar" src={donnieAvatar} />
-                                <div className="title">Dev</div>
+                                <div className="title">Developer</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Donnie</span>
@@ -218,7 +209,7 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="Nathan Avatar" className="avatar" src={nathanAvatar} />
-                                <div className="title">Dev</div>
+                                <div className="title">Developer</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Nathan</span>

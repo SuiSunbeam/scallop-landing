@@ -462,7 +462,7 @@ section {
 .Home-main section:nth-child(5) .group-of-manta {
     @apply content-[url('../resources/images/group-of-mantas.svg')];
     @apply absolute left-[-10%] md:left-[-5%] lg:left-[3%] xl:left-[5%] 3xl:left-[7%];
-    @apply bottom-[-5%] sm:bottom-0 lg:bottom-[8%] xl:bottom-[5%] 2xl:bottom-0 3xl:bottom-[5%];
+    @apply bottom-[-5%] sm:bottom-0 lg:bottom-[20%] xl:bottom-[20%] 2xl:bottom-[10%] 3xl:bottom-[20%];
     @apply w-[65%] sm:w-[60%] md:w-[55%] lg:w-[40%] xl:w-[35%] 2xl:w-[40%] 3xl:w-[35%];
 }
 
@@ -481,7 +481,7 @@ section {
 }
 
 .Home-main section:nth-child(5) .card-team .card-profile {
-    @apply flex-grow flex flex-col my-auto;
+    @apply flex-grow flex flex-col w-1/2 my-auto;
 }
 
 .Home-main section:nth-child(5) .card-team .card-profile .avatar {
@@ -490,13 +490,13 @@ section {
 }
 
 .Home-main section:nth-child(5) .card-team .card-profile .title {
-    @apply mt-2 mx-auto;
+    @apply mt-2 mx-auto p-1;
     @apply text-white text-center text-[0.5rem] xs:text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl;
     @apply leading-[0.75rem] xs:leading-[1rem] 4xl:leading-[1.5rem];
 }
 
 .Home-main section:nth-child(5) .card-team .card-content {
-    @apply flex-grow flex flex-col my-auto pl-3;
+    @apply flex-grow flex flex-col w-1/2 my-auto pl-3;
 }
 
 .Home-main section:nth-child(5) .card-team .card-content .card-name {
