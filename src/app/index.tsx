@@ -257,7 +257,7 @@ const Home = () => {
                         <a href="https://www.scallop.io/">HOME</a>
                         <a href="https://app.scallop.io/">APP</a>
                         <a href="https://docs.scallop.io/">DOCS</a>
-                        <a href="mailto:team@scallop.io">CONTACT US</a>
+                        <a href="mailto:team@scallop.io">CONTACT</a>
                     </div>
                     <div className="social-media">
                         <a href="https://t.me/scallop_io">
