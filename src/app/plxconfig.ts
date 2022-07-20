@@ -937,72 +937,322 @@ const sectionOneLeftFish = (breackPoints: { [index in endpoint]: boolean }) => {
     let data: any = [];
 
     if (breackPoints['5xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 2,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 560,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -200,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints['4xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 2,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 400,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -150,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints['3xl']) {
         data = [
             {
                 start: 'self',
-                end: '.rock-left',
+                duration: '100%',
+                easing: 'easeInOut',
                 properties: [
                     {
                         startValue: 0,
-                        endValue: 10,
-                        property: 'rotateZ',
+                        endValue: -15,
+                        property: 'rotate',
                     },
                     {
                         startValue: 1,
-                        endValue: 1,
+                        endValue: 2,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: 400,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -150,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
     } else if (breackPoints['2xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 300,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -150,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 300,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -150,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 300,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -150,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints.md) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                easing: 'ease',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -10,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 2,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 200,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -120,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 'self',
+                duration: '80%',
+                easing: 'ease',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -10,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 2,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 100,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -80,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 'self',
+                duration: '80%',
+                easing: 'ease',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: -10,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 2,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 100,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -80,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else {
         data = [
             {
                 start: 'self',
-                end: 'section:nth-child(4) .rock-left',
+                duration: '80%',
+                easing: 'ease',
                 properties: [
                     {
                         startValue: 0,
-                        endValue: 10,
-                        property: 'rotateZ',
+                        endValue: -45,
+                        property: 'rotate',
                     },
                     {
                         startValue: 1,
-                        endValue: 1,
+                        endValue: 2.5,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: 100,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -250,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
@@ -1015,72 +1265,612 @@ const sectionTwoRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     let data: any = [];
 
     if (breackPoints['5xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '30%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.6,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -40,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: '30%',
+                duration: '170%',
+                easing: 'easeOut',
+                properties: [
+                    {
+                        startValue: 15,
+                        endValue: 120,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1.6,
+                        endValue: 8,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -60,
+                        endValue: -520,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: -40,
+                        endValue: -700,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints['4xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '30%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.6,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -40,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: '30%',
+                duration: '170%',
+                easing: 'easeOut',
+                properties: [
+                    {
+                        startValue: 15,
+                        endValue: 120,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1.6,
+                        endValue: 8,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -60,
+                        endValue: -520,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: -40,
+                        endValue: -700,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints['3xl']) {
         data = [
             {
                 start: 'self',
-                end: '.rock-left',
+                duration: '30%',
+                easing: 'easeInOut',
                 properties: [
                     {
                         startValue: 0,
-                        endValue: 10,
-                        property: 'rotateZ',
+                        endValue: 15,
+                        property: 'rotate',
                     },
                     {
                         startValue: 1,
-                        endValue: 1,
+                        endValue: 1.6,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -40,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: '30%',
+                duration: '170%',
+                easing: 'easeOut',
+                properties: [
+                    {
+                        startValue: 15,
+                        endValue: 120,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1.6,
+                        endValue: 8,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -60,
+                        endValue: -520,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: -40,
+                        endValue: -700,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
     } else if (breackPoints['2xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '30%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.6,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -40,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: '30%',
+                duration: '170%',
+                easing: 'easeOut',
+                properties: [
+                    {
+                        startValue: 15,
+                        endValue: 120,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1.6,
+                        endValue: 8,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -60,
+                        endValue: -520,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: -40,
+                        endValue: -700,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 'self',
+                duration: '30%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.6,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -40,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: '30%',
+                duration: '170%',
+                easing: 'easeOut',
+                properties: [
+                    {
+                        startValue: 15,
+                        endValue: 120,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1.6,
+                        endValue: 8,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -60,
+                        endValue: -520,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: -40,
+                        endValue: -700,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 'self',
+                duration: '30%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.6,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -40,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: '30%',
+                duration: '170%',
+                easing: 'easeOut',
+                properties: [
+                    {
+                        startValue: 15,
+                        endValue: 120,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1.6,
+                        endValue: 8,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -60,
+                        endValue: -520,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: -40,
+                        endValue: -700,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints.md) {
+        data = [
+            {
+                start: 'self',
+                duration: '30%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.6,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -40,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: '30%',
+                duration: '170%',
+                easing: 'easeOut',
+                properties: [
+                    {
+                        startValue: 15,
+                        endValue: 120,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1.6,
+                        endValue: 8,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -60,
+                        endValue: -520,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: -40,
+                        endValue: -580,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 'self',
+                duration: '30%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.6,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -40,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: '30%',
+                duration: '170%',
+                easing: 'easeOut',
+                properties: [
+                    {
+                        startValue: 15,
+                        endValue: 120,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1.6,
+                        endValue: 8,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -60,
+                        endValue: -520,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: -40,
+                        endValue: -580,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 'self',
+                duration: '30%',
+                easing: 'easeInOut',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.6,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -40,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: '30%',
+                duration: '170%',
+                easing: 'easeOut',
+                properties: [
+                    {
+                        startValue: 15,
+                        endValue: 120,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1.6,
+                        endValue: 8,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -60,
+                        endValue: -520,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: -40,
+                        endValue: -580,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else {
         data = [
             {
                 start: 'self',
                 end: 'section:nth-child(4) .rock-left',
+                easing: 'easeInOut',
                 properties: [
                     {
                         startValue: 0,
-                        endValue: 10,
-                        property: 'rotateZ',
+                        endValue: 17,
+                        property: 'rotate',
                     },
                     {
                         startValue: 1,
-                        endValue: 1,
+                        endValue: 1.1,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: -30,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -10,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: 'section:nth-child(4) .rock-left',
+                duration: '30%',
+                easing: 'easeOut',
+                properties: [
+                    {
+                        startValue: 17,
+                        endValue: 42,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1.1,
+                        endValue: 2.7,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -30,
+                        endValue: -100,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: -10,
+                        endValue: -150,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
@@ -1093,49 +1883,136 @@ const sectionFourLeftFish = (breackPoints: { [index in endpoint]: boolean }) => 
     let data: any = [];
 
     if (breackPoints['5xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 5,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 4,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 270,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 160,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: 'self',
+                duration: '40%',
+                properties: [
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'opacity',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints['4xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 5,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 4,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 270,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 160,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: 'self',
+                duration: '40%',
+                properties: [
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'opacity',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints['3xl']) {
         data = [
             {
                 start: 'self',
-                end: '.rock-left',
+                duration: '100%',
                 properties: [
                     {
                         startValue: 0,
-                        endValue: 10,
+                        endValue: 5,
                         property: 'rotateZ',
                     },
                     {
                         startValue: 1,
-                        endValue: 1,
+                        endValue: 4,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: 270,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 160,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: 'self',
+                duration: '40%',
+                properties: [
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'opacity',
+                    },
                 ],
             },
         ];
     } else if (breackPoints['2xl']) {
-    } else if (breackPoints.xl) {
-    } else if (breackPoints.lg) {
-    } else if (breackPoints.md) {
-    } else if (breackPoints.sm) {
-    } else if (breackPoints.xs) {
-    } else {
         data = [
             {
                 start: 'self',
-                end: 'section:nth-child(4) .rock-left',
+                duration: '100%',
                 properties: [
                     {
                         startValue: 0,
@@ -1144,21 +2021,284 @@ const sectionFourLeftFish = (breackPoints: { [index in endpoint]: boolean }) => 
                     },
                     {
                         startValue: 1,
-                        endValue: 1,
+                        endValue: 3.5,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: 270,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 160,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: 'self',
+                duration: '40%',
+                properties: [
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'opacity',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 3.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 270,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 160,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: 'self',
+                duration: '40%',
+                properties: [
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'opacity',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 3.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 270,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 160,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: 'self',
+                duration: '40%',
+                properties: [
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'opacity',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 3.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 270,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 160,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: 'self',
+                duration: '40%',
+                properties: [
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'opacity',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 3.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 270,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 160,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: 'self',
+                duration: '40%',
+                properties: [
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'opacity',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 3.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 270,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 160,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: 'self',
+                duration: '40%',
+                properties: [
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'opacity',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 3.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 220,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 135,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+            {
+                start: 'self',
+                duration: '40%',
+                properties: [
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'opacity',
+                    },
                 ],
             },
         ];
@@ -1171,72 +2311,312 @@ const sectionFiveRightTurtle = (breackPoints: { [index in endpoint]: boolean }) 
     let data: any = [];
 
     if (breackPoints['5xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints['4xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints['3xl']) {
         data = [
             {
                 start: 'self',
-                end: '.rock-left',
+                duration: '100%',
                 properties: [
                     {
                         startValue: 0,
-                        endValue: 10,
+                        endValue: 0,
                         property: 'rotateZ',
                     },
                     {
                         startValue: 1,
-                        endValue: 1,
+                        endValue: 0.01,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: 60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
     } else if (breackPoints['2xl']) {
-    } else if (breackPoints.xl) {
-    } else if (breackPoints.lg) {
-    } else if (breackPoints.md) {
-    } else if (breackPoints.sm) {
-    } else if (breackPoints.xs) {
-    } else {
         data = [
             {
                 start: 'self',
-                end: 'section:nth-child(4) .rock-left',
+                duration: '100%',
                 properties: [
                     {
                         startValue: 0,
-                        endValue: 10,
+                        endValue: 0,
                         property: 'rotateZ',
                     },
                     {
                         startValue: 1,
-                        endValue: 1,
+                        endValue: 0.01,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: 60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 'self',
+                duration: '100%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 0.01,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
@@ -1249,12 +2629,72 @@ const sectionSixLeftFish = (breackPoints: { [index in endpoint]: boolean }) => {
     let data: any = [];
 
     if (breackPoints['5xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -15,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints['4xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -15,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints['3xl']) {
         data = [
             {
                 start: 'self',
-                end: '.rock-left',
+                duration: '50%',
                 properties: [
                     {
                         startValue: 0,
@@ -1263,35 +2703,29 @@ const sectionSixLeftFish = (breackPoints: { [index in endpoint]: boolean }) => {
                     },
                     {
                         startValue: 1,
-                        endValue: 1,
+                        endValue: 1.1,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -15,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
     } else if (breackPoints['2xl']) {
-    } else if (breackPoints.xl) {
-    } else if (breackPoints.lg) {
-    } else if (breackPoints.md) {
-    } else if (breackPoints.sm) {
-    } else if (breackPoints.xs) {
-    } else {
         data = [
             {
                 start: 'self',
-                end: 'section:nth-child(4) .rock-left',
+                duration: '50%',
                 properties: [
                     {
                         startValue: 0,
@@ -1300,21 +2734,207 @@ const sectionSixLeftFish = (breackPoints: { [index in endpoint]: boolean }) => {
                     },
                     {
                         startValue: 1,
-                        endValue: 1,
+                        endValue: 1.1,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: 20,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -10,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 40,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 30,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 25,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 20,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 30,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 40,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: 0,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
@@ -1327,72 +2947,312 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     let data: any = [];
 
     if (breackPoints['5xl']) {
-    } else if (breackPoints['4xl']) {
-    } else if (breackPoints['3xl']) {
         data = [
             {
-                start: 'self',
-                end: '.rock-left',
+                start: 'section:nth-child(6) .whale',
+                duration: '20%',
                 properties: [
                     {
                         startValue: 0,
                         endValue: 10,
-                        property: 'rotateZ',
+                        property: 'rotate',
                     },
                     {
                         startValue: 1,
-                        endValue: 1,
+                        endValue: 1.5,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: -90,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -120,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints['4xl']) {
+        data = [
+            {
+                start: 'section:nth-child(6) .whale',
+                duration: '20%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -90,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -120,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints['3xl']) {
+        data = [
+            {
+                start: 'section:nth-child(6) .whale',
+                duration: '20%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -90,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -120,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
     } else if (breackPoints['2xl']) {
-    } else if (breackPoints.xl) {
-    } else if (breackPoints.lg) {
-    } else if (breackPoints.md) {
-    } else if (breackPoints.sm) {
-    } else if (breackPoints.xs) {
-    } else {
         data = [
             {
-                start: 'self',
-                end: 'section:nth-child(4) .rock-left',
+                start: 'section:nth-child(6) .whale',
+                duration: '20%',
                 properties: [
                     {
                         startValue: 0,
                         endValue: 10,
-                        property: 'rotateZ',
+                        property: 'rotate',
                     },
                     {
                         startValue: 1,
-                        endValue: 1,
+                        endValue: 1.5,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: -65,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -75,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 'section:nth-child(6) .whale',
+                duration: '20%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 10,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -65,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -90,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 'section:nth-child(6) .whale',
+                duration: '20%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 20,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -65,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -90,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 'section:nth-child(6) .whale',
+                duration: '20%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -90,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 'section:nth-child(6) .whale',
+                duration: '20%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -90,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 'section:nth-child(6) .whale',
+                duration: '20%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -80,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -50,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 'section:nth-child(6) .whale',
+                duration: '20%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 15,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1.5,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -30,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
@@ -1405,16 +3265,64 @@ const sectionSixLeftjellyfish = (breackPoints: { [index in endpoint]: boolean })
     let data: any = [];
 
     if (breackPoints['5xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 2.75,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -30,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints['4xl']) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 2.75,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -20,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
     } else if (breackPoints['3xl']) {
         data = [
             {
                 start: 'self',
-                end: '.rock-left',
+                duration: '50%',
                 properties: [
                     {
                         startValue: 0,
-                        endValue: 10,
+                        endValue: 2.75,
                         property: 'rotateZ',
                     },
                     {
@@ -1422,36 +3330,24 @@ const sectionSixLeftjellyfish = (breackPoints: { [index in endpoint]: boolean })
                         endValue: 1,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: -20,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
     } else if (breackPoints['2xl']) {
-    } else if (breackPoints.xl) {
-    } else if (breackPoints.lg) {
-    } else if (breackPoints.md) {
-    } else if (breackPoints.sm) {
-    } else if (breackPoints.xs) {
-    } else {
         data = [
             {
                 start: 'self',
-                end: 'section:nth-child(4) .rock-left',
+                duration: '50%',
                 properties: [
                     {
                         startValue: 0,
-                        endValue: 10,
+                        endValue: 2.75,
                         property: 'rotateZ',
                     },
                     {
@@ -1459,18 +3355,162 @@ const sectionSixLeftjellyfish = (breackPoints: { [index in endpoint]: boolean })
                         endValue: 1,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: 0,
+                        endValue: -20,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 2.75,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -20,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 2.75,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -20,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 2.75,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -15,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 2.75,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -25,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 2.75,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -25,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 'self',
+                duration: '50%',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 2.5,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: 0,
+                        endValue: -20,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
@@ -1483,72 +3523,362 @@ const sectionSixWhale = (breackPoints: { [index in endpoint]: boolean }) => {
     let data: any = [];
 
     if (breackPoints['5xl']) {
-    } else if (breackPoints['4xl']) {
-    } else if (breackPoints['3xl']) {
         data = [
             {
-                start: 'self',
-                end: '.rock-left',
+                start: 'section:nth-child(5) .group-of-manta ',
+                end: 'footer',
                 properties: [
                     {
                         startValue: 0,
-                        endValue: 10,
+                        endValue: 5,
                         property: 'rotateZ',
+                    },
+                    {
+                        startValue: -10,
+                        endValue: 0,
+                        property: 'rotate',
                     },
                     {
                         startValue: 1,
                         endValue: 1,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: -20,
+                        endValue: -50,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 30,
+                        endValue: -75,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints['4xl']) {
+        data = [
+            {
+                start: 'section:nth-child(5) .group-of-manta ',
+                end: 'footer',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 5,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: -10,
+                        endValue: 0,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -20,
+                        endValue: -50,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 30,
+                        endValue: -75,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints['3xl']) {
+        data = [
+            {
+                start: 'section:nth-child(5) .group-of-manta ',
+                end: 'footer',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 5,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: -10,
+                        endValue: 0,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -20,
+                        endValue: -50,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 30,
+                        endValue: -75,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];
     } else if (breackPoints['2xl']) {
-    } else if (breackPoints.xl) {
-    } else if (breackPoints.lg) {
-    } else if (breackPoints.md) {
-    } else if (breackPoints.sm) {
-    } else if (breackPoints.xs) {
-    } else {
         data = [
             {
-                start: 'self',
-                end: 'section:nth-child(4) .rock-left',
+                start: 'section:nth-child(5) .group-of-manta ',
+                end: 'footer',
                 properties: [
                     {
                         startValue: 0,
-                        endValue: 10,
+                        endValue: 5,
                         property: 'rotateZ',
+                    },
+                    {
+                        startValue: -20,
+                        endValue: 0,
+                        property: 'rotate',
                     },
                     {
                         startValue: 1,
                         endValue: 1,
                         property: 'scale',
                     },
-                    // {
-                    //     startValue: -20,
-                    //     endValue: 10,
-                    //     unit: '%',
-                    //     property: 'translateX',
-                    // },
-                    // {
-                    //     startValue: 10,
-                    //     endValue: 20,
-                    //     unit: '%',
-                    //     property: 'translateY',
-                    // },
+                    {
+                        startValue: -20,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 20,
+                        endValue: -65,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 'section:nth-child(5) .group-of-manta ',
+                end: 'footer',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 5,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: -20,
+                        endValue: 0,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -20,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 20,
+                        endValue: -70,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 'section:nth-child(5) .group-of-manta ',
+                end: 'footer',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 5,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: -25,
+                        endValue: 0,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -20,
+                        endValue: -35,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 20,
+                        endValue: -60,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 'section:nth-child(5) .group-of-manta ',
+                end: 'footer',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 5,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: -30,
+                        endValue: 0,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -20,
+                        endValue: -30,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 10,
+                        endValue: -50,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 'section:nth-child(5) .group-of-manta ',
+                end: 'footer',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 5,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: -30,
+                        endValue: 0,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -20,
+                        endValue: -30,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 10,
+                        endValue: -50,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 'section:nth-child(5) .group-of-manta ',
+                end: 'footer',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 5,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: -30,
+                        endValue: 0,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -20,
+                        endValue: -30,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 10,
+                        endValue: -50,
+                        unit: '%',
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 'section:nth-child(5) .group-of-manta ',
+                end: 'footer',
+                properties: [
+                    {
+                        startValue: 0,
+                        endValue: 5,
+                        property: 'rotateZ',
+                    },
+                    {
+                        startValue: -25,
+                        endValue: 0,
+                        property: 'rotate',
+                    },
+                    {
+                        startValue: 1,
+                        endValue: 1,
+                        property: 'scale',
+                    },
+                    {
+                        startValue: -20,
+                        endValue: -30,
+                        unit: '%',
+                        property: 'translateX',
+                    },
+                    {
+                        startValue: 10,
+                        endValue: -50,
+                        unit: '%',
+                        property: 'translateY',
+                    },
                 ],
             },
         ];

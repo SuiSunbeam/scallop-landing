@@ -136,7 +136,7 @@ section {
 .Home-main section:nth-child(1) .group-of-fish {
     @apply content-[url('../resources/images/bg-group-of-fish-1.svg')];
     @apply absolute left-[-10%] xs:left-[-15%] sm:left-[-25%] md:left-[-30%] lg:left-[-25%] xl:left-[-20%] 3xl:left-[-15%] 4xl:left-[-20%] 5xl:left-[-25%];
-    @apply bottom-[-30%] xs:bottom-[-40%] sm:bottom-[-50%] md:bottom-[-60%] lg:bottom-[-50%] xl:bottom-[-40%] 3xl:bottom-[-70%] 4xl:bottom-[-80%] 5xl:bottom-[-100%];
+    @apply bottom-[-30%] xs:bottom-[-40%] sm:bottom-[-50%] md:bottom-[-60%] lg:bottom-[-70%] xl:bottom-[-60%] 3xl:bottom-[-90%] 4xl:bottom-[-100%] 5xl:bottom-[-130%];
     @apply w-[40%] lg:w-[35%] xl:w-[30%];
 }
 
@@ -187,15 +187,15 @@ section {
 
 .Home-main section:nth-child(2) .group-of-fish {
     @apply content-[url('../resources/images/bg-group-of-fish-2.svg')];
-    @apply absolute right-[-20%] sm:right-[-17%] sm:right-[-20%] 2xl:right-[-15%] 3xl:right-[-20%] 4xl:right-[-10%];
-    @apply bottom-[-10%] sm:bottom-[10%] lg:bottom-[0%] 2xl:bottom-[-10%] 3xl:bottom-0 4xl:bottom-[-10%];
+    @apply absolute right-[-20%] xs:right-[-17%] sm:right-[-20%] 2xl:right-[-20%] 3xl:right-[-20%] 4xl:right-[-25%];
+    @apply bottom-[-10%] sm:bottom-[10%] lg:bottom-[0%] 2xl:bottom-[5%] 3xl:bottom-[7%] 4xl:bottom-[9%];
     @apply w-[25%] xs:w-[20%];
-    transform: rotateY(-180deg) rotate(30deg);
+    transform: rotateY(-180deg) rotate(15deg);
 }
 
 .Home-main section:nth-child(2) .group-of-zebra-fish {
     @apply content-[url('../resources/images/group-of-zebra-fish.svg')];
-    @apply absolute left-[-5%] left-0 sm:left-[-2.5%] md:left-[2%] lg:left-[10%] xl:left-[11%] 2xl:left-[12%] 3xl:left-[14%] 4xl:left-[12%] 5xl:left-[10%];
+    @apply absolute left-[-5%] xs:left-0 sm:left-[-2.5%] md:left-[2%] lg:left-[10%] xl:left-[11%] 2xl:left-[12%] 3xl:left-[14%] 4xl:left-[12%] 5xl:left-[10%];
     @apply bottom-[27%] xs:bottom-[22%] sm:bottom-[20%] md:bottom-[12%] lg:bottom-[10%] xl:bottom-[12%] 2xl:bottom-[15%];
     @apply w-[24rem] xs:w-[28rem] sm:w-[36rem] md:w-[38rem] lg:w-[42rem] xl:w-[45rem] 2xl:w-[52rem] 3xl:w-[70rem] 4xl:w-[88rem] 5xl:w-[120rem];
     @apply z-10;
@@ -338,7 +338,7 @@ section {
     @apply content-[url('../resources/images/bg-group-of-fish-2.svg')];
     @apply absolute left-[-20%] lg:left-[-15%] 2xl:left-[-10%] 3xl:left-[-5%];
     @apply top-[5%] xs:top-0 sm:top-[10%] xl:top-[12%] 2xl:top-[14%] 3xl:top-[16%] 4xl:top-[18%] 5xl:top-[14%];
-    @apply w-[30%] lg:w-[25%] 2xl:w-[20%] 3xl:w-[15%];
+    @apply w-[30%] lg:w-[25%] 2xl:w-[20%];
 }
 
 .Home-main section:nth-child(4) .lonely-jellyfish {
@@ -455,8 +455,8 @@ section {
 
 .Home-main section:nth-child(5) .group-of-turtle {
     @apply content-[url('../resources/images/bg-group-of-turtle.svg')];
-    @apply absolute right-[10%] top-[15%];
-    @apply w-[25%] xl:w-[20%] 3xl:w-[15%];
+    @apply absolute right-[10%] top-[5%];
+    @apply w-[50%] md:w-[40%] lg:w-[30%] xl:w-[20%];
 }
 
 .Home-main section:nth-child(5) .group-of-manta {
@@ -524,7 +524,7 @@ section {
 
 .Home-main section:nth-child(6) .group-of-fish-left {
     @apply content-[url('../resources/images/bg-group-of-fish-2.svg')];
-    @apply absolute left-[-10%] xs:left-[-15%] sm:left-[-20%] 2xl:left-[-15%];
+    @apply absolute left-[-30%] xs:left-[-27.5%] sm:left-[-25%] md:left-[-30%] 2xl:left-[-15%];
     @apply bottom-[5%] xs:bottom-[10%] sm:bottom-[20%] 2xl:bottom-[30%] 4xl:bottom-[55%];
     @apply w-[30%] xs:w-[32%] sm:w-[35%] lg:w-[30%] xl:w-[25%] 2xl:w-[20%];
     transform: rotate(-15deg);
@@ -541,15 +541,15 @@ section {
 .Home-main section:nth-child(6) .group-of-jelly-fish {
     @apply content-[url('../resources/images/bg-group-of-jelly-fish.svg')];
     @apply absolute left-[0%];
-    @apply bottom-[-42%] xs:bottom-[-32%] sm:bottom-[-22%] 2xl:bottom-[-20%] 3xl:bottom-[-10%];
+    @apply bottom-[-42%] xs:bottom-[-37%] sm:bottom-[-32%] md:bottom-[-25%] 2xl:bottom-[-20%] 3xl:bottom-[-10%];
     @apply w-[10%] sm:w-[12%] lg:w-[8%] xl:w-[6%];
 }
 
 .Home-main section:nth-child(6) .whale {
     @apply content-[url('../resources/images/bg-whale.svg')];
-    @apply absolute right-[-80%] xs:right-[-82%] sm:right-[-84%] 4xl:right-[-80%];
-    @apply top-[25%] xs:top-[30%] md:top-[25%] 4xl:top-[20%] 5xl:top-[10%];
-    @apply w-[100%];
+    @apply absolute right-[-80%] xs:right-[-82%] sm:right-[-84%] lg:right-[-86%] 4xl:right-[-80%];
+    @apply top-[55%] xs:top-[50%] md:top-[45%] lg:top-[50%] 4xl:top-[40%] 5xl:top-[30%];
+    @apply w-[100%] xl:w-[90%] 3xl:w-[80%];
 }
 
 .Home-main section:nth-child(6) .two-jellyfish {
@@ -565,7 +565,7 @@ section {
 }
 
 .Home-main section:nth-child(6) .text-title-section {
-    @apply absolute top-5 xs:top-10 sm:top-5 2xl:top-14 3xl:top-6;
+    @apply absolute top-[10%] xs:top-10 sm:top-5 2xl:top-14 3xl:top-6;
     @apply left-[12%] 3xl:left-[15%];
     @apply text-white font-bold text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
 }
