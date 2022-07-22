@@ -242,7 +242,7 @@ const Home = () => {
                     <Plx parallaxData={plxData.sectionSixLeftjellyfish} className="image-px">
                         <img className="group-of-jelly-fish" alt="Group of fish" />
                     </Plx>
-                    <Plx parallaxData={plxData.sectionSixWhale} className="image-px">
+                    <Plx parallaxData={[]} className="image-px">
                         <img className="whale" alt="Whale" />
                     </Plx>
                     <img className="two-jellyfish" alt="Two jellyfish" />
