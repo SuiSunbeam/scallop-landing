@@ -74,7 +74,9 @@ const Home = () => {
                     </a>
                     <div className="Home-nav-menu">
                         <ul className="hidden lg:flex md:space-x-12 2xl:space-x-14">
-                            <li className="active">Home</li>
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
                             <li>
                                 <a href="#decorations">Decorations</a>
                             </li>

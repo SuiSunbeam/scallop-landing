@@ -88,11 +88,11 @@
     @apply top-0 xs:top-0 sm:top-0 md:top-2 lg:top-6 xl:top-10 2xl:top-20;
     @apply w-full h-12 xs:h-12 sm:h-12 md:h-14 lg:h-16 xl:h-20 2xl:h-24;
     @apply place-items-center;
-    @apply text-[#7396B4];
+    @apply text-[#07476F];
 }
 
 .Home-navigation .active {
-    @apply text-[#07476F];
+    @apply text-[#7396B4];
 }
 
 .Home-nav-menu {
