@@ -552,7 +552,7 @@ section {
 
 .Home-main section:nth-child(6) .whale {
     @apply content-[url('../resources/images/bg-whale.svg')];
-    @apply absolute right-[-60%] xs:right-[-62%] sm:right-[-54%] lg:right-[-56%] xl:right-[-45%] 2xl:right-[-35%] 3xl:right-[-30%] 4xl:right-[-25%];
+    @apply absolute right-[-60%] xs:right-[-62%] sm:right-[-54%] lg:right-[-56%] xl:right-[-45%] 2xl:right-[-35%] 3xl:right-[-35%] 4xl:right-[-25%];
     @apply top-[10%] xs:top-[12%] sm:top-[5%] md:top-[3%] lg:top-[0%] xl:top-[-5%] 3xl:top-[-10%] 4xl:top-[-20%];
     @apply w-[100%] xl:w-[85%] 2xl:w-[80%] 3xl:w-[75%];
 }
