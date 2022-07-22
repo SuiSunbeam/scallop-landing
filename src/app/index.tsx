@@ -325,8 +325,8 @@ const Home = () => {
                             <Popover.Panel className="protocal-content">
                                 <h2>Metaplex</h2>
                                 <p>
-                                    Scallop Decorations and Scallop NFTs are all in Metaplex NFT standard, and we use Metaplex Candy Machine
-                                    V2 for NFTs minting.
+                                    All Scallop Decorations are in Metaplex NFT standard, and we use Metaplex Candy
+                                    Machine V2 for NFTs minting.
                                 </p>
                             </Popover.Panel>
                         </Popover>
@@ -345,7 +345,7 @@ const Home = () => {
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
                                 <h2>Solend</h2>
-                                <p>Solend is the lending protocol which Scallop pools are using.</p>
+                                <p>Solend is the lending protocol Scallop pools using.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -354,7 +354,7 @@ const Home = () => {
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
                                 <h2>Switchboard</h2>
-                                <p>Scallop relies on Switchboard VRF feeds for picking winners.</p>
+                                <p>Scallop use Switchboard VRF feeds for picking winners.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -363,7 +363,7 @@ const Home = () => {
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
                                 <h2>Marinade</h2>
-                                <p>Marinade is the staking protocol which Scallop pools are using.</p>
+                                <p>Marinade is the staking protocol Scallop pools using.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -381,7 +381,7 @@ const Home = () => {
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
                                 <h2>Aldrin</h2>
-                                <p>Aldrin is the main Scallop Decorations trading exchange by using Serum order book.</p>
+                                <p>Aldrin is the main Scallop Decorations trading exchange.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -408,7 +408,7 @@ const Home = () => {
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
                                 <h2>Snowflake</h2>
-                                <p>Scallop is using Snowflake for asset management.</p>
+                                <p>Scallop use Snowflake for asset management.</p>
                             </Popover.Panel>
                         </Popover>
                         {/* <Popover className="relative">
@@ -435,7 +435,7 @@ const Home = () => {
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
                                 <h2>Grape</h2>
-                                <p>Scallop use Grape verify bot for the token holder verifications.</p>
+                                <p>Scallop use Grape for the token holder verifications.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -444,7 +444,7 @@ const Home = () => {
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
                                 <h2>Shoebill Coin</h2>
-                                <p>Shoebill Coin is Scallop's marketing partner in Solana ecosystem.</p>
+                                <p>Shoebill Coin is Scallop's marketing partner.</p>
                             </Popover.Panel>
                         </Popover>
                     </div>
@@ -457,10 +457,10 @@ const Home = () => {
                 <div className="seabed"></div>
                 <div className="content">
                     <div className="menu">
-                        <a href="https://www.scallop.io/">HOME</a>
-                        <a href="https://app.scallop.io/">APP</a>
-                        <a href="https://docs.scallop.io/">DOCS</a>
-                        <a href="mailto:team@scallop.io">CONTACT</a>
+                        <a href="https://www.scallop.io/">Home</a>
+                        <a href="https://app.scallop.io/">App</a>
+                        <a href="https://docs.scallop.io/">Docs</a>
+                        <a href="mailto:team@scallop.io">Contact</a>
                     </div>
                     <div className="social-media">
                         <a href="https://t.me/scallop_io">
