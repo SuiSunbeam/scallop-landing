@@ -126,7 +126,7 @@ const Home = () => {
                     <div className="section-content">
                         <div className="bubble-left">
                             <div className="bubble-container">
-                                <h5 className="text-title">Total Prize value</h5>
+                                <h5 className="text-title">Next Prize Value</h5>
                                 <h4 className="text-number">
                                     <CountUp
                                         start={0}
