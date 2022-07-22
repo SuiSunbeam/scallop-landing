@@ -325,8 +325,8 @@ const Home = () => {
                             <Popover.Panel className="protocal-content">
                                 <h2>Metaplex</h2>
                                 <p>
-                                    Scallop Decorations and Scallop NFTs are all in Metaplex standard, and we use Metaplex Candy Machine V2
-                                    for NFTs minting.
+                                    Scallop Decorations and Scallop NFTs are all in Metaplex NFT standard, and we use Metaplex Candy Machine
+                                    V2 for NFTs minting.
                                 </p>
                             </Popover.Panel>
                         </Popover>
@@ -345,7 +345,7 @@ const Home = () => {
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
                                 <h2>Solend</h2>
-                                <p>Solend is the main lending protocol that Scallop pools are using.</p>
+                                <p>Solend is the lending protocol which Scallop pools are using.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -354,7 +354,7 @@ const Home = () => {
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
                                 <h2>Switchboard</h2>
-                                <p>Scallop relies on Switchboard for their VRF feeds to pick winners.</p>
+                                <p>Scallop relies on Switchboard VRF feeds for picking winners.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -363,7 +363,7 @@ const Home = () => {
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
                                 <h2>Marinade</h2>
-                                <p>Marinade is the main staking protocol that Scallop pools are using.</p>
+                                <p>Marinade is the staking protocol which Scallop pools are using.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
