@@ -54,7 +54,7 @@ const Home = () => {
                             <li>Decorations</li>
                             <li>Roadmap</li>
                             <li>Core Team</li>
-                            <li>Investors</li>
+                            <li>Partners</li>
                         </ul>
                     </div>
                 </nav>
@@ -334,11 +334,11 @@ const Home = () => {
                         </Popover>
                         <Popover className="relative">
                             <Popover.Button className="protocal-img">
-                                <img className="protocal-solvent" alt="Solvent" />
+                                <img className="protocal-solanafm" alt="SolanaFM" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Solvent</h2>
-                                <p>Scallop will use Solvent to fragments Scallop Decorations.</p>
+                                <h2>SolanaFM</h2>
+                                <p>SolanaFM is Scallop's official Solana explorer.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -352,11 +352,11 @@ const Home = () => {
                         </Popover>
                         <Popover className="relative">
                             <Popover.Button className="protocal-img">
-                                <img className="protocal-solanafm" alt="SolanaFM" />
+                                <img className="protocal-solvent" alt="Solvent" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>SolanaFM</h2>
-                                <p>SolanaFM is Scallop's official Solana explorer.</p>
+                                <h2>Solvent</h2>
+                                <p>Scallop will use Solvent to fragments Scallop Decorations.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">

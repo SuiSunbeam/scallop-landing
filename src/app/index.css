@@ -586,19 +586,19 @@ section {
 
 .protocal-content {
     @apply absolute z-10;
-    @apply bg-[#081c28] bg-opacity-95 text-white;
-    @apply p-3 4xl:p-4 5xl:p-5;
+    @apply rounded-2xl bg-[#081c28] bg-opacity-95 text-white;
+    @apply p-5 4xl:p-5 5xl:p-5;
     @apply w-[18rem] xs:w-[15rem] sm:w-[18rem] md:w-[20rem] lg:w-[22rem] 3xl:w-[28rem] 4xl:w-[40rem] 5xl:w-[60rem];
 }
 
 .protocal-content > h2 {
     @apply border-b;
     @apply pb-1 4xl:pb-3 5xl:pb-5 mb-1 4xl:mb-3 5xl:mb-5;
-    @apply  text-sm md:text-base lg:text-lg 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl;
+    @apply  text-sm md:text-base lg:text-base 3xl:text-xl 4xl:text-2xl 5xl:text-3xl;
 }
 
 .protocal-content > p {
-    @apply  text-xs md:text-sm lg:text-base 3xl:text-lg 4xl:text-xl 5xl:text-2xl;
+    @apply  text-xs md:text-sm lg:text-sm 3xl:text-base 4xl:text-lg 5xl:text-xl;
 }
 
 .Home-main section:nth-child(6) .section-content > div:nth-child(1) .protocal-content {
