@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import Plx from 'react-plx';
+import { Popover } from '@headlessui/react';
 import krissAvatar from '../resources/images/kriss-avatar.png';
 import juneAvatar from '../resources/images/june-avatar.png';
 import donnieAvatar from '../resources/images/donnie-avatar.png';
@@ -7,7 +9,6 @@ import twitterIcon from '../resources/images/twitter-icon.png';
 import telegramIcon from '../resources/images/telegram-icon.png';
 import discordIcon from '../resources/images/discord-icon.png';
 import mediumIcon from '../resources/images/medium-icon.png';
-import Plx from 'react-plx';
 import { usePlxData } from './plxconfig';
 import './index.css';
 
@@ -113,8 +114,8 @@ const Home = () => {
                     <div className="section-content">
                         {/* <h3 className="text-title-1">&nbsp;</h3> */}
                         <p className="text-title-2">
-                            Scallop protocol's native NFTs called Scallop Decorations, their goal is useful on-chain
-                            collectibles, Scallop Decorations will show at Scallop Tank and interact with Scallop protocol.
+                            Scallop protocol's native NFTs called Scallop Decorations, their goal is useful on-chain collectibles, Scallop
+                            Decorations will show at Scallop Tank and interact with Scallop protocol.
                         </p>
                         <a className="nft-button" href="#hermit-crab">
                             Coming Soon
@@ -246,7 +247,143 @@ const Home = () => {
                         <img className="whale" alt="Whale" />
                     </Plx>
                     <img className="two-jellyfish" alt="Two jellyfish" />
-                    <div className="section-content"></div>
+                    <div className="section-content">
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-solana" alt="Solana" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Solana</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-metaplex" alt="Metaplex" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Metaplex</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-serum" alt="Serum" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Serum</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-solend" alt="Solend" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Solend</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-switchboard" alt="Switchboard" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Switchboard</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-marinade" alt="Marinade" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Marinade</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-saber" alt="Saber" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Saber</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-aldrin" alt="Aldrin" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Aldrin</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-slope" alt="Slope" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Slope</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-solvent" alt="Solvent" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Solvent</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-snowflake" alt="Snowflake" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Snowflake</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-solanafm" alt="SolanaFM" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>SolanaFM</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-coral" alt="Coral" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Coral</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-grape" alt="Grape" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Grape</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-shoebill" alt="Shoebill Coin" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>Shoebill Coin</h2>
+                                <p>Description</p>
+                            </Popover.Panel>
+                        </Popover>
+                    </div>
                     <div className="text-title-section">Partners & Integrated with</div>
                 </section>
             </main>
