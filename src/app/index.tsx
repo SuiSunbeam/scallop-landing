@@ -477,8 +477,8 @@ const Home = () => {
                         </a>
                     </div>
                     <img alt="Scallop logo" />
-                    <div className="mt-3 xs:mt-3 sm:mt-2 text-xs sm:text-sm lg:text-base">
-                        <span className="rounded-full bg-gray-700 text-gray-100 px-4 py-1">Copyright © 2021, Scallop</span>
+                    <div className="copyright">
+                        <span>Copyright © 2021, Scallop</span>
                     </div>
                 </div>
             </footer>
