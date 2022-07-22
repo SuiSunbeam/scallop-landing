@@ -350,7 +350,7 @@ const Home = () => {
                                 <p>Scallop is using Snowflake for asset management.</p>
                             </Popover.Panel>
                         </Popover>
-                        <Popover className="relative">
+                        {/* <Popover className="relative">
                             <Popover.Button className="protocal-img">
                                 <img className="protocal-solvent" alt="Solvent" />
                             </Popover.Button>
@@ -358,7 +358,7 @@ const Home = () => {
                                 <h2>Solvent</h2>
                                 <p>Scallop will use Solvent to fragments Scallop Decorations.</p>
                             </Popover.Panel>
-                        </Popover>
+                        </Popover> */}
                         <Popover className="relative">
                             <Popover.Button className="protocal-img">
                                 <img className="protocal-coral" alt="Coral" />
