@@ -1,5 +1,7 @@
 <svg width="1595" height="1080" viewBox="0 0 1595 1080" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="1430.62" height="1013.32" transform="matrix(-0.98251 -0.186209 -0.186209 0.98251 1594.29 226.394)" fill="url(#pattern0)"/>
+<rect width="1430.62" height="1013.32" transform="matrix(-0.98251 -0.186209 -0.186209 0.98251 1594.29 226.394)" fill="url(#pattern0)">
+        <animate attributeName="y" dur="40s" values="0; 30; 0; 20; 0" keyTimes="0; 0.2; 0.4; 0.6; 1" repeatCount="indefinite" />
+    </rect>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_991_39" transform="scale(0.000474383 0.000670241)"/>
