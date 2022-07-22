@@ -75,10 +75,18 @@ const Home = () => {
                     <div className="Home-nav-menu">
                         <ul className="hidden lg:flex md:space-x-12 2xl:space-x-14">
                             <li className="active">Home</li>
-                            <li>Decorations</li>
-                            <li>Roadmap</li>
-                            <li>Core Team</li>
-                            <li>Partners</li>
+                            <li>
+                                <a href="#decorations">Decorations</a>
+                            </li>
+                            <li>
+                                <a href="#roadmap">Roadmap</a>
+                            </li>
+                            <li>
+                                <a href="#core-team">Core Team</a>
+                            </li>
+                            <li>
+                                <a href="#partners">Partners</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -168,7 +176,9 @@ const Home = () => {
                             Coming Soon
                         </a>
                     </div>
-                    <div className="text-title-section">Scallop Decorations</div>
+                    <div className="text-title-section" id="decorations">
+                        Scallop Decorations
+                    </div>
                 </section>
                 <section>
                     <Plx parallaxData={plxData.sectionFourLeftFish} className="image-px">
@@ -221,13 +231,15 @@ const Home = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="text-title-section">Roadmap</div>
+                    <div className="text-title-section" id="roadmap">
+                        Roadmap
+                    </div>
                 </section>
                 <section>
                     <Plx parallaxData={plxData.sectionFiveRightTurtle} className="image-px">
                         <img className="group-of-turtle" alt="Group of fish" />
                     </Plx>
-                    <img className="core-team-submarine" alt="Core team submarine" />
+                    <img className="core-team-submarine" id="core-team" alt="Core team submarine" />
                     <img className="group-of-manta" alt="Group of manta" />
                     <div className="section-content">
                         <div className="card-team">
@@ -434,7 +446,9 @@ const Home = () => {
                             </Popover.Panel>
                         </Popover>
                     </div>
-                    <div className="text-title-section">Partners & Integrated with</div>
+                    <div className="text-title-section" id="partners">
+                        Partners & Integrated with
+                    </div>
                 </section>
             </main>
             <footer>

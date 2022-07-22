@@ -88,11 +88,11 @@
     @apply top-0 xs:top-0 sm:top-0 md:top-2 lg:top-6 xl:top-10 2xl:top-20;
     @apply w-full h-12 xs:h-12 sm:h-12 md:h-14 lg:h-16 xl:h-20 2xl:h-24;
     @apply place-items-center;
-    @apply text-[#07476f];
+    @apply text-[#7396B4];
 }
 
 .Home-navigation .active {
-    @apply text-[#969696];
+    @apply text-[#07476F];
 }
 
 .Home-nav-menu {
@@ -469,7 +469,7 @@ section {
 .Home-main section:nth-child(5) .section-content {
     @apply absolute flex flex-row flex-wrap justify-end items-end;
     @apply space-x-2 lg:space-x-5 4xl:space-x-8 space-y-2 lg:space-y-5 4xl:space-y-8;
-    @apply w-full xs:w-[90%] sm:w-[84%] md:w-[35rem] lg:w-[30rem] xl:w-[35rem] 2xl:w-[40rem] 3xl:w-[45rem] 4xl:w-[56rem] 5xl:w-[80rem] h-auto; 
+    @apply w-full xs:w-[90%] sm:w-[84%] md:w-[35rem] lg:w-[30rem] xl:w-[35rem] 2xl:w-[40rem] 3xl:w-[45rem] 4xl:w-[56rem] 5xl:w-[80rem] h-auto;
     @apply top-[23%] xs:top-[28%] lg:top-[42.5%];
     @apply right-[3%] xs:right-[7%] sm:right-[9%];
 }
@@ -564,7 +564,7 @@ section {
     @apply absolute flex flex-row flex-wrap justify-start items-start;
     @apply gap-x-6 sm:gap-x-9 md:gap-x-10 lg:gap-x-12 3xl:gap-x-[5rem] 5xl:gap-x-[8rem];
     @apply gap-y-1.5 xs:gap-y-3 sm:gap-y-6 md:gap-y-8 lg:gap-y-9 3xl:gap-y-[3.5rem] 5xl:gap-y-[6rem];
-    @apply w-[18rem] xs:w-[60%] sm:w-[54%] md:w-[56%] lg:w-[58%] xl:w-[54%] h-auto; 
+    @apply w-[18rem] xs:w-[60%] sm:w-[54%] md:w-[56%] lg:w-[58%] xl:w-[54%] h-auto;
     @apply top-[23%] xs:top-[28%] lg:top-[30%];
     @apply left-[13%] xs:right-[7%] sm:right-[9%];
 }
@@ -594,11 +594,11 @@ section {
 .protocal-content > h2 {
     @apply border-b;
     @apply pb-1 4xl:pb-3 5xl:pb-5 mb-1 4xl:mb-3 5xl:mb-5;
-    @apply  text-sm md:text-base lg:text-base 3xl:text-xl 4xl:text-2xl 5xl:text-3xl;
+    @apply text-sm md:text-base lg:text-base 3xl:text-xl 4xl:text-2xl 5xl:text-3xl;
 }
 
 .protocal-content > p {
-    @apply  text-xs md:text-sm lg:text-sm 3xl:text-base 4xl:text-lg 5xl:text-xl;
+    @apply text-xs md:text-sm lg:text-sm 3xl:text-base 4xl:text-lg 5xl:text-xl;
 }
 
 .Home-main section:nth-child(6) .section-content > div:nth-child(1) .protocal-content {
