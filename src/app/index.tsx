@@ -325,8 +325,8 @@ const Home = () => {
                             <Popover.Panel className="protocal-content">
                                 <h2>Metaplex</h2>
                                 <p>
-                                    All Scallop Decorations are in Metaplex NFT standard, and we use Metaplex Candy
-                                    Machine V2 for NFTs minting.
+                                    All Scallop Decorations are in Metaplex NFT standard, and we use Metaplex Candy Machine V2 for NFTs
+                                    minting.
                                 </p>
                             </Popover.Panel>
                         </Popover>
@@ -390,7 +390,7 @@ const Home = () => {
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
                                 <h2>Slope</h2>
-                                <p>Slope integrate Scallop in their mobile wallet.</p>
+                                <p>Slope integrate Scallop in Slope mobile wallet.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
