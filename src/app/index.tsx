@@ -1,5 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Plx from 'react-plx';
+import axios from 'axios';
+import CountUp from 'react-countup';
 import { Popover } from '@headlessui/react';
 import krissAvatar from '../resources/images/kriss-avatar.png';
 import juneAvatar from '../resources/images/june-avatar.png';
@@ -15,8 +17,30 @@ import './index.css';
 const Home = () => {
     const plxData = usePlxData();
 
+    const BASE_URL = 'https://api.scallop.io';
+
+    const [totalValue, setTotalValue] = useState(0);
+    const [totalPrize, setTotalPrize] = useState(0);
+
     useEffect(() => {
         document.title = 'Scallop';
+
+        (async () => {
+            await axios
+                .get(`${BASE_URL}/v1/get-total-value`)
+                .then((response) => {
+                    setTotalValue(response.data.data);
+                })
+                .catch((e) => console.log('Failed to fetch total value:', e));
+
+            await axios
+                .get(`${BASE_URL}/v1/get-total-prize`)
+                .then((response) => {
+                    setTotalPrize(response.data.data);
+                })
+                .catch((e) => console.log('Failed to fetch total prize:', e));
+        })();
+
         return () => {};
     }, []);
 
@@ -93,13 +117,36 @@ const Home = () => {
                         <div className="bubble-left">
                             <div className="bubble-container">
                                 <h5 className="text-title">Total Prize value</h5>
-                                <h4 className="text-number">≈ 36142 USD</h4>
+                                <h4 className="text-number">
+                                    <CountUp
+                                        start={0}
+                                        end={totalPrize}
+                                        duration={8}
+                                        prefix="≈ "
+                                        suffix=" USD"
+                                        decimal="."
+                                        separator=","
+                                        decimals={2}
+                                        useEasing={true}
+                                    />
+                                </h4>
                             </div>
                         </div>
                         <div className="bubble-right">
                             <div className="bubble-container">
                                 <h5 className="text-title">Total Value Locked</h5>
-                                <h4 className="text-number">3,456,789 USD</h4>
+                                <h4 className="text-number">
+                                    <CountUp
+                                        start={0}
+                                        end={totalValue}
+                                        duration={8}
+                                        suffix=" USD"
+                                        decimal="."
+                                        separator=","
+                                        decimals={0}
+                                        useEasing={true}
+                                    />
+                                </h4>
                             </div>
                         </div>
                         <img className="two-jellyfish" alt="Two jellyfish" />
