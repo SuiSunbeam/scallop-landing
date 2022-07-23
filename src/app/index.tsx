@@ -13,6 +13,7 @@ import discordIcon from '../resources/images/discord-icon.png';
 import mediumIcon from '../resources/images/medium-icon.png';
 import { usePlxData } from './plxconfig';
 import { ArrowSmUpIcon } from '@heroicons/react/solid';
+import { ExternalLinkIcon } from '@heroicons/react/solid';
 import './index.css';
 
 const Home = () => {
@@ -333,7 +334,12 @@ const Home = () => {
                                 <img className="protocal-solana" alt="Solana" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Solana</h2>
+                                <h2>
+                                    Solana
+                                    <a href="https://solana.com/" title="Link to Solana" target="_blank">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>Scallop protocol is based on Solana.</p>
                             </Popover.Panel>
                         </Popover>
@@ -501,9 +507,7 @@ const Home = () => {
                     </div>
                 </div>
             </footer>
-            {showBTT && (
-                <ArrowSmUpIcon className="Back-to-top" onClick={backToTop} />
-            )}
+            {showBTT && <ArrowSmUpIcon className="Back-to-top" onClick={backToTop} />}
         </div>
     );
 };

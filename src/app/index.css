@@ -609,13 +609,18 @@ section {
 }
 
 .protocal-content > h2 {
-    @apply border-b;
+    @apply flex  flex-row flex-nowrap justify-between items-center border-b;
     @apply pb-1 4xl:pb-3 5xl:pb-5 mb-1 4xl:mb-3 5xl:mb-5;
     @apply text-sm md:text-base lg:text-base 3xl:text-xl 4xl:text-2xl 5xl:text-3xl;
 }
 
 .protocal-content > p {
     @apply text-xs md:text-sm lg:text-sm 3xl:text-base 4xl:text-lg 5xl:text-xl;
+}
+
+.protocal-link {
+    @apply h-[1rem] md:h-[1.3rem] 4xl:h-[2rem];
+    @apply w-[1rem] md:w-[1.3rem] 4xl:w-[2rem];
 }
 
 .Home-main section:nth-child(6) .section-content > div:nth-child(1) .protocal-content {
