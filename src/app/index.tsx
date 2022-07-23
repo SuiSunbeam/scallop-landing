@@ -336,7 +336,7 @@ const Home = () => {
                             <Popover.Panel className="protocal-content">
                                 <h2>
                                     Solana
-                                    <a href="https://solana.com/" title="Link to Solana" target="_blank">
+                                    <a href="https://solana.com/" title="Link to Solana" target="_blank" rel="noreferrer">
                                         <ExternalLinkIcon className="protocal-link" />
                                     </a>
                                 </h2>
