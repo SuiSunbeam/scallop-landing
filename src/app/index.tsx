@@ -348,7 +348,12 @@ const Home = () => {
                                 <img className="protocal-metaplex" alt="Metaplex" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Metaplex</h2>
+                                <h2>
+                                    Metaplex
+                                    <a href="https://www.metaplex.com/" title="Link to Metaplex" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>
                                     All Scallop Decorations are in Metaplex NFT standard, and we use Metaplex Candy Machine V2 for NFTs
                                     minting.
@@ -360,7 +365,12 @@ const Home = () => {
                                 <img className="protocal-serum" alt="Serum" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Serum</h2>
+                                <h2>
+                                    Serum
+                                    <a href="https://www.projectserum.com/" title="Link to Serum" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>You can trade Scallop Decorations on Serum order book.</p>
                             </Popover.Panel>
                         </Popover>
@@ -369,7 +379,12 @@ const Home = () => {
                                 <img className="protocal-solend" alt="Solend" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Solend</h2>
+                                <h2>
+                                    Solend
+                                    <a href="https://solend.fi/" title="Link to Solend" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>Solend is the lending protocol Scallop pools using.</p>
                             </Popover.Panel>
                         </Popover>
@@ -378,7 +393,12 @@ const Home = () => {
                                 <img className="protocal-switchboard" alt="Switchboard" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Switchboard</h2>
+                                <h2>
+                                    Switchboard
+                                    <a href="https://switchboard.xyz/" title="Link to Switchboard" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>Scallop use Switchboard VRF feeds for picking winners.</p>
                             </Popover.Panel>
                         </Popover>
@@ -387,7 +407,12 @@ const Home = () => {
                                 <img className="protocal-marinade" alt="Marinade" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Marinade</h2>
+                                <h2>
+                                    Marinade
+                                    <a href="https://marinade.finance/" title="Link to Marinade" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>Marinade is the staking protocol Scallop pools using.</p>
                             </Popover.Panel>
                         </Popover>
@@ -396,7 +421,12 @@ const Home = () => {
                                 <img className="protocal-saber" alt="Saber" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Saber</h2>
+                                <h2>
+                                    Saber
+                                    <a href="https://saber.so/" title="Link to Saber" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>Scallop use Merkle Distributor by Saber team for airdrop tokens.</p>
                             </Popover.Panel>
                         </Popover>
@@ -405,7 +435,12 @@ const Home = () => {
                                 <img className="protocal-aldrin" alt="Aldrin" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Aldrin</h2>
+                                <h2>
+                                    Aldrin
+                                    <a href="https://aldrin.com/" title="Link to Aldrin" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>Aldrin is the main Scallop Decorations trading exchange.</p>
                             </Popover.Panel>
                         </Popover>
@@ -414,7 +449,12 @@ const Home = () => {
                                 <img className="protocal-slope" alt="Slope" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Slope</h2>
+                                <h2>
+                                    Slope
+                                    <a href="https://slope.finance/" title="Link to Slope" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>Slope integrate Scallop in Slope mobile wallet.</p>
                             </Popover.Panel>
                         </Popover>
@@ -423,7 +463,12 @@ const Home = () => {
                                 <img className="protocal-solanafm" alt="SolanaFM" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>SolanaFM</h2>
+                                <h2>
+                                    SolanaFM
+                                    <a href="https://solana.fm/" title="Link to SolanaFM" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>SolanaFM is Scallop's official Solana explorer.</p>
                             </Popover.Panel>
                         </Popover>
@@ -432,25 +477,26 @@ const Home = () => {
                                 <img className="protocal-snowflake" alt="Snowflake" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Snowflake</h2>
+                                <h2>
+                                    Snowflake
+                                    <a href="https://snowflake.so/" title="Link to Snowflake" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>Scallop use Snowflake for asset management.</p>
                             </Popover.Panel>
                         </Popover>
-                        {/* <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-solvent" alt="Solvent" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>Solvent</h2>
-                                <p>Scallop will use Solvent to fragments Scallop Decorations.</p>
-                            </Popover.Panel>
-                        </Popover> */}
                         <Popover className="relative">
                             <Popover.Button className="protocal-img">
                                 <img className="protocal-coral" alt="Coral" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Coral</h2>
+                                <h2>
+                                    Coral
+                                    <a href="https://www.coral.community/" title="Link to Coral" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>Scallop use Anchor framework by Coral for Solana program development.</p>
                             </Popover.Panel>
                         </Popover>
@@ -459,7 +505,12 @@ const Home = () => {
                                 <img className="protocal-grape" alt="Grape" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Grape</h2>
+                                <h2>
+                                    Grape
+                                    <a href="https://grapes.network/" title="Link to Grape" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>Scallop use Grape for the token holder verifications.</p>
                             </Popover.Panel>
                         </Popover>
@@ -468,7 +519,12 @@ const Home = () => {
                                 <img className="protocal-shoebill" alt="Shoebill Coin" />
                             </Popover.Button>
                             <Popover.Panel className="protocal-content">
-                                <h2>Shoebill Coin</h2>
+                                <h2>
+                                    Shoebill Coin
+                                    <a href="https://shoebillco.in/" title="Link to Shoebill Coin" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
                                 <p>Shoebill Coin is Scallop's marketing partner.</p>
                             </Popover.Panel>
                         </Popover>
