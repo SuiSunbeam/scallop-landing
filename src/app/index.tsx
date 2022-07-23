@@ -478,7 +478,7 @@ const Home = () => {
                     </div>
                     <img alt="Scallop logo" />
                     <div className="copyright">
-                        <span>Copyright © 2021, Scallop</span>
+                        <span>© 2022 Scallop.io</span>
                     </div>
                 </div>
             </footer>
