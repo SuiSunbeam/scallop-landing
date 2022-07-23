@@ -1,15 +1,91 @@
 <svg width="722" height="350" viewBox="0 0 722 350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <style>
+            .bubble {
+                transform: scale(0);
+			}
+            
+            #bubble-1 {
+                transform-origin: 664.829px 255px;
+                animation: pop 5s linear infinite;
+                animation-delay: 0.5s;
+            }
+
+            #bubble-2 {
+                transform-origin: 63.0781px 29.1887px;
+                animation: pop 5s linear infinite;
+                animation-delay: 1.5s;
+            }
+
+            #bubble-3 {
+                transform-origin: 650.812px 159px;
+                animation: pop 4s linear infinite;
+                animation-delay: 2.5s;
+            }
+
+            #bubble-4 {
+                transform-origin: 76.0947px 255px;
+                animation: pop 4s linear infinite;
+                animation-delay: 3.5s;
+            }
+
+            #bubble-5 {
+                transform-origin: 694.018px 228.518px;
+                animation: pop 5s linear infinite;
+                animation-delay: 1s;
+            }
+
+            #bubble-6 {
+                transform-origin: 26.0322px 49px;
+                animation: pop 4s linear infinite;
+                animation-delay: 2.5s;
+            }
+
+            #bubble-7 {
+                transform-origin: 142.177px 255px;
+                animation: pop 5s linear infinite;
+                animation-delay: 3s;
+            }
+
+            #bubble-8 {
+                transform-origin: 20px 27.9824px;
+                animation: pop 5s linear infinite;
+                animation-delay: 3.5s;
+            }
+
+            #bubble-9 {
+                transform-origin: 106.133px 255px;
+                animation: pop 5s linear infinite;
+                animation-delay: 2.5s;
+            }
+
+            #bubble-10 {
+                transform-origin: 556.693px 48px;
+                animation: pop 5s linear infinite;
+                animation-delay: 3.5s;
+            }
+
+			@keyframes pop {
+				0% { transform: translate(0px, 100px) scale(0)}
+				20% { transform: translate(10px, 70px) scale(0.5) }
+				40% { transform: translate(0px, 50px) scale(1) }
+				60% { transform: translate(10px, 30px) scale(1) }
+				80% { transform: translate(0px, 10px) scale(1) }
+				100% { transform: translate(5px, 0px) scale(1) }
+			}
+        </style>
+    </defs>
     <rect x="59.0732" y="50" width="497.62" height="240" fill="url(#pattern0)" />
-    <!-- <rect x="664.829" y="276.073" width="29.1887" height="28.1868" fill="url(#pattern1)" /> -->
-    <!-- <rect x="63.0781" width="29.1887" height="28.1868" fill="url(#pattern2)" /> -->
-    <!-- <rect x="650.812" y="159" width="43.0537" height="45.5913" fill="url(#pattern3)" /> -->
-    <!-- <rect x="76.0947" y="307" width="43.0537" height="45.5913" fill="url(#pattern4)" /> -->
-    <!-- <rect x="694.018" y="228.518" width="27.9824" height="30.112" fill="url(#pattern5)" /> -->
-    <!-- <rect x="26.0322" y="49" width="46.9061" height="48.6068" fill="url(#pattern6)" /> -->
-    <!-- <rect x="142.177" y="292" width="27.9824" height="30.112" fill="url(#pattern7)" /> -->
-    <!-- <rect y="20" width="27.9824" height="30.112" fill="url(#pattern8)" /> -->
-    <!-- <rect x="106.133" y="278" width="19.0237" height="20.4715" fill="url(#pattern9)" /> -->
-    <!-- <rect x="556.693" y="48" width="34.6413" height="34" fill="url(#pattern10)" /> -->
+    <rect id="bubble-1" class="bubble" x="664.829" y="255" width="29.1887" height="28.1868" fill="url(#pattern1)" />
+    <rect id="bubble-2" class="bubble" x="63.0781" width="29.1887" height="28.1868" fill="url(#pattern2)" />
+    <rect id="bubble-3" class="bubble" x="650.812" y="159" width="43.0537" height="45.5913" fill="url(#pattern3)" />
+    <rect id="bubble-4" class="bubble" x="76.0947" y="255" width="43.0537" height="45.5913" fill="url(#pattern4)" />
+    <rect id="bubble-5" class="bubble" x="694.018" y="228.518" width="27.9824" height="30.112" fill="url(#pattern5)" />
+    <rect id="bubble-6" class="bubble" x="26.0322" y="49" width="46.9061" height="48.6068" fill="url(#pattern6)" />
+    <rect id="bubble-7" class="bubble" x="142.177" y="255" width="27.9824" height="30.112" fill="url(#pattern7)" />
+    <rect id="bubble-8" class="bubble" y="20" width="27.9824" height="30.112" fill="url(#pattern8)" />
+    <rect id="bubble-9" class="bubble" x="106.133" y="255" width="19.0237" height="20.4715" fill="url(#pattern9)" />
+    <rect id="bubble-10" class="bubble" x="556.693" y="48" width="34.6413" height="34" fill="url(#pattern10)" />
     <defs>
         <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
             <use xlink:href="#image0_1056_1544" transform="scale(0.000322893 0.000628931)" />

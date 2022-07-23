@@ -27,6 +27,26 @@
 
             }
 
+            .bubble {
+                transform: scale(0);
+				animation: pop 6s linear infinite;
+			}
+
+            #bubble-1 {
+                transform-origin: 339px 113px;
+                animation-delay: 1.5s;
+            }
+
+            #bubble-2 {
+                transform-origin: 364px 161px;
+                animation-delay: 2.5s;
+            }
+
+            #bubble-3 {
+                transform-origin: 310px 170px;
+                animation-delay: 3.5s;
+            }
+
             @keyframes morayswim {
                 0% { transform: translate(0%, 0%) }
                 25% { transform: translate(-0.3%, 0.5%) }
@@ -52,6 +72,14 @@
                 80% { transform: skew(-.12rad) }
                 100% { transform: skew(-.20rad) }
             }
+			@keyframes pop {
+				0% { transform: translate(0px, 100px) scale(0)}
+				20% { transform: translate(10px, 70px) scale(0.5) }
+				40% { transform: translate(0px, 50px) scale(1) }
+				60% { transform: translate(10px, 30px) scale(1) }
+				80% { transform: translate(0px, 10px) scale(1) }
+				100% { transform: translate(5px, 0px) scale(1) }
+			}
         </style>
     </defs>
     <path d="M0 232C542.5 232 663.5 342.5 1403 342.5C1811 341.778 1921 427 1921 427H0V232Z" fill="#8D8E8E" />
@@ -66,7 +94,6 @@
     <rect x="-1" width="605" height="402" fill="url(#pattern0)" />
     <rect x="-19" y="282" width="77" height="109.299" fill="url(#pattern1)" />
     <rect x="1560" y="16" width="585" height="298" fill="url(#pattern2)" />
-    <rect x="364" y="161" width="20.8477" height="21.6305" fill="url(#pattern3)" />
     <g id="seaweed-left-2-right-leaf">
         <path d="M227.869 75.3289C228.039 75.9226 228.209 76.4314 228.378 77.0251C230.329 82.6227 231.856 89.9164 232.28 98.652C232.534 103.486 232.449 108.829 231.856 114.427C231.601 117.056 231.177 119.77 230.668 122.569C230.329 124.519 229.905 126.555 229.396 128.59C228.717 131.304 228.717 134.442 229.057 137.665C230.414 149.878 236.944 164.55 236.266 171.675C234.994 185.923 231.092 192.368 233.467 194.743C239.489 193.895 252.041 181.343 251.192 165.398C251.108 164.211 251.023 163.024 250.853 161.921C249.411 150.726 244.408 143.263 244.832 130.541C245.001 127.742 245.341 124.604 246.019 121.042C247.376 114.681 248.733 108.236 249.496 101.96C251.277 87.7962 250.429 74.4808 240.846 64.5579C230.244 53.5324 225.071 64.6427 227.869 75.3289Z" fill="#3B8758" />
         <path d="M235.503 192.029C238.556 188.128 246.698 179.053 243.305 162.261C239.913 145.468 236.011 133.34 239.404 119.092C242.796 104.843 243.729 84.1494 235.078 71.6821C238.98 82.8772 243.22 92.8001 239.404 112.222C235.587 131.644 236.605 143.348 242.033 160.564C244.662 168.791 241.948 180.919 236.86 189.315C235.503 191.266 235.503 192.029 235.503 192.029Z" fill="#76BE54" />
@@ -206,7 +233,9 @@
     <rect width="24" height="45" transform="matrix(-1 0 0 1 149 0)" fill="url(#pattern4)">
         <animate attributeName="y" dur="20s" values="90; 50; 80; 30; 90" keyTimes="0; 0.2; 0.4; 0.6; 1" repeatCount="indefinite" />
     </rect>
-    <rect x="339" y="113" width="29.1524" height="28.1868" fill="url(#pattern5)" />
+    <rect id="bubble-1" class="bubble" x="339" y="113" width="29.1524" height="28.1868" fill="url(#pattern5)" />
+    <rect id="bubble-2" class="bubble" x="364" y="161" width="20.8477" height="21.6305" fill="url(#pattern3)" />
+    <rect id="bubble-3" class="bubble" x="310" y="175" width="20.8477" height="21.6305" fill="url(#pattern3)" />
     <path d="M1336.94 296.095C1337.04 295.9 1337.04 295.705 1337.14 295.51C1337.04 295.607 1336.94 295.9 1336.94 296.095Z" fill="#9EA4B3" />
     <path d="M1406.75 260.41C1408.31 261.483 1410.07 262.75 1411.82 264.115C1409.97 262.653 1408.31 261.483 1406.75 260.41Z" fill="#9EA4B3" />
     <path d="M1341.62 357.91C1342.11 358.008 1342.6 358.008 1343.09 358.008C1342.6 358.008 1342.11 358.008 1341.62 357.91Z" fill="#9EA4B3" />
