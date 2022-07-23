@@ -622,7 +622,7 @@ section {
     @apply left-0;
 }
 .Home-main section:nth-child(6) .section-content > div:nth-child(2) .protocal-content {
-    @apply left-0;
+    @apply left-[calc(-100vw*2/5)] xs:left-0;
 }
 .Home-main section:nth-child(6) .section-content > div:nth-child(3) .protocal-content {
     @apply left-0;
@@ -634,34 +634,31 @@ section {
     @apply left-0;
 }
 .Home-main section:nth-child(6) .section-content > div:nth-child(6) .protocal-content {
-    @apply left-0;
+    @apply left-[calc(-100vw*2.65/5)] xs:left-0;
 }
 .Home-main section:nth-child(6) .section-content > div:nth-child(7) .protocal-content {
-    @apply left-[calc(-100vw*2.3/5)] xs:left-0;
+    @apply left-0;
 }
 .Home-main section:nth-child(6) .section-content > div:nth-child(8) .protocal-content {
-    @apply left-0;
+    @apply left-[calc(-100vw*1.5/5)] xs:left-0;
 }
 .Home-main section:nth-child(6) .section-content > div:nth-child(9) .protocal-content {
-    @apply left-[calc(-100vw*1.25/5)] xs:left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(10) .protocal-content {
     @apply left-[calc(-100vw*2.6/5)] xs:left-0;
 }
-.Home-main section:nth-child(6) .section-content > div:nth-child(11) .protocal-content {
+.Home-main section:nth-child(6) .section-content > div:nth-child(10) .protocal-content {
     @apply left-0;
+}
+.Home-main section:nth-child(6) .section-content > div:nth-child(11) .protocal-content {
+    @apply left-[calc(-100vw*1.5/5)] xs:left-0;
 }
 .Home-main section:nth-child(6) .section-content > div:nth-child(12) .protocal-content {
-    @apply left-[calc(-100vw*1.45/5)] xs:left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(13) .protocal-content {
     @apply left-0;
 }
-.Home-main section:nth-child(6) .section-content > div:nth-child(14) .protocal-content {
+.Home-main section:nth-child(6) .section-content > div:nth-child(13) .protocal-content {
     @apply left-[calc(-100vw*1.65/5)] xs:left-0;
 }
-.Home-main section:nth-child(6) .section-content > div:nth-child(15) .protocal-content {
-    @apply left-[calc(-100vw*3.15/5)] xs:left-0;
+.Home-main section:nth-child(6) .section-content > div:nth-child(14) .protocal-content {
+    @apply left-0;
 }
 
 .protocal-solana {
