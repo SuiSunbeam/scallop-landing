@@ -161,6 +161,7 @@ section {
     @apply left-[10%] 2xl:left-[12%];
     @apply text-[#1e2d45];
     @apply 2xl:mt-5 3xl:mt-6 4xl:mt-8 5xl:mt-16;
+    @apply z-10;
 }
 
 .Home-main section:nth-child(1) .section-content > div {
@@ -264,6 +265,7 @@ section {
 
 .Home-main section:nth-child(2) .section-content {
     @apply absolute w-full h-full;
+    @apply z-10;
 }
 
 /*---- main (Section 3) ---- */
@@ -309,6 +311,7 @@ section {
     @apply w-[13rem] xs:w-[17rem] sm:w-[15rem] md:w-[17rem] lg:w-[24rem] xl:w-[25rem] 2xl:w-[28rem] 3xl:w-[30rem] 4xl:w-[35rem] 5xl:w-[56rem] h-auto;
     @apply absolute right-[15%] xs:right-[17.5%] sm:right-[15%] lg:right-[12%] xl:right-[15%] 3xl:right-[18%];
     @apply top-[11.5rem] xs:top-[15.5rem] sm:top-[3.5rem] md:top-[5rem] lg:top-[16rem] xl:top-[18rem] 2xl:top-[23rem] 3xl:top-[26rem] 4xl:top-[36rem] 5xl:top-[50rem];
+    @apply z-10;
 }
 
 .Home-main section:nth-child(3) .text-title-section {
@@ -398,6 +401,7 @@ section {
     @apply w-full h-full;
     @apply absolute left-0;
     @apply top-[2%] xs:top-0 sm:top-[15%] md:top-[20%] xl:top-[30%] 4xl:top-[25%];
+    @apply z-10;
 }
 
 .Home-main section:nth-child(4) .text-title {
@@ -480,6 +484,7 @@ section {
     @apply w-full xs:w-[90%] sm:w-[84%] md:w-[35rem] lg:w-[30rem] xl:w-[35rem] 2xl:w-[40rem] 3xl:w-[45rem] 4xl:w-[56rem] 5xl:w-[80rem] h-auto;
     @apply top-[23%] xs:top-[28%] lg:top-[42.5%];
     @apply right-[3%] xs:right-[7%] sm:right-[9%];
+    @apply z-10;    
 }
 
 .Home-main section:nth-child(5) .card-team {
@@ -566,6 +571,7 @@ section {
     @apply absolute right-[10%] xs:right-[5%];
     @apply bottom-0 xs:bottom-[-3%];
     @apply w-[12%] lg:w-[8%] xl:w-[6%];
+    @apply z-10;
     transform: rotateY(-180deg);
 }
 
@@ -576,6 +582,7 @@ section {
     @apply w-[18rem] xs:w-[60%] sm:w-[54%] md:w-[56%] lg:w-[58%] xl:w-[54%] h-auto;
     @apply top-[23%] xs:top-[28%] lg:top-[30%];
     @apply left-[13%] xs:right-[7%] sm:right-[9%];
+    @apply z-10;    
 }
 
 .Home-main section:nth-child(6) .text-title-section {
@@ -707,6 +714,7 @@ section {
 footer {
     @apply w-full h-[14rem] xs:h-[16rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 3xl:h-[28rem] 4xl:h-[38rem] 5xl:h-[56rem];
     @apply relative flex justify-center items-center;
+    @apply z-10;
 }
 
 footer .seabed {
