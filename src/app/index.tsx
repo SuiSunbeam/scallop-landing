@@ -557,7 +557,9 @@ const Home = () => {
                             <img src={discordIcon} alt="" />
                         </a>
                     </div>
-                    <img alt="Scallop logo" />
+                    <a href="/" className="footer-logo">
+                        <img alt="Scallop logo" />
+                    </a>
                     <div className="copyright">
                         <span>© 2022 Scallop.io</span>
                     </div>
