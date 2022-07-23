@@ -598,7 +598,7 @@ section {
 
 .protocal-img > img {
     @apply h-full;
-    @apply hover:animate-bounce;
+    @apply hover:scale-110;
 }
 
 .protocal-content {
