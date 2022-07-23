@@ -12,6 +12,7 @@ import telegramIcon from '../resources/images/telegram-icon.png';
 import discordIcon from '../resources/images/discord-icon.png';
 import mediumIcon from '../resources/images/medium-icon.png';
 import { usePlxData } from './plxconfig';
+import { ArrowSmUpIcon } from '@heroicons/react/solid';
 import './index.css';
 
 const Home = () => {
@@ -21,6 +22,24 @@ const Home = () => {
 
     const [totalValue, setTotalValue] = useState(0);
     const [totalPrize, setTotalPrize] = useState(0);
+    const [showBTT, setShowBTT] = useState(false);
+
+    const backToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > window.screen.height) {
+                setShowBTT(true);
+            } else {
+                setShowBTT(false);
+            }
+        });
+    }, []);
 
     useEffect(() => {
         document.title = 'Scallop';
@@ -482,6 +501,9 @@ const Home = () => {
                     </div>
                 </div>
             </footer>
+            {showBTT && (
+                <ArrowSmUpIcon className="Back-to-top" onClick={backToTop} />
+            )}
         </div>
     );
 };

@@ -758,3 +758,14 @@ footer .content .copyright {
 footer .content .copyright span {
     @apply rounded-full bg-gray-700 text-gray-100 px-4 py-1;
 }
+
+/*---- Back to top ---- */
+.Back-to-top {
+    @apply h-[1.8rem] md:h-[2.5rem];
+    @apply w-[1.8rem] md:w-[2.5rem];
+    @apply fixed bottom-[5%] md:bottom-[3.5%];
+    @apply right-[5%] md:right-[3.5%];
+    @apply bg-gray-200 text-gray-800 opacity-60 hover:opacity-80 rounded-full cursor-pointer;
+    @apply animate-bounce;
+    @apply z-50;
+}
