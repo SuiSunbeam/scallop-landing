@@ -95,7 +95,7 @@ const Home = () => {
             </header>
             <main className="Home-main">
                 <section>
-                    <Plx parallaxData={plxData.sectionOneLeftFish} className="image-px">
+                    <Plx parallaxData={plxData.sectionOneLeftFish} className="image-plx">
                         <img className="group-of-fish" alt="Group of fish" />
                     </Plx>
                     <img className="group-of-discus-fish" alt="Group of discus fish" />
@@ -117,7 +117,7 @@ const Home = () => {
                     </div>
                 </section>
                 <section>
-                    <Plx parallaxData={plxData.sectionTwoRightFish} className="image-px">
+                    <Plx parallaxData={plxData.sectionTwoRightFish} className="image-plx">
                         <img className="group-of-fish" alt="Group of fish" />
                     </Plx>
                     <img className="group-of-zebra-fish" alt="Group of zebra fish" />
@@ -183,7 +183,7 @@ const Home = () => {
                     </div>
                 </section>
                 <section>
-                    <Plx parallaxData={plxData.sectionFourLeftFish} className="image-px">
+                    <Plx parallaxData={plxData.sectionFourLeftFish} className="image-plx">
                         <img className="group-of-fish" alt="Group of fish" />
                     </Plx>
                     <img className="lonely-jellyfish" alt="Lonely jellyfish" />
@@ -238,7 +238,7 @@ const Home = () => {
                     </div>
                 </section>
                 <section>
-                    <Plx parallaxData={plxData.sectionFiveRightTurtle} className="image-px">
+                    <Plx parallaxData={plxData.sectionFiveRightTurtle} className="image-plx">
                         <img className="group-of-turtle" alt="Group of fish" />
                     </Plx>
                     <img className="core-team-submarine" id="core-team" alt="Core team submarine" />
@@ -295,16 +295,16 @@ const Home = () => {
                     </div>
                 </section>
                 <section>
-                    <Plx parallaxData={plxData.sectionSixLeftFish} className="image-px">
+                    <Plx parallaxData={plxData.sectionSixLeftFish} className="image-plx">
                         <img className="group-of-fish-left" alt="Group of fish" />
                     </Plx>
-                    <Plx parallaxData={plxData.sectionSixRightFish} className="image-px">
+                    <Plx parallaxData={plxData.sectionSixRightFish} className="image-plx">
                         <img className="group-of-fish-right" alt="Group of fish" />
                     </Plx>
-                    <Plx parallaxData={plxData.sectionSixLeftjellyfish} className="image-px">
+                    <Plx parallaxData={plxData.sectionSixLeftjellyfish} className="image-plx">
                         <img className="group-of-jelly-fish" alt="Group of fish" />
                     </Plx>
-                    <Plx parallaxData={[]} className="image-px">
+                    <Plx parallaxData={[]} className="image-plx">
                         <img className="whale" alt="Whale" />
                     </Plx>
                     <img className="two-jellyfish" alt="Two jellyfish" />

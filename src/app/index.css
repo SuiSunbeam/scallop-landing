@@ -132,7 +132,7 @@ section {
     @apply relative;
 }
 
-.image-px {
+.image-plx {
     @apply absolute w-full h-full;
 }
 
