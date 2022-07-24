@@ -140,8 +140,11 @@ const Home = () => {
                     <Plx parallaxData={plxData.sectionTwoRightFish} className="image-plx">
                         <img className="group-of-fish" alt="Group of fish" />
                     </Plx>
+                    <img className="group-of-bubble-1" alt="Group of bubble" />
+                    <img className="group-of-bubble-2" alt="Group of bubble" />
                     <img className="group-of-zebra-fish" alt="Group of zebra fish" />
                     <img className="rock-left" alt="Left rock" />
+                    <img className="group-of-bubble-3" alt="Group of bubble" />
                     <img className="rock-right" alt="Right rock" />
                     <div className="section-content">
                         <div className="bubble-left">
@@ -183,8 +186,14 @@ const Home = () => {
                     </div>
                 </section>
                 <section>
+                    <img className="group-of-bubble-1" alt="Group of bubble" />
+                    <img className="group-of-bubble-2" alt="Group of bubble" />
                     <div className="rock-left"></div>
+                    <img className="group-of-bubble-3" alt="Group of bubble" />
+                    <img className="group-of-bubble-4" alt="Group of bubble" />
                     <img className="rock-right" alt="Right rock" />
+                    <img className="group-of-bubble-5" alt="Group of bubble" />
+                    <img className="group-of-bubble-6" alt="Group of bubble" />
                     <img className="lonely-zebrafish" alt="Lonely zebrafish" />
                     <img className="seahorse" alt="Seahorse" />
                     <img className="hermit" alt="Hermit crab" />
@@ -211,6 +220,11 @@ const Home = () => {
                     <img className="group-of-discus-fish-right" alt="Group of discus fish" />
                     <img className="rock-left" alt="Left rock" />
                     <img className="rock-right" alt="Right rock" />
+                    <img className="group-of-bubble-1" alt="Group of bubble" />
+                    <img className="group-of-bubble-2" alt="Group of bubble" />
+                    <img className="group-of-bubble-3" alt="Group of bubble" />
+                    <img className="group-of-bubble-4" alt="Group of bubble" />
+                    <img className="group-of-bubble-5" alt="Group of bubble" />
                     <div className="roadmap-line" />
                     <div className="section-content">
                         <div className="text-roadmap-1">
@@ -313,6 +327,10 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+                    <img className="group-of-bubble-1" alt="Group of bubble" />
+                    <img className="group-of-bubble-2" alt="Group of bubble" />
+                    <img className="group-of-bubble-3" alt="Group of bubble" />
+                    <img className="group-of-bubble-4" alt="Group of bubble" />
                 </section>
                 <section>
                     <Plx parallaxData={plxData.sectionSixLeftFish} className="image-plx">
@@ -328,6 +346,8 @@ const Home = () => {
                         <img className="whale" alt="Whale" />
                     </Plx>
                     <img className="two-jellyfish" alt="Two jellyfish" />
+                    <img className="group-of-bubble-1" alt="Group of bubble" />
+                    <img className="group-of-bubble-2" alt="Group of bubble" />
                     <div className="section-content">
                         <Popover className="relative">
                             <Popover.Button className="protocal-img">
