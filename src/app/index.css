@@ -599,7 +599,6 @@ section {
 
 .protocal-img > img {
     @apply h-full;
-    @apply hover:scale-110;
     @apply transition duration-200;
 }
 
@@ -670,48 +669,59 @@ section {
 
 .protocal-solana {
     @apply content-[url('../resources/protocols/solana.svg')];
+    @apply hover:scale-110;
 }
 .protocal-metaplex {
     @apply content-[url('../resources/protocols/metaplex.svg')];
+    @apply hover:scale-110;
 }
 .protocal-serum {
     @apply content-[url('../resources/protocols/serum.svg')];
+    @apply hover:scale-110;
 }
 .protocal-solend {
     @apply content-[url('../resources/protocols/solend.svg')];
+    @apply hover:scale-110;
 }
 .protocal-switchboard {
     @apply content-[url('../resources/protocols/switchboard.svg')];
+    @apply hover:scale-110;
 }
 .protocal-marinade {
     @apply content-[url('../resources/protocols/marinade.svg')];
+    @apply hover:scale-110;
 }
 .protocal-saber {
     @apply content-[url('../resources/protocols/saber.svg')];
+    @apply hover:scale-110;
 }
 .protocal-aldrin {
     @apply content-[url('../resources/protocols/aldrin.svg')];
+    @apply scale-110 hover:scale-125;
 }
 .protocal-slope {
     @apply content-[url('../resources/protocols/slope.svg')];
-}
-.protocal-solvent {
-    @apply content-[url('../resources/protocols/solvent.svg')];
+    @apply hover:scale-110;
 }
 .protocal-snowflake {
     @apply content-[url('../resources/protocols/snowflake.svg')];
+    @apply scale-110 hover:scale-125;
 }
 .protocal-solanafm {
     @apply content-[url('../resources/protocols/solanafm.svg')];
+    @apply scale-110 hover:scale-125;
 }
 .protocal-coral {
     @apply content-[url('../resources/protocols/coral.svg')];
+    @apply hover:scale-110;
 }
 .protocal-grape {
     @apply content-[url('../resources/protocols/grape.svg')];
+    @apply hover:scale-110;
 }
 .protocal-shoebill {
     @apply content-[url('../resources/protocols/shoebill.svg')];
+    @apply scale-110 hover:scale-125;
 }
 
 /*---- footer ---- */
