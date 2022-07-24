@@ -571,6 +571,7 @@ section {
 }
 
 .Home-main section:nth-child(5) .group-of-manta {
+    @apply hidden md:block;
     @apply content-[url('../resources/images/group-of-mantas.svg')];
     @apply absolute left-[-10%] md:left-[-5%] lg:left-[3%] xl:left-[5%] 3xl:left-[7%];
     @apply bottom-[-5%] sm:bottom-0 lg:bottom-[20%] xl:bottom-[20%] 2xl:bottom-[10%] 3xl:bottom-[20%];
@@ -592,6 +593,7 @@ section {
 }
 
 .Home-main section:nth-child(5) .group-of-bubble-3 {
+    @apply hidden md:block;
     @apply content-[url('../resources/images/group-of-bubble-right-1.svg')];
     @apply absolute left-[40%] lg:left-[30%] xl:left-[28%] 2xl:left-[33%];
     @apply bottom-[10%] lg:bottom-[30%] xl:bottom-[28%] 2xl:bottom-[24%];
@@ -599,6 +601,7 @@ section {
 }
 
 .Home-main section:nth-child(5) .group-of-bubble-4 {
+    @apply hidden md:block;
     @apply content-[url('../resources/images/group-of-bubble-right-2.svg')];
     @apply absolute left-[1%] md:left-[3%] lg:left-[8%] xl:left-[10%];
     @apply bottom-[10%] sm:bottom-[15%] md:bottom-[18%] lg:bottom-[35%] 2xl:bottom-[30%] 3xl:bottom-[40%];
@@ -609,7 +612,7 @@ section {
     @apply absolute flex flex-row flex-wrap justify-end items-end;
     @apply space-x-2 lg:space-x-5 4xl:space-x-8 space-y-2 lg:space-y-5 4xl:space-y-8;
     @apply w-full xs:w-[90%] sm:w-[84%] md:w-[35rem] lg:w-[30rem] xl:w-[35rem] 2xl:w-[40rem] 3xl:w-[45rem] 4xl:w-[56rem] 5xl:w-[80rem] h-auto;
-    @apply top-[23%] xs:top-[28%] lg:top-[42.5%];
+    @apply top-[30%] xs:top-[35%] lg:top-[42.5%];
     @apply right-[3%] xs:right-[7%] sm:right-[9%];
     @apply z-10;
 }
@@ -665,6 +668,7 @@ section {
 }
 
 .Home-main section:nth-child(6) .group-of-fish-left {
+    @apply hidden sm:block;
     @apply content-[url('../resources/images/bg-group-of-fish-2.svg')];
     @apply absolute left-[-30%] xs:left-[-27.5%] sm:left-[-25%] md:left-[-30%] 2xl:left-[-15%];
     @apply bottom-[5%] xs:bottom-[10%] sm:bottom-[20%] 2xl:bottom-[30%] 4xl:bottom-[55%];
@@ -729,7 +733,7 @@ section {
 }
 
 .Home-main section:nth-child(6) .text-title-section {
-    @apply absolute top-[10%] xs:top-20 sm:top-16 2xl:top-14 3xl:top-6;
+    @apply absolute top-[5%] sm:top-16 2xl:top-14 3xl:top-6;
     @apply left-[12%] 3xl:left-[13%];
     @apply text-white font-bold text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
 }
