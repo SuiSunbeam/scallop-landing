@@ -405,7 +405,7 @@ const Home = () => {
                                         <ExternalLinkIcon className="protocal-link" />
                                     </a>
                                 </h2>
-                                <p>Solend is the lending protocol Scallop pools using.</p>
+                                <p>Scallop pools are using Solend lending program.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -433,7 +433,7 @@ const Home = () => {
                                         <ExternalLinkIcon className="protocal-link" />
                                     </a>
                                 </h2>
-                                <p>Marinade is the staking protocol Scallop pools using.</p>
+                                <p>Scallop pools are using Marinade for SOL staking.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -489,7 +489,7 @@ const Home = () => {
                                         <ExternalLinkIcon className="protocal-link" />
                                     </a>
                                 </h2>
-                                <p>SolanaFM is Scallop's official Solana explorer.</p>
+                                <p>Scallop is using SolanaFM for the default Solana explorer.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -503,7 +503,7 @@ const Home = () => {
                                         <ExternalLinkIcon className="protocal-link" />
                                     </a>
                                 </h2>
-                                <p>Scallop use Snowflake for asset management.</p>
+                                <p>Scallop use Snowflake safe for asset management.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -517,7 +517,7 @@ const Home = () => {
                                         <ExternalLinkIcon className="protocal-link" />
                                     </a>
                                 </h2>
-                                <p>Scallop use Anchor framework by Coral for Solana program development.</p>
+                                <p>Scallop use Anchor framework by Coral team for Solana program development.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -531,7 +531,7 @@ const Home = () => {
                                         <ExternalLinkIcon className="protocal-link" />
                                     </a>
                                 </h2>
-                                <p>Scallop use Grape for the token holder verifications.</p>
+                                <p>Scallop use Grape Access for the token holder verifications.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
