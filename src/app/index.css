@@ -599,6 +599,7 @@ section {
 .protocal-img > img {
     @apply h-full;
     @apply hover:scale-110;
+    @apply transition duration-200;
 }
 
 .protocal-content {
