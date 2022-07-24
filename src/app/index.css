@@ -484,7 +484,7 @@ section {
     @apply w-full xs:w-[90%] sm:w-[84%] md:w-[35rem] lg:w-[30rem] xl:w-[35rem] 2xl:w-[40rem] 3xl:w-[45rem] 4xl:w-[56rem] 5xl:w-[80rem] h-auto;
     @apply top-[23%] xs:top-[28%] lg:top-[42.5%];
     @apply right-[3%] xs:right-[7%] sm:right-[9%];
-    @apply z-10;    
+    @apply z-10;
 }
 
 .Home-main section:nth-child(5) .card-team {
@@ -522,13 +522,14 @@ section {
 
 .Home-main section:nth-child(5) .card-team .card-content .card-links a {
     @apply mr-1 mt-1;
-    @apply hover:animate-bounce;
+    @apply hover:rotate-12 transition-all;
 }
 
 .Home-main section:nth-child(5) .card-team .card-content .card-links .twitter {
     @apply content-[url(../resources/images/twitter-rounded.svg)];
     @apply w-4 lg:w-6 h-auto;
     @apply mt-2 4xl:mt-3;
+    @apply hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)];
 }
 
 /*---- main (Section 6) ---- */
@@ -582,7 +583,7 @@ section {
     @apply w-[18rem] xs:w-[60%] sm:w-[54%] md:w-[56%] lg:w-[58%] xl:w-[54%] h-auto;
     @apply top-[23%] xs:top-[28%] lg:top-[30%];
     @apply left-[13%] xs:right-[7%] sm:right-[9%];
-    @apply z-10;    
+    @apply z-10;
 }
 
 .Home-main section:nth-child(6) .text-title-section {
@@ -749,7 +750,7 @@ footer .content .social-media {
 footer .content .social-media a img {
     @apply inline px-1 w-6 sm:w-10 sm:px-2;
     @apply md:w-10 lg:w-12 xl:w-12 2xl:w-20 2xl:px-5;
-    @apply hover:text-gray-100 hover:animate-bounce;
+    @apply hover:text-gray-100 hover:scale-110 hover:drop-shadow-[0_0_0_rgba(255,255,255,255)] transition-all;
 }
 
 footer .content > img {
