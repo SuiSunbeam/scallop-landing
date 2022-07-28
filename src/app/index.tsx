@@ -503,7 +503,7 @@ const Home = () => {
                                         <ExternalLinkIcon className="protocal-link" />
                                     </a>
                                 </h2>
-                                <p>Scallop use Snowflake safe for asset management.</p>
+                                <p>Scallop use Snowflake Safe for asset management.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
