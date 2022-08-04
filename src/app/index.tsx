@@ -200,7 +200,7 @@ const Home = () => {
                     <div className="section-content">
                         {/* <h3 className="text-title-1">&nbsp;</h3> */}
                         <p className="text-title-2">
-                            Scallop protocol's native NFTs called Scallop Decorations, their goal is useful on-chain collectibles, Scallop
+                            You can also call Scallop protocol's native NFTs Scallop Decorations, the goal of them are useful on-chain collectibles, Scallop
                             Decorations will show at Scallop Tank and interact with Scallop protocol.
                         </p>
                         <a className="nft-button" href="#hermit-crab">
