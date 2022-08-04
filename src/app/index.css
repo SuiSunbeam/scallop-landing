@@ -330,7 +330,6 @@ section {
     @apply w-[14%] 3xl:w-[13%];
 }
 
-
 .Home-main section:nth-child(3) .group-of-bubble-3 {
     @apply content-[url('../resources/images/group-of-bubble-right-1.svg')];
     @apply absolute left-[15%] 3xl:left-[15%];
@@ -924,7 +923,6 @@ footer .content .copyright span {
 
 .footer-logo {
     @apply flex justify-center items-center col-span-2;
-    @apply ml-10 xs:ml-0;
 }
 
 .footer-logo > img {

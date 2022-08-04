@@ -47,14 +47,14 @@ const Home = () => {
 
         (async () => {
             await axios
-                .get(`${BASE_URL}/v1/get-total-value?cluster=devnet`)
+                .get(`${BASE_URL}/v1/get-total-value`)
                 .then((response) => {
                     setTotalValue(response.data.data);
                 })
                 .catch((e) => console.log('Failed to fetch total value:', e));
 
             await axios
-                .get(`${BASE_URL}/v1/get-total-prize?cluster=devnet`)
+                .get(`${BASE_URL}/v1/get-total-prize`)
                 .then((response) => {
                     setTotalPrize(response.data.data);
                 })
