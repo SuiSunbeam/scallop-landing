@@ -844,6 +844,10 @@ section {
     @apply content-[url('../resources/protocols/aldrin.svg')];
     @apply scale-110 hover:scale-125;
 }
+.protocal-pyth {
+    @apply content-[url('../resources/protocols/pyth.svg')];
+    @apply scale-110 hover:scale-125;
+}
 .protocal-slope {
     @apply content-[url('../resources/protocols/slope.svg')];
     @apply hover:scale-110;
