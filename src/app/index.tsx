@@ -200,8 +200,8 @@ const Home = () => {
                     <div className="section-content">
                         {/* <h3 className="text-title-1">&nbsp;</h3> */}
                         <p className="text-title-2">
-                            You can also call Scallop protocol's native NFTs Scallop Decorations, the goal of them are useful on-chain collectibles, Scallop
-                            Decorations will show at Scallop Tank and interact with Scallop protocol.
+                            You can also call Scallop protocol's native NFTs Scallop Decorations, the goal of them are useful on-chain
+                            collectibles, Scallop Decorations will show at Scallop Tank and interact with Scallop protocol.
                         </p>
                         <a className="nft-button" href="#hermit-crab">
                             Coming Soon
@@ -462,6 +462,20 @@ const Home = () => {
                                     </a>
                                 </h2>
                                 <p>Aldrin is the main Scallop Decorations trading exchange.</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-pyth" alt="Pyth" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>
+                                    Pyth
+                                    <a href="https://pyth.network/" title="Link to Pyth" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
+                                <p>Scallop dapp use Pyth Price Feeds for the token prices.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
