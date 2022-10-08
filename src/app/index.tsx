@@ -121,9 +121,9 @@ const Home = () => {
                     <img className="group-of-discus-fish" alt="Group of discus fish" />
                     <div className="section-content">
                         <p className="text-title-1">
-                            Scallop is a diverse no-loss
+                            The leading Premium Bonds
                             <br />
-                            protocol on Solana.
+                            protocol on Solana
                         </p>
                         <p className="text-title-2">Maximizes the potential yield with no principal loss.</p>
                         <div>
@@ -259,10 +259,10 @@ const Home = () => {
                             <h2 className="text-title">2022 Q4</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Scallop Swap</span>
+                                    <span>Scallop Staking Pool</span>
                                 </li>
                                 <li>
-                                    <span>?</span>
+                                    <span>NFTs Pool</span>
                                 </li>
                             </ul>
                         </div>
@@ -433,7 +433,7 @@ const Home = () => {
                                         <ExternalLinkIcon className="protocal-link" />
                                     </a>
                                 </h2>
-                                <p>Scallop pools are using Marinade for SOL staking.</p>
+                                <p>Scallop pools support Marinade mSOL.</p>
                             </Popover.Panel>
                         </Popover>
                         <Popover className="relative">
@@ -560,6 +560,76 @@ const Home = () => {
                                     </a>
                                 </h2>
                                 <p>Shoebill Coin is Scallop's marketing partner.</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-wormhole" alt="Wormhole" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>
+                                    Wormhole
+                                    <a href="https://wormhole.com/" title="Link to Wormhole" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
+                                <p>Scallop support Wormhole wrapped SPL tokens.</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-socean" alt="Socean" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>
+                                    Socean
+                                    <a href="https://www.socean.fi/" title="Link to Socean" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
+                                <p>Scallop collab with Socean for SOL liquidity staking, code review, and liquidity support.</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-meanfi" alt="Meanfi" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>
+                                    Meanfi
+                                    <a href="https://meanfi.com/" title="Link to Meanfi" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
+                                <p>Scallop use Meanfi for asset management, and we are also marketing partners.</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-coin98" alt="Coin98" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>
+                                    Coin98
+                                    <a href="https://coin98.com/" title="Link to Coin98" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
+                                <p>Coin98 integrate Scallop in Coin98 Super App.</p>
+                            </Popover.Panel>
+                        </Popover>
+                        <Popover className="relative">
+                            <Popover.Button className="protocal-img">
+                                <img className="protocal-exodus" alt="Exodus" />
+                            </Popover.Button>
+                            <Popover.Panel className="protocal-content">
+                                <h2>
+                                    Exodus
+                                    <a href="https://www.exodus.com/" title="Link to Exodus" target="_blank" rel="noreferrer">
+                                        <ExternalLinkIcon className="protocal-link" />
+                                    </a>
+                                </h2>
+                                <p>Scallop integrate with Exodus wallet.</p>
                             </Popover.Panel>
                         </Popover>
                     </div>

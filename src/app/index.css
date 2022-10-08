@@ -872,7 +872,26 @@ section {
     @apply content-[url('../resources/protocols/shoebill.svg')];
     @apply scale-110 hover:scale-125;
 }
-
+.protocal-wormhole {
+    @apply content-[url('../resources/protocols/wormhole.svg')];
+    @apply scale-110 hover:scale-125;
+}
+.protocal-socean {
+    @apply content-[url('../resources/protocols/socean.svg')];
+    @apply scale-110 hover:scale-125;
+}
+.protocal-meanfi {
+    @apply content-[url('../resources/protocols/meanfi.svg')];
+    @apply hover:scale-110;
+}
+.protocal-coin98 {
+    @apply content-[url('../resources/protocols/coin98.svg')];
+    @apply hover:scale-110;
+}
+.protocal-exodus {
+    @apply content-[url('../resources/protocols/exodus.svg')];
+    @apply hover:scale-110;
+}
 /*---- footer ---- */
 footer {
     @apply w-full h-[14rem] xs:h-[16rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 3xl:h-[28rem] 4xl:h-[38rem] 5xl:h-[56rem];
