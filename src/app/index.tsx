@@ -422,7 +422,7 @@ const Home = () => {
                                 <p>Scallop use Switchboard VRF feeds for picking winners.</p>
                             </Popover.Panel>
                         </Popover>
-                        <Popover className="relative">
+                        {/* <Popover className="relative">
                             <Popover.Button className="protocal-img">
                                 <img className="protocal-marinade" alt="Marinade" />
                             </Popover.Button>
@@ -435,7 +435,7 @@ const Home = () => {
                                 </h2>
                                 <p>Scallop pools support Marinade mSOL.</p>
                             </Popover.Panel>
-                        </Popover>
+                        </Popover> */}
                         <Popover className="relative">
                             <Popover.Button className="protocal-img">
                                 <img className="protocal-saber" alt="Saber" />
