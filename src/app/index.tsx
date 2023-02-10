@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import Plx from 'react-plx';
 import axios from 'axios';
 import CountUp from 'react-countup';
-import { Popover } from '@headlessui/react';
 import krissAvatar from '../resources/images/kriss-avatar.png';
 import juneAvatar from '../resources/images/june-avatar.png';
 import donnieAvatar from '../resources/images/donnie-avatar.png';
@@ -13,7 +12,6 @@ import discordIcon from '../resources/images/discord-icon.png';
 import mediumIcon from '../resources/images/medium-icon.png';
 import { usePlxData } from './plxconfig';
 import { ArrowSmUpIcon } from '@heroicons/react/solid';
-import { ExternalLinkIcon } from '@heroicons/react/solid';
 import './index.css';
 
 const Home = () => {
