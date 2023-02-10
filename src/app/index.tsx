@@ -133,6 +133,11 @@ const Home = () => {
                             <a className="more-button" href="https://linktr.ee/scallop_io">
                                 Read More
                             </a>
+                            <div className="based-on">
+                                <span>Based on</span>
+                                <img className="based-on-solana" alt="Solana" />
+                                <img className="based-on-sui" alt="Sui" />
+                            </div>
                         </div>
                     </div>
                 </section>

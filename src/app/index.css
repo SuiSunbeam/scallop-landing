@@ -169,6 +169,22 @@ section {
     @apply mt-3 sm:mt-4 md:mt-5 lg:mt-6 xl:mt-7 2xl:mt-8 3xl:mt-10 4xl:mt-14 5xl:mt-16;
 }
 
+.Home-main section:nth-child(1) .section-content .based-on {
+    @apply absolute left-0 2xl:left-[52%] bottom-[-2rem] sm:bottom-[-3rem] 2xl:bottom-0;
+    @apply flex flex-nowrap items-center justify-start 2xl:justify-end gap-[0.5rem];
+    @apply w-full 2xl:w-auto !m-0 whitespace-nowrap text-xs 2xl:text-sm;
+}
+
+.Home-main section:nth-child(1) .section-content .based-on-solana {
+    @apply content-[url('../resources/images/solana.png')];
+    @apply h-5 xs:h-5 sm:h-5 md:h-7 lg:h-6 xl:h-7 2xl:h-8 4xl:h-10 !m-0;
+}
+
+.Home-main section:nth-child(1) .section-content .based-on-sui {
+    @apply content-[url('../resources/images/sui.png')];
+    @apply h-5 xs:h-5 sm:h-5 md:h-7 lg:h-6 xl:h-7 2xl:h-8 4xl:h-10 !m-0;
+}
+
 .Home-main section:nth-child(1) .section-content .text-title-1 {
     @apply text-xs xs:text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
     @apply tracking-[.05em] font-[700] sm:font-[800] lg:font-[900];
