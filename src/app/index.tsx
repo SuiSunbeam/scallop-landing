@@ -453,7 +453,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="relative">
-                            <span className="and-more">AND MORE...</span>
+                            <span className="and-more">and more...</span>
                         </div>
                     </div>
                     <div className="text-title-section" id="partners">

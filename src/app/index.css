@@ -783,7 +783,7 @@ section {
 
 .and-more {
     @apply flex items-center justify-center;
-    @apply w-full h-[80px] sm:h-[138px]  text-xl text-white font-bold;
+    @apply w-full h-[80px] sm:h-[138px]  text-base text-white font-normal;
 }
 
 .investor-robert-chen {
