@@ -679,7 +679,7 @@ section {
 
 /*---- main (Section 6) ---- */
 .Home-main section:nth-child(6) {
-    @apply h-[48rem] xs:h-[64rem] sm:h-[42rem] md:h-[50rem] lg:h-[45rem] xl:h-[40rem] 2xl:h-[43rem] 3xl:h-[46rem] 4xl:h-[56rem] 5xl:h-[80rem];
+    @apply h-[48rem] xs:h-[52rem] sm:h-[42rem] md:h-[50rem] lg:h-[45rem] xl:h-[40rem] 2xl:h-[43rem] 3xl:h-[46rem] 4xl:h-[56rem] 5xl:h-[80rem];
 }
 
 .Home-main section:nth-child(6) .group-of-fish-left {
@@ -739,10 +739,10 @@ section {
 
 .Home-main section:nth-child(6) .section-content {
     @apply absolute flex flex-row flex-wrap justify-start items-start;
-    @apply gap-x-6 sm:gap-x-9 md:gap-x-10 lg:gap-x-6 3xl:gap-x-[5rem] 5xl:gap-x-[8rem];
-    @apply gap-y-1.5 xs:gap-y-3 sm:gap-y-6 md:gap-y-8 lg:gap-y-9 3xl:gap-y-[3.5rem] 5xl:gap-y-[6rem];
+    @apply gap-x-6 sm:gap-x-9 md:gap-x-10 lg:gap-x-[1.5rem] 2xl:gap-x-[2.5rem] 3xl:gap-x-[3rem] 5xl:gap-x-[8rem];
+    @apply gap-y-3.5 xs:gap-y-4 sm:gap-y-6 md:gap-y-8 lg:gap-y-9 3xl:gap-y-[3.5rem] 5xl:gap-y-[6rem];
     @apply w-[18rem] xs:w-[60%] sm:w-[58%] md:w-[56%] lg:w-[58%] xl:w-[54%] h-auto;
-    @apply top-[18%] xs:top-[28%] lg:top-[30%];
+    @apply top-[15%] xs:top-[20%] lg:top-[30%];
     @apply left-[13%] xs:right-[7%] sm:right-[9%];
     @apply z-10;
 }
@@ -763,8 +763,8 @@ section {
 }
 
 .Home-main section:nth-child(6) .section-content .investor-info {
-    @apply flex flex-col items-center justify-center gap-1.5;
-    @apply text-white;
+    @apply flex flex-col items-center justify-start gap-1.5;
+    @apply text-white text-center;
 }
 
 .Home-main section:nth-child(6) .section-content .investor-info > div {
@@ -788,68 +788,68 @@ section {
 
 .investor-robert-chen {
     @apply content-[url('../resources/investors/investor-robert-chen.png')];
-    @apply w-[90%] hover:scale-110;
+    @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
 
 .orginization-ottersec {
     @apply content-[url('../resources/investors/orginization-ottersec.png')];
-    @apply h-4 mt-0.5;
+    @apply h-5 lg:h-6 mt-0.5;
 }
 
 .investor-ivan-lee {
     @apply content-[url('../resources/investors/investor-ivan-lee.png')];
-    @apply w-[90%] hover:scale-110;
+    @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
 
 .orginization-comma3-ventures {
     @apply content-[url('../resources/investors/orginization-comma3-ventures.png')];
-    @apply h-4 mt-1;
+    @apply h-5 lg:h-6 mt-1;
 }
 
 .orginization-red-building {
     @apply content-[url('../resources/investors/orginization-red-building.png')];
-    @apply h-4 mt-1;
+    @apply h-5 lg:h-6 mt-1;
 }
 
 .investor-david-wang {
     @apply content-[url('../resources/investors/investor-david-wang.png')];
-    @apply w-[90%] hover:scale-110;
+    @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
 
 .orginization-phd-capital {
     @apply content-[url('../resources/investors/orginization-phd-capital.png')];
-    @apply h-4 mt-1;
+    @apply h-5 lg:h-6 mt-1;
 }
 
 .investor-hungry {
     @apply content-[url('../resources/investors/investor-hungry.png')];
-    @apply w-[90%] hover:scale-110;
+    @apply w-[56%] lg:w-[90%] hover:scale-110;
     @apply bg-white rounded-full;
 }
 
 .orginization-assembly-partners {
     @apply content-[url('../resources/investors/orginization-assembly-partners.png')];
-    @apply h-4 mt-1;
+    @apply h-5 lg:h-6 mt-1;
 }
 
 .investor-erwin {
     @apply content-[url('../resources/investors/investor-erwin.png')];
-    @apply w-[90%] hover:scale-110;
+    @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
 
 .orginization-defi-land {
     @apply content-[url('../resources/investors/orginization-defi-land.png')];
-    @apply h-4 mt-0.5;
+    @apply h-5 lg:h-6 mt-0.5;
 }
 
 .investor-lei-eth {
     @apply content-[url('../resources/investors/investor-lei-eth.png')];
-    @apply w-[90%] hover:scale-110;
+    @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
 
 .orginization-lol-capital {
     @apply content-[url('../resources/investors/orginization-lol-capital.png')];
-    @apply h-4 mt-1;
+    @apply h-5 lg:h-6 mt-1;
 }
 
 /*---- footer ---- */
