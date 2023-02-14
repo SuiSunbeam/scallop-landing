@@ -3,7 +3,7 @@ import Plx from 'react-plx';
 import axios from 'axios';
 import CountUp from 'react-countup';
 import krissAvatar from '../resources/images/kriss-avatar.png';
-import juneAvatar from '../resources/images/june-avatar.png';
+import annAvatar from '../resources/images/ann-avatar.png';
 import donnieAvatar from '../resources/images/donnie-avatar.png';
 import nathanAvatar from '../resources/images/nathan-avatar.png';
 import twitterIcon from '../resources/images/twitter-icon.png';
@@ -118,12 +118,10 @@ const Home = () => {
                     </Plx>
                     <img className="group-of-discus-fish" alt="Group of discus fish" />
                     <div className="section-content">
-                        <p className="text-title-1">
-                            The leading Premium Bonds
-                            <br />
-                            protocol on Solana
+                        <p className="text-title-1">The first verifiable random interest rate machine</p>
+                        <p className="text-title-2">
+                            and is building a money market with high-interest lending, low-fee borrowing, and premium bonds.
                         </p>
-                        <p className="text-title-2">Maximizes the potential yield with no principal loss.</p>
                         <div>
                             <a className="more-button" href="https://app.scallop.io">
                                 Launch App
@@ -231,41 +229,26 @@ const Home = () => {
                     <div className="roadmap-line" />
                     <div className="section-content">
                         <div className="text-roadmap-1">
-                            <h2 className="text-title">2022 Q2</h2>
+                            <h2 className="text-title">2022 Q4</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Scallop Devnet Beta</span>
-                                </li>
-                                <li>
-                                    <span>Hackathon 3.0</span>
+                                    <span>Get Sui Grant</span>
                                 </li>
                             </ul>
                         </div>
                         <div className="text-roadmap-2">
-                            <h2 className="text-title">2022 Q3</h2>
+                            <h2 className="text-title">2023 Q1</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Fossil NFTs</span>
-                                </li>
-                                <li>
-                                    <span>Scallop Tools</span>
-                                </li>
-                                <li>
-                                    <span>Landing Page V2</span>
-                                </li>
-                                <li>
-                                    <span>Scallop Mainnet</span>
+                                    <span>Pre-Seed Round</span>
                                 </li>
                             </ul>
                         </div>
                         <div className="text-roadmap-3">
-                            <h2 className="text-title">2022 Q4</h2>
+                            <h2 className="text-title">2023 Q2</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Scallop Staking Pool</span>
-                                </li>
-                                <li>
-                                    <span>NFTs Pool</span>
+                                    <span>Scallop Sui Testnet</span>
                                 </li>
                             </ul>
                         </div>
@@ -319,13 +302,13 @@ const Home = () => {
                         </div>
                         <div className="card-team">
                             <div className="card-profile">
-                                <img alt="June Avatar" className="avatar" src={juneAvatar} />
-                                <div className="title">Designer</div>
+                                <img alt="June Avatar" className="avatar" src={annAvatar} />
+                                <div className="title">Manager</div>
                             </div>
                             <div className="card-content">
-                                <span className="card-name">June</span>
+                                <span className="card-name">Ann</span>
                                 <div className="card-links">
-                                    <a className="twitter" href="https://twitter.com/ChunnnnHsieh"></a>
+                                    <a className="twitter" href="https://twitter.com/sailormoonann"></a>
                                 </div>
                             </div>
                         </div>
