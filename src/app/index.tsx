@@ -118,13 +118,11 @@ const Home = () => {
                     </Plx>
                     <img className="group-of-discus-fish" alt="Group of discus fish" />
                     <div className="section-content">
-                        <p className="text-title-1">The first verifiable random interest rate machine</p>
-                        <p className="text-title-2">
-                            and is building a money market with high-interest lending, low-fee borrowing, and premium bonds.
-                        </p>
+                        <p className="text-title-1">The Next Generation Interest Rate Machine</p>
+                        <p className="text-title-2">Building lending & borrowing for Sui ecosystem, and premium bonds for Solana & Sui.</p>
                         <div>
                             <a className="more-button" href="https://app.scallop.io">
-                                Launch App
+                                Solana App
                             </a>
                             <a className="more-button" href="https://linktr.ee/scallop_io">
                                 Read More
@@ -337,64 +335,70 @@ const Home = () => {
                     <div className="section-content">
                         <div className="relative">
                             <a
-                                href="https://twitter.com/#"
+                                href="https://twitter.com/NotDeGhost"
                                 className="investor-info"
-                                title="Robert Chen Twitter"
+                                title="Robert Twitter"
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 <img className="investor-robert-chen" alt="Robert Chen" />
                                 <div>
                                     <img alt="twitter" />
-                                    <span>Robert Chen</span>
+                                    <span>Robert</span>
                                 </div>
                             </a>
                             <div className="investor-orginization">
-                                <a href="#" title="OtterSec" target="_blank" rel="noreferrer">
+                                <a href="https://osec.io/" title="OtterSec" target="_blank" rel="noreferrer">
                                     <img className="orginization-ottersec" alt="OtterSec" />
                                 </a>
                             </div>
                         </div>
                         <div className="relative">
-                            <a href="https://twitter.com/#" className="investor-info" title="Ivan Lee" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://twitter.com/Ivantok4"
+                                className="investor-info"
+                                title="Ivan Twitter"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <img className="investor-ivan-lee" alt="Ivan Lee" />
                                 <div>
                                     <img alt="twitter" />
-                                    <span>Ivan Lee</span>
+                                    <span>Ivan</span>
                                 </div>
                             </a>
                             <div className="investor-orginization">
-                                <a href="#" title="Comma3 Ventures" target="_blank" rel="noreferrer">
+                                <a href="https://comma3.co/" title="Comma3 Ventures" target="_blank" rel="noreferrer">
                                     <img className="orginization-comma3-ventures" alt="Comma3 Ventures" />
                                 </a>
-                                <a href="#" title="Red Building" target="_blank" rel="noreferrer">
+                                <a href="https://www.rbcap.io/" title="Red Building Capital" target="_blank" rel="noreferrer">
                                     <img className="orginization-red-building" alt="Red Building" />
                                 </a>
                             </div>
                         </div>
                         <div className="relative">
                             <a
-                                href="https://twitter.com/#"
+                                href="https://twitter.com/dw8998"
                                 className="investor-info"
-                                title="David Wang Twitter"
+                                title="David Twitter"
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 <img className="investor-david-wang" alt="David Wang" />
                                 <div>
                                     <img alt="twitter" />
-                                    <span>David Wang</span>
+                                    <span>David</span>
                                 </div>
                             </a>
                             <div className="investor-orginization">
-                                <a href="#" title="PHD Capital" target="_blank" rel="noreferrer">
+                                <a href="https://www.phdcapital.fund/" title="PHD Capital" target="_blank" rel="noreferrer">
                                     <img className="orginization-phd-capital" alt="PHD Capital" />
                                 </a>
                             </div>
                         </div>
                         <div className="relative">
                             <a
-                                href="https://twitter.com/#"
+                                href="https://twitter.com/hungry3asmp"
                                 className="investor-info"
                                 title="Hungry Twitter"
                                 target="_blank"
@@ -407,14 +411,14 @@ const Home = () => {
                                 </div>
                             </a>
                             <div className="investor-orginization">
-                                <a href="#" title="Assembly Partners" target="_blank" rel="noreferrer">
+                                <a href="https://assembly.partners/" title="Assembly Partners" target="_blank" rel="noreferrer">
                                     <img className="orginization-assembly-partners" alt="Assembly Partners" />
                                 </a>
                             </div>
                         </div>
                         <div className="relative">
                             <a
-                                href="https://twitter.com/#"
+                                href="https://twitter.com/DFL_Erwin"
                                 className="investor-info"
                                 title="Erwin Twitter"
                                 target="_blank"
@@ -427,14 +431,14 @@ const Home = () => {
                                 </div>
                             </a>
                             <div className="investor-orginization">
-                                <a href="#" title="Defi Land" target="_blank" rel="noreferrer">
+                                <a href="https://defiland.app/" title="DefiLand" target="_blank" rel="noreferrer">
                                     <img className="orginization-defi-land" alt="Defi Land" />
                                 </a>
                             </div>
                         </div>
                         <div className="relative">
                             <a
-                                href="https://twitter.com/#"
+                                href="https://twitter.com/snow668899"
                                 className="investor-info"
                                 title="Lei.eth Twitter"
                                 target="_blank"
@@ -443,11 +447,11 @@ const Home = () => {
                                 <img className="investor-lei-eth" alt="Lei.eth" />
                                 <div>
                                     <img alt="twitter" />
-                                    <span>Lei.eth</span>
+                                    <span>Snow</span>
                                 </div>
                             </a>
                             <div className="investor-orginization">
-                                <a href="#" title="Lol Capital" target="_blank" rel="noreferrer">
+                                <a href="https://www.lolcapital.io/" title="Lol Capital" target="_blank" rel="noreferrer">
                                     <img className="orginization-lol-capital" alt="Lol Capital" />
                                 </a>
                             </div>
