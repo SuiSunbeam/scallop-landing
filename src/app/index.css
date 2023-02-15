@@ -793,7 +793,7 @@ section {
 
 .orginization-ottersec {
     @apply content-[url('../resources/investors/orginization-ottersec.png')];
-    @apply h-5 lg:h-6 mt-0.5;
+    @apply h-4 lg:h-5 mt-0.5;
 }
 
 .investor-ivan-lee {
