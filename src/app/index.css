@@ -786,8 +786,8 @@ section {
     @apply w-full h-[80px] sm:h-[138px]  text-base text-white font-normal;
 }
 
-.investor-robert-chen {
-    @apply content-[url('../resources/investors/investor-robert-chen.png')];
+.investor-robert {
+    @apply content-[url('../resources/investors/investor-robert.png')];
     @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
 
@@ -796,8 +796,8 @@ section {
     @apply h-4 lg:h-5 mt-0.5;
 }
 
-.investor-ivan-lee {
-    @apply content-[url('../resources/investors/investor-ivan-lee.png')];
+.investor-ivan {
+    @apply content-[url('../resources/investors/investor-ivan.png')];
     @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
 
@@ -811,8 +811,8 @@ section {
     @apply h-5 lg:h-6 mt-1;
 }
 
-.investor-david-wang {
-    @apply content-[url('../resources/investors/investor-david-wang.png')];
+.investor-david {
+    @apply content-[url('../resources/investors/investor-david.png')];
     @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
 
@@ -842,8 +842,8 @@ section {
     @apply h-5 lg:h-6 mt-0.5;
 }
 
-.investor-lei-eth {
-    @apply content-[url('../resources/investors/investor-lei-eth.png')];
+.investor-snow {
+    @apply content-[url('../resources/investors/investor-snow.png')];
     @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
 

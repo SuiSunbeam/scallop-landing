@@ -341,7 +341,7 @@ const Home = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <img className="investor-robert-chen" alt="Robert Chen" />
+                                <img className="investor-robert" alt="Robert Chen" />
                                 <div>
                                     <img alt="twitter" />
                                     <span>Robert</span>
@@ -361,7 +361,7 @@ const Home = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <img className="investor-ivan-lee" alt="Ivan Lee" />
+                                <img className="investor-ivan" alt="Ivan Lee" />
                                 <div>
                                     <img alt="twitter" />
                                     <span>Ivan</span>
@@ -384,7 +384,7 @@ const Home = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <img className="investor-david-wang" alt="David Wang" />
+                                <img className="investor-david" alt="David Wang" />
                                 <div>
                                     <img alt="twitter" />
                                     <span>David</span>
@@ -440,11 +440,11 @@ const Home = () => {
                             <a
                                 href="https://twitter.com/snow668899"
                                 className="investor-info"
-                                title="Lei.eth Twitter"
+                                title="Snow Twitter"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <img className="investor-lei-eth" alt="Lei.eth" />
+                                <img className="investor-snow" alt="Snow" />
                                 <div>
                                     <img alt="twitter" />
                                     <span>Snow</span>
