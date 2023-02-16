@@ -2,9 +2,8 @@ import { useEffect, useState } from 'react';
 import Plx from 'react-plx';
 import axios from 'axios';
 import CountUp from 'react-countup';
-import { Popover } from '@headlessui/react';
 import krissAvatar from '../resources/images/kriss-avatar.png';
-import juneAvatar from '../resources/images/june-avatar.png';
+import annAvatar from '../resources/images/ann-avatar.png';
 import donnieAvatar from '../resources/images/donnie-avatar.png';
 import nathanAvatar from '../resources/images/nathan-avatar.png';
 import twitterIcon from '../resources/images/twitter-icon.png';
@@ -13,7 +12,6 @@ import discordIcon from '../resources/images/discord-icon.png';
 import mediumIcon from '../resources/images/medium-icon.png';
 import { usePlxData } from './plxconfig';
 import { ArrowSmUpIcon } from '@heroicons/react/solid';
-import { ExternalLinkIcon } from '@heroicons/react/solid';
 import './index.css';
 
 const Home = () => {
@@ -120,19 +118,20 @@ const Home = () => {
                     </Plx>
                     <img className="group-of-discus-fish" alt="Group of discus fish" />
                     <div className="section-content">
-                        <p className="text-title-1">
-                            The leading Premium Bonds
-                            <br />
-                            protocol on Solana
-                        </p>
-                        <p className="text-title-2">Maximizes the potential yield with no principal loss.</p>
+                        <p className="text-title-1">The Next Generation Interest Rate Machine</p>
+                        <p className="text-title-2">Building lending & borrowing for Sui ecosystem, and premium bonds for Solana & Sui.</p>
                         <div>
                             <a className="more-button" href="https://app.scallop.io">
-                                Launch App
+                                Solana App
                             </a>
                             <a className="more-button" href="https://linktr.ee/scallop_io">
                                 Read More
                             </a>
+                            <div className="based-on">
+                                <span>Based on</span>
+                                <img className="based-on-solana" alt="Solana" />
+                                <img className="based-on-sui" alt="Sui" />
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -228,41 +227,26 @@ const Home = () => {
                     <div className="roadmap-line" />
                     <div className="section-content">
                         <div className="text-roadmap-1">
-                            <h2 className="text-title">2022 Q2</h2>
+                            <h2 className="text-title">2022 Q4</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Scallop Devnet Beta</span>
-                                </li>
-                                <li>
-                                    <span>Hackathon 3.0</span>
+                                    <span>Get Sui Grant</span>
                                 </li>
                             </ul>
                         </div>
                         <div className="text-roadmap-2">
-                            <h2 className="text-title">2022 Q3</h2>
+                            <h2 className="text-title">2023 Q1</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Fossil NFTs</span>
-                                </li>
-                                <li>
-                                    <span>Scallop Tools</span>
-                                </li>
-                                <li>
-                                    <span>Landing Page V2</span>
-                                </li>
-                                <li>
-                                    <span>Scallop Mainnet</span>
+                                    <span>Pre-Seed Round</span>
                                 </li>
                             </ul>
                         </div>
                         <div className="text-roadmap-3">
-                            <h2 className="text-title">2022 Q4</h2>
+                            <h2 className="text-title">2023 Q2</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Scallop Staking Pool</span>
-                                </li>
-                                <li>
-                                    <span>NFTs Pool</span>
+                                    <span>Scallop Sui Testnet</span>
                                 </li>
                             </ul>
                         </div>
@@ -316,13 +300,13 @@ const Home = () => {
                         </div>
                         <div className="card-team">
                             <div className="card-profile">
-                                <img alt="June Avatar" className="avatar" src={juneAvatar} />
-                                <div className="title">Designer</div>
+                                <img alt="June Avatar" className="avatar" src={annAvatar} />
+                                <div className="title">Manager</div>
                             </div>
                             <div className="card-content">
-                                <span className="card-name">June</span>
+                                <span className="card-name">Ann</span>
                                 <div className="card-links">
-                                    <a className="twitter" href="https://twitter.com/ChunnnnHsieh"></a>
+                                    <a className="twitter" href="https://twitter.com/sailormoonann"></a>
                                 </div>
                             </div>
                         </div>
@@ -349,292 +333,135 @@ const Home = () => {
                     <img className="group-of-bubble-1" alt="Group of bubble" />
                     <img className="group-of-bubble-2" alt="Group of bubble" />
                     <div className="section-content">
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-solana" alt="Solana" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Solana
-                                    <a href="https://solana.com/" title="Link to Solana" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop protocol is based on Solana.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-metaplex" alt="Metaplex" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Metaplex
-                                    <a href="https://www.metaplex.com/" title="Link to Metaplex" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>
-                                    All Scallop Decorations are in Metaplex NFT standard, and we use Metaplex Candy Machine V2 for NFTs
-                                    minting.
-                                </p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-serum" alt="Serum" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Serum
-                                    <a href="https://www.projectserum.com/" title="Link to Serum" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>You can trade Scallop Decorations on Serum order book.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-solend" alt="Solend" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Solend
-                                    <a href="https://solend.fi/" title="Link to Solend" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop pools are using Solend lending program.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-switchboard" alt="Switchboard" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Switchboard
-                                    <a href="https://switchboard.xyz/" title="Link to Switchboard" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop use Switchboard VRF feeds for picking winners.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        {/* <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-marinade" alt="Marinade" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Marinade
-                                    <a href="https://marinade.finance/" title="Link to Marinade" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop pools support Marinade mSOL.</p>
-                            </Popover.Panel>
-                        </Popover> */}
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-saber" alt="Saber" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Saber
-                                    <a href="https://saber.so/" title="Link to Saber" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop use Merkle Distributor by Saber team for airdrop tokens.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-aldrin" alt="Aldrin" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Aldrin
-                                    <a href="https://aldrin.com/" title="Link to Aldrin" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Aldrin is the main Scallop Decorations trading exchange.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-pyth" alt="Pyth" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Pyth
-                                    <a href="https://pyth.network/" title="Link to Pyth" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop dapp use Pyth Price Feeds for the token prices.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-slope" alt="Slope" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Slope
-                                    <a href="https://slope.finance/" title="Link to Slope" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Slope integrate Scallop in Slope mobile wallet.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-solanafm" alt="SolanaFM" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    SolanaFM
-                                    <a href="https://solana.fm/" title="Link to SolanaFM" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop is using SolanaFM for the default Solana explorer.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-snowflake" alt="Snowflake" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Snowflake
-                                    <a href="https://snowflake.so/" title="Link to Snowflake" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop use Snowflake Safe for asset management.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-coral" alt="Coral" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Coral
-                                    <a href="https://www.coral.community/" title="Link to Coral" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop use Anchor framework by Coral team for Solana program development.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-grape" alt="Grape" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Grape
-                                    <a href="https://grapes.network/" title="Link to Grape" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop use Grape Access for the token holder verifications.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-shoebill" alt="Shoebill Coin" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Shoebill Coin
-                                    <a href="https://shoebillco.in/" title="Link to Shoebill Coin" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Shoebill Coin is Scallop's marketing partner.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-wormhole" alt="Wormhole" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Wormhole
-                                    <a href="https://wormhole.com/" title="Link to Wormhole" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop support Wormhole wrapped SPL tokens.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-socean" alt="Socean" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Socean
-                                    <a href="https://www.socean.fi/" title="Link to Socean" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop collab with Socean for SOL liquidity staking, code review, and liquidity support.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-meanfi" alt="Meanfi" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Meanfi
-                                    <a href="https://meanfi.com/" title="Link to Meanfi" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop use Meanfi for asset management, and we are also marketing partners.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-coin98" alt="Coin98" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Coin98
-                                    <a href="https://coin98.com/" title="Link to Coin98" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Coin98 integrate Scallop in Coin98 Super App.</p>
-                            </Popover.Panel>
-                        </Popover>
-                        <Popover className="relative">
-                            <Popover.Button className="protocal-img">
-                                <img className="protocal-exodus" alt="Exodus" />
-                            </Popover.Button>
-                            <Popover.Panel className="protocal-content">
-                                <h2>
-                                    Exodus
-                                    <a href="https://www.exodus.com/" title="Link to Exodus" target="_blank" rel="noreferrer">
-                                        <ExternalLinkIcon className="protocal-link" />
-                                    </a>
-                                </h2>
-                                <p>Scallop integrate with Exodus wallet.</p>
-                            </Popover.Panel>
-                        </Popover>
+                        <div className="relative">
+                            <a
+                                href="https://twitter.com/NotDeGhost"
+                                className="investor-info"
+                                title="Robert Twitter"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img className="investor-robert" alt="Robert Chen" />
+                                <div>
+                                    <img alt="twitter" />
+                                    <span>Robert</span>
+                                </div>
+                            </a>
+                            <div className="investor-orginization">
+                                <a href="https://osec.io/" title="OtterSec" target="_blank" rel="noreferrer">
+                                    <img className="orginization-ottersec" alt="OtterSec" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative">
+                            <a
+                                href="https://twitter.com/Ivantok4"
+                                className="investor-info"
+                                title="Ivan Twitter"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img className="investor-ivan" alt="Ivan Lee" />
+                                <div>
+                                    <img alt="twitter" />
+                                    <span>Ivan</span>
+                                </div>
+                            </a>
+                            <div className="investor-orginization">
+                                <a href="https://comma3.co/" title="Comma3 Ventures" target="_blank" rel="noreferrer">
+                                    <img className="orginization-comma3-ventures" alt="Comma3 Ventures" />
+                                </a>
+                                <a href="https://www.rbcap.io/" title="Red Building Capital" target="_blank" rel="noreferrer">
+                                    <img className="orginization-red-building" alt="Red Building" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative">
+                            <a
+                                href="https://twitter.com/dw8998"
+                                className="investor-info"
+                                title="David Twitter"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img className="investor-david" alt="David Wang" />
+                                <div>
+                                    <img alt="twitter" />
+                                    <span>David</span>
+                                </div>
+                            </a>
+                            <div className="investor-orginization">
+                                <a href="https://www.phdcapital.fund/" title="PHD Capital" target="_blank" rel="noreferrer">
+                                    <img className="orginization-phd-capital" alt="PHD Capital" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative">
+                            <a
+                                href="https://twitter.com/hungry3asmp"
+                                className="investor-info"
+                                title="Hungry Twitter"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img className="investor-hungry" alt="Hungry" />
+                                <div>
+                                    <img alt="twitter" />
+                                    <span>Hungry</span>
+                                </div>
+                            </a>
+                            <div className="investor-orginization">
+                                <a href="https://assembly.partners/" title="Assembly Partners" target="_blank" rel="noreferrer">
+                                    <img className="orginization-assembly-partners" alt="Assembly Partners" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative">
+                            <a
+                                href="https://twitter.com/DFL_Erwin"
+                                className="investor-info"
+                                title="Erwin Twitter"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img className="investor-erwin" alt="Erwin" />
+                                <div>
+                                    <img alt="twitter" />
+                                    <span>Erwin</span>
+                                </div>
+                            </a>
+                            <div className="investor-orginization">
+                                <a href="https://defiland.app/" title="DefiLand" target="_blank" rel="noreferrer">
+                                    <img className="orginization-defi-land" alt="Defi Land" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative">
+                            <a
+                                href="https://twitter.com/snow668899"
+                                className="investor-info"
+                                title="Snow Twitter"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img className="investor-snow" alt="Snow" />
+                                <div>
+                                    <img alt="twitter" />
+                                    <span>Snow</span>
+                                </div>
+                            </a>
+                            <div className="investor-orginization">
+                                <a href="https://www.lolcapital.io/" title="Lol Capital" target="_blank" rel="noreferrer">
+                                    <img className="orginization-lol-capital" alt="Lol Capital" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative">
+                            <span className="and-more">and more...</span>
+                        </div>
                     </div>
                     <div className="text-title-section" id="partners">
-                        Partners & Integrated with
+                        Angel Investors
                     </div>
                 </section>
             </main>
