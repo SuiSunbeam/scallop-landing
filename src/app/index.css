@@ -165,8 +165,24 @@ section {
 }
 
 .Home-main section:nth-child(1) .section-content > div {
-    @apply flex w-full space-x-4 md:space-x-6 xl:space-x-8 4xl:space-x-10;
+    @apply relative flex w-full space-x-4 md:space-x-6 xl:space-x-8 4xl:space-x-10;
     @apply mt-3 sm:mt-4 md:mt-5 lg:mt-6 xl:mt-7 2xl:mt-8 3xl:mt-10 4xl:mt-14 5xl:mt-16;
+}
+
+.Home-main section:nth-child(1) .section-content .based-on {
+    @apply absolute left-0 2xl:left-[52%] bottom-[-2rem] sm:bottom-[-3rem] 2xl:bottom-0;
+    @apply flex flex-nowrap items-center justify-start 2xl:justify-end gap-[0.5rem];
+    @apply w-full 2xl:w-auto !m-0 whitespace-nowrap text-xs 2xl:text-sm;
+}
+
+.Home-main section:nth-child(1) .section-content .based-on-solana {
+    @apply content-[url('../resources/images/solana.png')];
+    @apply h-5 xs:h-5 sm:h-5 md:h-7 lg:h-6 xl:h-7 2xl:h-8 4xl:h-10 !m-0;
+}
+
+.Home-main section:nth-child(1) .section-content .based-on-sui {
+    @apply content-[url('../resources/images/sui.png')];
+    @apply h-5 xs:h-5 sm:h-5 md:h-7 lg:h-6 xl:h-7 2xl:h-8 4xl:h-10 !m-0;
 }
 
 .Home-main section:nth-child(1) .section-content .text-title-1 {
@@ -663,7 +679,7 @@ section {
 
 /*---- main (Section 6) ---- */
 .Home-main section:nth-child(6) {
-    @apply h-[26rem] xs:h-[34rem] sm:h-[42rem] md:h-[50rem] lg:h-[45rem] xl:h-[40rem] 2xl:h-[43rem] 3xl:h-[46rem] 4xl:h-[56rem] 5xl:h-[80rem];
+    @apply h-[48rem] xs:h-[52rem] sm:h-[42rem] md:h-[50rem] lg:h-[45rem] xl:h-[40rem] 2xl:h-[43rem] 3xl:h-[46rem] 4xl:h-[56rem] 5xl:h-[80rem];
 }
 
 .Home-main section:nth-child(6) .group-of-fish-left {
@@ -723,10 +739,10 @@ section {
 
 .Home-main section:nth-child(6) .section-content {
     @apply absolute flex flex-row flex-wrap justify-start items-start;
-    @apply gap-x-6 sm:gap-x-9 md:gap-x-10 lg:gap-x-12 3xl:gap-x-[5rem] 5xl:gap-x-[8rem];
-    @apply gap-y-1.5 xs:gap-y-3 sm:gap-y-6 md:gap-y-8 lg:gap-y-9 3xl:gap-y-[3.5rem] 5xl:gap-y-[6rem];
-    @apply w-[18rem] xs:w-[60%] sm:w-[54%] md:w-[56%] lg:w-[58%] xl:w-[54%] h-auto;
-    @apply top-[23%] xs:top-[28%] lg:top-[30%];
+    @apply gap-x-6 sm:gap-x-9 md:gap-x-10 lg:gap-x-[1.5rem] 2xl:gap-x-[2.5rem] 3xl:gap-x-[3rem] 5xl:gap-x-[8rem];
+    @apply gap-y-3.5 xs:gap-y-4 sm:gap-y-6 md:gap-y-8 lg:gap-y-9 3xl:gap-y-[3.5rem] 5xl:gap-y-[6rem];
+    @apply w-[18rem] xs:w-[60%] sm:w-[58%] md:w-[56%] lg:w-[58%] xl:w-[54%] h-auto;
+    @apply top-[15%] xs:top-[20%] lg:top-[30%];
     @apply left-[13%] xs:right-[7%] sm:right-[9%];
     @apply z-10;
 }
@@ -737,161 +753,105 @@ section {
     @apply text-white font-bold text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
 }
 
-.protocal-img {
-    @apply focus:outline-none;
-    @apply h-[1.4rem] sm:h-[1.6rem] md:h-[1.7rem] lg:h-[2rem] 3xl:h-[2.5rem] 4xl:h-[3rem] 5xl:h-[4.5rem];
+.Home-main section:nth-child(6) .section-content > div {
+    @apply flex flex-col gap-1 sm:gap-2;
+    @apply w-[calc(50%-1rem)] sm:w-[6rem];
 }
 
-.protocal-img > img {
-    @apply h-full;
-    @apply transition duration-200;
+.Home-main section:nth-child(6) .section-content > div:last-child {
+    @apply w-full sm:w-[6rem];
 }
 
-.protocal-content {
-    @apply absolute z-10;
-    @apply rounded-2xl bg-[#081c28] bg-opacity-95 text-white;
-    @apply p-5 4xl:p-5 5xl:p-5;
-    @apply w-[18rem] xs:w-[15rem] sm:w-[18rem] md:w-[20rem] lg:w-[22rem] 3xl:w-[28rem] 4xl:w-[40rem] 5xl:w-[60rem];
+.Home-main section:nth-child(6) .section-content .investor-info {
+    @apply flex flex-col items-center justify-start gap-1.5;
+    @apply text-white text-center;
 }
 
-.protocal-content > h2 {
-    @apply flex  flex-row flex-nowrap justify-between items-center border-b;
-    @apply pb-1 4xl:pb-3 5xl:pb-5 mb-1 4xl:mb-3 5xl:mb-5;
-    @apply text-sm md:text-base lg:text-base 3xl:text-xl 4xl:text-2xl 5xl:text-3xl;
+.Home-main section:nth-child(6) .section-content .investor-info > div {
+    @apply flex flex-row flex-nowrap items-center justify-center gap-1;
+    @apply text-xs whitespace-nowrap;
 }
 
-.protocal-content > p {
-    @apply text-xs md:text-sm lg:text-sm 3xl:text-base 4xl:text-lg 5xl:text-xl;
+.Home-main section:nth-child(6) .section-content .investor-info > div img {
+    @apply content-[url(../resources/images/twitter-rounded.svg)];
+    @apply w-4 lg:w-5 h-10;
 }
 
-.protocal-link {
-    @apply h-[1rem] md:h-[1.3rem] 4xl:h-[2rem];
-    @apply w-[1rem] md:w-[1.3rem] 4xl:w-[2rem];
+.Home-main section:nth-child(6) .section-content .investor-orginization {
+    @apply flex flex-row flex-nowrap items-center justify-center gap-1.5;
 }
 
-.Home-main section:nth-child(6) .section-content > div:nth-child(1) .protocal-content {
-    @apply left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(2) .protocal-content {
-    @apply left-[calc(-100vw*2/5)] xs:left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(3) .protocal-content {
-    @apply left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(4) .protocal-content {
-    @apply left-[calc(-100vw*1.4/5)] xs:left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(5) .protocal-content {
-    @apply left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(6) .protocal-content {
-    @apply left-[calc(-100vw*2.65/5)] xs:left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(7) .protocal-content {
-    @apply left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(8) .protocal-content {
-    @apply left-[calc(-100vw*1.5/5)] xs:left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(9) .protocal-content {
-    @apply left-[calc(-100vw*2.6/5)] xs:left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(10) .protocal-content {
-    @apply left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(11) .protocal-content {
-    @apply left-[calc(-100vw*1.5/5)] xs:left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(12) .protocal-content {
-    @apply left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(13) .protocal-content {
-    @apply left-[calc(-100vw*1.65/5)] xs:left-0;
-}
-.Home-main section:nth-child(6) .section-content > div:nth-child(14) .protocal-content {
-    @apply left-0;
+.and-more {
+    @apply flex items-center justify-center;
+    @apply w-full h-[80px] sm:h-[138px]  text-base text-white font-normal;
 }
 
-.protocal-solana {
-    @apply content-[url('../resources/protocols/solana.svg')];
-    @apply hover:scale-110;
+.investor-robert {
+    @apply content-[url('../resources/investors/investor-robert.png')];
+    @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
-.protocal-metaplex {
-    @apply content-[url('../resources/protocols/metaplex.svg')];
-    @apply hover:scale-110;
+
+.orginization-ottersec {
+    @apply content-[url('../resources/investors/orginization-ottersec.png')];
+    @apply h-4 lg:h-5 mt-0.5;
 }
-.protocal-serum {
-    @apply content-[url('../resources/protocols/serum.svg')];
-    @apply hover:scale-110;
+
+.investor-ivan {
+    @apply content-[url('../resources/investors/investor-ivan.png')];
+    @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
-.protocal-solend {
-    @apply content-[url('../resources/protocols/solend.svg')];
-    @apply hover:scale-110;
+
+.orginization-comma3-ventures {
+    @apply content-[url('../resources/investors/orginization-comma3-ventures.png')];
+    @apply h-5 lg:h-6 mt-1;
 }
-.protocal-switchboard {
-    @apply content-[url('../resources/protocols/switchboard.svg')];
-    @apply hover:scale-110;
+
+.orginization-red-building {
+    @apply content-[url('../resources/investors/orginization-red-building.png')];
+    @apply h-5 lg:h-6 mt-1;
 }
-.protocal-marinade {
-    @apply content-[url('../resources/protocols/marinade.svg')];
-    @apply hover:scale-110;
+
+.investor-david {
+    @apply content-[url('../resources/investors/investor-david.png')];
+    @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
-.protocal-saber {
-    @apply content-[url('../resources/protocols/saber.svg')];
-    @apply hover:scale-110;
+
+.orginization-phd-capital {
+    @apply content-[url('../resources/investors/orginization-phd-capital.png')];
+    @apply h-5 lg:h-6 mt-1;
 }
-.protocal-aldrin {
-    @apply content-[url('../resources/protocols/aldrin.svg')];
-    @apply scale-110 hover:scale-125;
+
+.investor-hungry {
+    @apply content-[url('../resources/investors/investor-hungry.png')];
+    @apply w-[56%] lg:w-[90%] hover:scale-110;
+    @apply bg-white rounded-full;
 }
-.protocal-pyth {
-    @apply content-[url('../resources/protocols/pyth.svg')];
-    @apply scale-110 hover:scale-125;
+
+.orginization-assembly-partners {
+    @apply content-[url('../resources/investors/orginization-assembly-partners.png')];
+    @apply h-5 lg:h-6 mt-1;
 }
-.protocal-slope {
-    @apply content-[url('../resources/protocols/slope.svg')];
-    @apply hover:scale-110;
+
+.investor-erwin {
+    @apply content-[url('../resources/investors/investor-erwin.png')];
+    @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
-.protocal-snowflake {
-    @apply content-[url('../resources/protocols/snowflake.svg')];
-    @apply scale-110 hover:scale-125;
+
+.orginization-defi-land {
+    @apply content-[url('../resources/investors/orginization-defi-land.png')];
+    @apply h-5 lg:h-6 mt-0.5;
 }
-.protocal-solanafm {
-    @apply content-[url('../resources/protocols/solanafm.svg')];
-    @apply scale-110 hover:scale-125;
+
+.investor-snow {
+    @apply content-[url('../resources/investors/investor-snow.png')];
+    @apply w-[56%] lg:w-[90%] hover:scale-110;
 }
-.protocal-coral {
-    @apply content-[url('../resources/protocols/coral.svg')];
-    @apply hover:scale-110;
+
+.orginization-lol-capital {
+    @apply content-[url('../resources/investors/orginization-lol-capital.png')];
+    @apply h-5 lg:h-6 mt-1;
 }
-.protocal-grape {
-    @apply content-[url('../resources/protocols/grape.svg')];
-    @apply hover:scale-110;
-}
-.protocal-shoebill {
-    @apply content-[url('../resources/protocols/shoebill.svg')];
-    @apply scale-110 hover:scale-125;
-}
-.protocal-wormhole {
-    @apply content-[url('../resources/protocols/wormhole.svg')];
-    @apply scale-110 hover:scale-125;
-}
-.protocal-socean {
-    @apply content-[url('../resources/protocols/socean.svg')];
-    @apply scale-110 hover:scale-125;
-}
-.protocal-meanfi {
-    @apply content-[url('../resources/protocols/meanfi.svg')];
-    @apply hover:scale-110;
-}
-.protocal-coin98 {
-    @apply content-[url('../resources/protocols/coin98.svg')];
-    @apply hover:scale-110;
-}
-.protocal-exodus {
-    @apply content-[url('../resources/protocols/exodus.svg')];
-    @apply hover:scale-110;
-}
+
 /*---- footer ---- */
 footer {
     @apply w-full h-[14rem] xs:h-[16rem] md:h-[18rem] lg:h-[20rem] xl:h-[24rem] 3xl:h-[28rem] 4xl:h-[38rem] 5xl:h-[56rem];
