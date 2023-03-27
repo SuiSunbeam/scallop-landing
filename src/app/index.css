@@ -821,8 +821,8 @@ section {
     @apply h-5 lg:h-6 mt-1;
 }
 
-.investor-hungry {
-    @apply content-[url('../resources/investors/investor-hungry.png')];
+.investor-henry {
+    @apply content-[url('../resources/investors/investor-henry.png')];
     @apply w-[56%] lg:w-[90%] hover:scale-110;
     @apply bg-white rounded-full;
 }

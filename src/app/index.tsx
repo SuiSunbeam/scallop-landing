@@ -105,7 +105,7 @@ const Home = () => {
                                 <a href="#core-team">Core Team</a>
                             </li>
                             <li>
-                                <a href="#partners">Partners</a>
+                                <a href="#investors">Investors</a>
                             </li>
                         </ul>
                     </div>
@@ -227,26 +227,32 @@ const Home = () => {
                     <div className="roadmap-line" />
                     <div className="section-content">
                         <div className="text-roadmap-1">
-                            <h2 className="text-title">2022 Q4</h2>
+                            <h2 className="text-title">2023 Q1</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Get Sui Grant</span>
+                                    <span>Award Sui Grant</span>
                                 </li>
                             </ul>
                         </div>
                         <div className="text-roadmap-2">
-                            <h2 className="text-title">2023 Q1</h2>
+                            <h2 className="text-title">2023 Q2</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Pre-Seed Round</span>
+                                    <span>ScallopV1 on Sui Testnet/Devnet</span>
+                                </li>
+                                <li>
+                                    <span>ScallopV1 on Sui Mainnet</span>
                                 </li>
                             </ul>
                         </div>
                         <div className="text-roadmap-3">
-                            <h2 className="text-title">2023 Q2</h2>
+                            <h2 className="text-title">2023 Q3</h2>
                             <ul className="text-list">
                                 <li>
-                                    <span>Scallop Sui Testnet</span>
+                                    <span>Mixing Asset</span>
+                                </li>
+                                <li>
+                                    <span>cToken</span>
                                 </li>
                             </ul>
                         </div>
@@ -398,16 +404,16 @@ const Home = () => {
                         </div>
                         <div className="relative">
                             <a
-                                href="https://twitter.com/hungry3asmp"
+                                href="https://twitter.com/henry3asmp"
                                 className="investor-info"
-                                title="Hungry Twitter"
+                                title="Henry Twitter"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <img className="investor-hungry" alt="Hungry" />
+                                <img className="investor-henry" alt="Henry" />
                                 <div>
                                     <img alt="twitter" />
-                                    <span>Hungry</span>
+                                    <span>Henry</span>
                                 </div>
                             </a>
                             <div className="investor-orginization">
@@ -460,7 +466,7 @@ const Home = () => {
                             <span className="and-more">and more...</span>
                         </div>
                     </div>
-                    <div className="text-title-section" id="partners">
+                    <div className="text-title-section" id="investors">
                         Angel Investors
                     </div>
                 </section>
@@ -492,7 +498,7 @@ const Home = () => {
                         <img alt="Scallop logo" />
                     </a>
                     <div className="copyright">
-                        <span>© 2022 Scallop.io</span>
+                        <span>© 2023 Scallop.io</span>
                     </div>
                 </div>
             </footer>
