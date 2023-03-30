@@ -487,7 +487,7 @@ const Home = () => {
                         <a href="https://twitter.com/Scallop_io">
                             <img src={twitterIcon} alt="" />
                         </a>
-                        <a href="https://scallopio.medium.com/scallop-c030758d9c40">
+                        <a href="https://medium.com/scallopio">
                             <img src={mediumIcon} alt="" />
                         </a>
                         <a href="https://discord.com/invite/F7umecFArJ">
