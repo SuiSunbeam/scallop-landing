@@ -4,6 +4,7 @@ import axios from 'axios';
 import CountUp from 'react-countup';
 import krissAvatar from '../resources/images/kriss-avatar.png';
 import annAvatar from '../resources/images/ann-avatar.png';
+import shawnAvatar from '../resources/images/shawn-avatar.jpg';
 import donnieAvatar from '../resources/images/donnie-avatar.png';
 import nathanAvatar from '../resources/images/nathan-avatar.png';
 import twitterIcon from '../resources/images/twitter-icon.png';
@@ -121,16 +122,22 @@ const Home = () => {
                         <p className="text-title-1">The Next Generation Interest Rate Machine</p>
                         <p className="text-title-2">Building lending & borrowing for Sui ecosystem, and premium bonds for Solana & Sui.</p>
                         <div>
-                            <a className="more-button" href="https://app.scallop.io">
-                                Solana App
-                            </a>
-                            <a className="more-button" href="https://linktr.ee/scallop_io">
-                                Read More
-                            </a>
+                            <div className="links-container">
+                                <a className="more-button" href="https://app.scallop.io">
+                                    Solana App
+                                </a>
+                                <a className="more-button pointer-events-none to-transparent" href="#">
+                                    Sui App
+                                </a>
+                                <a className="more-button flex-grow" href="https://linktr.ee/scallop_io">
+                                    Read More
+                                </a>
+                            </div>
+
                             <div className="based-on">
                                 <span>Based on</span>
-                                <img className="based-on-solana" alt="Solana" />
                                 <img className="based-on-sui" alt="Sui" />
+                                <img className="based-on-solana" alt="Solana" />
                             </div>
                         </div>
                     </div>
@@ -316,6 +323,19 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="card-team">
+                            <div className="card-profile">
+                                <img alt="June Avatar" className="avatar" src={shawnAvatar} />
+                                <div className="title">Tech Lead</div>
+                            </div>
+                            <div className="card-content">
+                                <span className="card-name">Shawn</span>
+                                <div className="card-links">
+                                    <a className="twitter" href="https://twitter.com/XinhaiZeng"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card-team"></div>
                     </div>
                     <img className="group-of-bubble-1" alt="Group of bubble" />
                     <img className="group-of-bubble-2" alt="Group of bubble" />
