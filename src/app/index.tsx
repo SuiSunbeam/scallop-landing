@@ -119,25 +119,30 @@ const Home = () => {
                     </Plx>
                     <img className="group-of-discus-fish" alt="Group of discus fish" />
                     <div className="section-content">
-                        <p className="text-title-1">The Next Generation Interest Rate Machine</p>
-                        <p className="text-title-2">Building lending & borrowing for Sui ecosystem, and premium bonds for Solana & Sui.</p>
-                        <div>
-                            <div className="links-container">
-                                <a className="more-button" href="https://app.scallop.io">
-                                    Solana App
-                                </a>
-                                <a className="more-button pointer-events-none to-transparent" href="#">
-                                    Sui App
-                                </a>
-                                <a className="more-button flex-grow" href="https://linktr.ee/scallop_io">
-                                    Read More
-                                </a>
-                            </div>
+                        <p className="text-title-1">Scallop is the Next Generation Interest Rate Machine.</p>
+                        <p className="text-title-2">
+                            A money market on Sui that emphasizes user-friendliness, with high-interest lending, low-fee borrowing, and
+                            premium bonds.
+                            <span className="more-link">
+                                <a href="https://linktr.ee/scallop_io">Read More</a>
+                            </span>
+                        </p>
 
+                        <div>
+                            <a className="more-button pointer-events-none" href="#">
+                                Sui App
+                            </a>
+                            <a className="more-button" href="https://app.scallop.io">
+                                Solana App
+                            </a>
                             <div className="based-on">
                                 <span>Based on</span>
-                                <img className="based-on-sui" alt="Sui" />
-                                <img className="based-on-solana" alt="Solana" />
+                                <a className="pointer-events-auto" href="https://sui.io/">
+                                    <img className="based-on-sui" alt="Sui" />
+                                </a>
+                                <a href="https://solana.com/zh">
+                                    <img className="based-on-solana" alt="Solana" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -278,7 +283,6 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="Kriss Avatar" className="avatar" src={krissAvatar} />
-                                <div className="title">Team Lead</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Kriss</span>
@@ -290,7 +294,6 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="Donnie Avatar" className="avatar" src={donnieAvatar} />
-                                <div className="title">Developer</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Donnie</span>
@@ -302,7 +305,6 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="Nathan Avatar" className="avatar" src={nathanAvatar} />
-                                <div className="title">Developer</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Nathan</span>
@@ -314,7 +316,6 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="June Avatar" className="avatar" src={annAvatar} />
-                                <div className="title">Manager</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Ann</span>
@@ -326,7 +327,6 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="June Avatar" className="avatar" src={shawnAvatar} />
-                                <div className="title">Tech Lead</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Shawn</span>
@@ -335,7 +335,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="card-team"></div>
+                        <div className="card-team invisible"></div>
                     </div>
                     <img className="group-of-bubble-1" alt="Group of bubble" />
                     <img className="group-of-bubble-2" alt="Group of bubble" />
@@ -368,8 +368,11 @@ const Home = () => {
                                 rel="noreferrer"
                             >
                                 <img className="investor-robert" alt="Robert Chen" />
-                                <div>
-                                    <img alt="twitter" />
+                                <div className="group">
+                                    <img
+                                        alt="twitter"
+                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
+                                    />
                                     <span>Robert</span>
                                 </div>
                             </a>
@@ -388,8 +391,11 @@ const Home = () => {
                                 rel="noreferrer"
                             >
                                 <img className="investor-ivan" alt="Ivan Lee" />
-                                <div>
-                                    <img alt="twitter" />
+                                <div className="group">
+                                    <img
+                                        alt="twitter"
+                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
+                                    />
                                     <span>Ivan</span>
                                 </div>
                             </a>
@@ -411,8 +417,11 @@ const Home = () => {
                                 rel="noreferrer"
                             >
                                 <img className="investor-david" alt="David Wang" />
-                                <div>
-                                    <img alt="twitter" />
+                                <div className="group">
+                                    <img
+                                        alt="twitter"
+                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
+                                    />
                                     <span>David</span>
                                 </div>
                             </a>
@@ -431,8 +440,11 @@ const Home = () => {
                                 rel="noreferrer"
                             >
                                 <img className="investor-henry" alt="Henry" />
-                                <div>
-                                    <img alt="twitter" />
+                                <div className="group">
+                                    <img
+                                        alt="twitter"
+                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
+                                    />
                                     <span>Henry</span>
                                 </div>
                             </a>
@@ -451,8 +463,11 @@ const Home = () => {
                                 rel="noreferrer"
                             >
                                 <img className="investor-erwin" alt="Erwin" />
-                                <div>
-                                    <img alt="twitter" />
+                                <div className="group">
+                                    <img
+                                        alt="twitter"
+                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
+                                    />
                                     <span>Erwin</span>
                                 </div>
                             </a>
@@ -471,8 +486,11 @@ const Home = () => {
                                 rel="noreferrer"
                             >
                                 <img className="investor-snow" alt="Snow" />
-                                <div>
-                                    <img alt="twitter" />
+                                <div className="group">
+                                    <img
+                                        alt="twitter"
+                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
+                                    />
                                     <span>Snow</span>
                                 </div>
                             </a>
