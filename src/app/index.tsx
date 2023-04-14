@@ -14,6 +14,9 @@ import mediumIcon from '../resources/images/medium-icon.png';
 import { usePlxData } from './plxconfig';
 import { ArrowSmUpIcon } from '@heroicons/react/solid';
 import './index.css';
+import dropdownTriangle from '../resources/images/dropdownTriangle.svg';
+import suiIcon from '../resources/images/sui.svg';
+import solanaIcon from '../resources/images/solana1.svg';
 
 const Home = () => {
     const plxData = usePlxData();
@@ -122,18 +125,12 @@ const Home = () => {
                         <p className="text-title-1">The Next Generation Interest Rate Machine</p>
                         <p className="text-title-2">Building lending & borrowing for Sui ecosystem, and premium bonds for Solana & Sui.</p>
                         <div>
-                            <div className="links-container">
-                                <a className="more-button" href="https://app.scallop.io">
-                                    Solana App
-                                </a>
-                                <a className="more-button pointer-events-none to-transparent" href="#">
-                                    Sui App
-                                </a>
-                                <a className="more-button flex-grow" href="https://linktr.ee/scallop_io">
-                                    Read More
-                                </a>
-                            </div>
-
+                            <a className="more-button pointer-events-none" href="#">
+                                Sui App
+                            </a>
+                            <a className="more-button" href="https://app.scallop.io">
+                                Solana App
+                            </a>
                             <div className="based-on">
                                 <span>Based on</span>
                                 <img className="based-on-sui" alt="Sui" />
@@ -278,7 +275,6 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="Kriss Avatar" className="avatar" src={krissAvatar} />
-                                <div className="title">Team Lead</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Kriss</span>
@@ -290,7 +286,6 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="Donnie Avatar" className="avatar" src={donnieAvatar} />
-                                <div className="title">Developer</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Donnie</span>
@@ -302,7 +297,6 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="Nathan Avatar" className="avatar" src={nathanAvatar} />
-                                <div className="title">Developer</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Nathan</span>
@@ -314,7 +308,6 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="June Avatar" className="avatar" src={annAvatar} />
-                                <div className="title">Manager</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Ann</span>
@@ -326,7 +319,6 @@ const Home = () => {
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="June Avatar" className="avatar" src={shawnAvatar} />
-                                <div className="title">Tech Lead</div>
                             </div>
                             <div className="card-content">
                                 <span className="card-name">Shawn</span>
@@ -335,7 +327,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="card-team"></div>
+                        <div className="card-team invisible"></div>
                     </div>
                     <img className="group-of-bubble-1" alt="Group of bubble" />
                     <img className="group-of-bubble-2" alt="Group of bubble" />
