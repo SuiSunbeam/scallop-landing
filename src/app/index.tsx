@@ -119,8 +119,15 @@ const Home = () => {
                     </Plx>
                     <img className="group-of-discus-fish" alt="Group of discus fish" />
                     <div className="section-content">
-                        <p className="text-title-1">The Next Generation Interest Rate Machine</p>
-                        <p className="text-title-2">Building lending & borrowing for Sui ecosystem, and premium bonds for Solana & Sui.</p>
+                        <p className="text-title-1">Scallop is the first verifiable random interest rate machine on Solana</p>
+                        <p className="text-title-2">
+                            and is building a money market on Sui that emphasizes user&#8209;friendliness with high&#8209;interest lending, low&#8209;fee
+                            borrowing, and premium bonds.
+                            <span className="more-link">
+                                <a href="https://linktr.ee/scallop_io">Read More</a>
+                            </span>
+                        </p>
+
                         <div>
                             <a className="more-button pointer-events-none" href="#">
                                 Sui App
@@ -130,8 +137,12 @@ const Home = () => {
                             </a>
                             <div className="based-on">
                                 <span>Based on</span>
-                                <img className="based-on-sui" alt="Sui" />
-                                <img className="based-on-solana" alt="Solana" />
+                                <a className="pointer-events-auto" href="https://sui.io/">
+                                    <img className="based-on-sui" alt="Sui" />
+                                </a>
+                                <a href="https://solana.com/zh">
+                                    <img className="based-on-solana" alt="Solana" />
+                                </a>
                             </div>
                         </div>
                     </div>

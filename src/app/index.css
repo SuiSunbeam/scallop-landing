@@ -157,7 +157,7 @@ section {
 
 .Home-main section:nth-child(1) .section-content {
     @apply absolute flex flex-col justify-self-start place-content-center;
-    @apply w-[50%] xs:w-[55%] sm:w-[56%] md:w-[60%] h-full;
+    @apply w-[50%] xs:w-[55%] sm:w-[56%] md:w-[50%] h-full;
     @apply left-[10%] 2xl:left-[12%];
     @apply text-[#1e2d45];
     @apply 2xl:mt-5 3xl:mt-6 4xl:mt-8 5xl:mt-16;
@@ -195,6 +195,11 @@ section {
 
 .Home-main section:nth-child(1) .section-content .text-title-2 {
     @apply text-[0.5rem] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl;
+}
+
+.more-link {
+    @apply text-[#1e2d45] font-medium text-[0.5rem] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl;
+    @apply leading-[0.75rem] lg:leading-7 underline ml-1;
 }
 
 .more-button {
