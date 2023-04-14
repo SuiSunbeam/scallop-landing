@@ -198,7 +198,7 @@ section {
 }
 
 .more-link {
-    @apply text-[#1e2d45] font-medium text-[0.5rem] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl;
+    @apply text-[#1e2d45] font-semibold text-[0.5rem] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl;
     @apply leading-[0.75rem] lg:leading-7 underline ml-1;
 }
 
