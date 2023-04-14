@@ -14,9 +14,6 @@ import mediumIcon from '../resources/images/medium-icon.png';
 import { usePlxData } from './plxconfig';
 import { ArrowSmUpIcon } from '@heroicons/react/solid';
 import './index.css';
-import dropdownTriangle from '../resources/images/dropdownTriangle.svg';
-import suiIcon from '../resources/images/sui.svg';
-import solanaIcon from '../resources/images/solana1.svg';
 
 const Home = () => {
     const plxData = usePlxData();
@@ -360,8 +357,11 @@ const Home = () => {
                                 rel="noreferrer"
                             >
                                 <img className="investor-robert" alt="Robert Chen" />
-                                <div>
-                                    <img alt="twitter" />
+                                <div className="group">
+                                    <img
+                                        alt="twitter"
+                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
+                                    />
                                     <span>Robert</span>
                                 </div>
                             </a>
@@ -380,8 +380,11 @@ const Home = () => {
                                 rel="noreferrer"
                             >
                                 <img className="investor-ivan" alt="Ivan Lee" />
-                                <div>
-                                    <img alt="twitter" />
+                                <div className="group">
+                                    <img
+                                        alt="twitter"
+                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
+                                    />
                                     <span>Ivan</span>
                                 </div>
                             </a>
@@ -403,8 +406,11 @@ const Home = () => {
                                 rel="noreferrer"
                             >
                                 <img className="investor-david" alt="David Wang" />
-                                <div>
-                                    <img alt="twitter" />
+                                <div className="group">
+                                    <img
+                                        alt="twitter"
+                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
+                                    />
                                     <span>David</span>
                                 </div>
                             </a>
@@ -423,8 +429,11 @@ const Home = () => {
                                 rel="noreferrer"
                             >
                                 <img className="investor-henry" alt="Henry" />
-                                <div>
-                                    <img alt="twitter" />
+                                <div className="group">
+                                    <img
+                                        alt="twitter"
+                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
+                                    />
                                     <span>Henry</span>
                                 </div>
                             </a>
@@ -443,8 +452,11 @@ const Home = () => {
                                 rel="noreferrer"
                             >
                                 <img className="investor-erwin" alt="Erwin" />
-                                <div>
-                                    <img alt="twitter" />
+                                <div className="group">
+                                    <img
+                                        alt="twitter"
+                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
+                                    />
                                     <span>Erwin</span>
                                 </div>
                             </a>
@@ -463,8 +475,11 @@ const Home = () => {
                                 rel="noreferrer"
                             >
                                 <img className="investor-snow" alt="Snow" />
-                                <div>
-                                    <img alt="twitter" />
+                                <div className="group">
+                                    <img
+                                        alt="twitter"
+                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
+                                    />
                                     <span>Snow</span>
                                 </div>
                             </a>

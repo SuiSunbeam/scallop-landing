@@ -774,8 +774,7 @@ section {
 
 .Home-main section:nth-child(6) .section-content .investor-info > div img {
     @apply content-[url(../resources/images/twitter-rounded.svg)];
-    @apply w-4 lg:w-5 h-10 mr-1;
-    @apply hover:rotate-12 transition-all hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)];
+    @apply w-4 lg:w-5 h-10 mr-1 transition-all;
 }
 
 .Home-main section:nth-child(6) .section-content .investor-orginization {
