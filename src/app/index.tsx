@@ -121,8 +121,8 @@ const Home = () => {
                     <div className="section-content">
                         <p className="text-title-1">Scallop is the first verifiable random interest rate machine on Solana</p>
                         <p className="text-title-2">
-                            and is building a money market on Sui that emphasizes user&#8209;friendliness with high&#8209;interest lending, low&#8209;fee
-                            borrowing, and premium bonds.
+                            and is building a money market on Sui that emphasizes user&#8209;friendliness with high&#8209;interest lending,
+                            low&#8209;fee borrowing, and premium bonds.
                             <span className="more-link">
                                 <a href="https://linktr.ee/scallop_io">Read More</a>
                             </span>

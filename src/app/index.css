@@ -161,7 +161,7 @@ section {
     @apply left-[10%] 2xl:left-[12%];
     @apply text-[#1e2d45];
     @apply 2xl:mt-5 3xl:mt-6 4xl:mt-8 5xl:mt-16;
-    @apply z-10;
+    @apply z-20;
 }
 
 .Home-main section:nth-child(1) .section-content > div {
@@ -228,7 +228,7 @@ section {
     @apply absolute left-[-5%] xs:left-0 sm:left-[-2.5%] md:left-[2%] lg:left-[10%] xl:left-[11%] 2xl:left-[10%] 3xl:left-[14%] 4xl:left-[12%] 5xl:left-[10%];
     @apply bottom-[27%] xs:bottom-[22%] sm:bottom-[20%] md:bottom-[12%] lg:bottom-[10%] xl:bottom-[12%] 2xl:bottom-[15%];
     @apply w-[24rem] xs:w-[28rem] sm:w-[36rem] md:w-[38rem] lg:w-[42rem] xl:w-[45rem] 2xl:w-[62rem] 3xl:w-[70rem] 4xl:w-[88rem] 5xl:w-[120rem];
-    @apply z-20;
+    @apply z-10;
 }
 
 .Home-main section:nth-child(2) .two-jellyfish {
@@ -394,7 +394,7 @@ section {
 .Home-main section:nth-child(3) .section-content {
     @apply w-[13rem] xs:w-[17rem] sm:w-[15rem] md:w-[17rem] lg:w-[24rem] xl:w-[25rem] 2xl:w-[28rem] 3xl:w-[30rem] 4xl:w-[35rem] 5xl:w-[56rem] h-auto;
     @apply absolute right-[15%] xs:right-[17.5%] sm:right-[15%] lg:right-[12%] xl:right-[15%] 3xl:right-[18%];
-    @apply top-[11.5rem] xs:top-[15.5rem] sm:top-[3.5rem] md:top-[5rem] lg:top-[16rem] xl:top-[18rem] 2xl:top-[23rem] 3xl:top-[26rem] 4xl:top-[36rem] 5xl:top-[50rem];
+    @apply top-[11.5rem] xs:top-[1rem] sm:top-[3.5rem] md:top-[5rem] lg:top-[16rem] xl:top-[18rem] 2xl:top-[23rem] 3xl:top-[26rem] 4xl:top-[36rem] 5xl:top-[50rem];
     @apply z-10;
 }
 
