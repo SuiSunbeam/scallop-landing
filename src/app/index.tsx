@@ -121,15 +121,14 @@ const Home = () => {
                     <div className="section-content">
                         <p className="text-title-1">Scallop is the Next Generation Interest Rate Machine.</p>
                         <p className="text-title-2">
-                            A money market on Sui that emphasizes user-friendliness, with high-interest lending, low-fee borrowing, and
-                            premium bonds.
+                            A money market on Sui that emphasizes institutional grade, high composability, and high security.
                             <span className="more-link">
                                 <a href="https://linktr.ee/scallop_io">Read More</a>
                             </span>
                         </p>
 
                         <div>
-                            <a className="more-button pointer-events-none" href="#">
+                            <a className="more-button pointer-events-none" href="https://sui.scallop.io">
                                 Sui App
                             </a>
                             <a className="more-button" href="https://app.scallop.io">
