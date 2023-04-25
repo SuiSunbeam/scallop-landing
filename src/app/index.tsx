@@ -128,7 +128,7 @@ const Home = () => {
                         </p>
 
                         <div>
-                            <a className="more-button pointer-events-none" href="https://sui.scallop.io">
+                            <a className="more-button" href="https://sui.scallop.io">
                                 Sui App
                             </a>
                             <a className="more-button" href="https://app.scallop.io">
