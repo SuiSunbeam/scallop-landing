@@ -17,50 +17,12 @@ import './index.css';
 const Home = () => {
     const plxData = usePlxData();
 
-    const BASE_URL = 'https://api.scallop.io';
-
-    const [totalValue, setTotalValue] = useState(0);
-    const [totalPrize, setTotalPrize] = useState(0);
-    const [showBTT, setShowBTT] = useState(false);
-
     const backToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth',
         });
     };
-
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > window.screen.height) {
-                setShowBTT(true);
-            } else {
-                setShowBTT(false);
-            }
-        });
-    }, []);
-
-    useEffect(() => {
-        document.title = 'Scallop';
-
-        (async () => {
-            await axios
-                .get(`${BASE_URL}/v1/get-total-value`)
-                .then((response) => {
-                    setTotalValue(response.data.data);
-                })
-                .catch((e) => console.log('Failed to fetch total value:', e));
-
-            await axios
-                .get(`${BASE_URL}/v1/get-total-prize`)
-                .then((response) => {
-                    setTotalPrize(response.data.data);
-                })
-                .catch((e) => console.log('Failed to fetch total prize:', e));
-        })();
-
-        return () => {};
-    }, []);
 
     return (
         <div className="Home">
@@ -93,31 +55,6 @@ const Home = () => {
                     <a href="/" className="Home-logo">
                         <img alt="Scallop logo" />
                     </a>
-                    <div className="Home-nav-menu">
-                        <ul className="hidden lg:flex md:space-x-8 2xl:space-x-14">
-                            <li>
-                                <a href="/">Home</a>
-                            </li>
-                            <li>
-                                <a href="#about">About</a>
-                            </li>
-                            <li>
-                                <a href="#build">Build</a>
-                            </li>
-                            <li>
-                                <a href="#achievement">Achievements</a>
-                            </li>
-                            <li>
-                                <a href="#beyond">Beyond</a>
-                            </li>
-                            <li>
-                                <a href="#core-team">Core Team</a>
-                            </li>
-                            <li>
-                                <a href="#roadmap">Roadmap</a>
-                            </li>
-                        </ul>
-                    </div>
                 </nav>
             </header>
             <main className="Home-main">
@@ -128,7 +65,7 @@ const Home = () => {
                     <img className="group-of-discus-fish" alt="Group of discus fish" />
                     <div className="section-content">
                         <p className="text-title-1">
-                            Scallop is the <span className="text-[#252E3D]">Next Generation</span> Interest Rate Machine
+                            Scallop is the <span className="text-[#334664]">Next Generation</span> Interest Rate Machine
                         </p>
                         <p className="text-title-2">
                             A money market that emphasizes user-friendliness with high-interest lending, low-fee borrowing, and premium
@@ -136,7 +73,7 @@ const Home = () => {
                         </p>
                         <div>
                             <div className="links-container">
-                                <a className="more-button button1 pointer-events-none to-transparent" href="#">
+                                <a className="more-button button1 to-transparent" href="https://sui.scallop.io/">
                                     Launch App
                                 </a>
                                 <a className="more-button button2" href="https://linktr.ee/scallop_io">
@@ -146,7 +83,9 @@ const Home = () => {
 
                             <div className="based-on">
                                 <span>Based on</span>
-                                <img className="based-on-sui" alt="Sui" />
+                                <a href="https://sui.io/">
+                                    <img className="based-on-sui" alt="Sui" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -157,7 +96,7 @@ const Home = () => {
                     </Plx>
                     <img className="group-of-bubble-1" alt="Group of bubble" />
                     <img className="group-of-bubble-2" alt="Group of bubble" />
-                    <img className="group-of-zebra-fish" alt="Group of zebra fish" />
+                    {/* <img className="group-of-zebra-fish" alt="Group of zebra fish" /> */}
                     <img className="rock-left" alt="Left rock" />
                     <img className="group-of-bubble-3" alt="Group of bubble" />
                     <img className="rock-right" alt="Right rock" />
@@ -170,18 +109,6 @@ const Home = () => {
                     </div>
                 </section>
                 <section>
-                    <div className="group-of-bubble-1">
-                        <img className="bubble-1" alt="Group of bubble" />
-                        <h3 className="text-title-1">High Security</h3>
-                    </div>
-                    <div className="group-of-bubble-2">
-                        <img className="bubble-2" alt="Composability of bubble" />
-                        <h3 className="text-title-2">Composability</h3>
-                    </div>
-                    <div className="group-of-bubble-3">
-                        <img className="bubble-3" alt="Institutional Grade of bubble" />
-                        <h3 className="text-title-3">Institutional Grade</h3>
-                    </div>
                     <img className="seahorse" alt="Seahorse" />
                     <img className="rock-right" alt="Right rock" />
                     <img className="group-of-bubble-4" alt="Group of bubble" />
@@ -192,6 +119,20 @@ const Home = () => {
                     </div>
                     <div className="text-title-section" id="build">
                         Build with...
+                    </div>
+                    <div className="group-bubbles">
+                        <div className="group-of-bubble-1">
+                            <img className="bubble-1" alt="Group of bubble" />
+                            <h3 className="text-title-1">High Security</h3>
+                        </div>
+                        <div className="group-of-bubble-2">
+                            <img className="bubble-2" alt="Composability of bubble" />
+                            <h3 className="text-title-2">Composability</h3>
+                        </div>
+                        <div className="group-of-bubble-3">
+                            <img className="bubble-3" alt="Institutional Grade of bubble" />
+                            <h3 className="text-title-3">Institutional Grade</h3>
+                        </div>
                     </div>
                 </section>
                 <section>
@@ -209,27 +150,56 @@ const Home = () => {
                     <img className="group-of-bubble-4" alt="Group of bubble" />
                     <img className="group-of-bubble-5" alt="Group of bubble" />
                     <div className="section-content">
+                        <div className="text-title-section" id="achievement">
+                            Achievements
+                        </div>
                         <ul className="text-list">
                             <li>
-                                <span>🥇 1st DeFi project award an official grant from the Sui Foundation</span>
+                                <div className="championGroupLeft">
+                                    <img className="champion-bubble-1" alt=""></img>
+                                    <img className="bubbleLine1" alt="" />
+                                </div>
+
+                                <span>
+                                    <a className="underline" href="https://blog.sui.io/grant-recipients-round-one/">
+                                        🥇 1st DeFi project award an official grant from the Sui Foundation
+                                    </a>{' '}
+                                </span>
                             </li>
                             <li>
-                                <span>🥇 1st highest community vote project in 2021 Solana Ignition Hackathon Asia</span>
+                                <span>
+                                    <a className="underline" href="https://dorahacks.io/grant/solana-2/top">
+                                        🥇 1st highest community vote project in 2021 Solana Ignition Hackathon Asia
+                                    </a>{' '}
+                                </span>
+                                <div className="championGroupRight">
+                                    <img className="champion-bubble-2" alt=""></img>
+                                    <img className="bubbleLine2" alt="" />
+                                </div>
                             </li>
                             <li>
-                                <span>🥉 3rd place in the Sui x jump_ Builder House Ho Chi Minh City CTF challenge</span>
+                                <div className="championGroupLeft">
+                                    <img className="champion-bubble-3" alt=""></img>
+                                    <img className="bubbleLine3" alt="" />
+                                </div>
+                                <span>
+                                    <a className="underline" href="https://suictf.movebit.xyz/scoreboard">
+                                        🥉 3rd place in the Sui x jump_ Builder House Ho Chi Minh City CTF challenge
+                                    </a>{' '}
+                                </span>
                             </li>
                             <li>
-                                <span>🥉 3rd place in the Sui x jump_ Builder House Ho Chi Minh City CTF challenge</span>
+                                <span>
+                                    <a className="underline" href="https://suitf.osec.io/scores">
+                                        🎖️ 5th place in the Sui Builder House Denver CTF challenge.
+                                    </a>{' '}
+                                </span>
+                                <div className="championGroupRight">
+                                    <img className="champion-bubble-4" alt=""></img>
+                                    <img className="bubbleLine4" alt="" />
+                                </div>
                             </li>
                         </ul>
-                    </div>
-                    <div className="champion-bubble-1"></div>
-                    <div className="champion-bubble-2"></div>
-                    <div className="champion-bubble-3"></div>
-                    <div className="champion-bubble-4"></div>
-                    <div className="text-title-section" id="achievement">
-                        Achievements
                     </div>
                 </section>
                 <section>
@@ -308,6 +278,14 @@ const Home = () => {
                     <img className="group-of-bubble-2" alt="Group of bubble" />
                     <img className="group-of-bubble-3" alt="Group of bubble" />
                     <img className="group-of-bubble-4" alt="Group of bubble" />
+                </section>
+                <section>
+                    <div className="section-content">
+                        <div className="text-title-section" id="Backer">
+                            Backer
+                        </div>
+                        <img className="suiFoundation" alt="suiFoundation" />
+                    </div>
                 </section>
                 <section>
                     <Plx parallaxData={plxData.sectionSixLeftFish} className="image-plx">
