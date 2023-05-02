@@ -87,6 +87,29 @@ html {
     @apply bottom-0;
 }
 
+.Home-navigation {
+    @apply absolute flex justify-between pr-4 xl:pr-16 pl-8;
+    @apply top-0 xs:top-0 sm:top-0 md:top-2 lg:top-16 xl:top-14 2xl:top-20;
+    @apply w-full h-12 xs:h-12 sm:h-12 md:h-14 lg:h-16 xl:h-20 2xl:h-24;
+    @apply place-items-center;
+    @apply text-[#07476F];
+}
+
+.Home-navigation a {
+    @apply hover:text-[#7396B4];
+}
+
+.Home-navigation .active {
+    @apply text-[#7396B4];
+}
+
+.Home-nav-menu {
+    @apply flex ;
+    @apply sm:text-xs md:text-sm lg:text-sm xl:text-base 2xl:text-xl 4xl:text-2xl text-center;
+    @apply lg:ml-24 xl:ml-44 2xl:ml-60;
+    @apply my-4 list-none divide-y z-50;
+}
+
 .Home-header-logo {
     @apply flex;
 }
@@ -185,7 +208,7 @@ section {
     }
 
     .button2 {
-        @apply border-white border-2;
+        @apply border-white border-2 hover:opacity-80;
     }
 }
 
@@ -213,7 +236,7 @@ section {
 .Home-main section:nth-child(2) .two-jellyfish {
     @apply content-[url('../resources/images/group-of-jelly-fish.svg')];
     @apply absolute right-[10%] xs:right-[15%] sm:right-[10%] xl:right-[13%] 2xl:right-[15%];
-    @apply top-[20%] sm:top-[25%] xl:top-[20%] 2xl:top-[30%] 3xl:top-[30%];
+    @apply top-[20%];
     @apply w-[10%];
 }
 
@@ -261,7 +284,7 @@ section {
 .Home-main section:nth-child(2) .about {
     @apply content-[url('../resources/images/about.svg')];
     @apply absolute left-[17%] sm:left-[15%] top-[48%] xs:top-[40%] md:top-[45%] lg:top-[45%];
-    @apply w-[65%] sm:w-[70%];
+    @apply w-[65%] sm:w-[70%] z-30;
 }
 
 .Home-main section:nth-child(2) .text-title-section {
@@ -282,7 +305,7 @@ section {
 
 .Home-main section:nth-child(3) .group-of-bubble-1 {
     @apply flex flex-col items-center justify-center;
-    @apply w-[25%] xs:w-[18%] 3xl:w-[18%];
+    @apply w-[25%] xs:w-[15%] xl:w-[12%] mt-5;
 }
 
 .Home-main section:nth-child(3) .group-of-bubble-1 > img {
@@ -297,7 +320,7 @@ section {
 
 .Home-main section:nth-child(3) .group-of-bubble-2 {
     @apply flex flex-col items-center justify-center;
-    @apply w-[25%] xs:w-[18%] 3xl:w-[18%] mt-5;
+    @apply w-[25%] xs:w-[15%] xl:w-[12%] mt-5;
 }
 
 .Home-main section:nth-child(3) .group-of-bubble-2 > img {
@@ -312,7 +335,7 @@ section {
 
 .Home-main section:nth-child(3) .group-of-bubble-3 {
     @apply flex flex-col items-center justify-center;
-    @apply w-[25%] xs:w-[18%] 3xl:w-[18%] mt-5;
+    @apply w-[25%] xs:w-[15%] xl:w-[12%] mt-5;
 }
 
 .Home-main section:nth-child(3) .group-of-bubble-3 > img {
@@ -368,6 +391,7 @@ section {
 
 .Home-main section:nth-child(3) .group-bubbles {
     @apply w-full flex flex-col xs:flex-row justify-center items-center xs:justify-evenly;
+    @apply mt-0 xs:mt-5 md:mt-10 lg:mt-20;
 }
 
 .Home-main section:nth-child(3) .text-title-section {
@@ -590,7 +614,7 @@ section {
 
 /*---- main (Section 5) ---- */
 .Home-main section:nth-child(5) {
-    @apply h-[26rem] xs:h-[34rem] sm:h-[42rem] md:h-[45rem] lg:h-[40rem] xl:h-[45rem] 2xl:h-[60rem] 3xl:h-[65rem] 4xl:h-[65rem] 5xl:h-[100rem];
+    @apply h-[18rem] xs:h-[34rem] sm:h-[42rem] md:h-[45rem] lg:h-[40rem] xl:h-[45rem] 2xl:h-[60rem] 3xl:h-[65rem] 4xl:h-[65rem] 5xl:h-[100rem];
 }
 
 .Home-main section:nth-child(5) .text-title-section {
@@ -670,7 +694,7 @@ section {
 
 .Home-main section:nth-child(6) .card-team {
     @apply flex flex-col border justify-center items-center border-[#AAD6FF] rounded-2xl px-1 xs:px-2 md:px-3 py-1;
-    @apply h-24 xs:h-32 sm:h-36 lg:h-40 xl:h-48 2xl:h-56 3xl:h-72;
+    @apply h-24 xs:h-32 sm:h-36 lg:h-40 xl:h-48 2xl:h-56 3xl:h-64;
     @apply w-[40%] sm:w-[calc(25%-1rem)] md:w-[calc(18%-1rem)] lg:w-[9.5rem] xl:w-[11.5rem] 2xl:w-[12rem] 3xl:w-[14rem];
 }
 
@@ -679,12 +703,12 @@ section {
 }
 
 .Home-main section:nth-child(6) .card-team .card-profile .avatar {
-    @apply border-2 border-[#AAD6FF] rounded-full mx-auto mt-4;
+    @apply border-2 border-[#AAD6FF] rounded-full mx-auto mt-4 xl:mt-6;
     @apply w-8 xs:w-10 sm:w-16 md:w-16 lg:w-16 xl:w-20 2xl:w-20;
 }
 
 .Home-main section:nth-child(6) .card-team .card-content {
-    @apply flex-grow flex gap-2 justify-center items-center flex-row w-1/2;
+    @apply flex-grow flex gap-2 justify-center items-center flex-row w-1/2 xl:mb-4 mt-4;
 }
 
 .Home-main section:nth-child(6) .card-team .card-content .card-name {
@@ -707,8 +731,8 @@ section {
 
 /*---- main (Section 7) ---- */
 .Home-main section:nth-child(7) {
-    @apply h-[20rem] xs:h-[25rem] sm:h-[30rem] md:h-[35rem] lg:h-[45rem] xl:h-[40rem] 2xl:h-[46rem] 3xl:h-[55rem] 4xl:h-[56rem] 5xl:h-[80rem];
-    @apply flex justify-center items-center;
+    @apply h-[30rem] xs:h-[25rem] sm:h-[25rem] md:h-[35rem] lg:h-[45rem] xl:h-[40rem] 2xl:h-[46rem] 3xl:h-[55rem] 4xl:h-[56rem] 5xl:h-[80rem];
+    @apply flex justify-center items-center mb-10;
 }
 
 .Home-main section:nth-child(7) .text-title-section {
@@ -719,7 +743,7 @@ section {
 .Home-main section:nth-child(7) .suiFoundation {
     @apply content-[url('../resources/images/suiFoundation.svg')];
     @apply mx-auto;
-    @apply w-[40%];
+    @apply w-[50%] md:w-[80%] lg:w-full ;
 }
 
 .Home-main section:nth-child(7) .section-content {
@@ -745,7 +769,7 @@ section {
 .Home-main section:nth-child(8) .group-of-fish-right {
     @apply content-[url('../resources/images/bg-group-of-fish-2.svg')];
     @apply absolute right-[-30%] xs:right-[-34%] sm:right-[-38%] lg:right-[-34%] 4xl:right-[-30%];
-    @apply top-[20%] xs:top-[25%] md:top-[20%] lg:top-[25%] 4xl:top-[20%] 5xl:top-[10%];
+    @apply top-[-25%] xs:top-[-10%] md:top-[-5%] lg:top-[-15%] 4xl:top-[-20%] 5xl:top-[10%];
     @apply w-[33%] xs:w-[35%] sm:w-[38%] lg:w-[33%] 4xl:w-[30%];
     transform: rotateY(-180deg) rotate(-30deg);
 }
@@ -759,9 +783,9 @@ section {
 
 .Home-main section:nth-child(8) .whale {
     @apply content-[url('../resources/images/bg-whale.svg')];
-    @apply absolute right-[-66%] xs:right-[-62%] sm:right-[-65%] md:right-[-65%] lg:right-[-66%] xl:right-[-50%] 2xl:right-[-45%] 3xl:right-[-35%] 4xl:right-[-25%];
-    @apply top-[10%] xs:top-[12%] sm:top-[5%] md:top-[3%] lg:top-[0%] xl:top-[-5%] 3xl:top-[-10%] 4xl:top-[-20%];
-    @apply w-[100%] xl:w-[85%] 2xl:w-[80%] 3xl:w-[75%];
+    @apply absolute right-[-66%] xs:right-[-62%] sm:right-[-65%] md:right-[-65%] lg:right-[-56%] xl:right-[-55%] 2xl:right-[-50%] 3xl:right-[-45%] 4xl:right-[-43%];
+    @apply top-[-40%] xs:top-[-35%] sm:top-[-25%] md:top-[-35%] lg:top-[-50%] xl:top-[-55%] 3xl:top-[-60%] 4xl:-top-[70%];
+    @apply w-[100%] xl:w-[85%] 2xl:w-[80%] 3xl:w-[75%] z-0;
 }
 
 .Home-main section:nth-child(8) .two-jellyfish {
@@ -806,7 +830,7 @@ section {
 .Home-main section:nth-child(8) .roadmap {
     @apply content-[url('../resources/images/roadmap.svg')];
     @apply mx-auto;
-    @apply w-[70%] lg:w-[80%];
+    @apply w-[70%] lg:w-[80%] z-50;
 }
 
 .Home-main section:nth-child(8) .section-content > div {
@@ -820,7 +844,7 @@ section {
 
 /*---- footer ---- */
 footer {
-    @apply w-full h-[14rem] xs:h-[10rem] md:h-[9rem] lg:h-[24rem] xl:h-[36rem] 2xl:h-[44rem] 3xl:h-[52rem] 4xl:h-[38rem] 5xl:h-[56rem];
+    @apply w-full h-[20rem] xs:h-[10rem] md:h-[9rem] lg:h-[24rem] xl:h-[36rem] 2xl:h-[44rem] 3xl:h-[52rem] 4xl:h-[38rem] 5xl:h-[56rem];
     @apply relative flex justify-center items-center;
     @apply z-10;
 }
@@ -842,9 +866,9 @@ footer .content .menu {
 
 footer .content .menu a {
     @apply inline px-1 font-semibold text-white text-[0.5rem] md:text-sm lg:text-base lg:px-2 xl:px-3 xl:text-base 2xl:text-xl;
-    @apply leading-[0.75rem] md:leading-5;
+    @apply leading-[0.75rem];
     @apply hover:text-[#9cd0dd];
-    @apply font-['Poppins'];
+    @apply font-['Poppins'] w-96;
 }
 
 footer .content .social-media {

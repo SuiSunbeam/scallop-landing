@@ -17,12 +17,24 @@ import './index.css';
 const Home = () => {
     const plxData = usePlxData();
 
+    const [showBTT, setShowBTT] = useState(false);
+
     const backToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth',
         });
     };
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > window.screen.height) {
+                setShowBTT(true);
+            } else {
+                setShowBTT(false);
+            }
+        });
+    }, []);
 
     return (
         <div className="Home">
@@ -55,6 +67,28 @@ const Home = () => {
                     <a href="/" className="Home-logo">
                         <img alt="Scallop logo" />
                     </a>
+                    <div className="Home-nav-menu">
+                        <ul className="hidden lg:flex md:space-x-6 2xl:space-x-14">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="#decorations">App</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#core-team">Core Team</a>
+                            </li>
+                            <li>
+                                <a href="#backer">Backer</a>
+                            </li>
+                            <li>
+                                <a href="#roadmap">Roadmap</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
             <main className="Home-main">
@@ -192,7 +226,7 @@ const Home = () => {
                                 <span>
                                     <a className="underline" href="https://suitf.osec.io/scores">
                                         🎖️ 5th place in the Sui Builder House Denver CTF challenge.
-                                    </a>{' '}
+                                    </a>
                                 </span>
                                 <div className="championGroupRight">
                                     <img className="champion-bubble-4" alt=""></img>
@@ -281,7 +315,7 @@ const Home = () => {
                 </section>
                 <section>
                     <div className="section-content">
-                        <div className="text-title-section" id="Backer">
+                        <div className="text-title-section" id="backer">
                             Backer
                         </div>
                         <img className="suiFoundation" alt="suiFoundation" />
