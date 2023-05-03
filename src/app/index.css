@@ -4,7 +4,9 @@ html {
 
 .Home {
     @apply overflow-hidden min-w-[320px];
-    background: linear-gradient(180deg, #91c2f8 13%, #122340 27.7%, #040b13 100%);
+    background: linear-gradient(180deg, #98c9ff 13%, #265c83 27.7%, #081c28 100%);
+
+    background: linear-gradient(180deg, #98c9ff 5%, #91c2f8 13%, #122340 27.7%, #040b13 100%);
 }
 
 /*---- header ---- */
@@ -115,8 +117,8 @@ html {
 }
 
 .Home-logo {
-    @apply flex justify-center items-center col-span-2;
-    @apply ml-10 xs:ml-10 hover:scale-110;
+    @apply flex justify-center items-center;
+    @apply ml-10 lg:ml-20 2xl:ml-32 hover:scale-110;
 }
 
 .Home-logo > img {
@@ -182,14 +184,14 @@ section {
 
 .Home-main section:nth-child(1) .section-content .text-title-1 {
     @apply text-xs xs:text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
-    @apply tracking-[.05em] font-[700] sm:font-[800] lg:font-[900] text-white;
+    @apply tracking-[.05em] font-[700] sm:font-[800] lg:font-[900] text-[#334664];
     @apply leading-[1.2rem] xs:leading-[1.5rem] sm:leading-[2rem] md:leading-[2.5rem] lg:leading-[3rem];
     @apply xl:leading-[3.5rem] 2xl:leading-[4rem] 3xl:leading-[4.5rem] 4xl:leading-[5rem] 5xl:leading-[6rem];
     @apply mb-2 sm:mb-3 lg:mb-3 xl:mb-4 2xl:mb-5 3xl:mb-7 4xl:mb-10 5xl:mb-14;
 }
 
 .Home-main section:nth-child(1) .section-content .text-title-2 {
-    @apply text-[0.5rem] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl text-white;
+    @apply text-[0.5rem] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl text-[s];
 }
 
 .links-container {
@@ -204,11 +206,13 @@ section {
     }
 
     .button1 {
+        @apply flex items-center justify-center;
         @apply bg-[#334664] hover:bg-[#1e2d45];
     }
 
     .button2 {
-        @apply border-white border-2 hover:opacity-80;
+        @apply text-[#1e2d45] text-center text-[0.5rem] sm:text-sm md:text-base lg:text-lg 2xl:text-xl 4xl:text-2xl 5xl:text-3xl;
+        @apply bg-white bg-opacity-60 py-1 xs:py-1.5 sm:py-2 md:py-2.5 lg:py-2 4xl:py-3.5 5xl:py-6 hover:bg-opacity-90;
     }
 }
 
@@ -289,7 +293,7 @@ section {
 
 .Home-main section:nth-child(2) .text-title-section {
     @apply absolute top-[35%] xs:top-[30%] lg:top-[35%] xl:top-[35%];
-    @apply left-[45%] sm:left-[45%];
+    @apply left-[45%] lg:left-[46%];
     @apply text-white font-bold text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
 }
 
@@ -300,7 +304,7 @@ section {
 
 /*---- main (Section 3) ---- */
 .Home-main section:nth-child(3) {
-    @apply h-[35rem] xs:h-[28rem] sm:h-[30rem] md:h-[40rem] lg:h-[45rem] xl:h-[50rem] 2xl:h-[60rem] 3xl:h-[75rem] 4xl:h-[100rem] 5xl:h-[140rem];
+    @apply h-[40rem] xs:h-[23rem] sm:h-[28rem] md:h-[35rem] lg:h-[35rem] xl:h-[35rem] 2xl:h-[40rem] 3xl:h-[45rem] 4xl:h-[60rem] 5xl:h-[140rem];
 }
 
 .Home-main section:nth-child(3) .group-of-bubble-1 {
@@ -421,7 +425,7 @@ section {
 
 /*---- main (Section 4) ---- */
 .Home-main section:nth-child(4) {
-    @apply h-[35rem] xs:h-[35rem] sm:h-[42rem] md:h-[45rem] lg:h-[52rem] xl:h-[58rem] 2xl:h-[64rem] 3xl:h-[80rem] 4xl:h-[100rem] 5xl:h-[140rem] mt-10;
+    @apply h-[28rem] xs:h-[30rem] sm:h-[35rem] md:h-[40rem] lg:h-[52rem] xl:h-[58rem] 2xl:h-[64rem] 3xl:h-[80rem] 4xl:h-[100rem] 5xl:h-[140rem] mt-10;
 }
 
 .Home-main section:nth-child(4) .group-of-fish {
@@ -614,7 +618,7 @@ section {
 
 /*---- main (Section 5) ---- */
 .Home-main section:nth-child(5) {
-    @apply h-[18rem] xs:h-[34rem] sm:h-[42rem] md:h-[45rem] lg:h-[40rem] xl:h-[45rem] 2xl:h-[60rem] 3xl:h-[65rem] 4xl:h-[65rem] 5xl:h-[100rem];
+    @apply h-[18rem] xs:h-[34rem] sm:h-[35rem] md:h-[45rem] lg:h-[40rem] xl:h-[45rem] 2xl:h-[60rem] 3xl:h-[65rem] 4xl:h-[65rem] 5xl:h-[100rem];
 }
 
 .Home-main section:nth-child(5) .text-title-section {
@@ -636,7 +640,7 @@ section {
 .Home-main section:nth-child(6) .core-team-submarine {
     @apply content-[url('../resources/images/submarine-core-team.svg')];
     @apply absolute left-[5%] md:left-[10%] 2xl:left-[11%] top-0;
-    @apply w-[60%] md:w-[55%] md:w-[50%] 2xl:w-[45%];
+    @apply w-[60%] md:w-[55%] 2xl:w-[45%];
 }
 
 .Home-main section:nth-child(6) .group-of-turtle {
@@ -685,7 +689,7 @@ section {
 
 .Home-main section:nth-child(6) .section-content {
     @apply absolute flex flex-row flex-wrap justify-center items-end;
-    @apply gap-6 xs:gap-4 sm:space-x-6 lg:space-x-8 4xl:space-x-8 space-y-6 lg:space-y-5 4xl:space-y-8;
+    @apply gap-6 xs:gap-4 sm:space-x-6 md:space-x-4 lg:space-x-8 4xl:space-x-8 space-y-6 lg:space-y-5 4xl:space-y-8;
     @apply w-full lg:w-[55%] xl:w-[45rem] 2xl:w-[50rem] 3xl:w-[60rem] 4xl:w-[70rem] 5xl:w-[80rem] h-auto;
     @apply top-[30%] xs:top-[35%] lg:top-[42.5%];
     @apply right-0  lg:right-[1%] xl:right-[2%];
@@ -731,7 +735,7 @@ section {
 
 /*---- main (Section 7) ---- */
 .Home-main section:nth-child(7) {
-    @apply h-[30rem] xs:h-[25rem] sm:h-[25rem] md:h-[35rem] lg:h-[45rem] xl:h-[40rem] 2xl:h-[46rem] 3xl:h-[55rem] 4xl:h-[56rem] 5xl:h-[80rem];
+    @apply h-[30rem] xs:h-[35rem] sm:h-[25rem] md:h-[35rem] lg:h-[45rem] xl:h-[40rem] 2xl:h-[46rem] 3xl:h-[55rem] 4xl:h-[56rem] 5xl:h-[80rem];
     @apply flex justify-center items-center mb-10;
 }
 
@@ -748,13 +752,13 @@ section {
 
 .Home-main section:nth-child(7) .section-content {
     @apply absolute flex flex-col flex-wrap;
-    @apply top-[50%] xs:top-[50%] md:top-[20%] lg:top-[30%];
+    @apply top-[50%] xs:top-[50%] sm:top-[30%] md:top-[20%] lg:top-[30%];
     @apply z-10;
 }
 
 /*---- main (Section 8) ---- */
 .Home-main section:nth-child(8) {
-    @apply h-[15rem] xs:h-[25rem] sm:h-[42rem] md:h-[50rem] lg:h-[45rem] xl:h-[40rem] 2xl:h-[46rem] 3xl:h-[55rem] 4xl:h-[56rem] 5xl:h-[80rem];
+    @apply h-[15rem] xs:h-[25rem] sm:h-[30rem] md:h-[40rem] lg:h-[45rem] xl:h-[40rem] 2xl:h-[46rem] 3xl:h-[55rem] 4xl:h-[56rem] 5xl:h-[80rem];
 }
 
 .Home-main section:nth-child(8) .group-of-fish-left {

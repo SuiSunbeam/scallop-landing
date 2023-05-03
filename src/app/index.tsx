@@ -73,7 +73,7 @@ const Home = () => {
                                 <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="#decorations">App</a>
+                                <a href="https://sui.scallop.io/">App</a>
                             </li>
                             <li>
                                 <a href="#about">About</a>
@@ -99,11 +99,11 @@ const Home = () => {
                     <img className="group-of-discus-fish" alt="Group of discus fish" />
                     <div className="section-content">
                         <p className="text-title-1">
-                            Scallop is the <span className="text-[#334664]">Next Generation</span> Interest Rate Machine
+                        Scallop is the Next Generation Money Market
                         </p>
                         <p className="text-title-2">
-                            A money market that emphasizes user-friendliness with high-interest lending, low-fee borrowing, and premium
-                            bonds.
+                        which emphasizes institutional-grade quality, enhanced composability, and robust security.
+
                         </p>
                         <div>
                             <div className="links-container">
@@ -116,7 +116,7 @@ const Home = () => {
                             </div>
 
                             <div className="based-on">
-                                <span>Based on</span>
+                                <span className='text-[#1e2d45]'>Based on</span>
                                 <a href="https://sui.io/">
                                     <img className="based-on-sui" alt="Sui" />
                                 </a>
