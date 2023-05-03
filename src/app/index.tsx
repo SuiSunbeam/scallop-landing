@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react';
 import Plx from 'react-plx';
 import axios from 'axios';
-import CountUp from 'react-countup';
 import krissAvatar from '../resources/images/kriss-avatar.png';
 import annAvatar from '../resources/images/ann-avatar.png';
 import shawnAvatar from '../resources/images/shawn-avatar.jpg';
 import donnieAvatar from '../resources/images/donnie-avatar.png';
 import nathanAvatar from '../resources/images/nathan-avatar.png';
-import twitterIcon from '../resources/images/twitter-icon.png';
-import telegramIcon from '../resources/images/telegram-icon.png';
-import discordIcon from '../resources/images/discord-icon.png';
-import mediumIcon from '../resources/images/medium-icon.png';
+import twitterIcon from '../resources/images/twitter-icon.svg';
+import telegramIcon from '../resources/images/telegram-icon.svg';
+import discordIcon from '../resources/images/discord-icon.svg';
+import mediumIcon from '../resources/images/medium-icon.svg';
 import { usePlxData } from './plxconfig';
 import { ArrowSmUpIcon } from '@heroicons/react/solid';
 import './index.css';
@@ -18,10 +17,6 @@ import './index.css';
 const Home = () => {
     const plxData = usePlxData();
 
-    const BASE_URL = 'https://api.scallop.io';
-
-    const [totalValue, setTotalValue] = useState(0);
-    const [totalPrize, setTotalPrize] = useState(0);
     const [showBTT, setShowBTT] = useState(false);
 
     const backToTop = () => {
@@ -39,28 +34,6 @@ const Home = () => {
                 setShowBTT(false);
             }
         });
-    }, []);
-
-    useEffect(() => {
-        document.title = 'Scallop';
-
-        (async () => {
-            await axios
-                .get(`${BASE_URL}/v1/get-total-value`)
-                .then((response) => {
-                    setTotalValue(response.data.data);
-                })
-                .catch((e) => console.log('Failed to fetch total value:', e));
-
-            await axios
-                .get(`${BASE_URL}/v1/get-total-prize`)
-                .then((response) => {
-                    setTotalPrize(response.data.data);
-                })
-                .catch((e) => console.log('Failed to fetch total prize:', e));
-        })();
-
-        return () => {};
     }, []);
 
     return (
@@ -82,6 +55,9 @@ const Home = () => {
                     <Plx parallaxData={plxData.bannerClould4} className="Home-banner-plx">
                         <div className="Home-banner-layer Home-banner-clould-4"></div>
                     </Plx>
+                    <Plx parallaxData={plxData.bannerClould5} className="Home-banner-plx">
+                        <div className="Home-banner-layer Home-banner-clould-4"></div>
+                    </Plx>
                     <Plx parallaxData={plxData.bannerSea} className="Home-banner-plx">
                         <div className="Home-banner-layer Home-banner-sea"></div>
                     </Plx>
@@ -92,21 +68,24 @@ const Home = () => {
                         <img alt="Scallop logo" />
                     </a>
                     <div className="Home-nav-menu">
-                        <ul className="hidden lg:flex md:space-x-12 2xl:space-x-14">
+                        <ul className="hidden lg:flex md:space-x-6 2xl:space-x-14">
                             <li>
                                 <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="#decorations">Decorations</a>
+                                <a href="https://sui.scallop.io/">App</a>
                             </li>
                             <li>
-                                <a href="#roadmap">Roadmap</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
                                 <a href="#core-team">Core Team</a>
                             </li>
                             <li>
-                                <a href="#investors">Investors</a>
+                                <a href="#backer">Backer</a>
+                            </li>
+                            <li>
+                                <a href="#roadmap">Roadmap</a>
                             </li>
                         </ul>
                     </div>
@@ -119,28 +98,24 @@ const Home = () => {
                     </Plx>
                     <img className="group-of-discus-fish" alt="Group of discus fish" />
                     <div className="section-content">
-                        <p className="text-title-1">Scallop is the Next Generation Interest Rate Machine.</p>
+                        <p className="text-title-1">Scallop is the Next Generation Money Market</p>
                         <p className="text-title-2">
-                            A money market on Sui that emphasizes institutional grade, high composability, and high security.
-                            <span className="more-link">
-                                <a href="https://linktr.ee/scallop_io">Read More</a>
-                            </span>
+                            which emphasizes institutional-grade quality, enhanced composability, and robust security.
                         </p>
-
                         <div>
-                            <a className="more-button" href="https://sui.scallop.io">
-                                Sui App
-                            </a>
-                            <a className="more-button" href="https://app.scallop.io">
-                                Solana App
-                            </a>
-                            <div className="based-on">
-                                <span>Based on</span>
-                                <a className="pointer-events-auto" href="https://sui.io/">
-                                    <img className="based-on-sui" alt="Sui" />
+                            <div className="links-container">
+                                <a className="more-button button1 to-transparent" href="https://sui.scallop.io/">
+                                    Launch App
                                 </a>
-                                <a href="https://solana.com/zh">
-                                    <img className="based-on-solana" alt="Solana" />
+                                <a className="more-button button2" href="https://linktr.ee/scallop_io">
+                                    Read More
+                                </a>
+                            </div>
+
+                            <div className="based-on">
+                                <span className="text-[#1e2d45]">Based on</span>
+                                <a href="https://sui.io/">
+                                    <img className="based-on-sui" alt="Sui" />
                                 </a>
                             </div>
                         </div>
@@ -152,73 +127,43 @@ const Home = () => {
                     </Plx>
                     <img className="group-of-bubble-1" alt="Group of bubble" />
                     <img className="group-of-bubble-2" alt="Group of bubble" />
-                    <img className="group-of-zebra-fish" alt="Group of zebra fish" />
+                    {/* <img className="group-of-zebra-fish" alt="Group of zebra fish" /> */}
                     <img className="rock-left" alt="Left rock" />
                     <img className="group-of-bubble-3" alt="Group of bubble" />
                     <img className="rock-right" alt="Right rock" />
                     <div className="section-content">
-                        <div className="bubble-left">
-                            <div className="bubble-container">
-                                <h5 className="text-title">Next Prize Value</h5>
-                                <h4 className="text-number">
-                                    <CountUp
-                                        start={0}
-                                        end={totalPrize}
-                                        duration={8}
-                                        prefix="≈ "
-                                        suffix=" USD"
-                                        decimal="."
-                                        separator=","
-                                        decimals={2}
-                                        useEasing={true}
-                                    />
-                                </h4>
-                            </div>
+                        <div className="text-title-section" id="about">
+                            About
                         </div>
-                        <div className="bubble-right">
-                            <div className="bubble-container">
-                                <h5 className="text-title">Total Value Locked</h5>
-                                <h4 className="text-number">
-                                    <CountUp
-                                        start={0}
-                                        end={totalValue}
-                                        duration={8}
-                                        suffix=" USD"
-                                        decimal="."
-                                        separator=","
-                                        decimals={0}
-                                        useEasing={true}
-                                    />
-                                </h4>
-                            </div>
-                        </div>
+                        <img className="about" alt="about" />
                         <img className="two-jellyfish" alt="Two jellyfish" />
                     </div>
                 </section>
                 <section>
-                    <img className="group-of-bubble-1" alt="Group of bubble" />
-                    <img className="group-of-bubble-2" alt="Group of bubble" />
-                    <div className="rock-left"></div>
-                    <img className="group-of-bubble-3" alt="Group of bubble" />
-                    <img className="group-of-bubble-4" alt="Group of bubble" />
+                    <img className="seahorse" alt="Seahorse" />
                     <img className="rock-right" alt="Right rock" />
+                    <img className="group-of-bubble-4" alt="Group of bubble" />
                     <img className="group-of-bubble-5" alt="Group of bubble" />
                     <img className="group-of-bubble-6" alt="Group of bubble" />
-                    <img className="lonely-zebrafish" alt="Lonely zebrafish" />
-                    <img className="seahorse" alt="Seahorse" />
-                    <img className="hermit" alt="Hermit crab" />
                     <div className="section-content">
-                        {/* <h3 className="text-title-1">&nbsp;</h3> */}
-                        <p className="text-title-2">
-                            You can also call Scallop protocol's native NFTs Scallop Decorations, the goal of them are useful on-chain
-                            collectibles, Scallop Decorations will show at Scallop Tank and interact with Scallop protocol.
-                        </p>
-                        <a className="nft-button" href="#hermit-crab">
-                            Coming Soon
-                        </a>
+                        <div className="bubble2"></div>
                     </div>
-                    <div className="text-title-section" id="decorations">
-                        Scallop Decorations
+                    <div className="text-title-section" id="build">
+                        Build with
+                    </div>
+                    <div className="group-bubbles">
+                        <div className="group-of-bubble-1">
+                            <img className="bubble-1" alt="Group of bubble" />
+                            <h3 className="text-title-1">High Security</h3>
+                        </div>
+                        <div className="group-of-bubble-2">
+                            <img className="bubble-2" alt="Composability of bubble" />
+                            <h3 className="text-title-2">Composability</h3>
+                        </div>
+                        <div className="group-of-bubble-3">
+                            <img className="bubble-3" alt="Institutional Grade of bubble" />
+                            <h3 className="text-title-3">Institutional Grade</h3>
+                        </div>
                     </div>
                 </section>
                 <section>
@@ -235,41 +180,63 @@ const Home = () => {
                     <img className="group-of-bubble-3" alt="Group of bubble" />
                     <img className="group-of-bubble-4" alt="Group of bubble" />
                     <img className="group-of-bubble-5" alt="Group of bubble" />
-                    <div className="roadmap-line" />
                     <div className="section-content">
-                        <div className="text-roadmap-1">
-                            <h2 className="text-title">2023 Q1</h2>
-                            <ul className="text-list">
-                                <li>
-                                    <span>Award Sui Grant</span>
-                                </li>
-                            </ul>
+                        <div className="text-title-section" id="achievement">
+                            Achievements
                         </div>
-                        <div className="text-roadmap-2">
-                            <h2 className="text-title">2023 Q2</h2>
-                            <ul className="text-list">
-                                <li>
-                                    <span>ScallopV1 on Sui Testnet/Devnet</span>
-                                </li>
-                                <li>
-                                    <span>ScallopV1 on Sui Mainnet</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="text-roadmap-3">
-                            <h2 className="text-title">2023 Q3</h2>
-                            <ul className="text-list">
-                                <li>
-                                    <span>Mixing Asset</span>
-                                </li>
-                                <li>
-                                    <span>cToken</span>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul className="text-list">
+                            <li>
+                                <div className="championGroupLeft">
+                                    <img className="champion-bubble-1" alt=""></img>
+                                    <img className="bubbleLine1" alt="" />
+                                </div>
+
+                                <span>
+                                    <a href="https://blog.sui.io/grant-recipients-round-one/">
+                                        🥇 1st DeFi project award an official grant from the Sui Foundation
+                                    </a>{' '}
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <a href="https://dorahacks.io/grant/solana-2/top">
+                                        🥇 1st highest community vote project in 2021 Solana Ignition Hackathon Asia
+                                    </a>{' '}
+                                </span>
+                                <div className="championGroupRight">
+                                    <img className="champion-bubble-2" alt=""></img>
+                                    <img className="bubbleLine2" alt="" />
+                                </div>
+                            </li>
+                            <li>
+                                <div className="championGroupLeft">
+                                    <img className="champion-bubble-3" alt=""></img>
+                                    <img className="bubbleLine3" alt="" />
+                                </div>
+                                <span>
+                                    <a href="https://suictf.movebit.xyz/scoreboard">
+                                        🥉 3rd place in the Sui x jump_ Builder House Ho Chi Minh City CTF challenge
+                                    </a>{' '}
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <a href="https://suitf.osec.io/scores">🎖️ 5th place in the Sui Builder House Denver CTF challenge</a>
+                                </span>
+                                <div className="championGroupRight">
+                                    <img className="champion-bubble-4" alt=""></img>
+                                    <img className="bubbleLine4" alt="" />
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div className="text-title-section" id="roadmap">
-                        Roadmap
+                </section>
+                <section>
+                    <div className="section-content">
+                        <div className="text-title-section" id="beyond">
+                            Beyond Lending & Borrowing
+                        </div>
+                        <img className="beyond" alt="beyond" />
                     </div>
                 </section>
                 <section>
@@ -284,10 +251,10 @@ const Home = () => {
                                 <img alt="Kriss Avatar" className="avatar" src={krissAvatar} />
                             </div>
                             <div className="card-content">
-                                <span className="card-name">Kriss</span>
                                 <div className="card-links">
                                     <a className="twitter" href="https://twitter.com/djchrisssssss"></a>
                                 </div>
+                                <span className="card-name">Kriss</span>
                             </div>
                         </div>
                         <div className="card-team">
@@ -295,10 +262,10 @@ const Home = () => {
                                 <img alt="Donnie Avatar" className="avatar" src={donnieAvatar} />
                             </div>
                             <div className="card-content">
-                                <span className="card-name">Donnie</span>
                                 <div className="card-links">
                                     <a className="twitter" href="https://twitter.com/MrDonor_donnie"></a>
                                 </div>
+                                <span className="card-name">Donnie</span>
                             </div>
                         </div>
                         <div className="card-team">
@@ -306,21 +273,22 @@ const Home = () => {
                                 <img alt="Nathan Avatar" className="avatar" src={nathanAvatar} />
                             </div>
                             <div className="card-content">
-                                <span className="card-name">Nathan</span>
                                 <div className="card-links">
                                     <a className="twitter" href="https://twitter.com/nathanramli"></a>
                                 </div>
+                                <span className="card-name">Nathan</span>
                             </div>
                         </div>
+
                         <div className="card-team">
                             <div className="card-profile">
                                 <img alt="June Avatar" className="avatar" src={annAvatar} />
                             </div>
                             <div className="card-content">
-                                <span className="card-name">Ann</span>
                                 <div className="card-links">
                                     <a className="twitter" href="https://twitter.com/sailormoonann"></a>
                                 </div>
+                                <span className="card-name">Ann</span>
                             </div>
                         </div>
                         <div className="card-team">
@@ -328,18 +296,27 @@ const Home = () => {
                                 <img alt="June Avatar" className="avatar" src={shawnAvatar} />
                             </div>
                             <div className="card-content">
-                                <span className="card-name">Shawn</span>
                                 <div className="card-links">
                                     <a className="twitter" href="https://twitter.com/XinhaiZeng"></a>
                                 </div>
+                                <span className="card-name">Shawn</span>
                             </div>
                         </div>
-                        <div className="card-team invisible"></div>
                     </div>
                     <img className="group-of-bubble-1" alt="Group of bubble" />
                     <img className="group-of-bubble-2" alt="Group of bubble" />
                     <img className="group-of-bubble-3" alt="Group of bubble" />
                     <img className="group-of-bubble-4" alt="Group of bubble" />
+                </section>
+                <section>
+                    <div className="section-content">
+                        <div className="text-title-section" id="backer">
+                            Backers
+                        </div>
+                        <a href="https://blog.sui.io/grant-recipients-round-one/">
+                            <img className="suiFoundation" alt="suiFoundation" />
+                        </a>
+                    </div>
                 </section>
                 <section>
                     <Plx parallaxData={plxData.sectionSixLeftFish} className="image-plx">
@@ -357,155 +334,11 @@ const Home = () => {
                     <img className="two-jellyfish" alt="Two jellyfish" />
                     <img className="group-of-bubble-1" alt="Group of bubble" />
                     <img className="group-of-bubble-2" alt="Group of bubble" />
-                    <div className="section-content">
-                        <div className="relative">
-                            <a
-                                href="https://twitter.com/NotDeGhost"
-                                className="investor-info"
-                                title="Robert Twitter"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <img className="investor-robert" alt="Robert Chen" />
-                                <div className="group">
-                                    <img
-                                        alt="twitter"
-                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
-                                    />
-                                    <span>Robert</span>
-                                </div>
-                            </a>
-                            <div className="investor-orginization">
-                                <a href="https://osec.io/" title="OtterSec" target="_blank" rel="noreferrer">
-                                    <img className="orginization-ottersec" alt="OtterSec" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="relative">
-                            <a
-                                href="https://twitter.com/Ivantok4"
-                                className="investor-info"
-                                title="Ivan Twitter"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <img className="investor-ivan" alt="Ivan Lee" />
-                                <div className="group">
-                                    <img
-                                        alt="twitter"
-                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
-                                    />
-                                    <span>Ivan</span>
-                                </div>
-                            </a>
-                            <div className="investor-orginization">
-                                <a href="https://comma3.co/" title="Comma3 Ventures" target="_blank" rel="noreferrer">
-                                    <img className="orginization-comma3-ventures" alt="Comma3 Ventures" />
-                                </a>
-                                <a href="https://www.rbcap.io/" title="Red Building Capital" target="_blank" rel="noreferrer">
-                                    <img className="orginization-red-building" alt="Red Building" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="relative">
-                            <a
-                                href="https://twitter.com/dw8998"
-                                className="investor-info"
-                                title="David Twitter"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <img className="investor-david" alt="David Wang" />
-                                <div className="group">
-                                    <img
-                                        alt="twitter"
-                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
-                                    />
-                                    <span>David</span>
-                                </div>
-                            </a>
-                            <div className="investor-orginization">
-                                <a href="https://www.phdcapital.fund/" title="PHD Capital" target="_blank" rel="noreferrer">
-                                    <img className="orginization-phd-capital" alt="PHD Capital" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="relative">
-                            <a
-                                href="https://twitter.com/henry3asmp"
-                                className="investor-info"
-                                title="Henry Twitter"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <img className="investor-henry" alt="Henry" />
-                                <div className="group">
-                                    <img
-                                        alt="twitter"
-                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
-                                    />
-                                    <span>Henry</span>
-                                </div>
-                            </a>
-                            <div className="investor-orginization">
-                                <a href="https://assembly.partners/" title="Assembly Partners" target="_blank" rel="noreferrer">
-                                    <img className="orginization-assembly-partners" alt="Assembly Partners" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="relative">
-                            <a
-                                href="https://twitter.com/DFL_Erwin"
-                                className="investor-info"
-                                title="Erwin Twitter"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <img className="investor-erwin" alt="Erwin" />
-                                <div className="group">
-                                    <img
-                                        alt="twitter"
-                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
-                                    />
-                                    <span>Erwin</span>
-                                </div>
-                            </a>
-                            <div className="investor-orginization">
-                                <a href="https://defiland.app/" title="DefiLand" target="_blank" rel="noreferrer">
-                                    <img className="orginization-defi-land" alt="Defi Land" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="relative">
-                            <a
-                                href="https://twitter.com/snow668899"
-                                className="investor-info"
-                                title="Snow Twitter"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <img className="investor-snow" alt="Snow" />
-                                <div className="group">
-                                    <img
-                                        alt="twitter"
-                                        className="group-hover:rotate-12 group-hover:drop-shadow-[0_0_4px_rgba(29,161,242,255)]"
-                                    />
-                                    <span>Snow</span>
-                                </div>
-                            </a>
-                            <div className="investor-orginization">
-                                <a href="https://www.lolcapital.io/" title="Lol Capital" target="_blank" rel="noreferrer">
-                                    <img className="orginization-lol-capital" alt="Lol Capital" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="relative">
-                            <span className="and-more">and more...</span>
-                        </div>
+                    <div className="section-content"></div>
+                    <div className="text-title-section" id="roadmap">
+                        Roadmap
                     </div>
-                    <div className="text-title-section" id="investors">
-                        Angel Investors
-                    </div>
+                    <img className="roadmap" alt="Roadmap" />
                 </section>
             </main>
             <footer>
