@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import Plx from 'react-plx';
-import axios from 'axios';
 import krissAvatar from '../resources/images/kriss-avatar.png';
 import annAvatar from '../resources/images/ann-avatar.png';
 import shawnAvatar from '../resources/images/shawn-avatar.jpg';
