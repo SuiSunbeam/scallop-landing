@@ -152,7 +152,7 @@ section {
 
 .Home-main section:nth-child(1) .group-of-discus-fish {
     @apply content-[url('../resources/images/group-of-discus-fish-1.svg')];
-    @apply absolute right-[5%] sm:right-[5%] lg:right-[10%] xl:right-[15%] 2xl:right-[20%] 3xl:right-[20%] 4xl:right-[20%];
+    @apply absolute right-[5%] sm:right-[5%] lg:right-[8%] xl:right-[12%] 4xl:right-[15%];
     @apply top-[25%] xl:top-[35%] 2xl:top-[45%] 4xl:top-[55%] 5xl:top-[60%];
     @apply w-[30%] lg:w-[25%] xl:w-[20%] 2xl:w-[15%];
 }
@@ -318,7 +318,7 @@ section {
 }
 
 .Home-main section:nth-child(3) .group-of-bubble-1 > h3 {
-    @apply bg-[#00000066] m-2 py-2 px-3 border-none border-2 rounded-md w-[7rem] xs:w-[7rem] sm:w-[9rem] lg:w-[11rem] xl:w-[13rem] 2xl:w-[15rem] flex justify-center;
+    @apply bg-[#00000066] m-2 py-2 px-3 border-none border-2 rounded-md w-[7rem] xs:w-[7rem] sm:w-[9rem] lg:w-[9rem] xl:w-[11rem] 2xl:w-[11rem] 3xl:w-[15rem] 4xl:w-[17rem] flex justify-center;
     @apply text-xs sm:text-base  xl:text-xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-bold text-white;
 }
 
@@ -348,7 +348,7 @@ section {
 }
 
 .Home-main section:nth-child(3) .group-of-bubble-3 > h3 {
-    @apply bg-[#00000066] m-2 py-2 px-3 border-none border-2 rounded-md w-[10rem] xs:w-[9rem] sm:w-[12rem] lg:w-[12rem] xl:w-[14rem] 2xl:w-[21rem] flex justify-center;
+    @apply bg-[#00000066] m-2 py-2 px-3 border-none border-2 rounded-md w-[10rem] xs:w-[9rem] sm:w-[12rem] lg:w-[12rem] xl:w-[14rem] 2xl:w-[14rem] 3xl:w-[20rem] 4xl:w-[24rem] flex justify-center;
     @apply text-xs sm:text-base xl:text-xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl font-bold text-white;
 }
 

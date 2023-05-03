@@ -221,9 +221,7 @@ const Home = () => {
                             </li>
                             <li>
                                 <span>
-                                    <a href="https://suitf.osec.io/scores">
-                                        🎖️ 5th place in the Sui Builder House Denver CTF challenge
-                                    </a>
+                                    <a href="https://suitf.osec.io/scores">🎖️ 5th place in the Sui Builder House Denver CTF challenge</a>
                                 </span>
                                 <div className="championGroupRight">
                                     <img className="champion-bubble-4" alt=""></img>
