@@ -106,7 +106,7 @@ html {
 }
 
 .Home-nav-menu {
-    @apply flex ;
+    @apply flex;
     @apply sm:text-xs md:text-sm lg:text-sm xl:text-base 2xl:text-xl 4xl:text-2xl text-center;
     @apply lg:ml-24 xl:ml-44 2xl:ml-60;
     @apply my-4 list-none divide-y z-50;
@@ -191,7 +191,7 @@ section {
 }
 
 .Home-main section:nth-child(1) .section-content .text-title-2 {
-    @apply text-[0.5rem] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl text-[s];
+    @apply text-[0.5rem] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-4xl text-[#334664];
 }
 
 .links-container {
@@ -747,7 +747,7 @@ section {
 .Home-main section:nth-child(7) .suiFoundation {
     @apply content-[url('../resources/images/suiFoundation.svg')];
     @apply mx-auto;
-    @apply w-[50%] md:w-[80%] lg:w-full ;
+    @apply w-[50%] md:w-[80%] lg:w-full;
 }
 
 .Home-main section:nth-child(7) .section-content {

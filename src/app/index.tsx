@@ -98,12 +98,9 @@ const Home = () => {
                     </Plx>
                     <img className="group-of-discus-fish" alt="Group of discus fish" />
                     <div className="section-content">
-                        <p className="text-title-1">
-                        Scallop is the Next Generation Money Market
-                        </p>
+                        <p className="text-title-1">Scallop is the Next Generation Money Market</p>
                         <p className="text-title-2">
-                        which emphasizes institutional-grade quality, enhanced composability, and robust security.
-
+                            which emphasizes institutional-grade quality, enhanced composability, and robust security.
                         </p>
                         <div>
                             <div className="links-container">
@@ -116,7 +113,7 @@ const Home = () => {
                             </div>
 
                             <div className="based-on">
-                                <span className='text-[#1e2d45]'>Based on</span>
+                                <span className="text-[#1e2d45]">Based on</span>
                                 <a href="https://sui.io/">
                                     <img className="based-on-sui" alt="Sui" />
                                 </a>
