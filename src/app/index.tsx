@@ -149,7 +149,7 @@ const Home = () => {
                         <div className="bubble2"></div>
                     </div>
                     <div className="text-title-section" id="build">
-                        Build with...
+                        Build with
                     </div>
                     <div className="group-bubbles">
                         <div className="group-of-bubble-1">
@@ -192,14 +192,14 @@ const Home = () => {
                                 </div>
 
                                 <span>
-                                    <a className="underline" href="https://blog.sui.io/grant-recipients-round-one/">
+                                    <a href="https://blog.sui.io/grant-recipients-round-one/">
                                         🥇 1st DeFi project award an official grant from the Sui Foundation
                                     </a>{' '}
                                 </span>
                             </li>
                             <li>
                                 <span>
-                                    <a className="underline" href="https://dorahacks.io/grant/solana-2/top">
+                                    <a href="https://dorahacks.io/grant/solana-2/top">
                                         🥇 1st highest community vote project in 2021 Solana Ignition Hackathon Asia
                                     </a>{' '}
                                 </span>
@@ -214,15 +214,15 @@ const Home = () => {
                                     <img className="bubbleLine3" alt="" />
                                 </div>
                                 <span>
-                                    <a className="underline" href="https://suictf.movebit.xyz/scoreboard">
+                                    <a href="https://suictf.movebit.xyz/scoreboard">
                                         🥉 3rd place in the Sui x jump_ Builder House Ho Chi Minh City CTF challenge
                                     </a>{' '}
                                 </span>
                             </li>
                             <li>
                                 <span>
-                                    <a className="underline" href="https://suitf.osec.io/scores">
-                                        🎖️ 5th place in the Sui Builder House Denver CTF challenge.
+                                    <a href="https://suitf.osec.io/scores">
+                                        🎖️ 5th place in the Sui Builder House Denver CTF challenge
                                     </a>
                                 </span>
                                 <div className="championGroupRight">
@@ -313,9 +313,11 @@ const Home = () => {
                 <section>
                     <div className="section-content">
                         <div className="text-title-section" id="backer">
-                            Backer
+                            Backers
                         </div>
-                        <img className="suiFoundation" alt="suiFoundation" />
+                        <a href="https://blog.sui.io/grant-recipients-round-one/">
+                            <img className="suiFoundation" alt="suiFoundation" />
+                        </a>
                     </div>
                 </section>
                 <section>
