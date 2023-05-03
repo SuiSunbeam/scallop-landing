@@ -27,6 +27,7 @@ export const usePlxData = () => {
         bannerClould2: bannerElement === null ? [] : bannerClould2(breackPoints, bannerElement),
         bannerClould3: bannerElement === null ? [] : bannerClould3(breackPoints, bannerElement),
         bannerClould4: bannerElement === null ? [] : bannerClould4(breackPoints, bannerElement),
+        bannerClould5: bannerElement === null ? [] : bannerClould5(breackPoints, bannerElement),
         bannerSea: bannerElement === null ? [] : bannerSea(breackPoints, bannerElement),
         sectionOneLeftFish: sectionOneLeftFish(breackPoints),
         sectionTwoRightFish: sectionTwoRightFish(breackPoints),
@@ -636,6 +637,155 @@ const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
 };
 
 const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }, bannerElement: Element) => {
+    const bannerHeight = bannerElement.clientHeight;
+    let data: any = [];
+
+    if (breackPoints['5xl']) {
+        data = [
+            {
+                start: 'self',
+                end: bannerHeight,
+                properties: [
+                    {
+                        startValue: 300,
+                        endValue: 185,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints['4xl']) {
+        data = [
+            {
+                start: 'self',
+                end: bannerHeight,
+                properties: [
+                    {
+                        startValue: 185,
+                        endValue: 185,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints['3xl']) {
+        data = [
+            {
+                start: 'self',
+                end: bannerHeight,
+                properties: [
+                    {
+                        startValue: 185,
+                        endValue: 185,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints['2xl']) {
+        data = [
+            {
+                start: 'self',
+                end: bannerHeight,
+                properties: [
+                    {
+                        startValue: 180,
+                        endValue: 180,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xl) {
+        data = [
+            {
+                start: 'self',
+                end: bannerHeight,
+                properties: [
+                    {
+                        startValue: 180,
+                        endValue: 180,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.lg) {
+        data = [
+            {
+                start: 'self',
+                end: bannerHeight,
+                properties: [
+                    {
+                        startValue: 170,
+                        endValue: 170,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.md) {
+        data = [
+            {
+                start: 'self',
+                end: bannerHeight,
+                properties: [
+                    {
+                        startValue: 160,
+                        endValue: 160,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.sm) {
+        data = [
+            {
+                start: 'self',
+                end: bannerHeight,
+                properties: [
+                    {
+                        startValue: 150,
+                        endValue: 150,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else if (breackPoints.xs) {
+        data = [
+            {
+                start: 'self',
+                end: bannerHeight,
+                properties: [
+                    {
+                        startValue: 100,
+                        endValue: 105,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    } else {
+        data = [
+            {
+                start: 'self',
+                end: bannerHeight,
+                properties: [
+                    {
+                        startValue: 90,
+                        endValue: 100,
+                        property: 'translateY',
+                    },
+                ],
+            },
+        ];
+    }
+
+    return data;
+};
+
+const bannerClould5 = (breackPoints: { [index in endpoint]: boolean }, bannerElement: Element) => {
     const bannerHeight = bannerElement.clientHeight;
     let data: any = [];
 
@@ -2949,7 +3099,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     if (breackPoints['5xl']) {
         data = [
             {
-                start: 'section:nth-child(6) .whale',
+                start: 'section:nth-child(8) .whale',
                 duration: '20%',
                 properties: [
                     {
@@ -2980,7 +3130,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     } else if (breackPoints['4xl']) {
         data = [
             {
-                start: 'section:nth-child(6) .whale',
+                start: 'section:nth-child(8) .whale',
                 duration: '20%',
                 properties: [
                     {
@@ -3011,7 +3161,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     } else if (breackPoints['3xl']) {
         data = [
             {
-                start: 'section:nth-child(6) .whale',
+                start: 'section:nth-child(8) .whale',
                 duration: '20%',
                 properties: [
                     {
@@ -3042,7 +3192,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     } else if (breackPoints['2xl']) {
         data = [
             {
-                start: 'section:nth-child(6) .whale',
+                start: 'section:nth-child(8) .whale',
                 duration: '20%',
                 properties: [
                     {
@@ -3073,7 +3223,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     } else if (breackPoints.xl) {
         data = [
             {
-                start: 'section:nth-child(6) .whale',
+                start: 'section:nth-child(8) .whale',
                 duration: '20%',
                 properties: [
                     {
@@ -3104,7 +3254,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     } else if (breackPoints.lg) {
         data = [
             {
-                start: 'section:nth-child(6) .whale',
+                start: 'section:nth-child(8) .whale',
                 duration: '20%',
                 properties: [
                     {
@@ -3135,7 +3285,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     } else if (breackPoints.md) {
         data = [
             {
-                start: 'section:nth-child(6) .whale',
+                start: 'section:nth-child(8) .whale',
                 duration: '20%',
                 properties: [
                     {
@@ -3166,7 +3316,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     } else if (breackPoints.sm) {
         data = [
             {
-                start: 'section:nth-child(6) .whale',
+                start: 'section:nth-child(8) .whale',
                 duration: '20%',
                 properties: [
                     {
@@ -3197,7 +3347,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     } else if (breackPoints.xs) {
         data = [
             {
-                start: 'section:nth-child(6) .whale',
+                start: 'section:nth-child(8) .whale',
                 duration: '20%',
                 properties: [
                     {
@@ -3228,7 +3378,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     } else {
         data = [
             {
-                start: 'section:nth-child(6) .whale',
+                start: 'section:nth-child(8) .whale',
                 duration: '20%',
                 properties: [
                     {
@@ -3525,7 +3675,7 @@ const sectionSixWhale = (breackPoints: { [index in endpoint]: boolean }) => {
     if (breackPoints['5xl']) {
         data = [
             {
-                start: 'section:nth-child(5) .group-of-manta ',
+                start: 'section:nth-child(8) .group-of-manta ',
                 end: 'footer',
                 properties: [
                     {
@@ -3561,7 +3711,7 @@ const sectionSixWhale = (breackPoints: { [index in endpoint]: boolean }) => {
     } else if (breackPoints['4xl']) {
         data = [
             {
-                start: 'section:nth-child(5) .group-of-manta ',
+                start: 'section:nth-child(8) .group-of-manta ',
                 end: 'footer',
                 properties: [
                     {
@@ -3597,7 +3747,7 @@ const sectionSixWhale = (breackPoints: { [index in endpoint]: boolean }) => {
     } else if (breackPoints['3xl']) {
         data = [
             {
-                start: 'section:nth-child(5) .group-of-manta ',
+                start: 'section:nth-child(8) .group-of-manta ',
                 end: 'footer',
                 properties: [
                     {
@@ -3633,7 +3783,7 @@ const sectionSixWhale = (breackPoints: { [index in endpoint]: boolean }) => {
     } else if (breackPoints['2xl']) {
         data = [
             {
-                start: 'section:nth-child(5) .group-of-manta ',
+                start: 'section:nth-child(8) .group-of-manta ',
                 end: 'footer',
                 properties: [
                     {
@@ -3669,7 +3819,7 @@ const sectionSixWhale = (breackPoints: { [index in endpoint]: boolean }) => {
     } else if (breackPoints.xl) {
         data = [
             {
-                start: 'section:nth-child(5) .group-of-manta ',
+                start: 'section:nth-child(8) .group-of-manta ',
                 end: 'footer',
                 properties: [
                     {
@@ -3705,7 +3855,7 @@ const sectionSixWhale = (breackPoints: { [index in endpoint]: boolean }) => {
     } else if (breackPoints.lg) {
         data = [
             {
-                start: 'section:nth-child(5) .group-of-manta ',
+                start: 'section:nth-child(8) .group-of-manta ',
                 end: 'footer',
                 properties: [
                     {
@@ -3741,7 +3891,7 @@ const sectionSixWhale = (breackPoints: { [index in endpoint]: boolean }) => {
     } else if (breackPoints.md) {
         data = [
             {
-                start: 'section:nth-child(5) .group-of-manta ',
+                start: 'section:nth-child(8) .group-of-manta ',
                 end: 'footer',
                 properties: [
                     {
@@ -3777,7 +3927,7 @@ const sectionSixWhale = (breackPoints: { [index in endpoint]: boolean }) => {
     } else if (breackPoints.sm) {
         data = [
             {
-                start: 'section:nth-child(5) .group-of-manta ',
+                start: 'section:nth-child(8) .group-of-manta ',
                 end: 'footer',
                 properties: [
                     {
@@ -3813,7 +3963,7 @@ const sectionSixWhale = (breackPoints: { [index in endpoint]: boolean }) => {
     } else if (breackPoints.xs) {
         data = [
             {
-                start: 'section:nth-child(5) .group-of-manta ',
+                start: 'section:nth-child(8) .group-of-manta ',
                 end: 'footer',
                 properties: [
                     {
@@ -3849,7 +3999,7 @@ const sectionSixWhale = (breackPoints: { [index in endpoint]: boolean }) => {
     } else {
         data = [
             {
-                start: 'section:nth-child(5) .group-of-manta ',
+                start: 'section:nth-child(8) .group-of-manta ',
                 end: 'footer',
                 properties: [
                     {
