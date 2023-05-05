@@ -103,7 +103,7 @@ const Home = () => {
                         </p>
                         <div>
                             <div className="links-container">
-                                <a className="more-button button1 to-transparent" href="https://sui.scallop.io/">
+                                <a className="more-button button1" href="https://sui.scallop.io/">
                                     Launch App
                                 </a>
                                 <a className="more-button button2" href="https://linktr.ee/scallop_io">
