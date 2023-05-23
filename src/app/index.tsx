@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Menu } from '@headlessui/react';
 import Plx from 'react-plx';
 import krissAvatar from '../resources/images/kriss-avatar.png';
 import annAvatar from '../resources/images/ann-avatar.png';
@@ -10,7 +11,7 @@ import telegramIcon from '../resources/images/telegram-icon.svg';
 import discordIcon from '../resources/images/discord-icon.svg';
 import mediumIcon from '../resources/images/medium-icon.svg';
 import { usePlxData } from './plxconfig';
-import { ArrowSmUpIcon } from '@heroicons/react/solid';
+import { ArrowSmUpIcon, MenuIcon } from '@heroicons/react/solid';
 import './index.css';
 
 const Home = () => {
@@ -67,12 +68,15 @@ const Home = () => {
                         <img alt="Scallop logo" />
                     </a>
                     <div className="Home-nav-menu">
-                        <ul className="hidden lg:flex md:space-x-6 2xl:space-x-14">
+                        <ul>
                             <li>
                                 <a href="/">Home</a>
                             </li>
                             <li>
                                 <a href="https://sui.scallop.io/">App</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.scallop.io/">Docs</a>
                             </li>
                             <li>
                                 <a href="#about">About</a>
@@ -88,6 +92,34 @@ const Home = () => {
                             </li>
                         </ul>
                     </div>
+                    <Menu>
+                        <Menu.Button className="Home-links-button">
+                            <MenuIcon />
+                        </Menu.Button>
+                        <Menu.Items className="Home-links-items">
+                            <Menu.Item>
+                                <a href="/">Home</a>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <a href="https://sui.scallop.io/">App</a>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <a href="https://docs.scallop.io/">Docs</a>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <a href="#about">About</a>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <a href="#core-team">Core Team</a>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <a href="#backer">Backer</a>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <a href="#roadmap">Roadmap</a>
+                            </Menu.Item>
+                        </Menu.Items>
+                    </Menu>
                 </nav>
             </header>
             <main className="Home-main">

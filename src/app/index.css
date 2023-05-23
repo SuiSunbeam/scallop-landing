@@ -95,6 +95,7 @@ html {
     @apply w-full h-12 xs:h-12 sm:h-12 md:h-14 lg:h-16 xl:h-20 2xl:h-24;
     @apply place-items-center;
     @apply text-[#07476F];
+    @apply mt-5 xs:mt-5 sm:mt-10 md:mt-10 lg:mt-0;
 }
 
 .Home-navigation a {
@@ -106,14 +107,31 @@ html {
 }
 
 .Home-nav-menu {
-    @apply flex;
-    @apply sm:text-xs md:text-sm lg:text-sm xl:text-base 2xl:text-xl 4xl:text-2xl text-center;
-    @apply lg:ml-24 xl:ml-44 2xl:ml-60;
-    @apply my-4 list-none divide-y z-50;
+    @apply hidden sm:flex items-center justify-center;
+    @apply text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base 2xl:text-xl 4xl:text-2xl text-center;
 }
 
-.Home-header-logo {
-    @apply flex;
+.Home-nav-menu ul {
+    @apply flex sm:flex-row items-start justify-start;
+    @apply gap-y-1 sm:gap-x-4 md:gap-x-6 2xl:gap-x-14;
+}
+
+.Home-links-button {
+    @apply flex sm:hidden z-50;
+    @apply p-1 rounded-md;
+    @apply !bg-white bg-opacity-60 hover:bg-opacity-90;
+}
+
+.Home-links-button svg {
+    @apply w-5 h-5;
+    @apply fill-[#334664] hover:fill-[#1e2d45];
+}
+
+.Home-links-items {
+    @apply absolute flex flex-col items-center justify-start gap-0.5;
+    @apply top-11 right-4 p-2;
+    @apply text-xs rounded;
+    @apply !bg-white bg-opacity-60;
 }
 
 .Home-logo {
@@ -124,8 +142,7 @@ html {
 .Home-logo > img {
     @apply content-[url('../resources/images/logo-black.svg')];
     @apply block pointer-events-none filter;
-    @apply h-6 xs:h-6 sm:h-6 md:h-10 lg:h-8 xl:h-10 2xl:h-16 4xl:h-20;
-    @apply mt-5 xs:mt-5 sm:mt-10 md:mt-10 lg:mt-0;
+    @apply h-6 xs:h-6 sm:h-8 md:h-10 lg:h-8 xl:h-10 2xl:h-16 4xl:h-20;
 }
 
 /*---- main ---- */
