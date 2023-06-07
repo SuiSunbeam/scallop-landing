@@ -181,20 +181,24 @@ const Home = () => {
                         <div className="bubble2"></div>
                     </div>
                     <div className="text-title-section" id="build">
-                        Build with
+                        Why Scallop?
                     </div>
                     <div className="group-bubbles">
+                        <div className="group-of-bubble-2">
+                            <img
+                                className="bubble-2"
+                                alt="glab
+                        ] of bubble"
+                            />
+                            <h3 className="text-title-2">Professional Trader Enabling</h3>
+                        </div>
                         <div className="group-of-bubble-1">
                             <img className="bubble-1" alt="Group of bubble" />
-                            <h3 className="text-title-1">High Security</h3>
-                        </div>
-                        <div className="group-of-bubble-2">
-                            <img className="bubble-2" alt="Composability of bubble" />
-                            <h3 className="text-title-2">Composability</h3>
+                            <h3 className="text-title-1">Industry Leading Model</h3>
                         </div>
                         <div className="group-of-bubble-3">
                             <img className="bubble-3" alt="Institutional Grade of bubble" />
-                            <h3 className="text-title-3">Institutional Grade</h3>
+                            <h3 className="text-title-3">Security First</h3>
                         </div>
                     </div>
                 </section>
