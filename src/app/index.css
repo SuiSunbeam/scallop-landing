@@ -98,14 +98,6 @@ html {
     @apply mt-5 xs:mt-5 sm:mt-10 md:mt-10 lg:mt-0;
 }
 
-.Home-navigation a {
-    @apply hover:text-[#7396B4];
-}
-
-.Home-navigation .active {
-    @apply text-[#7396B4];
-}
-
 .Home-nav-menu {
     @apply hidden sm:flex items-center justify-center;
     @apply text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base 2xl:text-xl 4xl:text-2xl text-center;
@@ -114,6 +106,13 @@ html {
 .Home-nav-menu ul {
     @apply flex sm:flex-row items-start justify-start;
     @apply gap-y-1 sm:gap-x-4 md:gap-x-6 2xl:gap-x-14;
+}
+.Home-nav-menu a {
+    @apply hover:text-[#7396B4];
+}
+
+.Home-nav-menu .active {
+    @apply text-[#7396B4];
 }
 
 .Home-links-button {
@@ -135,12 +134,14 @@ html {
 }
 
 .Home-logo {
-    @apply flex justify-center items-center;
-    @apply ml-10 lg:ml-20 2xl:ml-32 hover:scale-110;
+    @apply flex justify-center items-center gap-1 lg:gap-1.5 2xl:gap-2;
+    @apply ml-10 lg:ml-20 2xl:ml-32;
+    @apply text-base md:text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl 4xl:text-5xl;
+    @apply text-black font-medium 2xl:font-semibold;
 }
 
 .Home-logo > img {
-    @apply content-[url('../resources/images/logo-black.svg')];
+    @apply content-[url('../resources/images/scallop.webp')];
     @apply block pointer-events-none filter;
     @apply h-6 xs:h-6 sm:h-8 md:h-10 lg:h-8 xl:h-10 2xl:h-16 4xl:h-20;
 }
@@ -913,16 +914,34 @@ footer .content .copyright {
 
 footer .content .copyright span {
     @apply rounded-full bg-gray-700 text-gray-100 px-4 py-1;
+    @apply text-gray-200 font-medium 2xl:font-semibold;
 }
 
 .footer-logo {
-    @apply flex justify-center items-center col-span-2  hover:scale-110;
+    @apply flex justify-center items-center col-span-2 gap-1 lg:gap-1.5 2xl:gap-2;
+    @apply text-base md:text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl 4xl:text-5xl;
+    @apply text-white font-medium 2xl:font-semibold;
+    @apply py-2;
 }
 
 .footer-logo > img {
-    @apply content-[url('../resources/images/logo-white.png')];
-    @apply w-1/2 xl:w-1/3 text-center;
+    @apply content-[url('../resources/images/scallop.webp')];
+    @apply block pointer-events-none filter;
+    @apply h-6 xs:h-6 sm:h-8 md:h-10 lg:h-8 xl:h-10 2xl:h-12;
 }
+
+/* .Home-logo {
+    @apply flex justify-center items-center gap-1 lg:gap-1.5 2xl:gap-2;
+    @apply ml-10 lg:ml-20 2xl:ml-32;
+    @apply text-base md:text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl 4xl:text-5xl;
+    @apply text-black font-medium 2xl:font-semibold;
+}
+
+.Home-logo > img {
+    @apply content-[url('../resources/images/scallop.webp')];
+    @apply block pointer-events-none filter;
+    @apply h-6 xs:h-6 sm:h-8 md:h-10 lg:h-8 xl:h-10 2xl:h-16 4xl:h-20;
+} */
 
 /*---- Back to top ---- */
 .Back-to-top {

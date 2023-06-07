@@ -64,8 +64,9 @@ const Home = () => {
                     <div className="Home-banner-layer Home-banner-wave"></div>
                 </div>
                 <nav className="Home-navigation">
-                    <a href="/" className="Home-logo">
-                        <img alt="Scallop logo" />
+                    <a href="/" className="Home-logo group">
+                        <img className="group-hover:animate-shake" alt="Scallop logo" />
+                        <span>Scallop</span>
                     </a>
                     <div className="Home-nav-menu">
                         <ul>
@@ -395,8 +396,9 @@ const Home = () => {
                             <img src={discordIcon} alt="" />
                         </a>
                     </div>
-                    <a href="/" className="footer-logo">
-                        <img alt="Scallop logo" />
+                    <a href="/" className="footer-logo group">
+                        <img className="group-hover:animate-shake" alt="Scallop logo" />
+                        <span>Scallop</span>
                     </a>
                     <div className="copyright">
                         <span>© 2023 Scallop.io</span>
