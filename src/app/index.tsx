@@ -74,7 +74,7 @@ const Home = () => {
                                 <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="https://sui.scallop.io/">App</a>
+                                <a href="https://app.scallop.io/">App</a>
                             </li>
                             <li>
                                 <a href="https://docs.scallop.io/">Docs</a>
@@ -102,7 +102,7 @@ const Home = () => {
                                 <a href="/">Home</a>
                             </Menu.Item>
                             <Menu.Item>
-                                <a href="https://sui.scallop.io/">App</a>
+                                <a href="https://app.scallop.io/">App</a>
                             </Menu.Item>
                             <Menu.Item>
                                 <a href="https://docs.scallop.io/">Docs</a>
@@ -136,7 +136,7 @@ const Home = () => {
                         </p>
                         <div>
                             <div className="links-container">
-                                <a className="more-button button1" href="https://sui.scallop.io/">
+                                <a className="more-button button1" href="https://app.scallop.io/">
                                     Launch App
                                 </a>
                                 <a className="more-button button2" href="https://linktr.ee/scallop_io">
