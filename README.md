@@ -5,15 +5,19 @@
 </p>
 
 # solana-scallop-home
+
 Scallop's home page.
 
 ### Develop environment
+
 - Typescript React
 
 ### Build project (develop)
+
 1. npm install
 2. npm run start
 
 ### Build project (product)
+
 1. npm install
 2. npm run build
