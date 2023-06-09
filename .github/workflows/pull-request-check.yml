@@ -22,7 +22,7 @@ jobs:
           version: latest
       - run: echo '//npm.pkg.github.com/:_authToken=${{ secrets.GH_ACCESS_TOKEN }}' >> .npmrc
       - name: Install dependencies
-        - run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - name: Build
         env:
           CI: false
