@@ -21,11 +21,12 @@
 }
 
 :root {
+  --color-sky-default: 156 208 255; /* #9CD0FF */
   --color-basic-lighter: 170 214 255; /* #AAD6FF */
   --color-basic-light: 115 150 180; /* #7396B4 */
   --color-basic-normal: 51 70 100; /* #334664 */
   --color-basic-dark: 30 45 69; /* #1E2D45 */
-  --color-basic-darker: 4 11 19; /* #040b13 */
+  --color-basic-darker: 4 11 19; /* #07476F */
 }
 
 html,
@@ -35,6 +36,10 @@ body,
 
   -webkit-tap-highlight-color: transparent;
   text-size-adjust: 100%;
+}
+
+html {
+  @apply scroll-smooth;
 }
 
 body {

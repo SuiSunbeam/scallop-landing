@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
-import { endpoint, checkBreakpoint } from './utils';
+import { endpoint, checkBreakpoint } from '@/app/utils';
 
 export const usePlxData = () => {
   const [breackPoints, setBreackPoints] = useState<{ [index in endpoint]: boolean }>(
     checkBreakpoint()
   );
-  const [bannerElement, setBannerElement] = useState<Element | null>(null);
+  const [headerSceneElement, setHeaderSceneElement] = useState<Element | null>(null);
 
   const handleResize = () => {
     setBreackPoints(checkBreakpoint());
   };
 
   useEffect(() => {
-    setBannerElement(document.querySelector('.Home-banner'));
+    setHeaderSceneElement(document.querySelector('.header-scene'));
   }, []);
 
   useEffect(() => {
@@ -24,33 +24,39 @@ export const usePlxData = () => {
   }, [handleResize]);
 
   return {
-    bannerSun: bannerElement === null ? [] : bannerSun(breackPoints, bannerElement),
-    bannerClould1: bannerElement === null ? [] : bannerClould1(breackPoints, bannerElement),
-    bannerClould2: bannerElement === null ? [] : bannerClould2(breackPoints, bannerElement),
-    bannerClould3: bannerElement === null ? [] : bannerClould3(breackPoints, bannerElement),
-    bannerClould4: bannerElement === null ? [] : bannerClould4(breackPoints, bannerElement),
-    bannerClould5: bannerElement === null ? [] : bannerClould5(breackPoints, bannerElement),
-    bannerSea: bannerElement === null ? [] : bannerSea(breackPoints, bannerElement),
-    sectionOneLeftFish: sectionOneLeftFish(breackPoints),
-    sectionTwoRightFish: sectionTwoRightFish(breackPoints),
-    sectionFourLeftFish: sectionFourLeftFish(breackPoints),
-    sectionFiveRightTurtle: sectionFiveRightTurtle(breackPoints),
-    sectionSixLeftFish: sectionSixLeftFish(breackPoints),
-    sectionSixRightFish: sectionSixRightFish(breackPoints),
-    sectionSixLeftjellyfish: sectionSixLeftjellyfish(breackPoints),
-    sectionSixWhale: sectionSixWhale(breackPoints),
+    headerSceneSun:
+      headerSceneElement === null ? [] : headerSceneSun(breackPoints, headerSceneElement),
+    headerSceneClould1:
+      headerSceneElement === null ? [] : headerSceneClould1(breackPoints, headerSceneElement),
+    headerSceneClould2:
+      headerSceneElement === null ? [] : headerSceneClould2(breackPoints, headerSceneElement),
+    headerSceneClould3:
+      headerSceneElement === null ? [] : headerSceneClould3(breackPoints, headerSceneElement),
+    headerSceneClould4:
+      headerSceneElement === null ? [] : headerSceneClould4(breackPoints, headerSceneElement),
+    headerSceneClould5:
+      headerSceneElement === null ? [] : headerSceneClould5(breackPoints, headerSceneElement),
+    headerSceneSea:
+      headerSceneElement === null ? [] : headerSceneSea(breackPoints, headerSceneElement),
+    mainGroupOfFishOne: mainGroupOfFishOne(breackPoints),
+    mainGroupOfFishTwo: mainGroupOfFishTwo(breackPoints),
+    mainGroupOfFishThree: mainGroupOfFishThree(breackPoints),
+    mainGroupOfTurtle: mainGroupOfTurtle(breackPoints),
+    mainGroupOfFishFour: mainGroupOfFishFour(breackPoints),
+    mainGroupOfFishFive: mainGroupOfFishFive(breackPoints),
+    mainGroupOfJellyFishTwo: mainGroupOfJellyFishTwo(breackPoints),
   };
 };
 
-const bannerSun = (breackPoints: { [index in endpoint]: boolean }, bannerElement: Element) => {
-  const bannerHeight = bannerElement.clientHeight;
+const headerSceneSun = (breackPoints: { [index in endpoint]: boolean }, sceneElement: Element) => {
+  const scenceHeight = sceneElement.clientHeight;
   let data: any = [];
 
   if (breackPoints['5xl']) {
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -64,7 +70,7 @@ const bannerSun = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -78,7 +84,7 @@ const bannerSun = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -92,7 +98,7 @@ const bannerSun = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -106,7 +112,7 @@ const bannerSun = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -120,7 +126,7 @@ const bannerSun = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -134,7 +140,7 @@ const bannerSun = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -148,7 +154,7 @@ const bannerSun = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -162,7 +168,7 @@ const bannerSun = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -176,7 +182,7 @@ const bannerSun = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -191,15 +197,18 @@ const bannerSun = (breackPoints: { [index in endpoint]: boolean }, bannerElement
   return data;
 };
 
-const bannerClould1 = (breackPoints: { [index in endpoint]: boolean }, bannerElement: Element) => {
-  const bannerHeight = bannerElement.clientHeight;
+const headerSceneClould1 = (
+  breackPoints: { [index in endpoint]: boolean },
+  sceneElement: Element
+) => {
+  const scenceHeight = sceneElement.clientHeight;
   let data: any = [];
 
   if (breackPoints['5xl']) {
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -440,
@@ -213,7 +222,7 @@ const bannerClould1 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -370,
@@ -227,7 +236,7 @@ const bannerClould1 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -260,
@@ -241,7 +250,7 @@ const bannerClould1 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -170,
@@ -255,7 +264,7 @@ const bannerClould1 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -120,
@@ -269,7 +278,7 @@ const bannerClould1 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -80,
@@ -283,7 +292,7 @@ const bannerClould1 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -20,
@@ -297,7 +306,7 @@ const bannerClould1 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -10,
@@ -311,7 +320,7 @@ const bannerClould1 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -5,
@@ -325,7 +334,7 @@ const bannerClould1 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -340,15 +349,18 @@ const bannerClould1 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
   return data;
 };
 
-const bannerClould2 = (breackPoints: { [index in endpoint]: boolean }, bannerElement: Element) => {
-  const bannerHeight = bannerElement.clientHeight;
+const headerSceneClould2 = (
+  breackPoints: { [index in endpoint]: boolean },
+  sceneElement: Element
+) => {
+  const scenceHeight = sceneElement.clientHeight;
   let data: any = [];
 
   if (breackPoints['5xl']) {
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -140,
@@ -362,7 +374,7 @@ const bannerClould2 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -160,
@@ -376,7 +388,7 @@ const bannerClould2 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -80,
@@ -390,7 +402,7 @@ const bannerClould2 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -30,
@@ -404,7 +416,7 @@ const bannerClould2 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -418,7 +430,7 @@ const bannerClould2 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 30,
@@ -432,7 +444,7 @@ const bannerClould2 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 60,
@@ -446,7 +458,7 @@ const bannerClould2 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 65,
@@ -460,7 +472,7 @@ const bannerClould2 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 35,
@@ -474,7 +486,7 @@ const bannerClould2 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 35,
@@ -489,15 +501,18 @@ const bannerClould2 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
   return data;
 };
 
-const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }, bannerElement: Element) => {
-  const bannerHeight = bannerElement.clientHeight;
+const headerSceneClould3 = (
+  breackPoints: { [index in endpoint]: boolean },
+  sceneElement: Element
+) => {
+  const scenceHeight = sceneElement.clientHeight;
   let data: any = [];
 
   if (breackPoints['5xl']) {
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -160,
@@ -511,7 +526,7 @@ const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -170,
@@ -525,7 +540,7 @@ const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -95,
@@ -539,7 +554,7 @@ const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -50,
@@ -553,7 +568,7 @@ const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: -10,
@@ -567,7 +582,7 @@ const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 5,
@@ -581,7 +596,7 @@ const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 40,
@@ -595,7 +610,7 @@ const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 50,
@@ -609,7 +624,7 @@ const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 25,
@@ -623,7 +638,7 @@ const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 30,
@@ -638,15 +653,18 @@ const bannerClould3 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
   return data;
 };
 
-const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }, bannerElement: Element) => {
-  const bannerHeight = bannerElement.clientHeight;
+const headerSceneClould4 = (
+  breackPoints: { [index in endpoint]: boolean },
+  sceneElement: Element
+) => {
+  const scenceHeight = sceneElement.clientHeight;
   let data: any = [];
 
   if (breackPoints['5xl']) {
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 300,
@@ -660,7 +678,7 @@ const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 185,
@@ -674,7 +692,7 @@ const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 185,
@@ -688,7 +706,7 @@ const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 180,
@@ -702,7 +720,7 @@ const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 180,
@@ -716,7 +734,7 @@ const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 170,
@@ -730,7 +748,7 @@ const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 160,
@@ -744,7 +762,7 @@ const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 150,
@@ -758,7 +776,7 @@ const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 100,
@@ -772,7 +790,7 @@ const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 90,
@@ -787,15 +805,18 @@ const bannerClould4 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
   return data;
 };
 
-const bannerClould5 = (breackPoints: { [index in endpoint]: boolean }, bannerElement: Element) => {
-  const bannerHeight = bannerElement.clientHeight;
+const headerSceneClould5 = (
+  breackPoints: { [index in endpoint]: boolean },
+  sceneElement: Element
+) => {
+  const scenceHeight = sceneElement.clientHeight;
   let data: any = [];
 
   if (breackPoints['5xl']) {
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 300,
@@ -809,7 +830,7 @@ const bannerClould5 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 185,
@@ -823,7 +844,7 @@ const bannerClould5 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 185,
@@ -837,7 +858,7 @@ const bannerClould5 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 180,
@@ -851,7 +872,7 @@ const bannerClould5 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 180,
@@ -865,7 +886,7 @@ const bannerClould5 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 170,
@@ -879,7 +900,7 @@ const bannerClould5 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 160,
@@ -893,7 +914,7 @@ const bannerClould5 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 150,
@@ -907,7 +928,7 @@ const bannerClould5 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 100,
@@ -921,7 +942,7 @@ const bannerClould5 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 90,
@@ -936,15 +957,15 @@ const bannerClould5 = (breackPoints: { [index in endpoint]: boolean }, bannerEle
   return data;
 };
 
-const bannerSea = (breackPoints: { [index in endpoint]: boolean }, bannerElement: Element) => {
-  const bannerHeight = bannerElement.clientHeight;
+const headerSceneSea = (breackPoints: { [index in endpoint]: boolean }, sceneElement: Element) => {
+  const scenceHeight = sceneElement.clientHeight;
   let data: any = [];
 
   if (breackPoints['5xl']) {
     data = [
       {
         start: 'self',
-        end: bannerHeight - 135,
+        end: scenceHeight - 135,
         properties: [
           {
             startValue: 0,
@@ -958,7 +979,7 @@ const bannerSea = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight - 120,
+        end: scenceHeight - 120,
         properties: [
           {
             startValue: 0,
@@ -972,7 +993,7 @@ const bannerSea = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight - 105,
+        end: scenceHeight - 105,
         properties: [
           {
             startValue: 0,
@@ -986,7 +1007,7 @@ const bannerSea = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight - 90,
+        end: scenceHeight - 90,
         properties: [
           {
             startValue: 0,
@@ -1000,7 +1021,7 @@ const bannerSea = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight - 75,
+        end: scenceHeight - 75,
         properties: [
           {
             startValue: 0,
@@ -1014,7 +1035,7 @@ const bannerSea = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight - 60,
+        end: scenceHeight - 60,
         properties: [
           {
             startValue: 0,
@@ -1028,7 +1049,7 @@ const bannerSea = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight - 45,
+        end: scenceHeight - 45,
         properties: [
           {
             startValue: 0,
@@ -1042,7 +1063,7 @@ const bannerSea = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight - 30,
+        end: scenceHeight - 30,
         properties: [
           {
             startValue: 0,
@@ -1056,7 +1077,7 @@ const bannerSea = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight - 15,
+        end: scenceHeight - 15,
         properties: [
           {
             startValue: 0,
@@ -1070,7 +1091,7 @@ const bannerSea = (breackPoints: { [index in endpoint]: boolean }, bannerElement
     data = [
       {
         start: 'self',
-        end: bannerHeight,
+        end: scenceHeight,
         properties: [
           {
             startValue: 0,
@@ -1085,7 +1106,7 @@ const bannerSea = (breackPoints: { [index in endpoint]: boolean }, bannerElement
   return data;
 };
 
-const sectionOneLeftFish = (breackPoints: { [index in endpoint]: boolean }) => {
+const mainGroupOfFishOne = (breackPoints: { [index in endpoint]: boolean }) => {
   let data: any = [];
 
   if (breackPoints['5xl']) {
@@ -1413,7 +1434,7 @@ const sectionOneLeftFish = (breackPoints: { [index in endpoint]: boolean }) => {
   return data;
 };
 
-const sectionTwoRightFish = (breackPoints: { [index in endpoint]: boolean }) => {
+const mainGroupOfFishTwo = (breackPoints: { [index in endpoint]: boolean }) => {
   let data: any = [];
 
   if (breackPoints['5xl']) {
@@ -1969,7 +1990,7 @@ const sectionTwoRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
     data = [
       {
         start: 'self',
-        end: 'section:nth-child(4) .rock-left',
+        end: '.scene-rockLeft-1',
         easing: 'easeInOut',
         properties: [
           {
@@ -1997,7 +2018,7 @@ const sectionTwoRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
         ],
       },
       {
-        start: 'section:nth-child(4) .rock-left',
+        start: '.scene-rockLeft-1',
         duration: '30%',
         easing: 'easeOut',
         properties: [
@@ -2031,7 +2052,7 @@ const sectionTwoRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
   return data;
 };
 
-const sectionFourLeftFish = (breackPoints: { [index in endpoint]: boolean }) => {
+const mainGroupOfFishThree = (breackPoints: { [index in endpoint]: boolean }) => {
   let data: any = [];
 
   if (breackPoints['5xl']) {
@@ -2459,7 +2480,7 @@ const sectionFourLeftFish = (breackPoints: { [index in endpoint]: boolean }) => 
   return data;
 };
 
-const sectionFiveRightTurtle = (breackPoints: { [index in endpoint]: boolean }) => {
+const mainGroupOfTurtle = (breackPoints: { [index in endpoint]: boolean }) => {
   let data: any = [];
 
   if (breackPoints['5xl']) {
@@ -2777,7 +2798,7 @@ const sectionFiveRightTurtle = (breackPoints: { [index in endpoint]: boolean }) 
   return data;
 };
 
-const sectionSixLeftFish = (breackPoints: { [index in endpoint]: boolean }) => {
+const mainGroupOfFishFour = (breackPoints: { [index in endpoint]: boolean }) => {
   let data: any = [];
 
   if (breackPoints['5xl']) {
@@ -3095,13 +3116,13 @@ const sectionSixLeftFish = (breackPoints: { [index in endpoint]: boolean }) => {
   return data;
 };
 
-const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => {
+const mainGroupOfFishFive = (breackPoints: { [index in endpoint]: boolean }) => {
   let data: any = [];
 
   if (breackPoints['5xl']) {
     data = [
       {
-        start: 'section:nth-child(8) .whale',
+        start: '.scene-whale',
         duration: '20%',
         properties: [
           {
@@ -3132,7 +3153,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
   } else if (breackPoints['4xl']) {
     data = [
       {
-        start: 'section:nth-child(8) .whale',
+        start: '.scene-whale',
         duration: '20%',
         properties: [
           {
@@ -3163,7 +3184,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
   } else if (breackPoints['3xl']) {
     data = [
       {
-        start: 'section:nth-child(8) .whale',
+        start: '.scene-whale',
         duration: '20%',
         properties: [
           {
@@ -3194,7 +3215,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
   } else if (breackPoints['2xl']) {
     data = [
       {
-        start: 'section:nth-child(8) .whale',
+        start: '.scene-whale',
         duration: '20%',
         properties: [
           {
@@ -3225,7 +3246,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
   } else if (breackPoints.xl) {
     data = [
       {
-        start: 'section:nth-child(8) .whale',
+        start: '.scene-whale',
         duration: '20%',
         properties: [
           {
@@ -3256,7 +3277,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
   } else if (breackPoints.lg) {
     data = [
       {
-        start: 'section:nth-child(8) .whale',
+        start: '.scene-whale',
         duration: '20%',
         properties: [
           {
@@ -3287,7 +3308,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
   } else if (breackPoints.md) {
     data = [
       {
-        start: 'section:nth-child(8) .whale',
+        start: '.scene-whale',
         duration: '20%',
         properties: [
           {
@@ -3318,7 +3339,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
   } else if (breackPoints.sm) {
     data = [
       {
-        start: 'section:nth-child(8) .whale',
+        start: '.scene-whale',
         duration: '20%',
         properties: [
           {
@@ -3349,7 +3370,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
   } else if (breackPoints.xs) {
     data = [
       {
-        start: 'section:nth-child(8) .whale',
+        start: '.scene-whale',
         duration: '20%',
         properties: [
           {
@@ -3380,7 +3401,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
   } else {
     data = [
       {
-        start: 'section:nth-child(8) .whale',
+        start: '.scene-whale',
         duration: '20%',
         properties: [
           {
@@ -3413,7 +3434,7 @@ const sectionSixRightFish = (breackPoints: { [index in endpoint]: boolean }) => 
   return data;
 };
 
-const sectionSixLeftjellyfish = (breackPoints: { [index in endpoint]: boolean }) => {
+const mainGroupOfJellyFishTwo = (breackPoints: { [index in endpoint]: boolean }) => {
   let data: any = [];
 
   if (breackPoints['5xl']) {
@@ -3660,374 +3681,6 @@ const sectionSixLeftjellyfish = (breackPoints: { [index in endpoint]: boolean })
           {
             startValue: 0,
             endValue: -20,
-            unit: '%',
-            property: 'translateY',
-          },
-        ],
-      },
-    ];
-  }
-
-  return data;
-};
-
-const sectionSixWhale = (breackPoints: { [index in endpoint]: boolean }) => {
-  let data: any = [];
-
-  if (breackPoints['5xl']) {
-    data = [
-      {
-        start: 'section:nth-child(8) .group-of-manta ',
-        end: 'footer',
-        properties: [
-          {
-            startValue: 0,
-            endValue: 5,
-            property: 'rotateZ',
-          },
-          {
-            startValue: -10,
-            endValue: 0,
-            property: 'rotate',
-          },
-          {
-            startValue: 1,
-            endValue: 1,
-            property: 'scale',
-          },
-          {
-            startValue: -20,
-            endValue: -50,
-            unit: '%',
-            property: 'translateX',
-          },
-          {
-            startValue: 30,
-            endValue: -75,
-            unit: '%',
-            property: 'translateY',
-          },
-        ],
-      },
-    ];
-  } else if (breackPoints['4xl']) {
-    data = [
-      {
-        start: 'section:nth-child(8) .group-of-manta ',
-        end: 'footer',
-        properties: [
-          {
-            startValue: 0,
-            endValue: 5,
-            property: 'rotateZ',
-          },
-          {
-            startValue: -10,
-            endValue: 0,
-            property: 'rotate',
-          },
-          {
-            startValue: 1,
-            endValue: 1,
-            property: 'scale',
-          },
-          {
-            startValue: -20,
-            endValue: -50,
-            unit: '%',
-            property: 'translateX',
-          },
-          {
-            startValue: 30,
-            endValue: -75,
-            unit: '%',
-            property: 'translateY',
-          },
-        ],
-      },
-    ];
-  } else if (breackPoints['3xl']) {
-    data = [
-      {
-        start: 'section:nth-child(8) .group-of-manta ',
-        end: 'footer',
-        properties: [
-          {
-            startValue: 0,
-            endValue: 5,
-            property: 'rotateZ',
-          },
-          {
-            startValue: -10,
-            endValue: 0,
-            property: 'rotate',
-          },
-          {
-            startValue: 1,
-            endValue: 1,
-            property: 'scale',
-          },
-          {
-            startValue: -20,
-            endValue: -50,
-            unit: '%',
-            property: 'translateX',
-          },
-          {
-            startValue: 30,
-            endValue: -75,
-            unit: '%',
-            property: 'translateY',
-          },
-        ],
-      },
-    ];
-  } else if (breackPoints['2xl']) {
-    data = [
-      {
-        start: 'section:nth-child(8) .group-of-manta ',
-        end: 'footer',
-        properties: [
-          {
-            startValue: 0,
-            endValue: 5,
-            property: 'rotateZ',
-          },
-          {
-            startValue: -20,
-            endValue: 0,
-            property: 'rotate',
-          },
-          {
-            startValue: 1,
-            endValue: 1,
-            property: 'scale',
-          },
-          {
-            startValue: -20,
-            endValue: -35,
-            unit: '%',
-            property: 'translateX',
-          },
-          {
-            startValue: 20,
-            endValue: -65,
-            unit: '%',
-            property: 'translateY',
-          },
-        ],
-      },
-    ];
-  } else if (breackPoints.xl) {
-    data = [
-      {
-        start: 'section:nth-child(8) .group-of-manta ',
-        end: 'footer',
-        properties: [
-          {
-            startValue: 0,
-            endValue: 5,
-            property: 'rotateZ',
-          },
-          {
-            startValue: -20,
-            endValue: 0,
-            property: 'rotate',
-          },
-          {
-            startValue: 1,
-            endValue: 1,
-            property: 'scale',
-          },
-          {
-            startValue: -20,
-            endValue: -35,
-            unit: '%',
-            property: 'translateX',
-          },
-          {
-            startValue: 20,
-            endValue: -70,
-            unit: '%',
-            property: 'translateY',
-          },
-        ],
-      },
-    ];
-  } else if (breackPoints.lg) {
-    data = [
-      {
-        start: 'section:nth-child(8) .group-of-manta ',
-        end: 'footer',
-        properties: [
-          {
-            startValue: 0,
-            endValue: 5,
-            property: 'rotateZ',
-          },
-          {
-            startValue: -25,
-            endValue: 0,
-            property: 'rotate',
-          },
-          {
-            startValue: 1,
-            endValue: 1,
-            property: 'scale',
-          },
-          {
-            startValue: -20,
-            endValue: -35,
-            unit: '%',
-            property: 'translateX',
-          },
-          {
-            startValue: 20,
-            endValue: -60,
-            unit: '%',
-            property: 'translateY',
-          },
-        ],
-      },
-    ];
-  } else if (breackPoints.md) {
-    data = [
-      {
-        start: 'section:nth-child(8) .group-of-manta ',
-        end: 'footer',
-        properties: [
-          {
-            startValue: 0,
-            endValue: 5,
-            property: 'rotateZ',
-          },
-          {
-            startValue: -30,
-            endValue: 0,
-            property: 'rotate',
-          },
-          {
-            startValue: 1,
-            endValue: 1,
-            property: 'scale',
-          },
-          {
-            startValue: -20,
-            endValue: -30,
-            unit: '%',
-            property: 'translateX',
-          },
-          {
-            startValue: 10,
-            endValue: -50,
-            unit: '%',
-            property: 'translateY',
-          },
-        ],
-      },
-    ];
-  } else if (breackPoints.sm) {
-    data = [
-      {
-        start: 'section:nth-child(8) .group-of-manta ',
-        end: 'footer',
-        properties: [
-          {
-            startValue: 0,
-            endValue: 5,
-            property: 'rotateZ',
-          },
-          {
-            startValue: -30,
-            endValue: 0,
-            property: 'rotate',
-          },
-          {
-            startValue: 1,
-            endValue: 1,
-            property: 'scale',
-          },
-          {
-            startValue: -20,
-            endValue: -30,
-            unit: '%',
-            property: 'translateX',
-          },
-          {
-            startValue: 10,
-            endValue: -50,
-            unit: '%',
-            property: 'translateY',
-          },
-        ],
-      },
-    ];
-  } else if (breackPoints.xs) {
-    data = [
-      {
-        start: 'section:nth-child(8) .group-of-manta ',
-        end: 'footer',
-        properties: [
-          {
-            startValue: 0,
-            endValue: 5,
-            property: 'rotateZ',
-          },
-          {
-            startValue: -30,
-            endValue: 0,
-            property: 'rotate',
-          },
-          {
-            startValue: 1,
-            endValue: 1,
-            property: 'scale',
-          },
-          {
-            startValue: -20,
-            endValue: -30,
-            unit: '%',
-            property: 'translateX',
-          },
-          {
-            startValue: 10,
-            endValue: -50,
-            unit: '%',
-            property: 'translateY',
-          },
-        ],
-      },
-    ];
-  } else {
-    data = [
-      {
-        start: 'section:nth-child(8) .group-of-manta ',
-        end: 'footer',
-        properties: [
-          {
-            startValue: 0,
-            endValue: 5,
-            property: 'rotateZ',
-          },
-          {
-            startValue: -25,
-            endValue: 0,
-            property: 'rotate',
-          },
-          {
-            startValue: 1,
-            endValue: 1,
-            property: 'scale',
-          },
-          {
-            startValue: -20,
-            endValue: -30,
-            unit: '%',
-            property: 'translateX',
-          },
-          {
-            startValue: 10,
-            endValue: -50,
             unit: '%',
             property: 'translateY',
           },

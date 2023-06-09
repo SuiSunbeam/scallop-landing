@@ -23,12 +23,15 @@ module.exports = {
     },
     extend: {
       colors: {
+        sky: {
+          DEFAULT: withOpacity('--color-sky-default'),
+        },
         basic: {
-          lighter: withOpacity('--color-base-lighter'),
-          light: withOpacity('--color-base-light'),
-          normal: withOpacity('--color-base-normal'),
-          dark: withOpacity('--color-base-dark'),
-          darker: withOpacity('--color-base-darker'),
+          lighter: withOpacity('--color-basic-lighter'),
+          light: withOpacity('--color-basic-light'),
+          normal: withOpacity('--color-basic-normal'),
+          dark: withOpacity('--color-basic-dark'),
+          darker: withOpacity('--color-basic-darker'),
         },
       },
       animation: {
