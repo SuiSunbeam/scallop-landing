@@ -429,7 +429,7 @@ const Home = () => {
                   <div>
                     <span>🎖️</span>
                     <a href="" target="_blank" rel="noreferrer">
-                      5th place in the Sui Builder House Denver CTF challenge
+                      5th place in the Sui Builder House Denver CTF challenge.
                     </a>{' '}
                   </div>
                 </li>

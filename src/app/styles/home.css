@@ -622,7 +622,7 @@
                 & > ul {
                   @apply flex flex-col items-start justify-start gap-1.5 lg:gap-2.5;
                   @apply w-[90%] lg:w-full;
-                  @apply lg:min-h-[24rem] 2xl:min-h-[22rem];
+                  @apply lg:min-h-[22rem] 2xl:min-h-[20rem];
                   @apply text-xs md:text-base;
                   @apply leading-[1.2rem] md:leading-[1.4rem] lg:leading-[1.6rem];
                   @apply text-white;
@@ -634,11 +634,12 @@
 
                     & > ul {
                       @apply flex flex-col items-start justify-center gap-1 lg:gap-2;
-                      @apply mt-1 pl-1;
+                      @apply mt-2 pl-1;
 
                       & > li {
-                        @apply list-["-"];
-                        @apply text-[10px] md:text-sm;
+                        @apply list-["-\00a0"];
+                        @apply text-[8px] md:text-[10px];
+                        @apply leading-[14px];
                       }
                     }
                   }
@@ -857,12 +858,12 @@
               @apply absolute left-[7%] lg:left-[12%];
               @apply top-[20%] xs:top-[24%] md:top-[28%] lg:top-[20%];
               @apply flex flex-row flex-wrap items-center justify-center;
-              @apply gap-x-[5%] gap-y-[1rem] lg:gap-12;
+              @apply gap-x-[10%] gap-y-[1rem] lg:gap-y-[2rem] 2xl:gap-y-[3rem];
               @apply w-[86%] lg:w-[76%];
 
               & > a {
                 @apply flex justify-end;
-                @apply w-[25%] xs:w-[30%] lg:w-[25%];
+                @apply w-[20%] xs:w-[25%] lg:w-[20%];
 
                 &:nth-child(3) {
                   @apply hidden;
