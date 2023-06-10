@@ -1990,7 +1990,7 @@ const mainGroupOfFishTwo = (breackPoints: { [index in endpoint]: boolean }) => {
     data = [
       {
         start: 'self',
-        end: '.scene-rockLeft-1',
+        end: '.scene-rockLeft-2',
         easing: 'easeInOut',
         properties: [
           {

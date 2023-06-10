@@ -271,16 +271,26 @@ const Home = () => {
               </p>
               <div>
                 <div className="links-container">
-                  <a className="more-button button1" href="https://app.scallop.io/">
+                  <a
+                    className="more-button button1"
+                    href="https://app.scallop.io/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Launch App
                   </a>
-                  <a className="more-button button2" href="https://linktr.ee/scallop_io">
+                  <a
+                    className="more-button button2"
+                    href="https://linktr.ee/scallop_io"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Read More
                   </a>
                 </div>
                 <div className="based-on">
                   <span>Based on</span>
-                  <a href="https://sui.io/">
+                  <a href="https://sui.io/" target="_blank" rel="noreferrer">
                     <img className="based-on-sui" alt="Sui" />
                   </a>
                 </div>
@@ -304,14 +314,45 @@ const Home = () => {
                 <div className="reason-1">
                   <img />
                   <h3>Professional Trader Enabling</h3>
+                  <ul>
+                    <li>
+                      Full featured 2 Layer SDKs for integrate with Sui & Scallop, powered by
+                      programmable Transaction Blocks
+                    </li>
+                    <li>Zero-cost flash loan</li>
+                    <li>Market coins (Collateral token)</li>
+                    <li>Scallop Tools</li>
+                  </ul>
                 </div>
                 <div className="reason-2">
                   <img />
                   <h3>Industry Leading Model</h3>
+                  <ul>
+                    <li>
+                      Most optimzied model upon Compound V3, Euler & Solend V2:
+                      <ul>
+                        <li>Dynamic Parameters</li>
+                        <li>Collateral/Borrow Weights</li>
+                        <li>Protected Collateral Vault</li>
+                        <li>Borrow/Outflow/Collateralization Limits</li>
+                        <li>TWAP Oracles</li>
+                        <li>Multi-Oracle Strategy</li>
+                        <li>Delayed Model Change</li>
+                        <li>Soft Liquidation</li>
+                        <li>Insurance Fund</li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
                 <div className="reason-3">
                   <img />
                   <h3>Security First</h3>
+                  <ul>
+                    <li>Sui Move - Base on Rust</li>
+                    <li>Security Partners - Ottersec & MoveBit</li>
+                    <li>A team with cybersecurity background & Sui Move CTF contest places</li>
+                    <li>Designed with zero trust</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -327,43 +368,69 @@ const Home = () => {
                     <img className="champion-bubble sui-champion-1" />
                     <img className="left-champion-line" />
                   </div>
-                  <span>
-                    <a href="https://blog.sui.io/grant-recipients-round-one/">
-                      🥇 1st DeFi project award an official grant from the Sui Foundation
+                  <div>
+                    <span>🥇</span>
+                    <a
+                      href="https://blog.sui.io/grant-recipients-round-one/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      1st DeFi project award an official grant from the Sui Foundation.
                     </a>{' '}
-                  </span>
+                  </div>
                 </li>
                 <li>
-                  <span>
-                    <a href="https://dorahacks.io/grant/solana-2/top">
-                      🥇 1st highest community vote project in 2021 Solana Ignition Hackathon Asia
+                  <div>
+                    <span>🥇</span>
+                    <a href="" target="_blank" rel="noreferrer">
+                      1st place in the Sui Builder House Seoul Hackathon in June 2023. (Scallop
+                      Tools)
                     </a>{' '}
-                  </span>
+                  </div>
                   <div className="right-champion">
-                    <img className="champion-bubble sol-champion-1" />
+                    <img className="champion-bubble sui-champion-2" />
                     <img className="right-champion-line" />
                   </div>
                 </li>
                 <li>
                   <div className="left-champion">
-                    <img className="champion-bubble  sui-champion-2" />
+                    <img className="champion-bubble  sui-champion-3" />
                     <img className="left-champion-line" />
                   </div>
-                  <span>
-                    <a href="https://suictf.movebit.xyz/scoreboard">
-                      🥉 3rd place in the Sui x jump_ Builder House Ho Chi Minh City CTF challenge
+                  <div>
+                    <span>🥉</span>
+                    <a
+                      href="https://suictf.movebit.xyz/scoreboard"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      3rd place in the 2023 Sui x jump_ Builder House Ho Chi Minh City CTF
+                      challenge.
                     </a>{' '}
-                  </span>
+                  </div>
                 </li>
                 <li>
-                  <span>
-                    <a href="https://suitf.osec.io/scores">
-                      🎖️ 5th place in the Sui Builder House Denver CTF challenge
+                  <div>
+                    <span>🎖️</span>
+                    <a href="" target="_blank" rel="noreferrer">
+                      5th place in the Sui Builder House Seoul Hackathon in June 2023. (Sui Kit)
                     </a>
-                  </span>
+                  </div>
                   <div className="right-champion">
                     <img className="champion-bubble  sui-champion-3" />
                     <img className="right-champion-line" />
+                  </div>
+                </li>
+                <li>
+                  <div className="left-champion">
+                    <img className="champion-bubble  sui-champion-5" />
+                    <img className="left-champion-line" />
+                  </div>
+                  <div>
+                    <span>🎖️</span>
+                    <a href="" target="_blank" rel="noreferrer">
+                      5th place in the Sui Builder House Denver CTF challenge
+                    </a>{' '}
                   </div>
                 </li>
               </ul>
@@ -385,7 +452,12 @@ const Home = () => {
                 </div>
                 <div className="card-profile">
                   <div className="profile-links">
-                    <a className="twitter" href="https://twitter.com/djchrisssssss"></a>
+                    <a
+                      className="twitter"
+                      href="https://twitter.com/djchrisssssss"
+                      target="_blank"
+                      rel="noreferrer"
+                    />
                   </div>
                   <span className="profile-name">Kriss</span>
                 </div>
@@ -396,7 +468,12 @@ const Home = () => {
                 </div>
                 <div className="card-profile">
                   <div className="profile-links">
-                    <a className="twitter" href="https://twitter.com/MrDonor_donnie"></a>
+                    <a
+                      className="twitter"
+                      href="https://twitter.com/MrDonor_donnie"
+                      target="_blank"
+                      rel="noreferrer"
+                    />
                   </div>
                   <span className="profile-name">Donnie</span>
                 </div>
@@ -407,7 +484,12 @@ const Home = () => {
                 </div>
                 <div className="card-profile">
                   <div className="profile-links">
-                    <a className="twitter" href="https://twitter.com/nathanramli"></a>
+                    <a
+                      className="twitter"
+                      href="https://twitter.com/nathanramli"
+                      target="_blank"
+                      rel="noreferrer"
+                    />
                   </div>
                   <span className="profile-name">Nathan</span>
                 </div>
@@ -418,7 +500,12 @@ const Home = () => {
                 </div>
                 <div className="card-profile">
                   <div className="profile-links">
-                    <a className="twitter" href="https://twitter.com/sailormoonann"></a>
+                    <a
+                      className="twitter"
+                      href="https://twitter.com/sailormoonann"
+                      target="_blank"
+                      rel="noreferrer"
+                    />
                   </div>
                   <span className="profile-name">Ann</span>
                 </div>
@@ -429,7 +516,12 @@ const Home = () => {
                 </div>
                 <div className="card-profile">
                   <div className="profile-links">
-                    <a className="twitter" href="https://twitter.com/XinhaiZeng"></a>
+                    <a
+                      className="twitter"
+                      href="https://twitter.com/XinhaiZeng"
+                      target="_blank"
+                      rel="noreferrer"
+                    />
                   </div>
                   <span className="profile-name">Shawn</span>
                 </div>
@@ -442,8 +534,23 @@ const Home = () => {
                 Backers
               </div>
               <div className="backer">
-                <a href="https://blog.sui.io/grant-recipients-round-one/">
+                <a href="https://sui.io/" target="_blank" rel="noreferrer">
                   <img className="sui-foundation" alt="Sui Foundation" />
+                </a>
+                <a href="https://assembly.partners/" target="_blank" rel="noreferrer">
+                  <img className="assembly-partners" alt="Assembly Partners" />
+                </a>
+                <a href="https://comma3.co/" target="_blank" rel="noreferrer">
+                  <img className="comma3" alt="Comma3" />
+                </a>
+                <a href="https://supraoracles.com/" target="_blank" rel="noreferrer">
+                  <img className="supra-oracles" alt="Supra Oracles" />
+                </a>
+                <a href="https://osec.io/" target="_blank" rel="noreferrer">
+                  <img className="ottersec" alt="OtterSec" />
+                </a>
+                <a href="https://www.movebit.xyz/" target="_blank" rel="noreferrer">
+                  <img className="movebit" alt="MoveBit" />
                 </a>
               </div>
             </div>
@@ -463,23 +570,29 @@ const Home = () => {
         <div className="footer-scene"></div>
         <div className="footer-content">
           <div className="menu">
-            <a href="https://www.scallop.io/">Home</a>
-            <a href="https://app.scallop.io/">App</a>
-            <a href="https://docs.scallop.io/">Docs</a>
+            <a href="https://www.scallop.io/" target="_blank" rel="noreferrer">
+              Home
+            </a>
+            <a href="https://app.scallop.io/" target="_blank" rel="noreferrer">
+              App
+            </a>
+            <a href="https://docs.scallop.io/" target="_blank" rel="noreferrer">
+              Docs
+            </a>
             <a href="mailto:team@scallop.io">Contact</a>
           </div>
           <div className="community">
-            <a href="https://t.me/scallop_io">
-              <img src={telegramCommunity} alt="" />
+            <a href="https://t.me/scallop_io" target="_blank" rel="noreferrer">
+              <img src={telegramCommunity} alt="Scallop Telegram" />
             </a>
-            <a href="https://twitter.com/Scallop_io">
-              <img src={twitterCommunity} alt="" />
+            <a href="https://twitter.com/Scallop_io" target="_blank" rel="noreferrer">
+              <img src={twitterCommunity} alt="Scallop Twitter" />
             </a>
-            <a href="https://medium.com/scallopio">
-              <img src={mediumCommunity} alt="" />
+            <a href="https://medium.com/scallopio" target="_blank" rel="noreferrer">
+              <img src={mediumCommunity} alt="Scallop Medium" />
             </a>
-            <a href="https://discord.com/invite/F7umecFArJ">
-              <img src={discordCommunity} alt="" />
+            <a href="https://discord.com/invite/F7umecFArJ" target="_blank" rel="noreferrer">
+              <img src={discordCommunity} alt="Scallop Discord" />
             </a>
           </div>
           <a href="/" className="footer-logo group">
