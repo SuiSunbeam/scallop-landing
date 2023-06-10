@@ -573,6 +573,7 @@
               @apply absolute left-[7%] lg:left-[12%];
               @apply top-[50%] xs:top-[40%] md:top-[45%] lg:top-[45%];
               @apply w-[86%] lg:w-[76%];
+              @apply rounded-3xl bg-basic-darker/60;
             }
           }
         }
@@ -626,7 +627,7 @@
                   @apply leading-[1.2rem] md:leading-[1.4rem] lg:leading-[1.6rem];
                   @apply text-white;
                   @apply mt-1 py-3 pl-8 pr-6 lg:mt-2 2xl:mt-3;
-                  @apply rounded-xl bg-black/30;
+                  @apply rounded-3xl bg-basic-darker/30;
 
                   & > li {
                     @apply list-disc;
@@ -779,6 +780,7 @@
               @apply top-[25%] md:top-[38%] lg:top-[15%];
               @apply content-[url('@/assets/images/content-beyond-lending-and-borrowing.svg')];
               @apply w-[86%] lg:w-[76%];
+              @apply rounded-3xl bg-basic-darker/60;
             }
           }
         }
@@ -926,6 +928,7 @@
               @apply top-[17%] xs:top-[20%] md:top-[23%] lg:top-[15%];
               @apply content-[url('@/assets/images/content-roadmap.svg')];
               @apply z-50 w-[86%] lg:w-[76%];
+              @apply rounded-3xl bg-basic-dark/30;
             }
           }
         }
