@@ -1,0 +1,54 @@
+@import url('@fontsource/poppins');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar {
+    &::-webkit-scrollbar {
+      @apply block w-[0.25rem] bg-transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply rounded-full bg-gray-200/30;
+    }
+
+    &::-webkit-scrollbar-track {
+      @apply bg-transparent;
+    }
+  }
+}
+
+:root {
+  --color-sky-default: 156 208 255; /* #9CD0FF */
+  --color-basic-lighter: 156 208 221; /* #9CD0DD */
+  --color-basic-light: 115 150 180; /* #7396B4 */
+  --color-basic-normal: 51 70 100; /* #334664 */
+  --color-basic-dark: 30 45 69; /* #1E2D45 */
+  --color-basic-darker: 4 11 19; /* #07476F */
+}
+
+html,
+body,
+#root {
+  @apply h-full w-full;
+
+  -webkit-tap-highlight-color: transparent;
+  text-size-adjust: 100%;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply m-0 font-customer text-[16px];
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
