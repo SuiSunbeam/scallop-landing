@@ -559,7 +559,7 @@
             @apply z-10;
 
             & .text-title-section {
-              @apply absolute left-[44%] lg:left-[46%];
+              @apply absolute left-[44%];
               @apply top-[40%] xs:top-[30%] lg:top-[35%];
               @apply w-[12%];
               @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
