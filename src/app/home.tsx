@@ -316,8 +316,8 @@ const Home = () => {
                   <h3>Professional Trader Enabling</h3>
                   <ul>
                     <li>
-                      Full featured 2 Layer SDKs for integrate with Sui & Scallop, powered by
-                      programmable Transaction Blocks
+                      Full featured 2 Layers SDK for integrate with Sui & Scallop, powered by
+                      Programmable Transaction Blocks
                     </li>
                     <li>Zero-cost flash loan</li>
                     <li>Market coins (Collateral token)</li>
