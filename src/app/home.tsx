@@ -316,7 +316,7 @@ const Home = () => {
                   <h3>Professional Trader Enabling</h3>
                   <ul>
                     <li>
-                      Full featured 2 Layers SDK for integrate with Sui & Scallop, powered by
+                      Full-featured 2 Layers SDK for integrate with Sui & Scallop, powered by
                       Programmable Transaction Blocks
                     </li>
                     <li>Zero-cost flash loan</li>
@@ -381,7 +381,7 @@ const Home = () => {
                 <li>
                   <div>
                     <span>🥇</span>
-                    <a href="" target="_blank" rel="noreferrer">
+                    <a href="https://blog.sui.io/seoul-builder-house-recap/" target="_blank" rel="noreferrer">
                       1st place in the Sui Builder House Seoul Hackathon in June 2023. (Scallop
                       Tools)
                     </a>{' '}
@@ -411,7 +411,7 @@ const Home = () => {
                 <li>
                   <div>
                     <span>🎖️</span>
-                    <a href="" target="_blank" rel="noreferrer">
+                    <a href="https://blog.sui.io/seoul-builder-house-recap/" target="_blank" rel="noreferrer">
                       5th place in the Sui Builder House Seoul Hackathon in June 2023. (Sui Kit)
                     </a>
                   </div>
