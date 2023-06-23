@@ -331,15 +331,14 @@ const Home = () => {
                     <li>
                       Most optimzied model upon Compound V3, Euler & Solend V2:
                       <ul>
+                        <li>Trilinear Interest Rate Model</li>
                         <li>Dynamic Parameters</li>
                         <li>Collateral/Borrow Weights</li>
                         <li>Protected Collateral Vault</li>
                         <li>Borrow/Outflow/Collateralization Limits</li>
-                        <li>TWAP Oracles</li>
-                        <li>Multi-Oracle Strategy</li>
+                        <li>Multi-TWAP-Oracle Strategy</li>
                         <li>Delayed Model Change</li>
                         <li>Soft Liquidation</li>
-                        <li>Insurance Fund</li>
                       </ul>
                     </li>
                   </ul>
