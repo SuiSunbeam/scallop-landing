@@ -381,7 +381,11 @@ const Home = () => {
                 <li>
                   <div>
                     <span>🥇</span>
-                    <a href="https://blog.sui.io/seoul-builder-house-recap/" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://blog.sui.io/seoul-builder-house-recap/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       1st place in the Sui Builder House Seoul Hackathon in June 2023. (Scallop
                       Tools)
                     </a>{' '}
@@ -411,7 +415,11 @@ const Home = () => {
                 <li>
                   <div>
                     <span>🎖️</span>
-                    <a href="https://blog.sui.io/seoul-builder-house-recap/" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://blog.sui.io/seoul-builder-house-recap/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       5th place in the Sui Builder House Seoul Hackathon in June 2023. (Sui Kit)
                     </a>
                   </div>
@@ -533,14 +541,17 @@ const Home = () => {
                 Backers
               </div>
               <div className="backer">
+                <a href="https://mystenlabs.com/" target="_blank" rel="noreferrer">
+                  <img className="mystenlabs" alt="Mysten Labs" />
+                </a>
                 <a href="https://sui.io/" target="_blank" rel="noreferrer">
                   <img className="sui-foundation" alt="Sui Foundation" />
                 </a>
-                <a href="https://assembly.partners/" target="_blank" rel="noreferrer">
-                  <img className="assembly-partners" alt="Assembly Partners" />
-                </a>
                 <a href="https://comma3.co/" target="_blank" rel="noreferrer">
                   <img className="comma3" alt="Comma3" />
+                </a>
+                <a href="https://assembly.partners/" target="_blank" rel="noreferrer">
+                  <img className="assembly-partners" alt="Assembly Partners" />
                 </a>
                 <a href="https://supraoracles.com/" target="_blank" rel="noreferrer">
                   <img className="supra-oracles" alt="Supra Oracles" />
