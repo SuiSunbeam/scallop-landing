@@ -836,7 +836,7 @@
         }
 
         &:nth-child(7) {
-          @apply h-[20rem] xs:h-[25rem] sm:h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[50rem] 2xl:h-[60rem] 3xl:h-[70rem];
+          @apply h-[20rem] xs:h-[30rem] sm:h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[50rem] 2xl:h-[55rem] 3xl:h-[60rem];
 
           & .section-content {
             @apply flex flex-col flex-wrap items-center justify-start;
@@ -856,50 +856,53 @@
 
             & .backer {
               @apply absolute left-[7%] lg:left-[12%];
-              @apply top-[20%] xs:top-[24%] md:top-[28%] lg:top-[20%];
-              @apply flex flex-row flex-wrap items-center justify-center;
-              @apply gap-x-[10%] gap-y-[1rem] lg:gap-y-[2rem] 2xl:gap-y-[3rem];
+              @apply top-[20%] xs:top-[24%] md:top-[28%] lg:top-[25%];
+              @apply grid grid-cols-3 flex-row flex-wrap content-center justify-center lg:flex;
+              @apply gap-x-[3.33%] xs:gap-x-[3.33%] lg:gap-x-[8%];
+              @apply gap-y-[1rem] lg:gap-y-[2rem] 2xl:gap-y-[3rem];
               @apply w-[86%] lg:w-[76%];
 
               & > a {
-                @apply flex justify-end;
-                @apply w-[20%] xs:w-[25%] lg:w-[20%];
+                @apply flex justify-center lg:justify-end;
+                @apply w-full lg:w-[17%];
+                @apply h-[4rem] xs:h-[6rem] lg:h-[8rem];
 
-                &:nth-child(3) {
-                  @apply hidden;
+                & > img {
+                  @apply w-[80%] xs:w-[60%] lg:w-full;
                 }
+              }
+
+              & .mystenlabs {
+                @apply content-[url('@/assets/images/backer-mystenlabs.svg')];
+                @apply scale-[1.25];
               }
 
               & .sui-foundation {
                 @apply content-[url('@/assets/images/backer-sui-foundation.svg')];
-                @apply w-full;
-                @apply scale-[1.3];
+                @apply scale-[0.95];
               }
 
               & .assembly-partners {
                 @apply content-[url('@/assets/images/backer-assembly-partners.svg')];
-                @apply w-full;
+                @apply scale-[0.75];
               }
 
               & .comma3 {
                 @apply content-[url('@/assets/images/backer-comma3.svg')];
-                @apply w-full;
-                @apply scale-[0.6];
+                @apply scale-[1];
               }
 
               & .supra-oracles {
                 @apply content-[url('@/assets/images/backer-supra-oracles.svg')];
-                @apply w-full;
+                @apply scale-[0.85];
               }
 
               & .ottersec {
                 @apply content-[url('@/assets/images/backer-ottersec.svg')];
-                @apply w-full;
               }
 
               & .movebit {
                 @apply content-[url('@/assets/images/backer-movebit.svg')];
-                @apply w-full;
               }
             }
           }
