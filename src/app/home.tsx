@@ -503,7 +503,7 @@ const Home = () => {
               </div>
               <div className="team-card">
                 <div className="card-avatar">
-                  <img alt="June Avatar" src={annAvatar} />
+                  <img alt="Ann Avatar" src={annAvatar} />
                 </div>
                 <div className="card-profile">
                   <div className="profile-links">
@@ -519,7 +519,7 @@ const Home = () => {
               </div>
               <div className="team-card">
                 <div className="card-avatar">
-                  <img alt="June Avatar" src={shawnAvatar} />
+                  <img alt="Shawn Avatar" src={shawnAvatar} />
                 </div>
                 <div className="card-profile">
                   <div className="profile-links">
@@ -542,25 +542,49 @@ const Home = () => {
               </div>
               <div className="backer">
                 <a href="https://mystenlabs.com/" target="_blank" rel="noreferrer">
-                  <img className="mystenlabs" alt="Mysten Labs" />
+                  <img
+                    className="mystenlabs"
+                    alt="Mysten Labs"
+                    title="Mysten Labs is a company that develops a tech infrastructure platform designed for Web3 adoption, accelerating the development and adoption of decentralized services."
+                  />
                 </a>
                 <a href="https://sui.io/" target="_blank" rel="noreferrer">
-                  <img className="sui-foundation" alt="Sui Foundation" />
+                  <img
+                    className="sui-foundation"
+                    alt="Sui Foundation"
+                    title="Sui Foundation is an independent organization supporting the Sui community and its projects."
+                  />
                 </a>
                 {/* <a href="https://comma3.co/" target="_blank" rel="noreferrer">
                   <img className="comma3" alt="Comma3" />
                 </a> */}
                 <a href="https://assembly.partners/" target="_blank" rel="noreferrer">
-                  <img className="assembly-partners" alt="Assembly Partners" />
+                  <img
+                    className="assembly-partners"
+                    alt="Assembly Partners"
+                    title="Assembly Partners is a research-driven fund, seeking the next phenomenal infrastructure in the blockchain industry."
+                  />
                 </a>
                 <a href="https://supraoracles.com/" target="_blank" rel="noreferrer">
-                  <img className="supra-oracles" alt="Supra Oracles" />
+                  <img
+                    className="supra-oracles"
+                    alt="Supra Oracles"
+                    title="Supra Oracles is a cross-chain oracle, offering cross-chain data feeds with real-time refresh rates for price feeds."
+                  />
                 </a>
                 <a href="https://osec.io/" target="_blank" rel="noreferrer">
-                  <img className="ottersec" alt="OtterSec" />
+                  <img
+                    className="ottersec"
+                    alt="OtterSec"
+                    title="OtterSec is a blockchain security company focused on identifying and patching critical exploits before our clients go to market."
+                  />
                 </a>
                 <a href="https://www.movebit.xyz/" target="_blank" rel="noreferrer">
-                  <img className="movebit" alt="MoveBit" />
+                  <img
+                    className="movebit"
+                    alt="MoveBit"
+                    title="MoveBit is a blockchain security company focusing on Move ecosystem security."
+                  />
                 </a>
               </div>
             </div>
