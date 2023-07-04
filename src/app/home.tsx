@@ -547,9 +547,9 @@ const Home = () => {
                 <a href="https://sui.io/" target="_blank" rel="noreferrer">
                   <img className="sui-foundation" alt="Sui Foundation" />
                 </a>
-                <a href="https://comma3.co/" target="_blank" rel="noreferrer">
+                {/* <a href="https://comma3.co/" target="_blank" rel="noreferrer">
                   <img className="comma3" alt="Comma3" />
-                </a>
+                </a> */}
                 <a href="https://assembly.partners/" target="_blank" rel="noreferrer">
                   <img className="assembly-partners" alt="Assembly Partners" />
                 </a>
