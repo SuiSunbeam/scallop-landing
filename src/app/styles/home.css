@@ -868,7 +868,8 @@
                 @apply h-[4rem] xs:h-[6rem] lg:h-[8rem];
 
                 & > img {
-                  @apply w-[80%] xs:w-[60%] lg:w-full;
+                  @apply object-contain;
+                  @apply w-[80%] xs:w-[90%] lg:w-full;
                 }
               }
 
