@@ -555,9 +555,9 @@ const Home = () => {
                     title="Sui Foundation is an independent organization supporting the Sui community and its projects."
                   />
                 </a>
-                {/* <a href="https://comma3.co/" target="_blank" rel="noreferrer">
+                <a href="https://comma3.co/" target="_blank" rel="noreferrer">
                   <img className="comma3" alt="Comma3" />
-                </a> */}
+                </a>
                 <a href="https://assembly.partners/" target="_blank" rel="noreferrer">
                   <img
                     className="assembly-partners"
