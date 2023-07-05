@@ -569,6 +569,27 @@ const Home = () => {
                     title="Assembly Partners is a research-driven fund, seeking the next phenomenal infrastructure in the blockchain industry."
                   />
                 </a>
+                <a href="https://www.creditscend.com/" target="_blank" rel="noreferrer">
+                  <img
+                    className="credit-scend"
+                    alt="Credit Scend"
+                    title="Credit Scend is a crypto venture in Singapore firm that thrives on uncovering the hidden gems behind resourceful founders.​"
+                  />
+                </a>
+                <a href="https://www.phdcapital.fund/" target="_blank" rel="noreferrer">
+                  <img
+                    className="phd-capital"
+                    alt="PHD Capital"
+                    title="PHD Capital is a Web3 investment fund with a focus on early stage venture across the DeFi, NFT Finance and Layer 1/2 infrastructure space."
+                  />
+                </a>
+                <a href="https://www.lolcapital.io/" target="_blank" rel="noreferrer">
+                  <img
+                    className="lol-capital"
+                    alt="LOL Capital"
+                    title="LOL Capital is an independent investment firm specializing in cryptocurrency and metaverse. "
+                  />
+                </a>
                 <a href="https://supraoracles.com/" target="_blank" rel="noreferrer">
                   <img
                     className="supra-oracles"

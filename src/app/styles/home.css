@@ -887,6 +887,21 @@
                 @apply content-[url('@/assets/images/backer-assembly-partners.svg')];
                 @apply scale-[0.75];
               }
+              
+              & .credit-scend {
+                @apply content-[url('@/assets/images/backer-credit-scend.svg')];
+                @apply scale-[1];
+              }   
+
+              & .phd-capital {
+                @apply content-[url('@/assets/images/backer-phd-capital.svg')];
+                @apply scale-[01];
+              } 
+
+              & .lol-capital {
+                @apply content-[url('@/assets/images/backer-lol-capital.svg')];
+                @apply scale-[1];
+              }    
 
               & .comma3 {
                 @apply content-[url('@/assets/images/backer-comma3.svg')];
