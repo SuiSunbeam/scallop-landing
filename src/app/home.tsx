@@ -556,7 +556,11 @@ const Home = () => {
                   />
                 </a>
                 <a href="https://comma3.co/" target="_blank" rel="noreferrer">
-                  <img className="comma3" alt="Comma3" />
+                  <img
+                    className="comma3"
+                    alt="Comma3"
+                    title="Comma3 is a fund for founders. Looking for disruptive innovation entrepreneurs in Web3."
+                  />
                 </a>
                 <a href="https://assembly.partners/" target="_blank" rel="noreferrer">
                   <img
