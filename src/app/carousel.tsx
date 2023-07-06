@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { CarouselData } from './utils';
 import Slider from 'react-slick';
 
@@ -34,7 +34,7 @@ const Carousel: FC<CarouselProps> = ({ items }) => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,

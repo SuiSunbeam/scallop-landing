@@ -925,18 +925,18 @@
         }
 
         &:nth-child(8) {
-          @apply h-[16rem] xs:h-[25rem] sm:h-[25rem] md:h-[30rem] lg:h-[32rem] xl:h-[30rem] 2xl:h-[25rem] 3xl:h-[20rem];
+          @apply h-[26rem] xs:h-[25rem] sm:h-[25rem] md:h-[30rem] lg:h-[48rem] xl:h-[50rem] 2xl:h-[48rem] 3xl:h-[50rem];
 
           & .section-content {
             @apply flex flex-col flex-wrap items-center justify-start;
             @apply absolute left-0;
             @apply h-full w-full;
-            @apply top-[10%] sm:top-[30%] md:top-[20%] lg:top-[5%];
+            @apply top-[10%] sm:top-[30%] md:top-[15%] lg:top-[5%] 2xl:top-[10%];
             @apply z-10;
 
             & .text-title-section {
               @apply absolute left-[25%];
-              @apply top-[0%] lg:top-[0%];
+              @apply top-[5%] lg:top-[0%];
               @apply flex justify-center;
               @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
               @apply text-center font-bold text-white;
@@ -949,13 +949,14 @@
               @apply z-50 w-[86%] lg:w-[76%];
               @apply rounded-3xl;
               @apply flex justify-center;
+              @apply cursor-grab;
 
               & .slide {
                 @apply flex w-full items-stretch py-3;
 
                 & .slide-item {
-                  @apply mx-3 flex flex-col items-stretch rounded-sm bg-basic-dark/30 p-5 text-white;
-                  height: inherit;
+                  @apply mx-3 flex flex-col items-stretch rounded-sm bg-basic-darker/30 p-5 text-white;
+                  @apply h-auto rounded-md;
 
                   & .slide-item-logo {
                     @apply relative flex justify-start;
@@ -966,8 +967,10 @@
                   }
 
                   & .slide-item-message {
-                    @apply my-2 grow  leading-loose md:my-7;
-                    @apply text-[9px] opacity-90 lg:text-sm;
+                    @apply my-2 grow md:my-7;
+                    @apply text-[12px] xs:text-[14px]  lg:text-sm;
+                    @apply leading-[1.2rem] xs:leading-[1.6rem] lg:leading-[2rem];
+                    @apply opacity-90;
                   }
 
                   & .slide-item-profile {
@@ -989,40 +992,39 @@
               }
             }
 
-            .slick-track {
-              display: flex !important;
+            & .slick-track {
+              @apply !flex;
 
               & .slick-slide {
-                height: auto;
+                @apply h-auto;
 
                 & > div {
-                  height: 100%;
+                  @apply h-full;
                 }
               }
             }
 
-            .slick-dots li button:before {
-              @apply text-white;
+            & .slick-dots li button:before {
+              @apply text-[6px] text-white lg:text-[10px];
             }
 
-            .slide .slick-prev,
-            .slide .slick-next {
-              width: 30px;
-              height: 30px;
-              font-size: 34px !important;
+            & .slide .slick-prev,
+            & .slide .slick-next {
+              @apply h-[30px] w-[30px] !text-[34px];
+              @apply opacity-80;
             }
 
-            .slick-prev:before,
-            .slick-next:before {
-              font-size: 40px !important;
+            & .slick-prev:before,
+            & .slick-next:before {
+              @apply !text-[40px];
             }
 
-            .slick-prev {
-              left: -40px;
+            & .slick-prev {
+              @apply left-[-50px];
             }
 
-            .slick-next {
-              right: -30px;
+            & .slick-next {
+              @apply right-[-40px];
             }
 
             & .roadmap {
