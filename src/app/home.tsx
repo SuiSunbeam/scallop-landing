@@ -12,7 +12,71 @@ import twitterCommunity from '@/assets/images/community-twitter.svg';
 import telegramCommunity from '@/assets/images/community-telegram.svg';
 import discordCommunity from '@/assets/images/community-discord.svg';
 import mediumCommunity from '@/assets/images/community-medium.svg';
+import mystenLabsLogo from '@/assets/images/backer-mystenlabs.svg';
+import suiFoundationLogo from '@/assets/images/backer-sui-foundation.svg';
+import phdCapitalLogo from '@/assets/images/backer-phd-capital.svg';
+import otterSecLogo from '@/assets/images/backer-ottersec.svg';
+
+import Carousel from './carousel';
 import '@/app/styles/home.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { CarouselData } from './utils';
+
+const dataSlider: CarouselData[] = [
+  {
+    logo: {
+      source: mystenLabsLogo,
+      alt: 'Mysten Lab',
+    },
+    message:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus nisi. Integer sed rutrum purus. Fusce placerat quam tellus, et placerat justo scelerisque in. In hendrerit dapibus elit quis euismod. Nulla facilisi. "',
+    profile: {
+      image: nathanAvatar,
+      title: 'John Doe',
+      subtitle: 'Mysten Lab',
+    },
+  },
+  {
+    logo: {
+      source: suiFoundationLogo,
+      alt: 'Sui Fondation',
+    },
+    message:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus nisi. Integer sed rutrum purus. Fusce placerat quam tellus, et placerat justo scelerisque in. In hendrerit dapibus elit quis euismod. Nulla facilisi. "',
+    profile: {
+      image: donnieAvatar,
+      title: 'John Doe',
+      subtitle: 'Sui Foundation',
+    },
+  },
+  {
+    logo: {
+      source: phdCapitalLogo,
+      alt: 'PHD Capital',
+    },
+    message:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus nisi. Integer sed rutrum purus. Fusce placerat quam tellus, et placerat justo scelerisque in. In hendrerit dapibus elit quis euismod. Nulla facilisi. "',
+    profile: {
+      image: krissAvatar,
+      title: 'John Doe',
+      subtitle: 'PHD Capital',
+    },
+  },
+  {
+    logo: {
+      source: otterSecLogo,
+      alt: 'OtterSec',
+    },
+    message:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus nisi. Integer sed rutrum purus. Fusce placerat quam tellus, et placerat justo scelerisque in. In hendrerit dapibus elit quis euismod. Nulla facilisi. "',
+    profile: {
+      image: shawnAvatar,
+      title: 'John Doe',
+      subtitle: 'OtterSec',
+    },
+  },
+];
 
 const Home = () => {
   const plxData = usePlxData();
@@ -617,9 +681,9 @@ const Home = () => {
           <section>
             <div className="section-content">
               <div className="text-title-section" id="roadmap">
-                Roadmap
+                Message
               </div>
-              <img className="roadmap" />
+              <Carousel items={dataSlider} />
             </div>
           </section>
         </div>

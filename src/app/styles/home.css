@@ -887,21 +887,21 @@
                 @apply content-[url('@/assets/images/backer-assembly-partners.svg')];
                 @apply scale-[0.75];
               }
-              
+
               & .credit-scend {
                 @apply content-[url('@/assets/images/backer-credit-scend.svg')];
                 @apply scale-[1];
-              }   
+              }
 
               & .phd-capital {
                 @apply content-[url('@/assets/images/backer-phd-capital.svg')];
                 @apply scale-[01];
-              } 
+              }
 
               & .lol-capital {
                 @apply content-[url('@/assets/images/backer-lol-capital.svg')];
                 @apply scale-[1];
-              }    
+              }
 
               & .comma3 {
                 @apply content-[url('@/assets/images/backer-comma3.svg')];
@@ -925,7 +925,7 @@
         }
 
         &:nth-child(8) {
-          @apply h-[15rem] xs:h-[20rem] sm:h-[25rem] md:h-[30rem] lg:h-[45rem] xl:h-[50rem] 2xl:h-[55rem] 3xl:h-[60rem];
+          @apply h-[18rem] xs:h-[20rem] sm:h-[25rem] md:h-[30rem] lg:h-[45rem] xl:h-[50rem] 2xl:h-[55rem] 3xl:h-[60rem];
 
           & .section-content {
             @apply flex flex-col flex-wrap items-center justify-start;
@@ -943,12 +943,95 @@
               @apply w-[50%];
             }
 
+            & .slide-container {
+              @apply absolute left-[7%] lg:left-[12%];
+              @apply top-[17%] xs:top-[20%] md:top-[23%] lg:top-[15%];
+              @apply z-50 w-[86%] lg:w-[76%];
+              @apply rounded-3xl;
+              @apply flex justify-center;
+
+              & .slide {
+                @apply flex w-full items-stretch py-3;
+
+                & .slide-item {
+                  @apply mx-3 flex flex-col items-stretch rounded-sm bg-basic-dark/30 p-5 text-white;
+                  height: inherit;
+
+                  & .slide-item-logo {
+                    @apply relative flex justify-start;
+
+                    & > img {
+                      @apply h-3 xs:h-4 md:h-6;
+                    }
+                  }
+
+                  & .slide-item-message {
+                    @apply my-2 grow  leading-loose md:my-7;
+                    @apply text-[9px] opacity-90 lg:text-sm;
+                  }
+
+                  & .slide-item-profile {
+                    @apply my-2 flex items-center gap-4;
+
+                    & > img {
+                      @apply block h-8 rounded-full xs:h-8 lg:h-11;
+                    }
+
+                    & .title {
+                      @apply text-xs font-medium lg:text-base;
+                    }
+
+                    & .subtitle {
+                      @apply text-xs opacity-80 lg:text-sm;
+                    }
+                  }
+                }
+              }
+            }
+
+            .slick-track {
+              display: flex !important;
+
+              & .slick-slide {
+                height: auto;
+
+                & > div {
+                  height: 100%;
+                }
+              }
+            }
+
+            .slick-dots li button:before {
+              @apply text-white;
+            }
+
+            .slide .slick-prev,
+            .slide .slick-next {
+              width: 30px;
+              height: 30px;
+              font-size: 34px !important;
+            }
+
+            .slick-prev:before,
+            .slick-next:before {
+              font-size: 40px !important;
+            }
+
+            .slick-prev {
+              left: -40px;
+            }
+
+            .slick-next {
+              right: -30px;
+            }
+
             & .roadmap {
               @apply absolute left-[7%] lg:left-[12%];
               @apply top-[17%] xs:top-[20%] md:top-[23%] lg:top-[15%];
               @apply content-[url('@/assets/images/content-roadmap.svg')];
               @apply z-50 w-[86%] lg:w-[76%];
-              @apply rounded-3xl bg-basic-dark/30;
+              @apply rounded-3xl;
+              @apply flex justify-center;
             }
           }
         }
@@ -970,7 +1053,7 @@
 
     & .footer-content {
       @apply flex flex-col items-center;
-      @apply absolute bottom-[25%] lg:bottom-[40%];
+      @apply absolute bottom-[20%] lg:bottom-[40%];
       @apply w-2/3 sm:w-1/3;
 
       & .menu {
