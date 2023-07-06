@@ -40,6 +40,7 @@ const Carousel: FC<CarouselProps> = ({ items }) => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
@@ -47,6 +48,7 @@ const Carousel: FC<CarouselProps> = ({ items }) => {
         settings: {
           slidesToShow: 1,
           arrows: false,
+          slidesToScroll: 1,
         },
       },
     ],
