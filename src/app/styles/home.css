@@ -836,7 +836,7 @@
         }
 
         &:nth-child(7) {
-          @apply h-[20rem] xs:h-[30rem] sm:h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[50rem] 2xl:h-[55rem] 3xl:h-[60rem];
+          @apply h-[28rem] xs:h-[30rem] sm:h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[50rem] 2xl:h-[55rem] 3xl:h-[60rem];
 
           & .section-content {
             @apply flex flex-col flex-wrap items-center justify-start;
@@ -887,21 +887,21 @@
                 @apply content-[url('@/assets/images/backer-assembly-partners.svg')];
                 @apply scale-[0.75];
               }
-              
+
               & .credit-scend {
                 @apply content-[url('@/assets/images/backer-credit-scend.svg')];
                 @apply scale-[1];
-              }   
+              }
 
               & .phd-capital {
                 @apply content-[url('@/assets/images/backer-phd-capital.svg')];
                 @apply scale-[01];
-              } 
+              }
 
               & .lol-capital {
                 @apply content-[url('@/assets/images/backer-lol-capital.svg')];
                 @apply scale-[1];
-              }    
+              }
 
               & .comma3 {
                 @apply content-[url('@/assets/images/backer-comma3.svg')];
