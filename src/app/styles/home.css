@@ -879,7 +879,7 @@
               }
 
               & .sui-foundation {
-                @apply content-[url('@/assets/images/backer-sui-foundation.svg')];
+                @apply content-[url('@/assets/images/backer-sui-foundation.png')];
                 @apply scale-[0.95];
               }
 
@@ -889,7 +889,7 @@
               }
 
               & .credit-scend {
-                @apply content-[url('@/assets/images/backer-credit-scend.svg')];
+                @apply content-[url('@/assets/images/backer-credit-scend.png')];
                 @apply scale-[1];
               }
 
@@ -899,13 +899,13 @@
               }
 
               & .lol-capital {
-                @apply content-[url('@/assets/images/backer-lol-capital.svg')];
-                @apply scale-[1];
+                @apply content-[url('@/assets/images/backer-lol-capital.png')];
+                @apply scale-[1.1];
               }
 
               & .comma3 {
-                @apply content-[url('@/assets/images/backer-comma3.svg')];
-                @apply scale-[1];
+                @apply content-[url('@/assets/images/backer-comma3.png')];
+                @apply scale-[1.25];
               }
 
               & .supra-oracles {
@@ -919,6 +919,7 @@
 
               & .movebit {
                 @apply content-[url('@/assets/images/backer-movebit.svg')];
+                @apply scale-[1.2];
               }
             }
           }
