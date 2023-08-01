@@ -83,7 +83,7 @@ const Home = () => {
                 <a href="#about">About</a>
               </li>
               <li>
-                <a href="#core-team">Core Team</a>
+                <a href="#team">Team</a>
               </li>
               <li>
                 <a href="#backer">Backer</a>
@@ -111,7 +111,7 @@ const Home = () => {
                 <a href="#about">About</a>
               </Menu.Item>
               <Menu.Item as="div">
-                <a href="#core-team">Core Team</a>
+                <a href="#team">Team</a>
               </Menu.Item>
               <Menu.Item as="div">
                 <a href="#backer">Backer</a>
@@ -216,9 +216,6 @@ const Home = () => {
           <section>
             <Plx parallaxData={plxData.mainGroupOfTurtle} className="main-scene-plx">
               <img className="scene-groupOfTurtle" />
-            </Plx>
-            <Plx parallaxData={[]} className="main-scene-plx">
-              <img className="scene-submarine" id="core-team" />
             </Plx>
             <Plx parallaxData={[]} className="main-scene-plx">
               <img className="scene-groupOfManta" />
@@ -453,84 +450,121 @@ const Home = () => {
           </section>
           <section>
             <div className="section-content">
-              <div className="team-card">
-                <div className="card-avatar">
-                  <img alt="Kriss Avatar" src={krissAvatar} />
-                </div>
-                <div className="card-profile">
-                  <div className="profile-links">
-                    <a
-                      className="twitter"
-                      href="https://twitter.com/djchrisssssss"
-                      target="_blank"
-                      rel="noreferrer"
-                    />
-                  </div>
-                  <span className="profile-name">Kriss</span>
-                </div>
+              <div className="text-title-section" id="team">
+                Team
               </div>
-              <div className="team-card">
-                <div className="card-avatar">
-                  <img alt="Donnie Avatar" src={donnieAvatar} />
-                </div>
-                <div className="card-profile">
-                  <div className="profile-links">
-                    <a
-                      className="twitter"
-                      href="https://twitter.com/MrDonor_donnie"
-                      target="_blank"
-                      rel="noreferrer"
-                    />
+              <div className="team-container">
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Kriss Avatar" src={krissAvatar} />
                   </div>
-                  <span className="profile-name">Donnie</span>
-                </div>
-              </div>
-              <div className="team-card">
-                <div className="card-avatar">
-                  <img alt="Nathan Avatar" src={nathanAvatar} />
-                </div>
-                <div className="card-profile">
-                  <div className="profile-links">
-                    <a
-                      className="twitter"
-                      href="https://twitter.com/nathanramli"
-                      target="_blank"
-                      rel="noreferrer"
-                    />
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/djchrisssssss"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Kriss</span>
                   </div>
-                  <span className="profile-name">Nathan</span>
                 </div>
-              </div>
-              <div className="team-card">
-                <div className="card-avatar">
-                  <img alt="Ann Avatar" src={annAvatar} />
-                </div>
-                <div className="card-profile">
-                  <div className="profile-links">
-                    <a
-                      className="twitter"
-                      href="https://twitter.com/sailormoonann"
-                      target="_blank"
-                      rel="noreferrer"
-                    />
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Donnie Avatar" src={donnieAvatar} />
                   </div>
-                  <span className="profile-name">Ann</span>
-                </div>
-              </div>
-              <div className="team-card">
-                <div className="card-avatar">
-                  <img alt="Shawn Avatar" src={shawnAvatar} />
-                </div>
-                <div className="card-profile">
-                  <div className="profile-links">
-                    <a
-                      className="twitter"
-                      href="https://twitter.com/XinhaiZeng"
-                      target="_blank"
-                      rel="noreferrer"
-                    />
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/MrDonor_donnie"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Donnie</span>
                   </div>
-                  <span className="profile-name">Shawn</span>
+                </div>
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Nathan Avatar" src={nathanAvatar} />
+                  </div>
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/nathanramli"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Nathan</span>
+                  </div>
+                </div>
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Ann Avatar" src={annAvatar} />
+                  </div>
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/sailormoonann"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Ann</span>
+                  </div>
+                </div>
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Shawn Avatar" src={shawnAvatar} />
+                  </div>
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/XinhaiZeng"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Shawn</span>
+                  </div>
+                </div>
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Zhuang Avatar" src={shawnAvatar} />
+                  </div>
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/XinhaiZeng"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Zhuang</span>
+                  </div>
+                </div>
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Steven Avatar" src={shawnAvatar} />
+                  </div>
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/XinhaiZeng"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Steven</span>
+                  </div>
                 </div>
               </div>
             </div>

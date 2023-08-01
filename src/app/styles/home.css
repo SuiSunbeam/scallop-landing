@@ -790,48 +790,64 @@
           @apply h-[32rem] xs:h-[40rem] sm:h-[44rem] md:h-[48rem] lg:h-[52rem] xl:h-[60rem] 2xl:h-[68rem] 3xl:h-[76rem];
 
           & .section-content {
-            @apply flex flex-row flex-wrap items-start justify-start gap-6 sm:justify-center;
-            @apply absolute left-[7%] sm:left-auto lg:right-[3%] 2xl:right-[7%];
-            @apply w-full lg:w-[55%] xl:w-[45rem] 2xl:w-[50rem];
-            @apply top-[30%] sm:top-[45%] md:top-[55%] lg:top-[42.5%];
-            @apply z-10 px-[2%];
+            @apply flex flex-col flex-wrap items-center justify-start;
+            @apply absolute left-0;
+            @apply h-full w-full;
+            @apply top-[10%] md:top-[14%] lg:top-0;
+            @apply z-10;
 
-            & .team-card {
-              @apply flex flex-col items-center justify-center;
-              @apply rounded-2xl border border-basic-lighter;
-              @apply px-1 py-1 xs:px-2 md:px-3;
-              @apply h-24 xs:h-32 sm:h-36 lg:h-40 xl:h-48 2xl:h-56 3xl:h-64;
-              @apply w-[40%] sm:w-[calc(25%-1rem)] md:w-[calc(25%-1rem)] lg:w-[9.5rem] xl:w-[11.5rem] 2xl:w-[12rem] 3xl:w-[14rem];
-
-              & .card-avatar {
-                @apply flex w-3/4 flex-grow flex-col justify-center;
-
-                & > img {
-                  @apply mx-auto mt-4 rounded-full border-2 border-basic-lighter xl:mt-6;
-                  @apply w-8 xs:w-10 sm:w-16 md:w-16 lg:w-16 xl:w-20 2xl:w-20;
-                }
+            & .text-title-section {
+                @apply absolute left-[25%];
+                @apply flex w-full justify-center;
+                @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
+                @apply text-center font-bold text-white;
+                @apply w-[50%];
+                @apply top-0 sm:top-[5%] md:top-[15%] lg:top-[5%];
               }
 
-              & .card-profile {
-                @apply flex w-1/2 flex-grow flex-row items-center justify-center gap-2;
-                @apply mt-1 lg:mb-4 lg:mt-4;
-                @apply hover:drop-shadow-[0_0_4px_#9CD0DD];
+            & .team-container {
+                @apply flex flex-row flex-wrap items-start justify-start gap-6 sm:justify-center;
+                @apply w-full lg:w-[80%] xl:w-[70rem] 2xl:w-[70rem] 3xl:w-[80rem];
+                @apply absolute left-[7%] sm:left-0 sm:right-0 sm:right-0 sm:ml-auto sm:mr-auto;
+                @apply top-[6%] sm:top-[20%] md:top-[25%] lg:top-[20.5%];
 
-                & .profile-links {
-                  @apply flex flex-wrap;
+                & .team-card {
+                  @apply flex flex-col items-center justify-center;
+                  @apply rounded-2xl border border-basic-lighter;
+                  @apply px-1 py-1 xs:px-2 md:px-3;
+                  @apply h-24 xs:h-32 sm:h-36 lg:h-40 xl:h-48 2xl:h-56 3xl:h-64;
+                  @apply w-[40%] sm:w-[calc(25%-1rem)] md:w-[calc(25%-1rem)] lg:w-[9.5rem] xl:w-[11.5rem] 2xl:w-[12rem] 3xl:w-[14rem];
 
-                  & > a.twitter {
-                    @apply transition-all hover:rotate-12;
-                    @apply content-[url(@/assets/images/content-twitter-rounded.svg)];
-                    @apply h-4 w-4 lg:h-7 lg:w-7;
+                  & .card-avatar {
+                    @apply flex w-3/4 flex-grow flex-col justify-center;
+
+                    & > img {
+                      @apply mx-auto mt-4 rounded-full border-2 border-basic-lighter xl:mt-6;
+                      @apply w-8 xs:w-10 sm:w-16 md:w-16 lg:w-16 xl:w-20 2xl:w-20;
+                    }
+                  }
+
+                  & .card-profile {
+                    @apply flex w-1/2 flex-grow flex-row items-center justify-center gap-2;
+                    @apply mt-1 lg:mb-4 lg:mt-4;
+                    @apply hover:drop-shadow-[0_0_4px_#9CD0DD];
+
+                    & .profile-links {
+                      @apply flex flex-wrap;
+
+                      & > a.twitter {
+                        @apply transition-all hover:rotate-12;
+                        @apply content-[url(@/assets/images/content-twitter-rounded.svg)];
+                        @apply h-4 w-4 lg:h-7 lg:w-7;
+                      }
+                    }
+
+                    & .profile-name {
+                      @apply text-xs text-white sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
+                    }
                   }
                 }
-
-                & .profile-name {
-                  @apply text-xs text-white sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
-                }
               }
-            }
           }
         }
 
