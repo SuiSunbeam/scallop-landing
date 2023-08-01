@@ -8,6 +8,8 @@ import annAvatar from '@/assets/images/avatar-ann.png';
 import shawnAvatar from '@/assets/images/avatar-shawn.jpg';
 import donnieAvatar from '@/assets/images/avatar-donnie.png';
 import nathanAvatar from '@/assets/images/avatar-nathan.png';
+import zhuangAvatar from '@/assets/images/avatar-zhuang.png';
+import stevenAvatar from '@/assets/images/avatar-steven.png';
 import twitterCommunity from '@/assets/images/community-twitter.svg';
 import telegramCommunity from '@/assets/images/community-telegram.svg';
 import discordCommunity from '@/assets/images/community-discord.svg';
@@ -536,7 +538,7 @@ const Home = () => {
                 </div>
                 <div className="team-card">
                   <div className="card-avatar">
-                    <img alt="Zhuang Avatar" src={shawnAvatar} />
+                    <img alt="Zhuang Avatar" src={zhuangAvatar} />
                   </div>
                   <div className="card-profile">
                     <div className="profile-links">
@@ -552,7 +554,7 @@ const Home = () => {
                 </div>
                 <div className="team-card">
                   <div className="card-avatar">
-                    <img alt="Steven Avatar" src={shawnAvatar} />
+                    <img alt="Steven Avatar" src={stevenAvatar} />
                   </div>
                   <div className="card-profile">
                     <div className="profile-links">
