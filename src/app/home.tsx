@@ -544,7 +544,7 @@ const Home = () => {
                     <div className="profile-links">
                       <a
                         className="twitter"
-                        href="https://twitter.com/XinhaiZeng"
+                        href="https://twitter.com/NFT_ZHUANG"
                         target="_blank"
                         rel="noreferrer"
                       />
@@ -560,7 +560,7 @@ const Home = () => {
                     <div className="profile-links">
                       <a
                         className="twitter"
-                        href="https://twitter.com/XinhaiZeng"
+                        href="https://twitter.com/chen4hao"
                         target="_blank"
                         rel="noreferrer"
                       />
