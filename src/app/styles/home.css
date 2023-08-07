@@ -837,7 +837,7 @@
         }
 
         &:nth-child(7) {
-          @apply h-[30rem] xs:h-[44rem] sm:h-[46rem] md:h-[50rem] lg:h-[46rem] xl:h-[52rem] 2xl:h-[62rem] 3xl:h-[68rem];
+          @apply h-[28rem] xs:h-[30rem] sm:h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[50rem] 2xl:h-[55rem] 3xl:h-[60rem];
 
           & .section-content {
             @apply flex flex-col flex-wrap items-center justify-start;
@@ -880,7 +880,7 @@
               }
 
               & .sui-foundation {
-                @apply content-[url('@/assets/images/backer-sui-foundation.svg')];
+                @apply content-[url('@/assets/images/backer-sui-foundation.png')];
                 @apply scale-[0.95];
               }
 
@@ -890,7 +890,7 @@
               }
 
               & .credit-scend {
-                @apply content-[url('@/assets/images/backer-credit-scend.svg')];
+                @apply content-[url('@/assets/images/backer-credit-scend.png')];
                 @apply scale-[1];
               }
 
@@ -900,13 +900,13 @@
               }
 
               & .lol-capital {
-                @apply content-[url('@/assets/images/backer-lol-capital.svg')];
-                @apply scale-[1];
+                @apply content-[url('@/assets/images/backer-lol-capital.png')];
+                @apply scale-[1.1];
               }
 
               & .comma3 {
-                @apply content-[url('@/assets/images/backer-comma3.svg')];
-                @apply scale-[1];
+                @apply content-[url('@/assets/images/backer-comma3.png')];
+                @apply scale-[1.25];
               }
 
               & .supra-oracles {
@@ -920,6 +920,7 @@
 
               & .movebit {
                 @apply content-[url('@/assets/images/backer-movebit.svg')];
+                @apply scale-[1.2];
               }
             }
           }
