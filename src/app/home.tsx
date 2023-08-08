@@ -8,13 +8,13 @@ import annAvatar from '@/assets/images/avatar-ann.png';
 import shawnAvatar from '@/assets/images/avatar-shawn.jpg';
 import donnieAvatar from '@/assets/images/avatar-donnie.png';
 import nathanAvatar from '@/assets/images/avatar-nathan.png';
+import robertAvatar from '@/assets/images/robert.jpeg';
+import yiluAvatar from '@/assets/images/yilu.jpeg';
 import twitterCommunity from '@/assets/images/community-twitter.svg';
 import telegramCommunity from '@/assets/images/community-telegram.svg';
 import discordCommunity from '@/assets/images/community-discord.svg';
 import mediumCommunity from '@/assets/images/community-medium.svg';
-import mystenLabsLogo from '@/assets/images/backer-mystenlabs.svg';
-import suiFoundationLogo from '@/assets/images/backer-sui-foundation.svg';
-import phdCapitalLogo from '@/assets/images/backer-phd-capital.svg';
+import moveBitLogo from '@/assets/images/backer-movebit.svg';
 import otterSecLogo from '@/assets/images/backer-ottersec.svg';
 
 import Carousel from './carousel';
@@ -26,54 +26,28 @@ import { CarouselData } from './utils';
 const dataSlider: CarouselData[] = [
   {
     logo: {
-      source: mystenLabsLogo,
-      alt: 'Mysten Lab',
-    },
-    message:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus nisi. Integer sed rutrum purus. Fusce placerat quam tellus, et placerat justo scelerisque in. In hendrerit dapibus elit quis euismod. Nulla facilisi. "',
-    profile: {
-      image: nathanAvatar,
-      title: 'John Doe',
-      subtitle: 'Mysten Lab',
-    },
-  },
-  {
-    logo: {
-      source: suiFoundationLogo,
-      alt: 'Sui Fondation',
-    },
-    message:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus nisi. Integer sed rutrum purus. Fusce placerat quam tellus, et placerat justo scelerisque in. In hendrerit dapibus elit quis euismod. Nulla facilisi. "',
-    profile: {
-      image: donnieAvatar,
-      title: 'John Doe',
-      subtitle: 'Sui Foundation',
-    },
-  },
-  {
-    logo: {
-      source: phdCapitalLogo,
-      alt: 'PHD Capital',
-    },
-    message:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus nisi. Integer sed rutrum purus. Fusce placerat quam tellus, et placerat justo scelerisque in. In hendrerit dapibus elit quis euismod. Nulla facilisi. "',
-    profile: {
-      image: krissAvatar,
-      title: 'John Doe',
-      subtitle: 'PHD Capital',
-    },
-  },
-  {
-    logo: {
       source: otterSecLogo,
       alt: 'OtterSec',
     },
     message:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id finibus nisi. Integer sed rutrum purus. Fusce placerat quam tellus, et placerat justo scelerisque in. In hendrerit dapibus elit quis euismod. Nulla facilisi. "',
+      '"The Scallop team was a pleasure to work with. They care deeply about security and it was a great experience working closely with them to ship robust, secure products."',
     profile: {
-      image: shawnAvatar,
-      title: 'John Doe',
+      image: robertAvatar,
+      title: 'Robert Chen',
       subtitle: 'OtterSec',
+    },
+  },
+  {
+    logo: {
+      source: moveBitLogo,
+      alt: 'Movebit',
+    },
+    message:
+      '"The Scallop project is one of my favorite Defi projects in Sui Network. It is a great pleasure to work with them. The tech team behind Scallop is with rich experience in Move. I am looking forward to collaborating more with Scallop!"',
+    profile: {
+      image: yiluAvatar,
+      title: 'Yi Lu',
+      subtitle: 'Movebit',
     },
   },
 ];
@@ -153,7 +127,7 @@ const Home = () => {
                 <a href="#backer">Backer</a>
               </li>
               <li>
-                <a href="#roadmap">Roadmap</a>
+                <a href="#message">Message</a>
               </li>
             </ul>
           </div>
@@ -181,7 +155,7 @@ const Home = () => {
                 <a href="#backer">Backer</a>
               </Menu.Item>
               <Menu.Item as="div">
-                <a href="#roadmap">Roadmap</a>
+                <a href="#message">Message</a>
               </Menu.Item>
             </Menu.Items>
           </Menu>
@@ -680,7 +654,7 @@ const Home = () => {
           </section>
           <section>
             <div className="section-content">
-              <div className="text-title-section" id="roadmap">
+              <div className="text-title-section" id="message">
                 Message
               </div>
               <Carousel items={dataSlider} />

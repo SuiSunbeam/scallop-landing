@@ -14,7 +14,7 @@ const Slide: FC<SlideProps> = ({ item }) => {
   return (
     <div className="slide-item">
       <div className="slide-item-logo">
-        <img src={item.logo.source} alt={item.logo.alt} />
+        <img src={item.logo.source} height={150} width={100} alt={item.logo.alt} />
       </div>
       <p className="slide-item-message">{item.message}</p>
       <div className="slide-item-profile">
@@ -33,14 +33,21 @@ const Carousel: FC<CarouselProps> = ({ items }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1440,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
       {

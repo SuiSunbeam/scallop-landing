@@ -958,14 +958,11 @@
 
                 & .slide-item {
                   @apply mx-3 flex flex-col items-stretch rounded-sm bg-basic-darker/30 p-5 text-white;
-                  @apply h-auto rounded-md;
+                  @apply h-full rounded-md;
 
                   & .slide-item-logo {
                     @apply relative flex justify-start;
-
-                    & > img {
-                      @apply h-3 xs:h-4 md:h-6;
-                    }
+                    @apply h-10;
                   }
 
                   & .slide-item-message {
@@ -998,7 +995,7 @@
               @apply !flex;
 
               & .slick-slide {
-                @apply h-auto;
+                @apply h-auto w-auto;
 
                 & > div {
                   @apply h-full;
