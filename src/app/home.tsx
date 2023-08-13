@@ -374,7 +374,7 @@ const Home = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      1st DeFi project award an official grant from the Sui Foundation in Nov. 2022
+                      1st DeFi project award an official grant from the Sui Foundation in Nov. 2022.
                     </a>{' '}
                   </div>
                 </li>
@@ -403,7 +403,7 @@ const Home = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      1st place in the Move Hackathon by WebX Circle track in July 2023
+                      1st place in the Move Hackathon by WebX Circle track in July 2023.
                     </a>{' '}
                   </div>
                   <div className="left-champion">
@@ -423,7 +423,7 @@ const Home = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      3rd place Best Overall in the Sui x Kucoin Labs Summer Hackathon in July 2023
+                      3rd place Best Overall in the Sui x Kucoin Labs Summer Hackathon in July 2023.
                     </a>{' '}
                   </div>
                 </li>
@@ -440,7 +440,7 @@ const Home = () => {
                       rel="noreferrer"
                     >
                       3rd place in the Sui x jump_ Builder House Ho Chi Minh City CTF challenge in
-                      Mar. 2023
+                      Mar. 2023.
                     </a>{' '}
                   </div>
                 </li>
@@ -452,7 +452,7 @@ const Home = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      5th place in the Sui Builder House Denver CTF challenge Mar 2023
+                      5th place in the Sui Builder House Denver CTF challenge Mar 2023.
                     </a>
                   </div>
                   <div className="right-champion">
