@@ -126,7 +126,7 @@ const Home = () => {
                 <a href="#team">Team</a>
               </li>
               <li>
-                <a href="#backer">Backer</a>
+                <a href="#investor">Investor</a>
               </li>
               <li>
                 <a href="#message">Message</a>
@@ -638,8 +638,8 @@ const Home = () => {
           </section>
           <section>
             <div className="section-content">
-              <div className="text-title-section" id="backer">
-                Backers
+              <div className="text-title-section" id="investor">
+                Investors
               </div>
               <div className="backer">
                 <a href="https://mystenlabs.com/" target="_blank" rel="noreferrer">

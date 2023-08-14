@@ -763,7 +763,7 @@
         }
 
         &:nth-child(5) {
-          @apply h-[24rem] xs:h-[28rem] sm:h-[36rem] md:h-[44rem] lg:h-[48rem] xl:h-[50rem] 2xl:h-[58rem] 3xl:h-[76rem];
+          @apply h-[20rem] xs:h-[28rem] sm:h-[36rem] md:h-[44rem] lg:h-[38rem] xl:h-[45rem] 2xl:h-[58rem] 3xl:h-[76rem] 4xl:h-[80rem];
 
           & .section-content {
             @apply absolute h-full w-full;
@@ -788,13 +788,13 @@
         }
 
         &:nth-child(6) {
-          @apply h-[32rem] xs:h-[25rem] sm:h-[50rem] md:h-[60rem] lg:h-[52rem] xl:h-[60rem] 2xl:h-[68rem] 3xl:h-[76rem];
+          @apply h-[9rem] xs:h-[10rem] sm:h-[17rem] md:h-[20rem] lg:h-[25rem] xl:h-[27rem] 2xl:h-[29rem] 3xl:h-[35rem];
 
           & .section-content {
             @apply flex flex-col flex-wrap items-center justify-start;
             @apply absolute left-0;
             @apply h-full w-full;
-            @apply top-[10%] md:top-[14%] lg:top-0;
+            @apply top-0 3xl:top-[5%];
             @apply z-10;
 
             & .text-title-section {
@@ -803,7 +803,7 @@
               @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
               @apply text-center font-bold text-white;
               @apply w-[50%];
-              @apply top-0 sm:top-[5%] md:top-[15%] lg:top-[5%];
+              @apply top-0 sm:top-[5%] md:top-[14%] lg:top-[10%];
             }
 
             & .text-team-description {
@@ -812,32 +812,32 @@
               @apply text-[8px] xs:text-[9px] sm:text-sm lg:text-sm xl:text-base;
               @apply text-center text-white xs:font-medium;
               @apply w-[50%];
-              @apply bottom-0 xs:bottom-[10%] sm:bottom-[10%] md:bottom-[15%] lg:bottom-[20%] 3xl:bottom-[50%];
+              @apply bottom-0 md:bottom-[10%] lg:bottom-[20%] 3xl:bottom-[20%];
             }
 
             & .team-container {
-              @apply flex flex-row flex-wrap items-start justify-start justify-center gap-6;
-              @apply w-full lg:w-[80%] xl:w-[70rem] 2xl:w-[70rem] 3xl:w-[80rem];
-              @apply absolute sm:left-0 sm:right-0 sm:right-0 sm:ml-auto sm:mr-auto;
-              @apply top-[6%] sm:top-[20%] md:top-[25%] lg:top-[20.5%];
+              @apply flex flex-row flex-wrap items-start justify-center gap-3;
+              @apply w-full;
+              @apply absolute sm:left-0 sm:right-0 sm:ml-auto sm:mr-auto;
+              @apply top-[11%] xs:top-[15%] sm:top-[16%] md:top-[25%] lg:top-[20.5%] 3xl:top-[22%];
 
               & .team-card {
                 @apply flex flex-col items-center justify-center;
-                @apply h-20 xs:h-28 sm:h-36 lg:h-40 xl:h-48 2xl:h-56 3xl:h-64;
-                @apply w-[35%] xs:w-[20%] sm:w-[calc(25%-1rem)] md:w-[calc(25%-1rem)] lg:w-[11rem] xl:w-[9rem];
+                @apply h-14 sm:h-36 lg:h-40 xl:h-48 2xl:h-56 3xl:h-64;
+                @apply w-[10%] sm:w-[calc(14%-1rem)] lg:w-[8rem] xl:w-[9rem] 2xl:w-[12rem];
 
                 & .card-avatar {
                   @apply flex w-3/4 flex-grow flex-col justify-center;
 
                   & > img {
                     @apply mx-auto mt-4 rounded-full xl:mt-6;
-                    @apply w-8 xs:w-10 sm:w-16 md:w-16 lg:w-16 xl:w-20 2xl:w-20;
+                    @apply w-full xs:w-10 sm:w-16 md:w-16 lg:w-16 xl:w-20 2xl:w-24;
                   }
                 }
 
                 & .card-profile {
-                  @apply flex w-1/2 flex-grow flex-row items-center justify-center gap-2;
-                  @apply mt-1 lg:mb-4 lg:mt-4;
+                  @apply flex w-1/2 flex-grow flex-row items-center justify-center gap-1 lg:gap-2;
+                  @apply mt-2 lg:mb-4 lg:mt-4;
                   @apply hover:drop-shadow-[0_0_4px_#9CD0DD];
 
                   & .profile-links {
@@ -846,12 +846,12 @@
                     & > a.twitter {
                       @apply transition-all hover:rotate-12;
                       @apply content-[url(@/assets/images/content-twitter-rounded.svg)];
-                      @apply h-4 w-4 lg:h-7 lg:w-7;
+                      @apply h-2 w-2 sm:h-3 sm:w-3 md:h-4 md:w-4 lg:h-5 lg:w-5;
                     }
                   }
 
                   & .profile-name {
-                    @apply text-xs text-white sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
+                    @apply text-[6px] text-white sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl;
                   }
                 }
               }
