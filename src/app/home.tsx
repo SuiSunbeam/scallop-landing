@@ -630,6 +630,10 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+              <div className="text-team-description">
+                A team with cybersecurity, Web2 fintech, DeFi, algorithm contest, quantitative
+                trading, and VC backgrounds...
+              </div>
             </div>
           </section>
           <section>
