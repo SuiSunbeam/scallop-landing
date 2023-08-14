@@ -220,16 +220,7 @@ const Home = () => {
               <img className="scene-groupOfTurtle" />
             </Plx>
             <Plx parallaxData={[]} className="main-scene-plx">
-              <img className="scene-groupOfManta" />
-            </Plx>
-            <Plx parallaxData={[]} className="main-scene-plx">
               <img className="scene-groupOfBubble-12" />
-            </Plx>
-            <Plx parallaxData={[]} className="main-scene-plx">
-              <img className="scene-groupOfBubble-13" />
-            </Plx>
-            <Plx parallaxData={[]} className="main-scene-plx">
-              <img className="scene-groupOfBubble-14" />
             </Plx>
             <Plx parallaxData={[]} className="main-scene-plx">
               <img className="scene-groupOfBubble-15" />
