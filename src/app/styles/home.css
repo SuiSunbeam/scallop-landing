@@ -896,7 +896,6 @@
 
               & .mystenlabs {
                 @apply content-[url('@/assets/images/backer-mystenlabs.svg')];
-                /* @apply scale-[1.25]; */
               }
 
               & > .sui-foundation-href {
