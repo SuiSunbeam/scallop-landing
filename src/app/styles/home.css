@@ -809,7 +809,7 @@
             & .text-team-description {
               @apply absolute left-[25%];
               @apply flex w-full justify-center;
-              @apply text-[8px] xs:text-[9px] sm:text-base lg:text-lg xl:text-xl;
+              @apply text-[8px] xs:text-[9px] sm:text-sm lg:text-sm xl:text-base;
               @apply text-center text-white xs:font-medium;
               @apply w-[50%];
               @apply bottom-0 xs:bottom-[10%] sm:bottom-[10%] md:bottom-[15%] lg:bottom-[20%] 3xl:bottom-[50%];
@@ -824,7 +824,7 @@
               & .team-card {
                 @apply flex flex-col items-center justify-center;
                 @apply h-20 xs:h-28 sm:h-36 lg:h-40 xl:h-48 2xl:h-56 3xl:h-64;
-                @apply w-[35%] xs:w-[20%] sm:w-[calc(25%-1rem)] md:w-[calc(25%-1rem)] lg:w-[11rem] xl:w-[10rem];
+                @apply w-[35%] xs:w-[20%] sm:w-[calc(25%-1rem)] md:w-[calc(25%-1rem)] lg:w-[11rem] xl:w-[9rem];
 
                 & .card-avatar {
                   @apply flex w-3/4 flex-grow flex-col justify-center;
