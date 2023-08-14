@@ -3036,7 +3036,7 @@ const mainGroupOfFishFour = (breackPoints: { [index in endpoint]: boolean }) => 
           },
           {
             startValue: 0,
-            endValue: 20,
+            endValue: 30,
             unit: '%',
             property: 'translateX',
           },
@@ -3067,7 +3067,7 @@ const mainGroupOfFishFour = (breackPoints: { [index in endpoint]: boolean }) => 
           },
           {
             startValue: 0,
-            endValue: 30,
+            endValue: 40,
             unit: '%',
             property: 'translateX',
           },
@@ -3088,7 +3088,7 @@ const mainGroupOfFishFour = (breackPoints: { [index in endpoint]: boolean }) => 
         properties: [
           {
             startValue: 0,
-            endValue: 10,
+            endValue: 5,
             property: 'rotateZ',
           },
           {
@@ -3098,7 +3098,7 @@ const mainGroupOfFishFour = (breackPoints: { [index in endpoint]: boolean }) => 
           },
           {
             startValue: 0,
-            endValue: 40,
+            endValue: 30,
             unit: '%',
             property: 'translateX',
           },
