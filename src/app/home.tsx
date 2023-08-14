@@ -649,7 +649,12 @@ const Home = () => {
                     title="Mysten Labs is a company that develops a tech infrastructure platform designed for Web3 adoption, accelerating the development and adoption of decentralized services."
                   />
                 </a>
-                <a href="https://sui.io/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://sui.io/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="sui-foundation-href"
+                >
                   <img
                     className="sui-foundation"
                     alt="Sui Foundation"

@@ -860,18 +860,16 @@
         }
 
         &:nth-child(7) {
-          @apply h-[28rem] xs:h-[30rem] sm:h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[50rem] 2xl:h-[55rem] 3xl:h-[60rem];
+          @apply h-fit lg:mb-[4rem];
 
           & .section-content {
-            @apply flex flex-col flex-wrap items-center justify-start;
-            @apply absolute left-0;
+            @apply flex flex-col items-center justify-start;
             @apply h-full w-full;
             @apply top-[10%] md:top-[0%] lg:top-0;
             @apply z-10;
 
             & .text-title-section {
-              @apply absolute left-[25%];
-              @apply top-[12%] md:top-[12%] lg:top-[8%];
+              @apply my-[5rem];
               @apply flex w-full justify-center;
               @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
               @apply text-center font-bold text-white;
@@ -879,32 +877,40 @@
             }
 
             & .backer {
-              @apply absolute left-[7%] lg:left-[12%];
-              @apply top-[20%] xs:top-[24%] md:top-[28%] lg:top-[25%];
-              @apply grid grid-cols-3 flex-row flex-wrap content-center justify-center lg:flex;
-              @apply gap-x-[3.33%] xs:gap-x-[3.33%] lg:gap-x-[8%];
-              @apply gap-y-[1rem] lg:gap-y-[2rem] 2xl:gap-y-[3rem];
-              @apply w-[86%] lg:w-[76%];
+              @apply px-[4%] lg:px-[8%];
+              @apply flex flex-row flex-wrap justify-center;
+              @apply gap-x-[5%];
+              @apply gap-y-[5vw];
+
 
               & > a {
                 @apply flex justify-center lg:justify-end;
-                @apply w-full lg:w-[17%];
+                @apply w-full w-[30%] md:w-[20%];
                 @apply h-[4rem] xs:h-[6rem] lg:h-[8rem];
 
                 & > img {
                   @apply object-contain;
-                  @apply w-[80%] xs:w-[90%] lg:w-full;
+                  @apply w-full;
                 }
               }
 
               & .mystenlabs {
                 @apply content-[url('@/assets/images/backer-mystenlabs.svg')];
-                @apply scale-[1.25];
+                /* @apply scale-[1.25]; */
+              }
+
+              & > .sui-foundation-href {
+                @apply flex flex-col justify-end;
+
+                &::after {
+                  @apply content-['(Grants)'] text-white text-[0.55rem] xs:text-xs lg:text-sm;
+                  @apply relative left-[37%];
+                }
               }
 
               & .sui-foundation {
                 @apply content-[url('@/assets/images/backer-sui-foundation.png')];
-                @apply scale-[0.95];
+                @apply scale-[0.8];
               }
 
               & .assembly-partners {
@@ -914,36 +920,32 @@
 
               & .credit-scend {
                 @apply content-[url('@/assets/images/backer-credit-scend.png')];
-                @apply scale-[1];
               }
 
               & .phd-capital {
                 @apply content-[url('@/assets/images/backer-phd-capital.svg')];
-                @apply scale-[01];
               }
 
               & .lol-capital {
                 @apply content-[url('@/assets/images/backer-lol-capital.png')];
-                @apply scale-[1.1];
               }
 
               & .comma3 {
                 @apply content-[url('@/assets/images/backer-comma3.png')];
-                @apply scale-[1.25];
               }
 
               & .supra-oracles {
                 @apply content-[url('@/assets/images/backer-supra-oracles.svg')];
-                @apply scale-[0.85];
+                @apply scale-[0.8];
               }
 
               & .ottersec {
                 @apply content-[url('@/assets/images/backer-ottersec.svg')];
+                @apply scale-[0.9];
               }
 
               & .movebit {
                 @apply content-[url('@/assets/images/backer-movebit.svg')];
-                @apply scale-[1.2];
               }
             }
           }
