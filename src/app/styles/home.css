@@ -763,7 +763,7 @@
         }
 
         &:nth-child(5) {
-          @apply h-[24rem] xs:h-[28rem] sm:h-[36rem] md:h-[44rem] lg:h-[48rem] xl:h-[50rem] 2xl:h-[58rem] 3xl:h-[76rem];
+          @apply h-[20rem] xs:h-[28rem] sm:h-[36rem] md:h-[44rem] lg:h-[38rem] xl:h-[45rem] 2xl:h-[58rem] 3xl:h-[76rem] 4xl:h-[80rem];
 
           & .section-content {
             @apply absolute h-full w-full;
@@ -788,48 +788,65 @@
         }
 
         &:nth-child(6) {
-          @apply h-[32rem] xs:h-[38rem] sm:h-[42rem] md:h-[48rem] lg:h-[52rem] xl:h-[60rem] 2xl:h-[68rem] 3xl:h-[76rem];
+          @apply mb-[5rem] mt-[5rem] h-fit  md:mb-[12rem] md:mt-[8rem];
 
           & .section-content {
-            @apply flex flex-row flex-wrap items-start justify-start gap-6 sm:justify-center;
-            @apply absolute left-[7%] sm:left-auto lg:right-[3%] 2xl:right-[7%];
-            @apply w-full lg:w-[55%] xl:w-[45rem] 2xl:w-[50rem];
-            @apply top-[30%] sm:top-[35%] md:top-[40%] lg:top-[36%];
-            @apply z-10 px-[2%];
+            @apply flex flex-col items-center justify-start;
+            @apply h-full w-full;
+            @apply z-10;
 
-            & .team-card {
-              @apply flex flex-col items-center justify-center;
-              @apply rounded-2xl border border-basic-lighter;
-              @apply px-1 py-1 xs:px-2 md:px-3;
-              @apply h-24 xs:h-32 sm:h-36 lg:h-40 xl:h-48 2xl:h-56 3xl:h-64;
-              @apply w-[40%] sm:w-[calc(25%-1rem)] md:w-[calc(25%-1rem)] lg:w-[9.5rem] xl:w-[11.5rem] 2xl:w-[12rem] 3xl:w-[14rem];
+            & .text-title-section {
+              @apply my-[5rem];
+              @apply flex w-full justify-center;
+              @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
+              @apply text-center font-bold text-white;
+              @apply w-[50%];
+            }
 
-              & .card-avatar {
-                @apply flex w-3/4 flex-grow flex-col justify-center;
+            & .text-team-description {
+              @apply flex w-full justify-center;
+              @apply text-xs xs:text-sm xl:text-base;
+              @apply text-center text-white xs:font-medium;
+              @apply w-[50%];
+            }
 
-                & > img {
-                  @apply mx-auto mt-4 rounded-full border-2 border-basic-lighter xl:mt-6;
-                  @apply w-8 xs:w-10 sm:w-16 md:w-16 lg:w-16 xl:w-20 2xl:w-20;
-                }
-              }
+            & .team-container {
+              @apply flex flex-row flex-wrap items-start justify-center gap-3;
+              @apply mb-[1rem] w-full;
 
-              & .card-profile {
-                @apply flex w-1/2 flex-grow flex-row items-center justify-center gap-2;
-                @apply mt-1 lg:mb-4 lg:mt-4;
-                @apply hover:drop-shadow-[0_0_4px_#9CD0DD];
+              & .team-card {
+                @apply flex flex-col items-center justify-center;
+                @apply h-14 sm:h-36 lg:h-40 xl:h-48 2xl:h-56 3xl:h-64;
+                @apply w-[10%] sm:w-[calc(14%-1rem)] lg:w-[8rem] xl:w-[9rem] 2xl:w-[12rem];
 
-                & .profile-links {
-                  @apply flex flex-wrap;
+                & .card-avatar {
+                  /* @apply flex w-3/4 flex-grow flex-col justify-center; */
+                  @apply rounded-full border-2 border-white;
 
-                  & > a.twitter {
-                    @apply transition-all hover:rotate-12;
-                    @apply content-[url(@/assets/images/content-twitter-rounded.svg)];
-                    @apply h-4 w-4 lg:h-7 lg:w-7;
+                  & > img {
+                    /* @apply mx-auto mt-4 rounded-full xl:mt-6; */
+                    @apply w-full xs:w-10 sm:w-16 md:w-16 lg:w-16 xl:w-20 2xl:w-24;
                   }
                 }
 
-                & .profile-name {
-                  @apply text-xs text-white sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
+                & .card-profile {
+                  @apply flex w-1/2 flex-grow flex-row items-center justify-center gap-1 lg:gap-2;
+                  @apply mt-2 lg:mb-4 lg:mt-4;
+                  @apply hover:drop-shadow-[0_0_4px_#9CD0DD];
+
+                  & .profile-links {
+                    @apply flex flex-wrap;
+
+                    & > a.twitter {
+                      @apply transition-all hover:rotate-12;
+                      @apply content-[url(@/assets/images/content-twitter-rounded.svg)];
+                      @apply h-2 w-2 sm:h-3 sm:w-3 md:h-4 md:w-4 lg:h-5 lg:w-5;
+                    }
+                  }
+
+                  & .profile-name {
+                    @apply text-[6px] text-white sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl;
+                  }
                 }
               }
             }
@@ -837,18 +854,15 @@
         }
 
         &:nth-child(7) {
-          @apply h-[28rem] xs:h-[30rem] sm:h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[50rem] 2xl:h-[55rem] 3xl:h-[60rem];
+          @apply mb-[5rem] h-fit md:mb-[12rem];
 
           & .section-content {
-            @apply flex flex-col flex-wrap items-center justify-start;
-            @apply absolute left-0;
+            @apply flex flex-col items-center justify-start;
             @apply h-full w-full;
-            @apply top-[10%] md:top-[0%] lg:top-0;
             @apply z-10;
 
             & .text-title-section {
-              @apply absolute left-[25%];
-              @apply top-[8%] md:top-[12%] lg:top-[8%];
+              @apply my-[5rem];
               @apply flex w-full justify-center;
               @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
               @apply text-center font-bold text-white;
@@ -856,32 +870,38 @@
             }
 
             & .backer {
-              @apply absolute left-[7%] lg:left-[12%];
-              @apply top-[20%] xs:top-[24%] md:top-[28%] lg:top-[25%];
-              @apply grid grid-cols-3 flex-row flex-wrap content-center justify-center lg:flex;
-              @apply gap-x-[3.33%] xs:gap-x-[3.33%] lg:gap-x-[8%];
-              @apply gap-y-[1rem] lg:gap-y-[2rem] 2xl:gap-y-[3rem];
-              @apply w-[86%] lg:w-[76%];
+              @apply px-[4%] lg:px-[8%];
+              @apply flex flex-row flex-wrap justify-center;
+              @apply gap-x-[5%];
+              @apply gap-y-[5vw];
 
               & > a {
                 @apply flex justify-center lg:justify-end;
-                @apply w-full lg:w-[17%];
+                @apply w-[30%] w-full md:w-[20%];
                 @apply h-[4rem] xs:h-[6rem] lg:h-[8rem];
 
                 & > img {
                   @apply object-contain;
-                  @apply w-[80%] xs:w-[90%] lg:w-full;
+                  @apply w-full;
                 }
               }
 
               & .mystenlabs {
                 @apply content-[url('@/assets/images/backer-mystenlabs.svg')];
-                @apply scale-[1.25];
+              }
+
+              & > .sui-foundation-href {
+                @apply flex flex-col justify-end;
+
+                &::after {
+                  @apply text-[0.55rem] text-white content-['(Grants)'] xs:text-xs lg:text-sm;
+                  @apply relative left-[37%];
+                }
               }
 
               & .sui-foundation {
                 @apply content-[url('@/assets/images/backer-sui-foundation.png')];
-                @apply scale-[0.95];
+                @apply scale-[0.8];
               }
 
               & .assembly-partners {
@@ -891,43 +911,39 @@
 
               & .credit-scend {
                 @apply content-[url('@/assets/images/backer-credit-scend.png')];
-                @apply scale-[1];
               }
 
               & .phd-capital {
                 @apply content-[url('@/assets/images/backer-phd-capital.svg')];
-                @apply scale-[01];
               }
 
               & .lol-capital {
                 @apply content-[url('@/assets/images/backer-lol-capital.png')];
-                @apply scale-[1.1];
               }
 
               & .comma3 {
                 @apply content-[url('@/assets/images/backer-comma3.png')];
-                @apply scale-[1.25];
               }
 
               & .supra-oracles {
                 @apply content-[url('@/assets/images/backer-supra-oracles.svg')];
-                @apply scale-[0.85];
+                @apply scale-[0.8];
               }
 
               & .ottersec {
                 @apply content-[url('@/assets/images/backer-ottersec.svg')];
+                @apply scale-[0.9];
               }
 
               & .movebit {
                 @apply content-[url('@/assets/images/backer-movebit.svg')];
-                @apply scale-[1.2];
               }
             }
           }
         }
 
         &:nth-child(8) {
-          @apply h-[26rem] xs:h-[25rem] sm:h-[25rem] md:h-[30rem] lg:h-[48rem] xl:h-[50rem] 2xl:h-[48rem] 3xl:h-[50rem];
+          @apply h-[26rem] xs:h-[32rem] sm:h-[25rem] md:h-[30rem] lg:h-[35rem] xl:h-[35rem] 3xl:h-[30rem];
 
           & .section-content {
             @apply flex flex-col flex-wrap items-center justify-start;
@@ -938,7 +954,7 @@
 
             & .text-title-section {
               @apply absolute left-[25%];
-              @apply top-[5%] lg:top-[0%];
+              @apply top-[12%] lg:top-[0%];
               @apply flex justify-center;
               @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
               @apply text-center font-bold text-white;
@@ -947,7 +963,7 @@
 
             & .slide-container {
               @apply absolute left-[7%] lg:left-[12%];
-              @apply top-[17%] xs:top-[20%] md:top-[23%] lg:top-[15%];
+              @apply top-[17%] xs:top-[20%] md:top-[23%] lg:top-[20%] xl:top-[25%] 3xl:top-[35%];
               @apply z-50 w-[86%] lg:w-[76%];
               @apply rounded-3xl;
               @apply flex justify-center;
