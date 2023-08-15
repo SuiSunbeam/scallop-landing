@@ -788,7 +788,7 @@
         }
 
         &:nth-child(6) {
-          @apply mb-[5rem] mt-[5rem] h-fit  md:mb-[12rem] md:mt-[8rem];
+          @apply h-fit mb-[12rem] mt-[5rem] md:mt-[12rem];
 
           & .section-content {
             @apply flex flex-col items-center justify-start;
@@ -796,7 +796,7 @@
             @apply z-10;
 
             & .text-title-section {
-              @apply my-[5rem];
+              @apply my-[3rem] lg:my-[5rem];
               @apply flex w-full justify-center;
               @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
               @apply text-center font-bold text-white;
@@ -805,7 +805,7 @@
 
             & .text-team-description {
               @apply flex w-full justify-center;
-              @apply text-xs xs:text-sm xl:text-base;
+              @apply text-[0.5rem] xs:text-sm md:text-base xl:text-lg;
               @apply text-center text-white xs:font-medium;
               @apply w-[50%];
             }
@@ -854,7 +854,7 @@
         }
 
         &:nth-child(7) {
-          @apply mb-[5rem] h-fit md:mb-[12rem];
+          @apply h-fit mb-[12rem];
 
           & .section-content {
             @apply flex flex-col items-center justify-start;
@@ -862,7 +862,7 @@
             @apply z-10;
 
             & .text-title-section {
-              @apply my-[5rem];
+              @apply my-[3rem] lg:my-[5rem];
               @apply flex w-full justify-center;
               @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
               @apply text-center font-bold text-white;
@@ -877,7 +877,7 @@
 
               & > a {
                 @apply flex justify-center lg:justify-end;
-                @apply w-[30%] w-full md:w-[20%];
+                @apply w-[30%] md:w-[20%];
                 @apply h-[4rem] xs:h-[6rem] lg:h-[8rem];
 
                 & > img {
@@ -888,55 +888,65 @@
 
               & .mystenlabs {
                 @apply content-[url('@/assets/images/backer-mystenlabs.svg')];
+                @apply h-full;
               }
 
               & > .sui-foundation-href {
                 @apply flex flex-col justify-end;
 
                 &::after {
-                  @apply text-[0.55rem] text-white content-['(Grants)'] xs:text-xs lg:text-sm;
+                  @apply content-['(Grants)'] text-white text-[0.5rem] xs:text-xs lg:text-sm xl:text-xl;
                   @apply relative left-[37%];
                 }
               }
 
               & .sui-foundation {
                 @apply content-[url('@/assets/images/backer-sui-foundation.png')];
+                @apply h-fit;
                 @apply scale-[0.8];
               }
 
               & .assembly-partners {
                 @apply content-[url('@/assets/images/backer-assembly-partners.svg')];
+                @apply h-full;
                 @apply scale-[0.75];
               }
 
               & .credit-scend {
                 @apply content-[url('@/assets/images/backer-credit-scend.png')];
+                @apply h-full;
               }
 
               & .phd-capital {
                 @apply content-[url('@/assets/images/backer-phd-capital.svg')];
+                @apply h-full;
               }
 
               & .lol-capital {
                 @apply content-[url('@/assets/images/backer-lol-capital.png')];
+                @apply h-full;
               }
 
               & .comma3 {
                 @apply content-[url('@/assets/images/backer-comma3.png')];
+                @apply h-full;
               }
 
               & .supra-oracles {
                 @apply content-[url('@/assets/images/backer-supra-oracles.svg')];
+                @apply h-full;
                 @apply scale-[0.8];
               }
 
               & .ottersec {
                 @apply content-[url('@/assets/images/backer-ottersec.svg')];
+                @apply h-full;
                 @apply scale-[0.9];
               }
 
               & .movebit {
                 @apply content-[url('@/assets/images/backer-movebit.svg')];
+                @apply h-full;
               }
             }
           }
