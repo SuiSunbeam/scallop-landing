@@ -788,38 +788,31 @@
         }
 
         &:nth-child(6) {
-          @apply h-[9rem] xs:h-[10rem] sm:h-[17rem] md:h-[20rem] lg:h-[25rem] xl:h-[27rem] 2xl:h-[29rem] 3xl:h-[35rem];
+          @apply h-fit mb-[5rem] md:mb-[12rem]  mt-[5rem] md:mt-[8rem];
 
           & .section-content {
-            @apply flex flex-col flex-wrap items-center justify-start;
-            @apply absolute left-0;
+            @apply flex flex-col items-center justify-start;
             @apply h-full w-full;
-            @apply top-0 3xl:top-[5%];
             @apply z-10;
 
             & .text-title-section {
-              @apply absolute left-[25%];
+              @apply my-[5rem];
               @apply flex w-full justify-center;
               @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
               @apply text-center font-bold text-white;
               @apply w-[50%];
-              @apply top-0 sm:top-[5%] md:top-[14%] lg:top-[10%];
             }
 
             & .text-team-description {
-              @apply absolute left-[25%];
               @apply flex w-full justify-center;
-              @apply text-[8px] xs:text-[9px] sm:text-sm lg:text-sm xl:text-base;
+              @apply text-xs xs:text-sm xl:text-base;
               @apply text-center text-white xs:font-medium;
               @apply w-[50%];
-              @apply bottom-0 xs:bottom-[-20%] md:bottom-[5%] lg:bottom-[0%] 3xl:bottom-[20%];
             }
 
             & .team-container {
               @apply flex flex-row flex-wrap items-start justify-center gap-3;
-              @apply w-full;
-              @apply absolute sm:left-0 sm:right-0 sm:ml-auto sm:mr-auto;
-              @apply top-[11%] xs:top-[35%] sm:top-[30%] md:top-[30%] lg:top-[40%] 3xl:top-[22%];
+              @apply w-full mb-[1rem];
 
               & .team-card {
                 @apply flex flex-col items-center justify-center;
@@ -861,12 +854,11 @@
         }
 
         &:nth-child(7) {
-          @apply h-fit lg:mb-[4rem];
+          @apply h-fit mb-[5rem] md:mb-[12rem];
 
           & .section-content {
             @apply flex flex-col items-center justify-start;
             @apply h-full w-full;
-            @apply top-[10%] md:top-[0%] lg:top--[0%];
             @apply z-10;
 
             & .text-title-section {
