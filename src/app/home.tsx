@@ -779,7 +779,7 @@ const Home = () => {
             <span>Scallop</span>
           </a>
           <div className="copyright">
-            <span>© 2023 Scallop.io</span>
+            <span>© 2023 Scallop Labs</span>
           </div>
         </div>
       </footer>
