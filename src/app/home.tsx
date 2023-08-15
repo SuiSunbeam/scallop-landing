@@ -444,7 +444,7 @@ const Home = () => {
                   <div>
                     <span>🥇</span>
                     <a
-                      href="https://blog.sui.io/seoul-builder-house-recap/"
+                      href="https://twitter.com/Scallop_io/status/1688429952071520257"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -464,7 +464,7 @@ const Home = () => {
                   <div>
                     <span>🥉</span>
                     <a
-                      href="https://suictf.movebit.xyz/scoreboard"
+                      href="https://blog.sui.io/hackathon-winners/"
                       target="_blank"
                       rel="noreferrer"
                     >
