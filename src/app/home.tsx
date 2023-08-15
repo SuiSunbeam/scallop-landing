@@ -5,7 +5,7 @@ import { ArrowUpIcon, Bars3Icon } from '@heroicons/react/24/solid';
 import { usePlxData } from '@/app/plxconfig';
 import krissAvatar from '@/assets/images/avatar-kriss.png';
 import annAvatar from '@/assets/images/avatar-ann.png';
-import shawnAvatar from '@/assets/images/avatar-shawn.jpg';
+import shawnAvatar from '@/assets/images/avatar-shawn.png';
 import donnieAvatar from '@/assets/images/avatar-donnie.png';
 import nathanAvatar from '@/assets/images/avatar-nathan.png';
 import robertAvatar from '@/assets/images/robert.jpeg';
@@ -514,7 +514,7 @@ const Home = () => {
           <section>
             <div className="section-content">
               <div className="text-title-section" id="team">
-                Team
+                Scallop Labs
               </div>
               <div className="team-container">
                 <div className="team-card">
