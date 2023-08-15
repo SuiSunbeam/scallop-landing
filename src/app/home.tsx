@@ -364,7 +364,6 @@ const Home = () => {
                         <li>Collateral/Borrow Weights</li>
                         <li>Protected Collateral Vault</li>
                         <li>Borrow/Outflow/Collateralization Limits</li>
-                        <li>Multi-TWAP-Oracle Strategy</li>
                         <li>Delayed Model Change</li>
                         <li>Soft Liquidation</li>
                       </ul>
