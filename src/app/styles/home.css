@@ -788,7 +788,7 @@
         }
 
         &:nth-child(6) {
-          @apply h-fit mb-[5rem] md:mb-[12rem]  mt-[5rem] md:mt-[8rem];
+          @apply mb-[5rem] mt-[5rem] h-fit  md:mb-[12rem] md:mt-[8rem];
 
           & .section-content {
             @apply flex flex-col items-center justify-start;
@@ -812,7 +812,7 @@
 
             & .team-container {
               @apply flex flex-row flex-wrap items-start justify-center gap-3;
-              @apply w-full mb-[1rem];
+              @apply mb-[1rem] w-full;
 
               & .team-card {
                 @apply flex flex-col items-center justify-center;
@@ -821,7 +821,7 @@
 
                 & .card-avatar {
                   /* @apply flex w-3/4 flex-grow flex-col justify-center; */
-                  @apply border-2 border-white rounded-full;
+                  @apply rounded-full border-2 border-white;
 
                   & > img {
                     /* @apply mx-auto mt-4 rounded-full xl:mt-6; */
@@ -854,7 +854,7 @@
         }
 
         &:nth-child(7) {
-          @apply h-fit mb-[5rem] md:mb-[12rem];
+          @apply mb-[5rem] h-fit md:mb-[12rem];
 
           & .section-content {
             @apply flex flex-col items-center justify-start;
@@ -875,10 +875,9 @@
               @apply gap-x-[5%];
               @apply gap-y-[5vw];
 
-
               & > a {
                 @apply flex justify-center lg:justify-end;
-                @apply w-full w-[30%] md:w-[20%];
+                @apply w-[30%] w-full md:w-[20%];
                 @apply h-[4rem] xs:h-[6rem] lg:h-[8rem];
 
                 & > img {
@@ -895,7 +894,7 @@
                 @apply flex flex-col justify-end;
 
                 &::after {
-                  @apply content-['(Grants)'] text-white text-[0.55rem] xs:text-xs lg:text-sm;
+                  @apply text-[0.55rem] text-white content-['(Grants)'] xs:text-xs lg:text-sm;
                   @apply relative left-[37%];
                 }
               }
@@ -944,7 +943,7 @@
         }
 
         &:nth-child(8) {
-          @apply h-[26rem] xs:h-[32rem] sm:h-[25rem] md:h-[30rem] lg:h-[48rem] xl:h-[50rem] 2xl:h-[48rem] 3xl:h-[50rem];
+          @apply h-[26rem] xs:h-[32rem] sm:h-[25rem] md:h-[30rem] lg:h-[35rem] xl:h-[35rem] 3xl:h-[30rem];
 
           & .section-content {
             @apply flex flex-col flex-wrap items-center justify-start;
@@ -964,7 +963,7 @@
 
             & .slide-container {
               @apply absolute left-[7%] lg:left-[12%];
-              @apply top-[17%] xs:top-[20%] md:top-[23%] lg:top-[15%];
+              @apply top-[17%] xs:top-[20%] md:top-[23%] lg:top-[20%] xl:top-[25%] 3xl:top-[35%];
               @apply z-50 w-[86%] lg:w-[76%];
               @apply rounded-3xl;
               @apply flex justify-center;
