@@ -375,10 +375,11 @@ const Home = () => {
                   <img />
                   <h3>Security First</h3>
                   <ul>
-                    <li>Sui Move - Base on Rust</li>
-                    <li>Security Partners - Ottersec & MoveBit</li>
+                    <li>Base on Rust</li>
+                    <li>Sui Move - Object Strucuture</li>
                     <li>A team with cybersecurity background & Sui Move CTF contest places</li>
-                    <li>Designed with zero trust</li>
+                    <li>Security Partners - Ottersec & MoveBit</li>
+                    <li>Multi-Oracle Strategy</li>
                   </ul>
                 </div>
               </div>
