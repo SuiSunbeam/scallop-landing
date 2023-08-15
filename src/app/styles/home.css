@@ -803,7 +803,7 @@
               @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
               @apply text-center font-bold text-white;
               @apply w-[50%];
-              @apply top-0 sm:top-[5%] md:top-[14%] lg:top-[10%];
+              @apply top-0 sm:top-[5%] md:top-[14%] lg:top-[0%];
             }
 
             & .text-team-description {
@@ -812,7 +812,7 @@
               @apply text-[0.5rem] xs:text-sm md:text-base xl:text-lg;
               @apply text-center text-white xs:font-medium;
               @apply w-[50%];
-              @apply bottom-[1rem] md:bottom-[10%] lg:bottom-[20%] 3xl:bottom-[20%];
+              @apply bottom-[1rem] sm:bottom-[5%] md:bottom-[10%] lg:bottom-[20%] 3xl:bottom-[20%];
             }
 
             & .team-container {
