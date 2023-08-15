@@ -164,11 +164,11 @@
         }
 
         &:nth-child(5) {
-          @apply h-[20rem] xs:h-[24rem] sm:h-[30rem] md:h-[36rem] lg:h-[42rem] xl:h-[50rem] 2xl:h-[58rem] 3xl:h-[68rem];
+          @apply h-[24rem] xs:h-[26rem] sm:h-[30rem] md:h-[44rem] lg:h-[42rem] xl:h-[54rem] 2xl:h-[68rem] 3xl:h-[90rem];
         }
 
         &:nth-child(6) {
-          @apply h-[38rem] xs:h-[46rem] sm:h-[44rem] md:h-[48rem] lg:h-[56rem] xl:h-[62rem] 2xl:h-[68rem] 3xl:h-[76rem];
+          @apply h-[12rem] xs:h-[16rem] sm:h-[20rem] md:h-[24rem] lg:h-[28rem] xl:h-[32rem] 2xl:h-[36rem] 3xl:h-[40rem];
         }
 
         &:nth-child(7) {
@@ -763,7 +763,7 @@
         }
 
         &:nth-child(5) {
-          @apply h-[20rem] xs:h-[28rem] sm:h-[36rem] md:h-[44rem] lg:h-[38rem] xl:h-[45rem] 2xl:h-[58rem] 3xl:h-[76rem] 4xl:h-[80rem];
+          @apply h-[24rem] xs:h-[26rem] sm:h-[30rem] md:h-[44rem] lg:h-[42rem] xl:h-[54rem] 2xl:h-[68rem] 3xl:h-[90rem];
 
           & .section-content {
             @apply absolute h-full w-full;
@@ -788,8 +788,7 @@
         }
 
         &:nth-child(6) {
-          @apply h-[9rem] xs:h-[10rem] sm:h-[17rem] md:h-[20rem] lg:h-[25rem] xl:h-[27rem] 2xl:h-[29rem] 3xl:h-[35rem];
-          @apply mt-[12rem] xs:mt-[10rem] md:mt-[12rem] lg:mt-[21rem] xl:mt-[16rem];
+          @apply h-[12rem] xs:h-[16rem] sm:h-[20rem] md:h-[24rem] lg:h-[28rem] xl:h-[32rem] 2xl:h-[36rem] 3xl:h-[40rem];
 
           & .section-content {
             @apply flex flex-col flex-wrap items-center justify-start;
@@ -798,13 +797,22 @@
             @apply top-0 3xl:top-[5%];
             @apply z-10;
 
+            & .text-title-section {
+              @apply absolute left-[25%];
+              @apply flex w-full justify-center;
+              @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
+              @apply text-center font-bold text-white;
+              @apply w-[50%];
+              @apply top-0 sm:top-[5%] md:top-[14%] lg:top-[10%];
+            }
+
             & .text-team-description {
               @apply absolute left-[25%];
               @apply flex w-full justify-center;
               @apply text-[0.5rem] xs:text-sm md:text-base xl:text-lg;
               @apply text-center text-white xs:font-medium;
               @apply w-[50%];
-              @apply bottom-0 md:bottom-[10%] lg:bottom-[20%] 3xl:bottom-[20%];
+              @apply bottom-[1rem] md:bottom-[10%] lg:bottom-[20%] 3xl:bottom-[20%];
             }
 
             & .team-container {
@@ -812,6 +820,7 @@
               @apply w-full;
               @apply absolute sm:left-0 sm:right-0 sm:ml-auto sm:mr-auto;
               @apply top-[11%] xs:top-[15%] sm:top-[16%] md:top-[25%] lg:top-[20.5%] 3xl:top-[22%];
+              @apply mt-[2rem];
 
               & .team-card {
                 @apply flex flex-col items-center justify-center;
@@ -853,20 +862,13 @@
         }
 
         &:nth-child(7) {
-          @apply h-fit my-[12rem];
+          @apply h-[28rem] xs:h-[40rem] sm:h-[48rem] md:h-[46rem] lg:h-[46rem] xl:h-[50rem] 2xl:h-[60rem] 3xl:h-[72rem];
+          @apply mb-[8rem];
 
           & .section-content {
-            @apply flex flex-col items-center justify-start;
+            @apply flex flex-col items-center justify-end;
             @apply h-full w-full;
-            @apply z-10;
-
-            & .text-title-section {
-              @apply mb-[4rem] xl:mb-[8rem];
-              @apply flex w-full justify-center;
-              @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
-              @apply text-center font-bold text-white;
-              @apply w-[50%];
-            }
+            @apply z-10 sm:mt-[2rem];
 
             & .backer {
               @apply px-[4%] lg:px-[8%];

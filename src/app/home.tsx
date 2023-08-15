@@ -254,9 +254,6 @@ const Home = () => {
           </section>
           <section></section>
           <section>
-            <Plx parallaxData={[]} className="main-scene-plx">
-              <img className="scene-submarine" />
-            </Plx>
             <Plx parallaxData={plxData.mainGroupOfTurtle} className="main-scene-plx">
               <img className="scene-groupOfTurtle" />
             </Plx>
@@ -267,7 +264,11 @@ const Home = () => {
               <img className="scene-groupOfBubble-15" />
             </Plx>
           </section>
-          <section></section>
+          <section>
+            <Plx parallaxData={[]} className="main-scene-plx">
+              <img className="scene-submarine" />
+            </Plx>
+          </section>
           <section>
             <Plx parallaxData={plxData.mainGroupOfFishFour} className="main-scene-plx">
               <img className="scene-groupOfFish-4" />
@@ -517,6 +518,9 @@ const Home = () => {
           </section>
           <section>
             <div className="section-content">
+              <div className="text-title-section" id="team">
+                Scallop Labs
+              </div>
               <div className="team-container">
                 <div className="team-card">
                   <div className="card-avatar">
@@ -639,9 +643,6 @@ const Home = () => {
           </section>
           <section>
             <div className="section-content">
-              <div className="text-title-section" id="investor">
-                Investors
-              </div>
               <div className="backer">
                 <a href="https://mystenlabs.com/" target="_blank" rel="noreferrer">
                   <img
