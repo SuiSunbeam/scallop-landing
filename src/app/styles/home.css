@@ -164,11 +164,11 @@
         }
 
         &:nth-child(5) {
-          @apply h-[24rem] xs:h-[26rem] sm:h-[30rem] md:h-[44rem] lg:h-[42rem] xl:h-[54rem] 2xl:h-[68rem] 3xl:h-[90rem];
+          @apply h-[20rem] xs:h-[22rem] sm:h-[30rem] md:h-[31rem] lg:h-[35rem] xl:h-[48rem] 2xl:h-[68rem] 3xl:h-[90rem];
         }
 
         &:nth-child(6) {
-          @apply h-[12rem] xs:h-[16rem] sm:h-[20rem] md:h-[24rem] lg:h-[28rem] xl:h-[32rem] 2xl:h-[36rem] 3xl:h-[40rem];
+          @apply h-[16rem] xs:h-[20rem] sm:h-[20rem] md:h-[32rem] lg:h-[36rem] xl:h-[36rem] 2xl:h-[36rem] 3xl:h-[40rem];
         }
 
         &:nth-child(7) {
@@ -862,7 +862,7 @@
         }
 
         &:nth-child(7) {
-          @apply h-[28rem] xs:h-[40rem] sm:h-[48rem] md:h-[46rem] lg:h-[46rem] xl:h-[50rem] 2xl:h-[60rem] 3xl:h-[72rem];
+          @apply h-[28rem] xs:h-[40rem] sm:h-[48rem] md:h-[38rem] lg:h-[46rem] xl:h-[50rem] 2xl:h-[60rem] 3xl:h-[72rem];
           @apply mb-[8rem];
 
           & .section-content {
