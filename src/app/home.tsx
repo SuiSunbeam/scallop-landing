@@ -345,15 +345,28 @@ const Home = () => {
               <div className="why-scallop">
                 <div className="reason-1">
                   <img />
-                  <h3>Professional Trader Enabling</h3>
+                  <h3>Comprehensive Support</h3>
                   <ul>
                     <li>
-                      Full-featured 2 Layers SDK for integrate with Sui & Scallop, powered by
-                      Programmable Transaction Blocks
+                      <a href="https://app.scallop.io/tools">Scallop Tools</a>
+                      <ul>
+                        <li>UI Tool for Building Sui Programmable Transaction Blocks</li>
+                      </ul>
                     </li>
+                    <li>
+                      <a href="https://github.com/scallop-io/sui-scallop-sdk">Scallop SDK</a>
+                      <ul>
+                        <li>Typescript SDK for interacting with Scallop</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="https://github.com/scallop-io/sui-kit">Sui Kit</a>
+                      <ul>
+                        <li>Toolkit for interacting with Sui using Typescript SDK</li>
+                      </ul>
+                    </li>
+                    <li>sCoins (Scallop Market Coins)</li>
                     <li>Zero-cost flash loan</li>
-                    <li>Market coins (Collateral token)</li>
-                    <li>Scallop Tools</li>
                   </ul>
                 </div>
                 <div className="reason-2">
@@ -376,11 +389,11 @@ const Home = () => {
                 </div>
                 <div className="reason-3">
                   <img />
-                  <h3>Security First</h3>
+                  <h3>Robust Security</h3>
                   <ul>
-                    <li>Base on Rust</li>
-                    <li>Sui Move - Object Strucuture</li>
-                    <li>A team with cybersecurity background & Sui Move CTF contest places</li>
+                    <li>Base on Rust Language</li>
+                    <li>Develop by Sui Move</li>
+                    <li>A team with cybersecurity & CTF challenge background</li>
                     <li>Security Partners - Ottersec & MoveBit</li>
                     <li>Multi-Oracle Strategy</li>
                   </ul>
@@ -651,7 +664,7 @@ const Home = () => {
                   />
                 </a>
                 <a
-                  href="https://sui.io/"
+                  href="https://sui.io/about"
                   target="_blank"
                   rel="noreferrer"
                   className="sui-foundation-href"

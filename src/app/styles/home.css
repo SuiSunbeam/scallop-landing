@@ -639,8 +639,8 @@
 
                       & > li {
                         @apply list-["-\00a0"];
-                        @apply text-[8px] md:text-[10px];
-                        @apply leading-[14px];
+                        @apply text-[8px] md:text-[12px];
+                        @apply leading-[20px];
                       }
                     }
                   }
