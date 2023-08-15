@@ -788,31 +788,30 @@
         }
 
         &:nth-child(6) {
-          @apply h-fit mb-[12rem] mt-[5rem] md:mt-[12rem];
+          @apply h-[9rem] xs:h-[10rem] sm:h-[17rem] md:h-[20rem] lg:h-[25rem] xl:h-[27rem] 2xl:h-[29rem] 3xl:h-[35rem];
+          @apply mt-[12rem] xs:mt-[10rem] md:mt-[12rem] lg:mt-[21rem] xl:mt-[16rem];
 
           & .section-content {
-            @apply flex flex-col items-center justify-start;
+            @apply flex flex-col flex-wrap items-center justify-start;
+            @apply absolute left-0;
             @apply h-full w-full;
+            @apply top-0 3xl:top-[5%];
             @apply z-10;
 
-            & .text-title-section {
-              @apply my-[3rem] lg:my-[5rem];
-              @apply flex w-full justify-center;
-              @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
-              @apply text-center font-bold text-white;
-              @apply w-[50%];
-            }
-
             & .text-team-description {
+              @apply absolute left-[25%];
               @apply flex w-full justify-center;
               @apply text-[0.5rem] xs:text-sm md:text-base xl:text-lg;
               @apply text-center text-white xs:font-medium;
               @apply w-[50%];
+              @apply bottom-0 md:bottom-[10%] lg:bottom-[20%] 3xl:bottom-[20%];
             }
 
             & .team-container {
               @apply flex flex-row flex-wrap items-start justify-center gap-3;
-              @apply mb-[1rem] w-full;
+              @apply w-full;
+              @apply absolute sm:left-0 sm:right-0 sm:ml-auto sm:mr-auto;
+              @apply top-[11%] xs:top-[15%] sm:top-[16%] md:top-[25%] lg:top-[20.5%] 3xl:top-[22%];
 
               & .team-card {
                 @apply flex flex-col items-center justify-center;
@@ -854,7 +853,7 @@
         }
 
         &:nth-child(7) {
-          @apply h-fit mb-[12rem];
+          @apply h-fit my-[12rem];
 
           & .section-content {
             @apply flex flex-col items-center justify-start;
@@ -862,7 +861,7 @@
             @apply z-10;
 
             & .text-title-section {
-              @apply my-[3rem] lg:my-[5rem];
+              @apply mb-[4rem] xl:mb-[8rem];
               @apply flex w-full justify-center;
               @apply text-xs xs:text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl 5xl:text-7xl;
               @apply text-center font-bold text-white;
@@ -895,7 +894,7 @@
                 @apply flex flex-col justify-end;
 
                 &::after {
-                  @apply content-['(Grants)'] text-white text-[0.5rem] xs:text-xs lg:text-sm xl:text-xl;
+                  @apply text-[0.5rem] text-white content-['(Grants)'] xs:text-xs lg:text-sm xl:text-xl;
                   @apply relative left-[37%];
                 }
               }
