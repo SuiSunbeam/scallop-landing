@@ -392,7 +392,7 @@ const Home = () => {
                   <h3>Robust Security</h3>
                   <ul>
                     <li>Base on Rust Language</li>
-                    <li>Develop by Sui Move</li>
+                    <li>Develop with Sui Move</li>
                     <li>A team with cybersecurity & CTF challenge background</li>
                     <li>Security Partners - Ottersec & MoveBit</li>
                     <li>Multi-Oracle Strategy</li>
