@@ -5,14 +5,54 @@ import { ArrowUpIcon, Bars3Icon } from '@heroicons/react/24/solid';
 import { usePlxData } from '@/app/plxconfig';
 import krissAvatar from '@/assets/images/avatar-kriss.png';
 import annAvatar from '@/assets/images/avatar-ann.png';
-import shawnAvatar from '@/assets/images/avatar-shawn.jpg';
+import shawnAvatar from '@/assets/images/avatar-shawn.png';
 import donnieAvatar from '@/assets/images/avatar-donnie.png';
 import nathanAvatar from '@/assets/images/avatar-nathan.png';
+import robertAvatar from '@/assets/images/robert.jpeg';
+import yiluAvatar from '@/assets/images/yilu.jpeg';
+import zhuangAvatar from '@/assets/images/avatar-zhuang.png';
+import stevenAvatar from '@/assets/images/avatar-steven.png';
 import twitterCommunity from '@/assets/images/community-twitter.svg';
 import telegramCommunity from '@/assets/images/community-telegram.svg';
 import discordCommunity from '@/assets/images/community-discord.svg';
 import mediumCommunity from '@/assets/images/community-medium.svg';
+import moveBitLogo from '@/assets/images/backer-movebit.svg';
+import otterSecLogo from '@/assets/images/backer-ottersec.svg';
+
+import Carousel from './carousel';
 import '@/app/styles/home.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { CarouselData } from './utils';
+
+const dataSlider: CarouselData[] = [
+  {
+    logo: {
+      source: otterSecLogo,
+      alt: 'OtterSec',
+    },
+    message:
+      '"The Scallop team was a pleasure to work with. They care deeply about security and it was a great experience working closely with them to ship robust, secure products."',
+    profile: {
+      image: robertAvatar,
+      title: 'Robert Chen',
+      subtitle: 'OtterSec',
+    },
+  },
+  {
+    logo: {
+      source: moveBitLogo,
+      alt: 'Movebit',
+    },
+    message:
+      '"The Scallop project is one of my favorite Defi projects in Sui Network. It is a great pleasure to work with them. The tech team behind Scallop is with rich experience in Move. I am looking forward to collaborating more with Scallop!"',
+    profile: {
+      image: yiluAvatar,
+      title: 'Yi Lu',
+      subtitle: 'Movebit',
+    },
+  },
+];
 
 const Home = () => {
   const plxData = usePlxData();
@@ -83,13 +123,13 @@ const Home = () => {
                 <a href="#about">About</a>
               </li>
               <li>
-                <a href="#core-team">Core Team</a>
+                <a href="#team">Team</a>
               </li>
               <li>
-                <a href="#backer">Backer</a>
+                <a href="#investor">Investor</a>
               </li>
               <li>
-                <a href="#roadmap">Roadmap</a>
+                <a href="#message">Message</a>
               </li>
             </ul>
           </div>
@@ -111,13 +151,13 @@ const Home = () => {
                 <a href="#about">About</a>
               </Menu.Item>
               <Menu.Item as="div">
-                <a href="#core-team">Core Team</a>
+                <a href="#team">Team</a>
               </Menu.Item>
               <Menu.Item as="div">
                 <a href="#backer">Backer</a>
               </Menu.Item>
               <Menu.Item as="div">
-                <a href="#roadmap">Roadmap</a>
+                <a href="#message">Message</a>
               </Menu.Item>
             </Menu.Items>
           </Menu>
@@ -218,25 +258,17 @@ const Home = () => {
               <img className="scene-groupOfTurtle" />
             </Plx>
             <Plx parallaxData={[]} className="main-scene-plx">
-              <img className="scene-submarine" id="core-team" />
-            </Plx>
-            <Plx parallaxData={[]} className="main-scene-plx">
-              <img className="scene-groupOfManta" />
-            </Plx>
-            <Plx parallaxData={[]} className="main-scene-plx">
               <img className="scene-groupOfBubble-12" />
-            </Plx>
-            <Plx parallaxData={[]} className="main-scene-plx">
-              <img className="scene-groupOfBubble-13" />
-            </Plx>
-            <Plx parallaxData={[]} className="main-scene-plx">
-              <img className="scene-groupOfBubble-14" />
             </Plx>
             <Plx parallaxData={[]} className="main-scene-plx">
               <img className="scene-groupOfBubble-15" />
             </Plx>
           </section>
-          <section></section>
+          <section>
+            <Plx parallaxData={[]} className="main-scene-plx">
+              <img className="scene-submarine" />
+            </Plx>
+          </section>
           <section>
             <Plx parallaxData={plxData.mainGroupOfFishFour} className="main-scene-plx">
               <img className="scene-groupOfFish-4" />
@@ -313,15 +345,28 @@ const Home = () => {
               <div className="why-scallop">
                 <div className="reason-1">
                   <img />
-                  <h3>Professional Trader Enabling</h3>
+                  <h3>Comprehensive Support</h3>
                   <ul>
                     <li>
-                      Full-featured 2 Layers SDK for integrate with Sui & Scallop, powered by
-                      Programmable Transaction Blocks
+                      <a href="https://app.scallop.io/tools">Scallop Tools</a>
+                      <ul>
+                        <li>UI Tool for Building Sui Programmable Transaction Blocks</li>
+                      </ul>
                     </li>
+                    <li>
+                      <a href="https://github.com/scallop-io/sui-scallop-sdk">Scallop SDK</a>
+                      <ul>
+                        <li>Typescript SDK for interacting with Scallop</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="https://github.com/scallop-io/sui-kit">Sui Kit</a>
+                      <ul>
+                        <li>Toolkit for interacting with Sui using Typescript SDK</li>
+                      </ul>
+                    </li>
+                    <li>sCoins (Scallop Market Coins)</li>
                     <li>Zero-cost flash loan</li>
-                    <li>Market coins (Collateral token)</li>
-                    <li>Scallop Tools</li>
                   </ul>
                 </div>
                 <div className="reason-2">
@@ -336,7 +381,6 @@ const Home = () => {
                         <li>Collateral/Borrow Weights</li>
                         <li>Protected Collateral Vault</li>
                         <li>Borrow/Outflow/Collateralization Limits</li>
-                        <li>Multi-TWAP-Oracle Strategy</li>
                         <li>Delayed Model Change</li>
                         <li>Soft Liquidation</li>
                       </ul>
@@ -345,12 +389,13 @@ const Home = () => {
                 </div>
                 <div className="reason-3">
                   <img />
-                  <h3>Security First</h3>
+                  <h3>Robust Security</h3>
                   <ul>
-                    <li>Sui Move - Base on Rust</li>
+                    <li>Base on Rust Language</li>
+                    <li>Develop by Sui Move</li>
+                    <li>A team with cybersecurity & CTF challenge background</li>
                     <li>Security Partners - Ottersec & MoveBit</li>
-                    <li>A team with cybersecurity background & Sui Move CTF contest places</li>
-                    <li>Designed with zero trust</li>
+                    <li>Multi-Oracle Strategy</li>
                   </ul>
                 </div>
               </div>
@@ -374,7 +419,7 @@ const Home = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      1st DeFi project award an official grant from the Sui Foundation.
+                      1st DeFi project award an official grant from the Sui Foundation in Nov. 2022.
                     </a>{' '}
                   </div>
                 </li>
@@ -396,8 +441,40 @@ const Home = () => {
                   </div>
                 </li>
                 <li>
+                  <div>
+                    <span>🥇</span>
+                    <a
+                      href="https://twitter.com/Scallop_io/status/1688429952071520257"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      1st place in the Move Hackathon by WebX Circle track in July 2023.
+                    </a>{' '}
+                  </div>
                   <div className="left-champion">
-                    <img className="champion-bubble  sui-champion-3" />
+                    <img className="champion-bubble sui-champion-2" />
+                    <img className="left-champion-line" />
+                  </div>
+                </li>
+                <li>
+                  <div className="right-champion">
+                    <img className="champion-bubble sui-champion-3" />
+                    <img className="right-champion-line" />
+                  </div>
+                  <div>
+                    <span>🥉</span>
+                    <a
+                      href="https://blog.sui.io/hackathon-winners/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      3rd place Best Overall in the Sui x Kucoin Labs Summer Hackathon in July 2023.
+                    </a>{' '}
+                  </div>
+                </li>
+                <li>
+                  <div className="left-champion">
+                    <img className="champion-bubble sui-champion-3" />
                     <img className="left-champion-line" />
                   </div>
                   <div>
@@ -407,8 +484,8 @@ const Home = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      3rd place in the 2023 Sui x jump_ Builder House Ho Chi Minh City CTF
-                      challenge.
+                      3rd place in the Sui x jump_ Builder House Ho Chi Minh City CTF challenge in
+                      Mar. 2023.
                     </a>{' '}
                   </div>
                 </li>
@@ -420,7 +497,7 @@ const Home = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      5th place in the Sui Builder House Seoul Hackathon in June 2023. (Sui Kit)
+                      5th place in the Sui Builder House Denver CTF challenge Mar 2023.
                     </a>
                   </div>
                   <div className="right-champion">
@@ -436,7 +513,7 @@ const Home = () => {
                   <div>
                     <span>🎖️</span>
                     <a href="" target="_blank" rel="noreferrer">
-                      5th place in the Sui Builder House Denver CTF challenge.
+                      5th place in the Sui Builder House Seoul Hackathon in June 2023. (Sui Kit)
                     </a>{' '}
                   </div>
                 </li>
@@ -453,93 +530,131 @@ const Home = () => {
           </section>
           <section>
             <div className="section-content">
-              <div className="team-card">
-                <div className="card-avatar">
-                  <img alt="Kriss Avatar" src={krissAvatar} />
-                </div>
-                <div className="card-profile">
-                  <div className="profile-links">
-                    <a
-                      className="twitter"
-                      href="https://twitter.com/djchrisssssss"
-                      target="_blank"
-                      rel="noreferrer"
-                    />
+              <div className="text-title-section" id="team">
+                Scallop Labs
+              </div>
+              <div className="team-container">
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Kriss Avatar" src={krissAvatar} />
                   </div>
-                  <span className="profile-name">Kriss</span>
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/djchrisssssss"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Kriss</span>
+                  </div>
+                </div>
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Donnie Avatar" src={donnieAvatar} />
+                  </div>
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/MrDonor_donnie"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Donnie</span>
+                  </div>
+                </div>
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Nathan Avatar" src={nathanAvatar} />
+                  </div>
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/nathanramli"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Nathan</span>
+                  </div>
+                </div>
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Ann Avatar" src={annAvatar} />
+                  </div>
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/sailormoonann"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Ann</span>
+                  </div>
+                </div>
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Shawn Avatar" src={shawnAvatar} />
+                  </div>
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/XinhaiZeng"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Shawn</span>
+                  </div>
+                </div>
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Zhuang Avatar" src={zhuangAvatar} />
+                  </div>
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/NFT_ZHUANG"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Zhuang</span>
+                  </div>
+                </div>
+                <div className="team-card">
+                  <div className="card-avatar">
+                    <img alt="Steven Avatar" src={stevenAvatar} />
+                  </div>
+                  <div className="card-profile">
+                    <div className="profile-links">
+                      <a
+                        className="twitter"
+                        href="https://twitter.com/chen4hao"
+                        target="_blank"
+                        rel="noreferrer"
+                      />
+                    </div>
+                    <span className="profile-name">Steven</span>
+                  </div>
                 </div>
               </div>
-              <div className="team-card">
-                <div className="card-avatar">
-                  <img alt="Donnie Avatar" src={donnieAvatar} />
-                </div>
-                <div className="card-profile">
-                  <div className="profile-links">
-                    <a
-                      className="twitter"
-                      href="https://twitter.com/MrDonor_donnie"
-                      target="_blank"
-                      rel="noreferrer"
-                    />
-                  </div>
-                  <span className="profile-name">Donnie</span>
-                </div>
-              </div>
-              <div className="team-card">
-                <div className="card-avatar">
-                  <img alt="Nathan Avatar" src={nathanAvatar} />
-                </div>
-                <div className="card-profile">
-                  <div className="profile-links">
-                    <a
-                      className="twitter"
-                      href="https://twitter.com/nathanramli"
-                      target="_blank"
-                      rel="noreferrer"
-                    />
-                  </div>
-                  <span className="profile-name">Nathan</span>
-                </div>
-              </div>
-              <div className="team-card">
-                <div className="card-avatar">
-                  <img alt="Ann Avatar" src={annAvatar} />
-                </div>
-                <div className="card-profile">
-                  <div className="profile-links">
-                    <a
-                      className="twitter"
-                      href="https://twitter.com/sailormoonann"
-                      target="_blank"
-                      rel="noreferrer"
-                    />
-                  </div>
-                  <span className="profile-name">Ann</span>
-                </div>
-              </div>
-              <div className="team-card">
-                <div className="card-avatar">
-                  <img alt="Shawn Avatar" src={shawnAvatar} />
-                </div>
-                <div className="card-profile">
-                  <div className="profile-links">
-                    <a
-                      className="twitter"
-                      href="https://twitter.com/XinhaiZeng"
-                      target="_blank"
-                      rel="noreferrer"
-                    />
-                  </div>
-                  <span className="profile-name">Shawn</span>
-                </div>
+              <div className="text-team-description">
+                A team with cybersecurity, Web2 fintech, DeFi, algorithm contest, quantitative
+                trading, and VC backgrounds...
               </div>
             </div>
           </section>
           <section>
             <div className="section-content">
-              <div className="text-title-section" id="backer">
-                Backers
-              </div>
               <div className="backer">
                 <a href="https://mystenlabs.com/" target="_blank" rel="noreferrer">
                   <img
@@ -548,7 +663,12 @@ const Home = () => {
                     title="Mysten Labs is a company that develops a tech infrastructure platform designed for Web3 adoption, accelerating the development and adoption of decentralized services."
                   />
                 </a>
-                <a href="https://sui.io/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://sui.io/about"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="sui-foundation-href"
+                >
                   <img
                     className="sui-foundation"
                     alt="Sui Foundation"
@@ -616,10 +736,10 @@ const Home = () => {
           </section>
           <section>
             <div className="section-content">
-              <div className="text-title-section" id="roadmap">
-                Roadmap
+              <div className="text-title-section" id="message">
+                Message
               </div>
-              <img className="roadmap" />
+              <Carousel items={dataSlider} />
             </div>
           </section>
         </div>
@@ -659,7 +779,7 @@ const Home = () => {
             <span>Scallop</span>
           </a>
           <div className="copyright">
-            <span>© 2023 Scallop.io</span>
+            <span>© 2023 Scallop Labs</span>
           </div>
         </div>
       </footer>

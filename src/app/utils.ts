@@ -12,6 +12,19 @@ export const parseEnv = (env: Record<string, string>) => {
 
 export const env = parseEnv(import.meta.env);
 
+export type CarouselData = {
+  logo: {
+    alt: string;
+    source: string;
+  };
+  message: string;
+  profile: {
+    image: string;
+    title: string;
+    subtitle: string;
+  };
+};
+
 export type endpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl';
 
 export const checkBreakpoint = (endpoint?: endpoint) => {
