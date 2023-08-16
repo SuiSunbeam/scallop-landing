@@ -794,7 +794,7 @@
             @apply flex flex-col flex-wrap items-center justify-start;
             @apply absolute left-0;
             @apply h-full w-full;
-            @apply top-0 3xl:top-[5%];
+            @apply xs:top-[8%] md:top-[12%] 3xl:top-[5%];
             @apply z-10;
 
             & .text-title-section {
@@ -863,7 +863,7 @@
 
         &:nth-child(7) {
           @apply h-[28rem] xs:h-[40rem] sm:h-[48rem] md:h-[38rem] lg:h-[46rem] xl:h-[50rem] 2xl:h-[60rem] 3xl:h-[72rem];
-          @apply mb-[8rem];
+          @apply mb-[2rem];
 
           & .section-content {
             @apply flex flex-col items-center justify-end;
@@ -960,7 +960,7 @@
             @apply flex flex-col flex-wrap items-center justify-start;
             @apply absolute left-0;
             @apply h-full w-full;
-            @apply top-[10%] sm:top-[30%] md:top-[15%] lg:top-[5%] 2xl:top-[10%];
+            @apply top-[10%] sm:top-[10%] md:top-[15%] lg:top-[5%] 2xl:top-[10%];
             @apply z-10;
 
             & .text-title-section {
