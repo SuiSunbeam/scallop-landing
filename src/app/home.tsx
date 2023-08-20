@@ -737,7 +737,7 @@ const Home = () => {
           <section>
             <div className="section-content">
               <div className="text-title-section" id="message">
-                Message
+                Trusted by
               </div>
               <Carousel items={dataSlider} />
             </div>
