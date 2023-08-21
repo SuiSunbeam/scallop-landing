@@ -129,7 +129,7 @@ const Home = () => {
                 <a href="#investor">Investor</a>
               </li>
               <li>
-                <a href="#message">Message</a>
+                <a href="#message">Trusted By</a>
               </li>
             </ul>
           </div>
@@ -737,7 +737,7 @@ const Home = () => {
           <section>
             <div className="section-content">
               <div className="text-title-section" id="message">
-                Trusted by
+                Trusted By
               </div>
               <Carousel items={dataSlider} />
             </div>
