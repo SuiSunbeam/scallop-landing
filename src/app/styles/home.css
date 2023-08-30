@@ -106,33 +106,48 @@
         }
       }
 
-      & .header-menubar-button {
-        @apply z-50 flex lg:hidden;
-        @apply rounded-md p-1;
-        @apply !bg-white/30 hover:bg-white/80;
+      & .header-dropdown-container {
+        @apply flex flex-row gap-2;
 
-        & svg {
-          @apply h-5 w-5 sm:h-6 sm:w-6;
-          @apply fill-basic-normal hover:fill-basic-dark;
+        & .header-menubar-button {
+          @apply z-50 flex lg:hidden;
+          @apply rounded-md p-1;
+          @apply !bg-white/30 hover:bg-white/80;
+
+          & svg {
+            @apply h-5 w-5 sm:h-6 sm:w-6;
+            @apply fill-basic-normal hover:fill-basic-dark;
+          }
+        }
+
+        & .header-menubar-launch-app {
+          @apply z-50 flex lg:hidden;
+          @apply px-2 py-1 text-sm sm:text-base;
+        }
+
+        & .header-menubar-items {
+          @apply absolute z-50 flex flex-col items-center justify-start gap-0.5 lg:hidden;
+          @apply top-11 p-2;
+          @apply rounded text-xs;
+          @apply !bg-white/30;
+
+          & > div {
+            @apply flex items-center justify-center;
+            @apply w-full rounded-sm;
+            @apply hover:bg-white/80;
+
+            & > a {
+              @apply w-full;
+              @apply px-2 py-1;
+            }
+          }
         }
       }
 
-      & .header-menubar-items {
-        @apply absolute z-50 flex flex-col items-center justify-start gap-0.5 lg:hidden;
-        @apply right-4 top-11 p-2;
-        @apply rounded text-xs;
-        @apply !bg-white/30;
-
-        & > div {
-          @apply flex items-center justify-center;
-          @apply w-full rounded-sm;
-          @apply hover:bg-white/80;
-
-          & > a {
-            @apply w-full;
-            @apply px-2 py-1;
-          }
-        }
+      .button-launch-app {
+        @apply text-center text-white;
+        @apply rounded-md lg:rounded-lg;
+        @apply bg-basic-normal/90 hover:bg-basic-dark;
       }
     }
   }

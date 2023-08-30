@@ -114,9 +114,6 @@ const Home = () => {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="https://app.scallop.io/">App</a>
-              </li>
-              <li>
                 <a href="https://docs.scallop.io/">Docs</a>
               </li>
               <li>
@@ -131,36 +128,49 @@ const Home = () => {
               <li>
                 <a href="#message">Trusted By</a>
               </li>
+              <li>
+                <a className="button-launch-app" href="https://app.scallop.io/">
+                  Launch App
+                </a>
+              </li>
             </ul>
           </div>
-          <Menu>
-            <Menu.Button className="header-menubar-button">
-              <Bars3Icon />
-            </Menu.Button>
-            <Menu.Items className="header-menubar-items">
-              <Menu.Item as="div">
-                <a href="/">Home</a>
-              </Menu.Item>
-              <Menu.Item as="div">
+          <div className="header-dropdown-container">
+            <Menu>
+              <Menu.Button className="header-menubar-button">
+                <Bars3Icon />
+              </Menu.Button>
+              <Menu.Items className="header-menubar-items">
+                <Menu.Item as="div">
+                  <a href="/">Home</a>
+                </Menu.Item>
+                {/* <Menu.Item as="div">
                 <a href="https://app.scallop.io/">App</a>
-              </Menu.Item>
-              <Menu.Item as="div">
-                <a href="https://docs.scallop.io/">Docs</a>
-              </Menu.Item>
-              <Menu.Item as="div">
-                <a href="#about">About</a>
-              </Menu.Item>
-              <Menu.Item as="div">
-                <a href="#team">Team</a>
-              </Menu.Item>
-              <Menu.Item as="div">
-                <a href="#backer">Backer</a>
-              </Menu.Item>
-              <Menu.Item as="div">
-                <a href="#message">Message</a>
-              </Menu.Item>
-            </Menu.Items>
-          </Menu>
+              </Menu.Item> */}
+                <Menu.Item as="div">
+                  <a href="https://docs.scallop.io/">Docs</a>
+                </Menu.Item>
+                <Menu.Item as="div">
+                  <a href="#about">About</a>
+                </Menu.Item>
+                <Menu.Item as="div">
+                  <a href="#team">Team</a>
+                </Menu.Item>
+                <Menu.Item as="div">
+                  <a href="#backer">Backer</a>
+                </Menu.Item>
+                <Menu.Item as="div">
+                  <a href="#message">Message</a>
+                </Menu.Item>
+              </Menu.Items>
+            </Menu>
+            <a
+              className="header-menubar-launch-app button-launch-app"
+              href="https://app.scallop.io"
+            >
+              Launch App
+            </a>
+          </div>
         </nav>
       </header>
 
