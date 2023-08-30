@@ -157,10 +157,10 @@ const Home = () => {
                   <a href="#team">Team</a>
                 </Menu.Item>
                 <Menu.Item as="div">
-                  <a href="#backer">Backer</a>
+                  <a href="#investor">Investor</a>
                 </Menu.Item>
                 <Menu.Item as="div">
-                  <a href="#message">Message</a>
+                  <a href="#message">Trusted By</a>
                 </Menu.Item>
               </Menu.Items>
             </Menu>
@@ -664,7 +664,7 @@ const Home = () => {
             </div>
           </section>
           <section>
-            <div className="section-content">
+            <div className="section-content" id="investor">
               <div className="backer">
                 <a href="https://mystenlabs.com/" target="_blank" rel="noreferrer">
                   <img
