@@ -74,7 +74,7 @@
 
       & .header-logo {
         @apply flex items-center justify-center gap-1 lg:gap-1.5 2xl:gap-2;
-        @apply ml-3 md:ml-10 lg:ml-20 2xl:ml-32;
+        @apply ml-1 md:ml-10 lg:ml-20 2xl:ml-32;
         @apply text-base md:text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl 4xl:text-5xl;
         @apply font-medium text-black 2xl:font-semibold;
 
