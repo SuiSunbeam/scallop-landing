@@ -699,6 +699,20 @@ const Home = () => {
                     title="Assembly Partners is a research-driven fund, seeking the next phenomenal infrastructure in the blockchain industry."
                   />
                 </a>
+                <a href="https://skynettrading.com/" target="_blank" rel="noreferrer">
+                  <img
+                    className="skynet-trading"
+                    alt="Skynet Trading"
+                    title="Skynet Trading is a digital assets trading and investment firm in the crypto capital market."
+                  />
+                </a>
+                <a rel="noreferrer">
+                  <img
+                    className="vitality-ventures"
+                    alt="Vitality Ventures"
+                    title="Vitality Ventures."
+                  />
+                </a>
                 <a href="https://www.creditscend.com/" target="_blank" rel="noreferrer">
                   <img
                     className="credit-scend"
