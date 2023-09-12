@@ -706,6 +706,13 @@ const Home = () => {
                     title="Skynet Trading is a digital assets trading and investment firm in the crypto capital market."
                   />
                 </a>
+                <a href="https://supraoracles.com/" target="_blank" rel="noreferrer">
+                  <img
+                    className="supra-oracles"
+                    alt="Supra Oracles"
+                    title="Supra Oracles is a cross-chain oracle, offering cross-chain data feeds with real-time refresh rates for price feeds."
+                  />
+                </a>
                 <a href="https://liquidity.ltd" target="_blank" rel="noreferrer">
                   <img
                     className="vitality-ventures"
@@ -732,13 +739,6 @@ const Home = () => {
                     className="lol-capital"
                     alt="LOL Capital"
                     title="LOL Capital is an independent investment firm specializing in cryptocurrency and metaverse. "
-                  />
-                </a>
-                <a href="https://supraoracles.com/" target="_blank" rel="noreferrer">
-                  <img
-                    className="supra-oracles"
-                    alt="Supra Oracles"
-                    title="Supra Oracles is a cross-chain oracle, offering cross-chain data feeds with real-time refresh rates for price feeds."
                   />
                 </a>
                 <a href="https://osec.io/" target="_blank" rel="noreferrer">
