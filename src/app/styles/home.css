@@ -928,6 +928,18 @@
                 @apply scale-[0.75];
               }
 
+              & .skynet-trading {
+                @apply content-[url('@/assets/images/backer-skynet.svg')];
+                @apply h-full;
+                @apply scale-[1];
+              }
+
+              & .vitality-ventures {
+                @apply content-[url('@/assets/images/backer-vitality.png')];
+                @apply h-full;
+                @apply scale-[0.9];
+              }
+
               & .credit-scend {
                 @apply content-[url('@/assets/images/backer-credit-scend.png')];
                 @apply h-full;
