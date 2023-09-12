@@ -706,11 +706,11 @@ const Home = () => {
                     title="Skynet Trading is a digital assets trading and investment firm in the crypto capital market."
                   />
                 </a>
-                <a rel="noreferrer">
+                <a href="https://liquidity.ltd" target="_blank" rel="noreferrer">
                   <img
                     className="vitality-ventures"
                     alt="Vitality Ventures"
-                    title="Vitality Ventures."
+                    title="Vitality Ventures specializes in creating custom algorithmic trading software."
                   />
                 </a>
                 <a href="https://www.creditscend.com/" target="_blank" rel="noreferrer">
