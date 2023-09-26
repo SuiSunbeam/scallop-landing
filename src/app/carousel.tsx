@@ -14,7 +14,12 @@ const Slide: FC<SlideProps> = ({ item }) => {
   return (
     <div className="slide-item">
       <div className="slide-item-logo">
-        <img src={item.logo.source} height={150} width={100} alt={item.logo.alt} />
+        <img
+          src={item.logo.source}
+          height={item.logo.height ?? 150}
+          width={item.logo.width ?? 100}
+          alt={item.logo.alt}
+        />
       </div>
       <p className="slide-item-message">{item.message}</p>
       <div className="slide-item-profile">
