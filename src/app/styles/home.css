@@ -1016,8 +1016,12 @@
                   @apply h-full rounded-md;
 
                   & .slide-item-logo {
-                    @apply relative flex justify-start;
+                    @apply relative flex items-center justify-start;
                     @apply h-10;
+
+                    & > img {
+                      @apply block;
+                    }
                   }
 
                   & .slide-item-message {
