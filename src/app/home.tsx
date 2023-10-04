@@ -755,6 +755,13 @@ const Home = () => {
                     title="MoveBit is a blockchain security company focusing on Move ecosystem security."
                   />
                 </a>
+                <a href="https://www.cointelegraph.com/accelerate" target="_blank" rel="noreferrer">
+                  <img
+                    className="cointelegraph"
+                    alt="Cointelegraph"
+                    title="Cointelegraph is the leading independent digital media resource covering a wide range of news on blockchain technology, crypto assets, and emerging fintech trends."
+                  />
+                </a>
               </div>
             </div>
           </section>
