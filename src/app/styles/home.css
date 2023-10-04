@@ -883,7 +883,7 @@
           & .section-content {
             @apply flex flex-col items-center justify-end;
             @apply h-full w-full;
-            @apply z-10 sm:mt-[2rem];
+            @apply z-10 mt-[30vw] md:mt-[20vw];
 
             & .backer {
               @apply px-[4%] lg:px-[8%];
@@ -975,6 +975,11 @@
 
               & .movebit {
                 @apply content-[url('@/assets/images/backer-movebit.svg')];
+                @apply h-full;
+              }
+
+              & .cointelegraph {
+                @apply content-[url('@/assets/images/backer-cointelegraph.svg')];
                 @apply h-full;
               }
             }
