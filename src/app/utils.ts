@@ -16,6 +16,8 @@ export type CarouselData = {
   logo: {
     alt: string;
     source: string;
+    width?: number;
+    height?: number;
   };
   message: string;
   profile: {

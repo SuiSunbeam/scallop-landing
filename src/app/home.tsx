@@ -9,6 +9,7 @@ import shawnAvatar from '@/assets/images/avatar-shawn.png';
 import donnieAvatar from '@/assets/images/avatar-donnie.png';
 import nathanAvatar from '@/assets/images/avatar-nathan.png';
 import robertAvatar from '@/assets/images/robert.jpeg';
+import joshuaAvatar from '@/assets/images/joshua-avatar.jpg';
 import yiluAvatar from '@/assets/images/yilu.jpeg';
 import zhuangAvatar from '@/assets/images/avatar-zhuang.png';
 import stevenAvatar from '@/assets/images/avatar-steven.png';
@@ -17,6 +18,7 @@ import telegramCommunity from '@/assets/images/community-telegram.svg';
 import discordCommunity from '@/assets/images/community-discord.svg';
 import mediumCommunity from '@/assets/images/community-medium.svg';
 import moveBitLogo from '@/assets/images/backer-movebit.svg';
+import supraLogo from '@/assets/images/backer-supra-oracles.svg';
 import otterSecLogo from '@/assets/images/backer-ottersec.svg';
 
 import Carousel from './carousel';
@@ -50,6 +52,20 @@ const dataSlider: CarouselData[] = [
       image: yiluAvatar,
       title: 'Yi Lu',
       subtitle: 'Movebit',
+    },
+  },
+  {
+    logo: {
+      source: supraLogo,
+      alt: 'Supra',
+      width: 70,
+    },
+    message:
+      '"The Scallop leadership is dynamic, energetic, focused, and driven. We\'re excited to work closely with them as they bring novel defi primitives to the Sui Ecosystem. "',
+    profile: {
+      image: joshuaAvatar,
+      title: 'Joshua D. Tobkin',
+      subtitle: 'Supra',
     },
   },
 ];
@@ -503,7 +519,7 @@ const Home = () => {
                   <div>
                     <span>🎖️</span>
                     <a
-                      href="https://blog.sui.io/seoul-builder-house-recap/"
+                      href="https://ottersec.notion.site/ottersec/SuiTF-Guidelines-d89a2cdda0944ab6b6de920c6ee77d02"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -522,7 +538,11 @@ const Home = () => {
                   </div>
                   <div>
                     <span>🎖️</span>
-                    <a href="" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://blog.sui.io/seoul-builder-house-recap/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       5th place in the Sui Builder House Seoul Hackathon in June 2023. (Sui Kit)
                     </a>{' '}
                   </div>
