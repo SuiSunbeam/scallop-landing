@@ -652,7 +652,7 @@ const Home = () => {
                     <div className="profile-links">
                       <a
                         className="twitter"
-                        href="https://twitter.com/NFT_ZHUANG"
+                        href="https://twitter.com/0x_ZHUANG"
                         target="_blank"
                         rel="noreferrer"
                       />
