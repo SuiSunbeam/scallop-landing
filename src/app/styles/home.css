@@ -982,6 +982,11 @@
                 @apply content-[url('@/assets/images/backer-cointelegraph.svg')];
                 @apply h-full;
               }
+
+              & .defiland {
+                @apply content-[url('@/assets/images/backer-defiland.svg')];
+                @apply h-full scale-[0.8];
+              }
             }
           }
         }
