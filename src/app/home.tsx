@@ -782,6 +782,13 @@ const Home = () => {
                     title="Cointelegraph is the leading independent digital media resource covering a wide range of news on blockchain technology, crypto assets, and emerging fintech trends."
                   />
                 </a>
+                <a href="https://defiland.app/" target="_blank" rel="noreferrer">
+                  <img
+                    className="defiland"
+                    alt="DeFi Land"
+                    title="DeFi Land is a multi-chain agriculture-simulation game created to gamify Decentralized Finance."
+                  />
+                </a>
               </div>
             </div>
           </section>
