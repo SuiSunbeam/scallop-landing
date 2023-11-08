@@ -925,7 +925,7 @@
               & .assembly-partners {
                 @apply content-[url('@/assets/images/backer-assembly-partners.svg')];
                 @apply h-full;
-                @apply scale-[0.75];
+                @apply scale-[0.7];
               }
 
               & .skynet-trading {
@@ -985,7 +985,7 @@
 
               & .defiland {
                 @apply content-[url('@/assets/images/backer-defiland.svg')];
-                @apply h-full scale-[0.8];
+                @apply h-full scale-[0.6];
               }
             }
           }
